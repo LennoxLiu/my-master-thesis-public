@@ -1,6 +1,8 @@
 from ast import If
 from functools import partial
 from tabnanny import verbose
+
+import optuna
 import dpp
 import matplotlib.pyplot as plt
 import numpy as np
@@ -264,6 +266,10 @@ def prepare_dataloaders(
     assert all(isinstance(evt, torch.Tensor) for evt in event_time), "All event_time elements must be torch.Tensor"
     assert len(event_time) == 2, "Currently only support two processes for TE estimation"
 
+    if seed is not None:
+        torch.manual_seed(seed)
+        np.random.seed(seed)
+    
     target_times = event_time[0][event_time[0]< configs["total_time"]]
     source_times = event_time[1][event_time[1]< configs["total_time"]]
 
@@ -341,8 +347,14 @@ def prepare_dataloaders(
     targets_yy = targets
 
     histories_source = torch.hstack([histories_source, time_deltas])
-    # You can now combine these as needed for your model, for example:
-    # Stack the two histories to create a multi-process history tensor
+    
+    if configs["shuffle"]:
+        # SHUFFLE THE COMBINED TENSOR VERTICALLY
+        # This keeps 'source' and 'time_deltas' aligned with each other,
+        # but breaks their relationship with 'targets' and 'histories_target'.
+        idx = torch.randperm(histories_source.size(0))
+        histories_source = histories_source[idx]
+
     histories = torch.stack([histories_target, histories_source], dim=2)
     # Shape will be (seq_num, history_length, 2)
     
@@ -353,13 +365,9 @@ def prepare_dataloaders(
     seq_num = targets.shape[0]
     # Train/Val/Test split
     indices = np.arange(seq_num)
-    if seed is not None:
-        np.random.seed(seed)
-    if configs["shuffle"]:
-        np.random.shuffle(indices)
-    else:
-        shift = int(seq_num * np.random.rand())
-        indices = np.roll(indices, shift)
+    shift = int(seq_num * np.random.rand())
+    indices = np.roll(indices, shift)
+
     train_ratio=0.6
     val_ratio=0.2
     train_end = int(train_ratio * seq_num)  # 60% for training
@@ -385,7 +393,8 @@ def prepare_dataloaders(
     return (dl_train, dl_val, dl_test), (dl_train_yy, dl_val_yy, dl_test_yy), len_target
 
 # event time in seconds
-def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, device = 'cpu', verbose = False) -> Tuple[dpp.models.LogNormMix, float]:
+def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, device = 'cpu', 
+                    verbose = False, trial = None, step_tracker:int = 0)-> Tuple[dpp.models.LogNormMix, float, int]:
     if seed is not None:
         torch.manual_seed(seed)
         np.random.seed(seed)
@@ -455,7 +464,7 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
     L_sep_weight = configs["train_config"].get("L_sep_weight", 0.0) # Default to 0 if not set
     L_scale_weight = configs["train_config"].get("L_scale_weight", 0.0) # Default to 0 if not set
     L_mean_match_weight = configs["train_config"].get("L_mean_match_weight", 0.0) # Default to 0 if not set
-   
+
     for epoch in range(configs["train_config"]["max_epochs"]):
         model.train()
         loss = torch.tensor(0.0)  # Initialize loss to a default value
@@ -489,7 +498,7 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
             
             if L_scale_weight > 0.0:
                 # Encourage smaller scale of the components to avoid long tails
-                L_scale = torch.mean(inter_time_dist.log_scales.exp())
+                L_scale = torch.mean(inter_time_dist.scales)
             
             loss = nll_loss + L_entropy_weight * L_weight + L_sep_weight * L_sep +\
             L_scale_weight * L_scale
@@ -518,6 +527,15 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
             best_loss = loss_val
             best_model = deepcopy(model.state_dict())
             impatient = 0
+
+        # --- PRUNING LOGIC ---
+        if trial is not None:
+            step_tracker += 1
+            trial.report(loss_val, step_tracker)
+            
+            if trial.should_prune():
+                raise optuna.TrialPruned()
+        # ---------------------
 
         if impatient >= configs["train_config"]["patience"]:
             if verbose:
@@ -565,7 +583,7 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
     # if verbose:
     #     print(f"Log loss: {log_loss.item():.5f}")
 
-    return model, log_loss
+    return model, log_loss, step_tracker
 
 
 def calculate_entropy_ghq(
@@ -1740,14 +1758,14 @@ def GetAnalyticalReferenceTE(
                 # Extract mu and sigma for the single log-normal
                 # .squeeze(-1) removes the unnecessary 'num_components' dimension
                 mu_yyx = dists_yyx.locs.squeeze(-1)
-                sigma_yyx = torch.exp(dists_yyx.log_scales.squeeze(-1))
+                sigma_yyx = dists_yyx.scales.squeeze(-1)
 
                 # --- Get parameters for H(Y'|Y) ---
                 context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
                 dists_yy = model_yy.get_inter_time_dist(context_yy)
                 
                 mu_yy = dists_yy.locs.squeeze(-1)
-                sigma_yy = torch.exp(dists_yy.log_scales.squeeze(-1))
+                sigma_yy = dists_yy.scales.squeeze(-1)
                 # mean_log_inter_time, std_log_inter_time are the parameters for config_yyx and config_yy
                 # --- Calculate entropies using the analytical formula ---
                 h_yyx = lognormal_entropy_pytorch(mu_yyx, sigma_yyx,a=model_yyx.get_std_log_inter_time(), b=model_yyx.get_mean_log_inter_time())
@@ -1761,7 +1779,8 @@ def GetAnalyticalReferenceTE(
 
         return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
 
-def CondH_estimation_yy(event_time, configs: dict, seed: int = 42):
+# For hyperparameter optimization
+def CondH_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):
     """
     Estimate the conditional entropy H(Y'|Y) of a temporal point process (TPP) using neural models."""
 
@@ -1783,16 +1802,16 @@ def CondH_estimation_yy(event_time, configs: dict, seed: int = 42):
     config_yy["history_length"] = configs["history_length"]
     config_yy["plot_pp"] = configs["plot_pp"]
 
-    model_yy, log_loss_yy = train_tpp_model(*dls_yy, configs=config_yy, seed=seed, device=configs["device"], verbose = configs["verbose"])
-    _, _, dl_test_yy = dls_yy
-    # H_yy_test = EstimateCondEntropy_ExpSinh(model_yy, dl_test_yy, device=configs["device"], degree=256)
-    # H_yy_test = Estimate_HazardEntropy_TanhSinh(model_yy, dl_test_yy, device=configs["device"], degree=256)
-    H_yy_test = Estimate_HazardEntropy(model_yy, dl_test_yy, device=configs["device"])
+    model_yy, log_loss_yy, _ = train_tpp_model(*dls_yy, configs=config_yy, seed=seed, device=configs["device"],
+                                               verbose = configs["verbose"], trial=trial)
+    
+    dl_train_yy, dl_val_yy, dl_test_yy = dls_yy
+    H_yy_test = Estimate_HazardEntropy(model_yy,  dl_test_yy, device=configs["device"])
 
     return H_yy_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yy
 
-
-def CondH_estimation_yyx(event_time, configs: dict, seed: int = 42):
+# For hyperparameter optimization
+def CondH_estimation_yyx(event_time, configs: dict, seed: int = 42, trial = None):
     """
     Estimate the conditional entropy H(Y'|Y,X) of a temporal point process (TPP) using neural models."""
     data_prep_config = deepcopy(configs["data_prep_config"])
@@ -1813,15 +1832,15 @@ def CondH_estimation_yyx(event_time, configs: dict, seed: int = 42):
     config_yyx["history_length"] = configs["history_length"]
     config_yyx["plot_pp"] = configs["plot_pp"]
     
-    model_yyx, log_loss_yyx = train_tpp_model(*dls_yyx, configs=config_yyx, seed=seed, device=configs["device"], verbose = configs["verbose"])
-    _, _, dl_test_yyx = dls_yyx
-    # H_yyx_test = EstimateCondEntropy_ExpSinh(model_yyx, dl_test_yyx, device=configs["device"], degree=256)
-    # H_yyx_test = Estimate_HazardEntropy_TanhSinh(model_yyx, dl_test_yyx, device=configs["device"], degree=256)
+    model_yyx, log_loss_yyx, _ = train_tpp_model(*dls_yyx, configs=config_yyx, seed=seed, device=configs["device"],
+                                                  verbose = configs["verbose"], trial=trial)
+    
+    dl_train_yyx, dl_val_yyx, dl_test_yyx = dls_yyx
     H_yyx_test = Estimate_HazardEntropy(model_yyx, dl_test_yyx, device=configs["device"])
 
     return H_yyx_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yyx
 
-def TE_estimation_tpp(event_time, configs: dict, seed: int = 42):
+def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     """
     Estimate the transfer entropy (TE) between two temporal point processes (TPPs) using neural models.
     This function prepares data loaders, trains two TPP models (one with and one without access to the source process),
@@ -1871,73 +1890,31 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42):
     config_yyx["history_length"] = configs["history_length"]
     config_yyx["plot_pp"] = configs["plot_pp"]
 
-    model_yy, log_loss_yy = train_tpp_model(*dls_yy, configs=config_yy, seed=seed, device=configs["device"], verbose = configs["verbose"])
-    model_yyx, log_loss_yyx = train_tpp_model(*dls_yyx, configs=config_yyx, seed=seed, device=configs["device"], verbose = configs["verbose"])
+    step_tracker = 0
 
+    model_yyx, log_loss_yyx, step_tracker = train_tpp_model(*dls_yyx, configs=config_yyx, seed=seed, device=configs["device"], verbose = configs["verbose"],
+                                            trial=trial, step_tracker=step_tracker)
+    model_yy, log_loss_yy, step_tracker = train_tpp_model(*dls_yy, configs=config_yy, seed=seed, device=configs["device"], verbose = configs["verbose"],
+                                            trial=trial, step_tracker=step_tracker)
+    
     dl_train_yyx, dl_val_yyx, dl_test_yyx = dls_yyx
     dl_train_yy, dl_val_yy, dl_test_yy = dls_yy
     
-    # TE_test_mc, H_yy_test_mc, H_yyx_test_mc = EstimateContinuousTE_MC(model_yy, model_yyx, dl_test_yyx, device=configs["device"], num_samples=configs["num_mc_samples"])
-    # print(f'[MC] Transfer Entropy (nats/event):\n'
-    #     f' - H_yy_test: {H_yy_test_mc}\n'
-    #     f' - H_yyx_test: {H_yyx_test_mc}\n'
-    #     f' - TE_test:  {TE_test_mc}')
-    
-    # # Use GHQ for faster and more accurate estimation
-    # TE_test_ghq, H_yy_test_ghq, H_yyx_test_ghq = EstimateContinuousTE_GHQ(model_yy, model_yyx, dl_test_yyx, device=configs["device"], degree=256)
-    # print(f'[GHQ] Transfer Entropy (nats/event):\n'
-    #     f' - H_yy_test: {H_yy_test_ghq}\n'
-    #     f' - H_yyx_test: {H_yyx_test_ghq}\n'
-    #     f' - TE_test:  {TE_test_ghq}')
-
-    # # Use Sinh-Sinh as an alternative deterministic method
-    # TE_test_sinhsinh, H_yy_test_sinhsinh, H_yyx_test_sinhsinh = EstimateContinuousTE_SinhSinh(model_yy, model_yyx, dl_test_yyx, device=configs["device"], degree=256)
-    # print(f'[Sinh-Sinh] Transfer Entropy (nats/event):\n'
-    #     f' - H_yy_test: {H_yy_test_sinhsinh}\n'
-    #     f' - H_yyx_test: {H_yyx_test_sinhsinh}\n'
-    #     f' - TE_test:  {TE_test_sinhsinh}')
-    
-    # Use Exp-Sinh as an alternative deterministic method
-    # TE_test_ExpSinh, H_yy_test_ExpSinh, H_yyx_test_ExpSinh = EstimateContinuousTE_ExpSinh(model_yy, model_yyx, dl_test_yyx, device=configs["device"], degree=2560)
-    # print(f'[Exp-Sinh] Transfer Entropy (nats/event):\n'
-    #     f' - ln_hazard_yy_test: {H_yy_test_ExpSinh:.5f}\n'
-    #     f' - ln_hazard_yyx_test: {H_yyx_test_ExpSinh:.5f}\n'
-    #     f' - TE_test:  {TE_test_ExpSinh:.5f}\n')
-
-    # if model_yy.num_mix_components == 1 and model_yyx.num_mix_components == 1:
-    #     TE_test, H_yy_test, H_yyx_test = GetAnalyticalReferenceTE(model_yy, model_yyx, dl_test_yyx, configs)
-    #     print(f'[Analytical] Transfer Entropy (nats/event):\n'
-    #         f' - ln_hazard_yy_test: {H_yy_test:.5f}\n'
-    #         f' - ln_hazard_yyx_test: {H_yyx_test:.5f}\n'
-    #         f' - TE_test:  {TE_test:.5f}')
-    
-
-    # TE_hazard_TanhSinh, H_yy_hazard_TanhSinh, H_yyx_hazard_TanhSinh = EstimateTE_HazardEntropy_TanhSinh(model_yy, model_yyx, dl_test_yyx, device=configs["device"], degree=256)
-    # print(f'[Hazard Tanh-Sinh] Transfer Entropy (nats/event):\n'
-    #     f' - ln_hazard_yy_test: {H_yy_hazard_TanhSinh:.5f}\n'
-    #     f' - ln_hazard_yyx_test: {H_yyx_hazard_TanhSinh:.5f}\n'
-    #     f' - TE_test:  {TE_hazard_TanhSinh:.5f}\n')
-    
-    # TE_hazard_MC, H_yy_hazard_MC, H_yyx_hazard_MC = EstimateTE_HazardEntropy_MC(model_yy, model_yyx, dl_test_yyx, device=configs["device"], num_samples=configs["num_mc_samples"])
-    # print(f'[Hazard MC] Transfer Entropy (nats/event):\n'
-    #     f' - ln_hazard_yy_test: {H_yy_hazard_MC:.5f}\n'
-    #     f' - ln_hazard_yyx_test: {H_yyx_hazard_MC:.5f}\n'
-    #     f' - TE_test:  {TE_hazard_MC:.5f}\n')
 
     TE_hazard, H_yy_hazard, H_yyx_hazard = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_test_yy, dl_test_yyx, device=configs["device"])
-    print(f'[Hazard Basic] Transfer Entropy (nats/event):\n'
+    print(f'[Test] Transfer Entropy (nats/event):\n'
         f' - ln_hazard_yy_test: {H_yy_hazard:.5f}\n'
         f' - ln_hazard_yyx_test: {H_yyx_hazard:.5f}\n'
         f' - TE_test:  {TE_hazard:.5f}\n')
 
     TE_hazard_train, H_yy_hazard_train, H_yyx_hazard_train = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_train_yy, dl_train_yyx, device=configs["device"])
-    print(f'[Hazard Basic] Transfer Entropy (nats/event):\n'
+    print(f'[Training] Transfer Entropy (nats/event):\n'
         f' - ln_hazard_yy_train: {H_yy_hazard_train:.5f}\n'
         f' - ln_hazard_yyx_train: {H_yyx_hazard_train:.5f}\n'
         f' - TE_train:  {TE_hazard_train:.5f}\n')
 
     TE_hazard_val, H_yy_hazard_val, H_yyx_hazard_val = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_val_yy, dl_val_yyx, device=configs["device"])
-    print(f'[Hazard Basic] Transfer Entropy (nats/event):\n'
+    print(f'[Validation] Transfer Entropy (nats/event):\n'
         f' - ln_hazard_yy_val: {H_yy_hazard_val:.5f}\n'
         f' - ln_hazard_yyx_val: {H_yyx_hazard_val:.5f}\n'
         f' - TE_val:  {TE_hazard_val:.5f}\n')
@@ -2115,7 +2092,7 @@ if __name__ == "__main__":
         },
         "data_prep_config":{
             "batch_size": 128,          # Number of sequences in a batch
-            "shuffle": False,                 # Whether to shuffle the time series before splitting into train/val/test
+            "shuffle": False,           # Whether to shuffle the source to break its relationship with the target
             "total_time": time_series_length,              # in second, Total time of the sequences, , truncated at this time if data exceeds this length
             "verbose": False # Whether to print data preparation statistics
         },

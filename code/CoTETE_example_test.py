@@ -1,3 +1,4 @@
+from copy import deepcopy
 import random
 import math
 import pickle
@@ -159,7 +160,7 @@ def plot_average_firing_rate(all_delta_t_candidates, all_accepted_delta_t, RATE_
     plt.plot(t_values, theoretical_rate, 'r--', label='Theoretical Rate', linewidth=2)
     
     plt.title('Average Firing Rate of Target vs. Time Since Last Source Spike ($\Delta t$)')
-    plt.xlabel('Time Since Last Source Spike ($ t-X(j^*)$)')
+    plt.xlabel('Time Since Last Source Spike')
     plt.ylabel('Firing Rate (Hz)')
     plt.legend()
     plt.grid(True)
@@ -222,7 +223,7 @@ def plot_firing_rate_over_time(event_train_x, time_step=500.0):
 
 if __name__ == "__main__":
     # Define simulation parameters
-    seed=43
+    seed=52
     num_source_events = int(2e+4)
     source_events, target_events, candidates, accepted = generate_spike_trains_CoTETE(RATE_Y = 1.0, RATE_X_MAX=6, NUM_Y_EVENTS=num_source_events,seed=seed)
     # print("x_events:", x_events[:5], "...", x_events[-5:])
@@ -246,31 +247,35 @@ if __name__ == "__main__":
             "model_config_yy": {
             "model_name": "LogNormMix_yy",
             "context_size": 16,
-            "num_mix_components": 32,
-            "hidden_sizes": [32],
+            "num_mix_components": 8,
+            "hidden_sizes": [4, 16],
             "context_extractor": "lstm",
             "activation_func": "GELU"
         },
         "model_config_yyx": {
             "model_name": "LogNormMix_yyx",
-            "context_size": 16,
+            "context_size": 8,
             "num_mix_components": 32,
-            "hidden_sizes": [32],
-            "context_extractor": "lstm",
-            "activation_func": "GELU"
+            "hidden_sizes": [8, 32],
+            "context_extractor": "gru",
+            "activation_func": "Tanh"
         },
         "train_config_yy": {
-            "L2_weight": 7.5993e-9,
-            "L_scale_weight": 3.1008e-08,
-            "learning_rate": 0.0074018,
+            "L2_weight": 3.8379954060256066e-08,
+            "L_entropy_weight": 0.00022756667123420592,
+            "L_sep_weight": 2.891600870711327e-10,
+            "L_scale_weight": 1.8621741962089573e-05,
+            "learning_rate": 0.0024284476869901616,
             "max_epochs": 500,
             "display_step": 5,
             "patience": 20
         },
         "train_config_yyx": {
-            "L2_weight": 7.5993e-9,
-            "L_scale_weight": 3.1008e-08,
-            "learning_rate": 0.0074018,
+            "L2_weight": 0.00015034955189675413,
+            "L_entropy_weight": 0.0002915120808357504,
+            "L_sep_weight": 6.238313212626435e-06,
+            "L_scale_weight": 4.033731713458755e-08,
+            "learning_rate": 0.007882822631563417,
             "max_epochs": 500,
             "display_step": 5,
             "patience": 20
@@ -284,17 +289,19 @@ if __name__ == "__main__":
         "device": device,
         "verbose": False,  # Whether to print the training statistics
         "plot_histograms": False,  # Whether to plot the conditional histograms
-        "plot_pp": True,            # Whether to plot the probability - probability plots
-        "history_length": 8,             # in number of bins, Length of the history to use for the model
+        "plot_pp": False,            # Whether to plot the probability - probability plots
+        "history_length": 256,             # in number of bins, Length of the history to use for the model
     }
 
     # Save the config for reference
     save_dict_indented(configs, f"./results/config_{seed}.txt")
     
+    config_plot = deepcopy(configs)
+    config_plot["plot_pp"] = True
     start_time = time.time()
     (TE_test, H_yy_test, H_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
             event_time=[torch.tensor(target_events,dtype=torch.float), torch.tensor(source_events,dtype=torch.float)], 
-            configs=configs, 
+            configs=config_plot, 
             seed=seed
     )
     end_time = time.time()

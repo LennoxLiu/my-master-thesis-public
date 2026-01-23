@@ -3,6 +3,7 @@ import torch.nn as nn
 from scipy.optimize import brentq
 
 import torch.distributions as D
+import torch.nn.functional as F
 from dpp.distributions import Normal, MixtureSameFamily, TransformedDistribution
 from dpp.utils import clamp_preserve_gradients
 from .recurrent_tpp import RecurrentTPP
@@ -14,14 +15,14 @@ class LogNormalMixtureDistribution(TransformedDistribution):
 
     We model it in the following way (see Appendix D.2 in the paper):
 
-    x ~ GaussianMixtureModel(locs, log_scales, log_weights)
+    x ~ GaussianMixtureModel(locs, scales, log_weights)
     y = std_log_inter_time * x + mean_log_inter_time
     z = exp(y)
 
     Args:
         locs: Location parameters of the component distributions,
             shape (batch_size, num_mix_components)
-        log_scales: Logarithms of scale parameters of the component distributions,
+        scales: Logarithms of scale parameters of the component distributions,
             shape (batch_size, num_mix_components)
         log_weights: Logarithms of mixing probabilities for the component distributions,
             shape (batch_size, num_mix_components)
@@ -31,17 +32,17 @@ class LogNormalMixtureDistribution(TransformedDistribution):
     def __init__(
         self,
         locs: torch.Tensor,
-        log_scales: torch.Tensor,
+        scales: torch.Tensor,
         log_weights: torch.Tensor,
         mean_log_inter_time: float = 0.0,
         std_log_inter_time: float = 1.0,
     ):
         self.logits = log_weights
         self.locs = locs
-        self.log_scales = log_scales
+        self.scales = scales
         mixture_dist = D.Categorical(logits=log_weights)
         
-        component_dist = D.LogNormal(loc=locs, scale=self.log_scales.exp()) # mean and standard deviation
+        component_dist = D.LogNormal(loc=locs, scale=self.scales) # mean and standard deviation
         MLN = MixtureSameFamily(mixture_dist, component_dist)
         transforms = []
         self.mean_log_inter_time = mean_log_inter_time
@@ -133,17 +134,19 @@ class LogNormMix(RecurrentTPP):
         # Slice the tensor to get the parameters of the mixture
         locs = raw_params[..., :self.num_mix_components] # mean of the mixture components
 
-        # log_scales: logarithm of standard deviation
-        log_scales = raw_params[..., self.num_mix_components: (2 * self.num_mix_components)]
+        # scales: logarithm of standard deviation
+        scales = raw_params[..., self.num_mix_components: (2 * self.num_mix_components)]
         log_weights = raw_params[..., (2 * self.num_mix_components):]
 
-        log_scales = clamp_preserve_gradients(log_scales, -5, 3) #-5,3 | -2, 0
+        # This operation helps with training stability
+        # log_scales = clamp_preserve_gradients(log_scales, -5, 3) #-5,3 | -2, 0, This hyperparameter can be tuned
         # locs = clamp_preserve_gradients(locs, -8, 2) # -8, 2
+        scales = F.softplus(scales) + 1e-8  # Ensure scales are positive
         log_weights = torch.log_softmax(log_weights, dim=-1)
         
         return LogNormalMixtureDistribution(
             locs=locs,
-            log_scales=log_scales,
+            scales=scales,
             log_weights=log_weights,
         )
     

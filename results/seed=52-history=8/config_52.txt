@@ -1,0 +1,55 @@
+{
+    "model_config_yy": {
+        "model_name": "LogNormMix_yy",
+        "context_size": 16,
+        "num_mix_components": 8,
+        "hidden_sizes": [
+            4,
+            16
+        ],
+        "context_extractor": "lstm",
+        "activation_func": "GELU"
+    },
+    "model_config_yyx": {
+        "model_name": "LogNormMix_yyx",
+        "context_size": 8,
+        "num_mix_components": 32,
+        "hidden_sizes": [
+            8,
+            32
+        ],
+        "context_extractor": "gru",
+        "activation_func": "Tanh"
+    },
+    "train_config_yy": {
+        "L2_weight": 3.8379954060256066e-08,
+        "L_entropy_weight": 0.00022756667123420592,
+        "L_sep_weight": 2.891600870711327e-10,
+        "L_scale_weight": 1.8621741962089573e-05,
+        "learning_rate": 0.0024284476869901616,
+        "max_epochs": 500,
+        "display_step": 5,
+        "patience": 20
+    },
+    "train_config_yyx": {
+        "L2_weight": 0.00015034955189675413,
+        "L_entropy_weight": 0.0002915120808357504,
+        "L_sep_weight": 6.238313212626435e-06,
+        "L_scale_weight": 4.033731713458755e-08,
+        "learning_rate": 0.007882822631563417,
+        "max_epochs": 500,
+        "display_step": 5,
+        "patience": 20
+    },
+    "data_prep_config": {
+        "batch_size": 128,
+        "shuffle": false,
+        "total_time": 19932.997070508965,
+        "verbose": false
+    },
+    "device": "cuda",
+    "verbose": false,
+    "plot_histograms": false,
+    "plot_pp": false,
+    "history_length": 8
+}

@@ -38,18 +38,18 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
         configs = {
             "model_config_yy": {
                 "model_name": "LogNormMix",  # Name of the model to use, ["LogNormMix", "ExponentialMix","GompertzMix"]
-                "context_size": 2** trial.suggest_int("context_size_yy", 0, 4),  # From 2^0 to 2^7, i.e., 1 to 128, Size of the RNN hidden vector
+                "context_size": 2** trial.suggest_int("context_size_yy", 1, 4),  # From 2^0 to 2^7, i.e., 1 to 128, Size of the RNN hidden vector
                 "num_mix_components": 2** trial.suggest_int("num_mix_components_yy", 1, 5),  # 32 Number of components for a mixture model
                 "hidden_sizes": hidden_sizes_yy,       # 16 Hidden sizes of the MLP for the inter-event time distribution
-                "context_extractor": "gru", #trial.suggest_categorical("context_extractor_yy", ["gru", "lstm", "mlp"]), # Type of RNN to use for context extraction, ["gru", "lstm", "mlp"]
+                "context_extractor": trial.suggest_categorical("context_extractor_yy", ["gru", "lstm"]), # Type of RNN to use for context extraction, ["gru", "lstm", "mlp"]
                 "activation_func": trial.suggest_categorical("activation_func_yy", ["Tanh", "ReLU", "GELU"]),
             },
             "train_config_yy": {
                 "L2_weight": trial.suggest_float("L2_weight_yy", 1e-10, 1e-3, log=True),          # L2 regularization parameter
-                # "L_entropy_weight": trial.suggest_float("L_entropy_weight_yy", 1e-10, 1e-3, log=True),      # Weight for the entropy regularization term
-                # "L_sep_weight": trial.suggest_float("L_sep_weight_yy", 1e-10, 1e-3, log=True),               # Weight for the separation regularization term
+                "L_entropy_weight": trial.suggest_float("L_entropy_weight_yy", 1e-10, 1e-3, log=True),      # Weight for the entropy regularization term
+                "L_sep_weight": trial.suggest_float("L_sep_weight_yy", 1e-10, 1e-3, log=True),               # Weight for the separation regularization term
                 "L_scale_weight": trial.suggest_float("L_scale_weight_yy", 1e-10, 1e-3, log=True),             # Weight for the scale regularization term
-                "learning_rate": trial.suggest_float("learning_rate_yy", 1e-5, 1e-2, log=True),           # Learning rate for Adam optimizer
+                "learning_rate": trial.suggest_float("learning_rate_yy", 5e-4, 1e-2, log=True),           # Learning rate for Adam optimizer
                 "max_epochs": 500,              # For how many epochs to train
                 "display_step": 5,               # Display training statistics after every display_step
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
@@ -85,7 +85,8 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             h_yy, log_loss_yy = CondH_estimation_yy(
                 event_time=[arrival_times_target, arrival_times_source],
                 configs=deepcopy(configs),
-                seed=seed*(i+1)
+                seed=seed*(i+1),
+                trial=trial
             )
             log_yy_losses.append(log_loss_yy)
             
@@ -112,15 +113,15 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
 
 if __name__ == "__main__":
     # Define simulation parameters
-    seed=42
-    num_source_events = int(1e+4)
+    seed=52
+    num_source_events = int(2e+4)
 
     source_events_list = []
     target_events_list = []
     torch.manual_seed(seed)
     np.random.seed(seed)
     min_time_length = float('inf')
-    for run_idx in range(3):
+    for run_idx in range(1):
         source_events, target_events, _, _ = generate_spike_trains_CoTETE(NUM_Y_EVENTS=num_source_events,seed=seed+run_idx+1)
         source_events_list.append(torch.tensor(source_events, dtype=torch.float))
         target_events_list.append(torch.tensor(target_events, dtype=torch.float))
@@ -137,15 +138,20 @@ if __name__ == "__main__":
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f'Using device: {device}')
 
+    # min_resource=10: Don't prune before epoch 10
+    # reduction_factor=3: Standard Hyperband setting
+    pruner = optuna.pruners.HyperbandPruner(min_resource=10, max_resource=500, reduction_factor=3)
+
     objective_t = create_objective(source_events_list, target_events_list,
                         SIMULATION_TIME, device, seed)
 
     # Assuming 'objective' function is defined as above
     # ,load_if_exists=True to continue from an existing study
     study = optuna.create_study(directions=["minimize"], storage="sqlite:///db.sqlite3"
-                                ,load_if_exists=True, study_name=f"CoTETE_Hyy_{seed:02d}") # Set direction to 'maximize' for TE,  
+                                ,load_if_exists=True, study_name=f"CoTETE_Hyy_{seed:02d}_{num_source_events:.0e}",
+                                pruner=pruner) # Set direction to 'maximize' for TE,  
 
-    study.optimize(objective_t, n_trials=None) # Run for unlimited trials
+    study.optimize(objective_t, n_trials=50) # Run for unlimited trials
 
     print("Best trial:")
     print(f"  Value: {study.best_value}")
