@@ -1,4 +1,4 @@
-# Deep Learning Estimation of Transfer Entropy Rate for Point Processes: Application to Spike Trains
+# Continuous-Time Transfer Entropy Estimation for Point Processes via Recurrent Mixture Density Networks: Application to Spike Trains
 
 Modified from Pytorch implementation of the paper ["Intensity-Free Learning of Temporal Point Processes"](https://openreview.net/forum?id=HygOjhEYDH), Oleksandr Shchur, Marin Biloš and Stephan Günnemann, ICLR 2020.
 
