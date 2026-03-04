@@ -44,7 +44,7 @@
     "data_prep_config": {
         "batch_size": 128,
         "shuffle": false,
-        "total_time": 1033.0446950415956,
+        "total_time": 10014.422484601557,
         "verbose": false
     },
     "device": "cuda",
