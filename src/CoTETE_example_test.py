@@ -3,8 +3,8 @@ import random
 import math
 import pickle
 import numpy as np
-from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from entropy_tpp import save_dict_indented
+from src.entropy_tpp import TE_estimation_tpp, run_multiple_estimation
+from src.entropy_tpp import save_dict_indented
 import torch
 import time
 import matplotlib.pyplot as plt
@@ -225,10 +225,10 @@ if __name__ == "__main__":
     # Define simulation parameters
     seed=52
     num_source_events = int(2e+4)
-    source_events, target_events, candidates, accepted = generate_spike_trains_CoTETE(RATE_Y = 1.0, RATE_X_MAX=6, NUM_Y_EVENTS=num_source_events,seed=seed)
+    source_events, target_events, candidates, accepted = generate_spike_trains_CoTETE(RATE_Y = 1.0, RATE_X_MAX=10, NUM_Y_EVENTS=num_source_events,seed=seed)
     # print("x_events:", x_events[:5], "...", x_events[-5:])
     # print("y_events:", y_events[:5], "...", y_events[-5:])
-    plot_average_firing_rate(candidates, accepted, RATE_X_MAX=6)
+    plot_average_firing_rate(candidates, accepted, RATE_X_MAX=10)
     plot_firing_rate_over_time(target_events, time_step=10.0)
     SIMULATION_TIME = min(source_events[-1], target_events[-1])  # seconds
     # Print summary statistics

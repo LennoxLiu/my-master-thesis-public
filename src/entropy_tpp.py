@@ -11,7 +11,6 @@ from copy import deepcopy
 from typing import Tuple
 # torch.set_default_tensor_type(torch.cuda.FloatTensor)
 from collections import deque
-from hawkes import simulate_hawkes, simulate_hawkes_onestep, simulate_mutually_exciting_hawkes
 from torch.utils.data import TensorDataset, DataLoader
 import time
 from tqdm import tqdm
