@@ -12,10 +12,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import torch
 from copy import deepcopy
-from piecewise_lognormal import simulate_processes, compute_reference
 import optuna
 from entropy_tpp import CondH_estimation_yy, CondH_estimation_yyx
-from morphing_test import create_morphed_intensity_table
 
 
 def create_objective(arrival_times_target_list, arrival_times_source_list,

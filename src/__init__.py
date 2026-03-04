@@ -1,0 +1,2 @@
+from .entropy_tpp import TE_estimation_tpp, run_multiple_estimation, save_dict_indented
+from .CoTETE_example_test import generate_spike_trains_CoTETE, plot_average_firing_rate, plot_firing_rate_over_time
