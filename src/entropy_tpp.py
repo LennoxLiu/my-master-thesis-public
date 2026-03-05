@@ -1,7 +1,3 @@
-from ast import If
-from functools import partial
-from tabnanny import verbose
-
 import optuna
 import dpp
 import matplotlib.pyplot as plt
@@ -9,21 +5,13 @@ import numpy as np
 import torch
 from copy import deepcopy
 from typing import Tuple
-# torch.set_default_tensor_type(torch.cuda.FloatTensor)
-from collections import deque
 from torch.utils.data import TensorDataset, DataLoader
 import time
 from tqdm import tqdm
-from numpy.polynomial.laguerre import laggauss
-from numpy.polynomial.hermite import hermgauss
 import math
 import torch.distributions as D
 from typing import Tuple, Dict, List
-import multiprocessing
 import pandas as pd
-from sklearn.model_selection import KFold
-import pandas as pd
-
 import json
 import copy
 import os
@@ -343,8 +331,6 @@ def prepare_dataloaders(
     histories_source = torch.stack(histories_source_list)
     time_deltas = torch.stack(time_deltas_list)
 
-    targets_yy = targets
-
     histories_source = torch.hstack([histories_source, time_deltas])
     
     if configs["shuffle"]:
@@ -359,6 +345,10 @@ def prepare_dataloaders(
     
     # Log-transform the inter-event times for better numerical stability
     histories = torch.log(histories.clamp(min=MIN_TIME))
+
+    # Move data to device in advance
+    histories = histories.to(device)
+    targets = targets.to(device)
 
     assert targets.shape[0] == histories.shape[0], "Targets and history must have the same length"
     seq_num = targets.shape[0]
@@ -386,9 +376,9 @@ def prepare_dataloaders(
     #     return (dl_train, dl_val, dl_test)
     # else:
     # If we have multiple neurons, return the dataloaders for the first neuron seperately
-    dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:,0].unsqueeze(-1), targets_yy[train_indices]), batch_size=configs["batch_size"], shuffle=True)
-    dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:,0].unsqueeze(-1), targets_yy[val_indices]), batch_size=configs["batch_size"], shuffle=False)
-    dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:,0].unsqueeze(-1), targets_yy[test_indices]), batch_size=configs["batch_size"], shuffle=False)
+    dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:,0].unsqueeze(-1), targets[train_indices]), batch_size=configs["batch_size"], shuffle=True)
+    dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:,0].unsqueeze(-1), targets[val_indices]), batch_size=configs["batch_size"], shuffle=False)
+    dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:,0].unsqueeze(-1), targets[test_indices]), batch_size=configs["batch_size"], shuffle=False)
     return (dl_train, dl_val, dl_test), (dl_train_yy, dl_val_yy, dl_test_yy), len_target
 
 # event time in seconds
@@ -430,6 +420,11 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
         history_length=configs["history_length"],
         **model_config
     ).to(device)
+
+    # Use PyTorch 2.0 Compilation for potential speedup if available
+    if int(torch.__version__.split('.')[0]) >= 2:
+        model = torch.compile(model)
+
     opt = torch.optim.Adam(model.parameters(), weight_decay=configs["train_config"]["L2_weight"], lr=configs["train_config"]["learning_rate"])
     # Use a learning rate scheduler
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
@@ -441,8 +436,6 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
         total_count = 0 # number of sequences in the batch
         with torch.no_grad():
             for history,target in dl:
-                history = history.to(device)
-                target = target.to(device)
                 total_loss += -model.log_prob_next(history,target).sum().item()
                 total_count += len(target)
         return total_loss / total_count
@@ -469,8 +462,6 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
         loss = torch.tensor(0.0)  # Initialize loss to a default value
         total_loss = 0.0
         for history,target in dl_train:
-            history = history.to(device)
-            target = target.to(device)
             opt.zero_grad()
             # Get the full distribution object, not just the log probability.
             context = model.get_context(history)
@@ -583,441 +574,6 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
     #     print(f"Log loss: {log_loss.item():.5f}")
 
     return model, log_loss, step_tracker
-
-
-def calculate_entropy_ghq(
-    dists: D.TransformedDistribution,
-    hermite_roots: torch.Tensor,
-    hermite_weights: torch.Tensor
-) -> torch.Tensor:
-    """
-    Calculates entropy for a batch of LogNormalMixtureDistribution objects
-    by decomposing the integral over its Gaussian Mixture Model components.
-
-    Args:
-        dists: An instance of your LogNormalMixtureDistribution.
-        hermite_roots (torch.Tensor): Roots of the Hermite polynomial.
-        hermite_weights (torch.Tensor): Weights for GHQ.
-
-    Returns:
-        The differential entropy for each mixture distribution in the batch.
-    """
-    # 1. Deconstruct the mixture distribution
-    gmm = dists.base_dist
-    component_dist = gmm.component_distribution
-    mixture_weights = gmm.mixture_distribution.probs
-
-    a = dists.std_log_inter_time
-    b = dists.mean_log_inter_time
-
-    mu_i = component_dist.loc
-    sigma_i = component_dist.scale
-
-    t_k = hermite_roots.view(1, 1, -1)
-    w_k = hermite_weights.view(1, 1, -1)
-
-    # 2. Perform GHQ for each component via broadcasting
-    y_points = mu_i.unsqueeze(-1) + sigma_i.unsqueeze(-1) * math.sqrt(2) * t_k
-    
-    # Add bounds checking to prevent overflow/underflow
-    exponent = a * y_points + b
-    exponent = torch.clamp(exponent, min=np.log10(QUAD_MIN), max=np.log10(QUAD_MAX))  # Reasonable bounds for numerical stability
-    z_points = torch.exp(exponent) # Shape: [B, K, D]
-    
-    # Ensure all values are strictly positive and within reasonable bounds for log-normal
-    z_points = torch.clamp(z_points, min=QUAD_MIN, max=QUAD_MAX)
-
-    # 3. Evaluate the integrand, using the correct shape convention for log_prob
-    batch_size, num_components, degree = z_points.shape
-    
-    # Flatten points: [B, K, D] -> [B, K*D]
-    z_points_flat = z_points.reshape(batch_size, -1)
-    
-    # <-- FIX: Transpose for log_prob: [B, K*D] -> [K*D, B]
-    z_points_swapped = z_points_flat.transpose(0, 1)
-
-    # Output will be [K*D, B]
-    log_prob_swapped = dists.log_prob(z_points_swapped)
-
-    # <-- FIX: Transpose back: [K*D, B] -> [B, K*D]
-    log_prob_flat = log_prob_swapped.transpose(0, 1)
-
-    # Reshape to the structured grid: [B, K*D] -> [B, K, D]
-    log_prob_values = log_prob_flat.reshape(batch_size, num_components, degree)
-    
-    integrand = -log_prob_values
-
-    # 4. Calculate the integral for each component using GHQ
-    component_integrals = (1.0 / math.sqrt(math.pi)) * torch.sum(integrand * w_k, dim=-1)
-
-    # 5. Compute the final entropy by taking the weighted sum
-    entropy = torch.sum(mixture_weights * component_integrals, dim=-1)
-
-    return entropy
-
-
-def EstimateCondEntropy_ExpSinh(
-    model,
-    dl,
-    device,
-    degree=256
-) -> float:
-    """
-    Estimates continuous transfer entropy using Tanh-Sinh Quadrature.
-    This method is deterministic and serves as an alternative to GHQ.
-    """
-    H = []
-
-    # 1. Get Tanh-Sinh nodes and weights ONCE and move them to the device
-    nodes, weights = exp_sinh_nodes_weights(degree, device)
-
-    model.eval()
-    with torch.no_grad():
-        for history, _ in dl:
-            history = history.to(device)
-
-            # 2. Get the conditional distributions from the models
-            context = model.get_context(history)
-            dists = model.get_inter_time_dist(context)
-
-            # 3. Calculate the batch of entropies using the Exp-Sinh helper function
-            h = calculate_entropy_exp_sinh(dists, nodes, weights)
-
-            H.extend(h.cpu().numpy())
-
-    return float(np.mean(H))
-
-
-def EstimateContinuousTE_GHQ(
-    model_yy,
-    model_yyx,
-    dl_yyx,
-    device,
-    degree=128
-) -> tuple[float, float, float]:
-    """
-    Estimates continuous transfer entropy using Gauss-Hermite Quadrature.
-    This method is deterministic and often more numerically stable than GLQ.
-    """
-    te_estimates, H_yy, H_yyx = [], [], []
-
-    # 1. Get Hermite roots and weights ONCE and move them to the device
-    x_k_np, w_k_np = hermgauss(degree)
-    hermite_roots = torch.from_numpy(x_k_np).float().to(device)
-    hermite_weights = torch.from_numpy(w_k_np).float().to(device)
-
-    model_yy.eval()
-    model_yyx.eval()
-    with torch.no_grad():
-        for history, _ in dl_yyx:
-            history = history.to(device)
-
-            # 2. Get the conditional distributions from the models
-            context_yyx = model_yyx.get_context(history)
-            dists_yyx = model_yyx.get_inter_time_dist(context_yyx)
-
-            context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
-            dists_yy = model_yy.get_inter_time_dist(context_yy)
-
-            # 3. Calculate the batch of entropies using the GHQ helper function
-            h_yyx = calculate_entropy_ghq(dists_yyx, hermite_roots, hermite_weights)
-            h_yy = calculate_entropy_ghq(dists_yy, hermite_roots, hermite_weights)
-
-            # 4. Calculate transfer entropy for the batch and store results
-            te_estimate = h_yy - h_yyx
-            te_estimates.extend(te_estimate.cpu().numpy())
-            H_yy.extend(h_yy.cpu().numpy())
-            H_yyx.extend(h_yyx.cpu().numpy())
-
-    return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
-
-
-def exp_sinh_nodes_weights(degree: int, device: torch.device) -> Tuple[torch.Tensor, torch.Tensor]:
-    """
-    Generates nodes and weights for Exp-Sinh Quadrature on (0, inf).
-
-    x = exp( (pi/2) * sinh(t) )
-    dx/dt = (pi/2) * cosh(t) * exp( (pi/2) * sinh(t) )
-
-    The integral is approximated by a sum using the trapezoidal rule on the
-    transformed function, which converges extremely quickly.
-
-    Args:
-        degree (int): The number of points to use (half positive, half negative).
-        device (torch.device): The torch device to place the tensors on.
-
-    Returns:
-        A tuple containing:
-        - nodes (torch.Tensor): The evaluation points `x_k` in (-1, 1).
-        - weights (torch.Tensor): The corresponding weights `w_k`.
-    """
-    # A max value of 4.0 for t, the range of sampling point is roughly [2.4e-19, 4.1e18]
-    h = 8.0 / (2 * degree)
-    k = torch.arange(-degree, degree + 1, device=device, dtype=torch.float64)
-
-    # Discretize the transformed variable `t`
-    t_nodes = k * h
-
-    # The transformation for the nodes is x_k = exp( (pi/2) * sinh(t_k) )
-    pi_half_sinh_t = 0.5 * torch.pi * torch.sinh(t_nodes)
-    nodes = torch.exp(pi_half_sinh_t)
-
-    # The weights are h * dx/dt evaluated at t_k
-    pi_half_cosh_t = 0.5 * torch.pi * torch.cosh(t_nodes)
-    weights = h * pi_half_cosh_t * torch.exp(pi_half_sinh_t)
-
-    return nodes.float(), weights.float()
-
-
-def calculate_entropy_exp_sinh(
-    dists: D.TransformedDistribution,
-    nodes: torch.Tensor,
-    weights: torch.Tensor
-) -> torch.Tensor:
-    """
-    Calculates entropy for a batch of distributions using numerical quadrature.
-
-    This function is adapted for a generic case where the base distribution
-    lives on the interval (-1, 1), which is the natural domain for the
-    tanh-sinh quadrature rule.
-
-    Args:
-        dists: An instance of a distribution transformed from a base on (-1, 1).
-        nodes (torch.Tensor): Nodes for quadrature `x_k`.
-        weights (torch.Tensor): Weights for quadrature.
-
-    Returns:
-        The differential entropy for each distribution in the batch.
-    """
-    # Use the provided nodes directly as they are the points `x_k`
-    x_points = nodes.view(1, -1)  # Shape: [1, num_nodes]
-    # x_points = torch.clamp(x_points, min=QUAD_MIN, max=QUAD_MAX)
-    
-    # 4. Prepare points for batch evaluation
-    batch_size = dists.batch_shape[0] if dists.batch_shape else 1
-    # Swap axes to match expected input shape for log_prob: [num_nodes, batch_size]
-    x_points = x_points.expand(batch_size, -1).transpose(0, 1)
-
-    # 5. Evaluate the necessary components of the integrand
-    # a) The function to take the expectation of: -log p(z)
-    log_prob_x = dists.log_prob(x_points).transpose(0, 1)
-    prob_x = torch.exp(log_prob_x)
-
-    # 6. Form the complete integrand for the expectation: -p(x) * log(p(z))
-    # Note: The change of variables formula for entropy is H(Z) = -E_x[-log p(z(x))]
-    integrand = prob_x * (-log_prob_x)
-
-    # 7. Calculate the integral by taking the weighted sum
-    entropy_batch = torch.sum(integrand * weights.view(1, -1), dim=-1)
-
-    return entropy_batch
-
-
-def EstimateContinuousTE_ExpSinh(
-    model_yy,
-    model_yyx,
-    dl_yyx,
-    device,
-    degree=128
-) -> tuple[float, float, float]:
-    """
-    Estimates continuous transfer entropy using Tanh-Sinh Quadrature.
-    This method is deterministic and serves as an alternative to GHQ.
-    """
-    te_estimates, H_yy, H_yyx = [], [], []
-
-    # 1. Get Tanh-Sinh nodes and weights ONCE and move them to the device
-    nodes, weights = exp_sinh_nodes_weights(degree, device)
-
-    model_yy.eval()
-    model_yyx.eval()
-    with torch.no_grad():
-        for history, target in dl_yyx:
-            history = history.to(device)
-
-            # 2. Get the conditional distributions from the models
-            context_yyx = model_yyx.get_context(history)
-            dists_yyx = model_yyx.get_inter_time_dist(context_yyx)
-
-            context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
-            dists_yy = model_yy.get_inter_time_dist(context_yy)
-
-            # 3. Calculate the batch of entropies using the Tanh-Sinh helper function
-            h_yyx = calculate_entropy_exp_sinh(dists_yyx, nodes, weights)
-            h_yy = calculate_entropy_exp_sinh(dists_yy, nodes, weights)
-
-            # 4. Calculate transfer entropy for the batch and store results
-            te_estimate = h_yy - h_yyx
-            te_estimates.extend(te_estimate.cpu().numpy())
-            H_yy.extend(h_yy.cpu().numpy())
-            H_yyx.extend(h_yyx.cpu().numpy())
-
-    return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
-
-def tanh_sinh_nodes_weights_0a_batch(
-    degree: int, 
-    target_a_batch: torch.Tensor, 
-    device: torch.device
-) -> Tuple[torch.Tensor, torch.Tensor]:
-    """
-    Generates nodes and weights for Tanh-Sinh Quadrature on (0, a) for a
-    BATCH of 'a' values.
-
-    CORRECTED VERSION: This version ensures mathematical consistency.
-    The weight (which depends on sech^2) is calculated from the *same*
-    clipped tanh value that is used to calculate the node,
-    using the identity sech^2(z) = 1 - tanh^2(z).
-    
-    This avoids numerical saturation at the endpoints while keeping the
-    (node, weight) pairs consistent.
-    
-    Args:
-        degree (int): The number of points to use.
-        target_a_batch (torch.Tensor): A batch of upper bounds [batch_size].
-        device (torch.device): The torch device.
-
-    Returns:
-        A tuple containing:
-        - nodes_batch (torch.Tensor): [batch_size, num_nodes]
-        - weights_batch (torch.Tensor): [batch_size, num_nodes]
-    """
-    h = 8.0 / (2 * degree)
-    k = torch.arange(-degree, degree + 1, device=device, dtype=torch.float64)
-
-    # t_nodes shape: [num_nodes]
-    t_nodes = k * h
-    
-    # --- Pre-calculate t-dependent components ---
-    pi_half_sinh_t = 0.5 * torch.pi * torch.sinh(t_nodes)
-    cosh_t = torch.cosh(t_nodes) # Still needed for dZ/dt
-    
-    # --- 1. Calculate and Clip tanh ---
-    tanh_term = torch.tanh(pi_half_sinh_t)
-    tanh_eps = torch.finfo(torch.float64).eps
-    
-    # This is our master value, used for both node and weight
-    tanh_term_clipped = torch.clamp(
-        tanh_term, 
-        min=-1.0 + tanh_eps,
-    ).unsqueeze(0) # Shape: [1, num_nodes]
-
-    # --- 2. Calculate Nodes from clipped value ---
-    # a_batch_col shape: [batch_size, 1]
-    a_batch_col = target_a_batch.double().unsqueeze(-1)
-    
-    # (B, 1) * (0.5 * ((1, N) + 1.0)) -> (B, N)
-    nodes_batch = (a_batch_col / 2.0) * (tanh_term_clipped + 1.0)
-
-    # --- 3. Calculate Weights from clipped value ---
-    
-    # sech^2(Z) = 1 - tanh^2(Z)
-    # Use the clipped value: 1 - tanh_term_clipped^2
-    sech_sq_term = 1.0 - tanh_term_clipped**2  # Shape: [1, num_nodes]
-    
-    # The full derivative is:
-    # dx/dt = (a/2) * sech^2(Z) * (dZ/dt)
-    # dx/dt = (a/2) * sech^2_term * ( (pi/2) * cosh(t) )
-    
-    # (B, 1) * (1, N) * ( (1, N) )
-    dx_dt_batch = (a_batch_col / 2.0) * sech_sq_term * \
-                  ( (torch.pi / 2.0) * cosh_t.unsqueeze(0) )
-    
-    weights_batch = h * dx_dt_batch
-
-    return nodes_batch.float(), weights_batch.float()
-
-
-def calculate_integral_batch(
-    dists: D.TransformedDistribution,
-    nodes_batch: torch.Tensor,  # Shape: [batch_size, num_nodes]
-    weights_batch: torch.Tensor # Shape: [batch_size, num_nodes]
-) -> torch.Tensor:
-    """
-    Calculates the integral for a batch of distributions where each
-    has its own set of nodes and weights.
-
-    Args:
-        dists: Batch of distributions.
-        nodes_batch (torch.Tensor): Nodes `x_k` [batch_size, num_nodes].
-        weights_batch (torch.Tensor): Weights `w_k` [batch_size, num_nodes].
-
-    Returns:
-        The definite integral for each distribution [batch_size].
-    """
-    # nodes_batch is [batch_size, num_nodes]
-    # log_prob expects [num_nodes, batch_size]
-    x_points = nodes_batch.transpose(0, 1)
-
-    # log_prob_x shape: [num_nodes, batch_size]
-    log_prob_x = dists.log_prob(x_points)
-
-    # integrand shape: [batch_size, num_nodes]
-    integrand = torch.exp(log_prob_x.transpose(0, 1))
-
-    # weights_batch is already [batch_size, num_nodes]
-
-    # Sum( integrand * weights_batch ) over dim=-1
-    # (B, N) * (B, N) -> sum(B, N) -> (B,)
-    integral_batch = torch.sum(integrand * weights_batch, dim=-1)
-
-    return integral_batch
-
-
-def Estimate_HazardEntropy_TanhSinh(
-    model,
-    dl,
-    device,
-    degree=128
-) -> float:
-    """
-    Estimates the average survival function S(a) by first calculating
-    F(a) = integral(p(y|history) dy) from 0 to 'a' and then computing 1.0 - F(a).
-    
-    This uses Tanh-Sinh Quadrature on (0, a) for each sample.
-    """
-    ln_hazards = []
-
-    model.eval()
-    with torch.no_grad():
-        for history, target in dl:
-            history = history.to(device)
-            # 'target' is our 'a' for the integral
-            target = target.to(device)
-            target = target.clamp(min=MIN_TIME)  # Avoid zero inter-event times
-            
-            # Squeeze target in case it's [batch_size, 1]
-            # We need it to be [batch_size]
-            target_a_batch = target.squeeze() 
-            
-            # --- Handle case of single-item batch ---
-            if target_a_batch.dim() == 0:
-                target_a_batch = target_a_batch.unsqueeze(0)
-
-            # 1. Get the conditional distributions
-            context = model.get_context(history)
-            dists = model.get_inter_time_dist(context)
-
-            # 2. Get nodes and weights for (0, a) *for this batch*
-            # Both nodes and weights depend on 'a' and are batched
-            nodes_batch, weights_batch = tanh_sinh_nodes_weights_0a_batch(
-                degree, 
-                target_a_batch, 
-                device
-            )
-
-            # 3. Calculate survival function S(a) = 1.0 - F(a)
-            # F(a) = integral from 0 to 'a' of p(y|history) dy
-            S_a_batch = 1.0 - calculate_integral_batch(dists, nodes_batch, weights_batch)
-
-            # 5. Calculate PDF of event at time 'target'
-            log_p_batch = dists.log_prob(target)
-
-            ln_hazard = torch.log(S_a_batch) - log_p_batch
-
-            ln_hazards.extend(ln_hazard.cpu().numpy())
-
-    mean_ln_hazard = float(np.mean(ln_hazards))
-    return mean_ln_hazard
 
 
 def EstimateTE_HazardEntropy_MC(
@@ -1168,230 +724,6 @@ def Estimate_TE_HazardEntropy(
     mean_te = mean_ln_hazard_yyx - mean_ln_hazard_yy
 
     return mean_te, -mean_ln_hazard_yy, -mean_ln_hazard_yyx
-
-def EstimateTE_HazardEntropy_TanhSinh(
-    model_yy,  # Kept to mimic signature, but unused
-    model_yyx,
-    dl_yyx,
-    device,
-    degree=128
-) -> tuple[float, float, float]:
-    """
-    Estimates the average survival function S(a) by first calculating
-    F(a) = integral(p(y|history) dy) from 0 to 'a' and then computing 1.0 - F(a).
-    
-    This uses Tanh-Sinh Quadrature on (0, a) for each sample.
-    """
-    ln_hazard_yyx_sum = 0.0
-    ln_hazard_yy_sum = 0.0
-    data_len = 0
-    model_yyx.eval()
-    with torch.no_grad():
-        for history, target in dl_yyx:
-            history = history.to(device)
-            # 'target' is our 'a' for the integral
-            target = target.to(device)
-            target = target.clamp(min=MIN_TIME)  # Avoid zero inter-event times
-            
-            # Squeeze target in case it's [batch_size, 1]
-            # We need it to be [batch_size]
-            target_a_batch = target.squeeze() 
-            
-            # --- Handle case of single-item batch ---
-            if target_a_batch.dim() == 0:
-                target_a_batch = target_a_batch.unsqueeze(0)
-
-            # 1. Get the conditional distributions
-            context_yyx = model_yyx.get_context(history)
-            dists_yyx = model_yyx.get_inter_time_dist(context_yyx)
-            context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
-            dists_yy = model_yy.get_inter_time_dist(context_yy)
-
-            # 2. Get nodes and weights for (0, a) *for this batch*
-            # Both nodes and weights depend on 'a' and are batched
-            nodes_batch, weights_batch = tanh_sinh_nodes_weights_0a_batch(
-                degree, 
-                target_a_batch, 
-                device
-            )
-
-            # 3. Calculate survival function S(a) = 1.0 - F(a)
-            # F(a) = integral from 0 to 'a' of p(y|history) dy
-            S_a_batch_yyx = 1.0 - calculate_integral_batch(dists_yyx, nodes_batch, weights_batch)
-            S_a_batch_yy = 1.0 - calculate_integral_batch(dists_yy, nodes_batch, weights_batch)
-
-            # Clamp survival probabilities to avoid division by zero or log(0)
-            S_a_batch_yyx = torch.clamp(S_a_batch_yyx, min=MIN_TIME, max=1.0-MIN_TIME)
-            S_a_batch_yy = torch.clamp(S_a_batch_yy, min=MIN_TIME, max=1.0-MIN_TIME)
-
-            # 5. Calculate PDF of event at time 'target'
-            log_p_batch_yyx = dists_yyx.log_prob(target)
-            log_p_batch_yy = dists_yy.log_prob(target)
-
-            ln_hazard_yyx = log_p_batch_yyx - torch.log(S_a_batch_yyx)
-            ln_hazard_yy = log_p_batch_yy - torch.log(S_a_batch_yy)
-
-            ln_hazard_yyx_sum += ln_hazard_yyx.sum().item()
-            ln_hazard_yy_sum += ln_hazard_yy.sum().item()
-
-            data_len += history.size(0)
-
-    mean_ln_hazard_yyx = float(ln_hazard_yyx_sum) / data_len
-    mean_ln_hazard_yy = float(ln_hazard_yy_sum) / data_len
-    return mean_ln_hazard_yyx - mean_ln_hazard_yy, -mean_ln_hazard_yy, -mean_ln_hazard_yyx
-
-def sinh_sinh_nodes_weights(degree: int, device: torch.device) -> Tuple[torch.Tensor, torch.Tensor]:
-    """
-    Generates nodes and weights for Sinh-Sinh (Double-Exponential) Quadrature.
-
-    For an integral over (-inf, inf), we use the double-exponential substitution:
-    y = sinh( (pi/2) * sinh(t) )
-    dy = cosh( (pi/2) * sinh(t) ) * (pi/2) * cosh(t) dt
-
-    This provides extremely fast convergence for analytic functions.
-
-    Args:
-        degree (int): The number of points to use (half positive, half negative).
-        device (torch.device): The torch device to place the tensors on.
-
-    Returns:
-        A tuple containing:
-        - nodes (torch.Tensor): The evaluation points `t_k`.
-        - weights (torch.Tensor): The corresponding weights `w_k`.
-    """
-    # Define the range and step size `h`
-    # A max value of 3-4 is usually sufficient due to faster decay.
-    h = 8.0 / (2 * degree)
-    k = torch.arange(-degree, degree + 1, device=device)
-    pi_half = torch.pi / 2.0
-
-    # Nodes (t_k)
-    nodes = k * h
-    cosh_t = torch.cosh(nodes)
-    sinh_t = torch.sinh(nodes)
-
-    nodes = torch.sinh(pi_half * sinh_t)
-    # Quadrature weights based on the derivative of the transformation
-    # w_k = h * dy/dt
-    weights = h * pi_half * cosh_t * torch.cosh(pi_half * sinh_t)
-
-    return nodes, weights
-
-
-def calculate_entropy_sinh_sinh(
-    dists: D.TransformedDistribution,
-    nodes: torch.Tensor,
-    weights: torch.Tensor
-) -> torch.Tensor:
-    """
-    Calculates entropy for a batch of LogNormalMixtureDistribution objects
-    using true Sinh-Sinh (Double-Exponential) quadrature.
-
-    Args:
-        dists: An instance of your LogNormalMixtureDistribution.
-        nodes (torch.Tensor): Nodes for Sinh-Sinh quadrature (t_k).
-        weights (torch.Tensor): Weights for Sinh-Sinh quadrature.
-
-    Returns:
-        The differential entropy for each mixture distribution in the batch.
-    """
-    # 1. Deconstruct the distribution
-    base_dist = dists.base_dist
-    a = dists.std_log_inter_time
-    b = dists.mean_log_inter_time
-
-    # 2. Perform the change of variable: y_k = sinh( (pi/2) * sinh(t_k) )
-    # This is the key change from the previous version.
-    pi_half = torch.pi / 2.0
-    y_points = nodes.view(1, -1) # Shape: [1, D]
-
-    # 3. Transform these points back to the log-normal domain `z = exp(a*y + b)`
-    exponent = a * y_points + b
-    # Clamping can still be useful for numerical stability
-    exponent = torch.clamp(exponent, min=-20, max=20)
-    z_points = torch.exp(exponent)
-    z_points = torch.clamp(z_points, min=QUAD_MIN, max=QUAD_MAX)
-
-    # 4. Prepare points for batch evaluation
-    batch_size = dists.batch_shape[0]
-    y_points_swapped = y_points.expand(batch_size, -1).transpose(0, 1)
-    z_points_swapped = z_points.expand(batch_size, -1).transpose(0, 1)
-
-    # 5. Evaluate the necessary components of the integrand
-    # a) The function to take the expectation of: -log p(z)
-    log_prob_z = dists.log_prob(z_points_swapped).transpose(0, 1) # Shape: [B, D]
-
-    # b) The probability density of the base distribution: p(y)
-    log_prob_y = base_dist.log_prob(y_points_swapped).transpose(0, 1) # Shape: [B, D]
-    prob_y = torch.exp(log_prob_y)
-
-    # 6. Form the complete integrand: -p(y) * log(p(z))
-    integrand = prob_y * (-log_prob_z)
-
-    # 7. Calculate the integral by taking the weighted sum
-    # The new weights correctly account for the double-exponential transform
-    entropy_batch = torch.sum(integrand * weights.view(1, -1), dim=-1)
-
-    return entropy_batch
-
-
-def EstimateContinuousTE_SinhSinh(
-    model_yy,
-    model_yyx,
-    dl_yyx,
-    device,
-    degree=128
-) -> tuple[float, float, float]:
-    """
-    Estimates continuous transfer entropy using Sinh-Sinh Quadrature.
-    """
-    te_estimates, H_yy, H_yyx = [], [], []
-
-    # 1. Get Sinh-Sinh nodes and weights
-    nodes, weights = sinh_sinh_nodes_weights(degree, device)
-
-    model_yy.eval()
-    model_yyx.eval()
-    with torch.no_grad():
-        for history, _ in dl_yyx:
-            history = history.to(device)
-
-            # 2. Get the conditional distributions from the models
-            context_yyx = model_yyx.get_context(history)
-            dists_yyx = model_yyx.get_inter_time_dist(context_yyx)
-
-            context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
-            dists_yy = model_yy.get_inter_time_dist(context_yy)
-
-            # 3. Calculate entropies using the new Sinh-Sinh helper function
-            h_yyx = calculate_entropy_sinh_sinh(dists_yyx, nodes, weights)
-            h_yy = calculate_entropy_sinh_sinh(dists_yy, nodes, weights)
-
-            # 4. Calculate transfer entropy and store results
-            te_estimate = h_yy - h_yyx
-            te_estimates.extend(te_estimate.cpu().numpy())
-            H_yy.extend(h_yy.cpu().numpy())
-            H_yyx.extend(h_yyx.cpu().numpy())
-
-    return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
-
-
-def lognormal_entropy_pytorch(
-    mu: torch.Tensor, 
-    sigma: torch.Tensor, 
-    a: float, 
-    b: float
-) -> torch.Tensor:
-    """
-    Computes the analytical entropy of a transformed log-normal distribution.
-    """
-    # Calculate the parameters of the new underlying normal distribution
-    mu_prime = a * mu + b
-    sigma_prime_sq = a * sigma
-    
-    # Apply the standard log-normal entropy formula with the new parameters
-    entropy = 0.5 * torch.log(2 * torch.pi * torch.e * sigma_prime_sq**2) + mu_prime
-    return entropy
 
 
 def plot_conditional_histograms(
@@ -1728,55 +1060,6 @@ def EstimateContinuousTE_MC(
 
     return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
     
-def GetAnalyticalReferenceTE(
-        model_yy, 
-        model_yyx, 
-        dl_yyx, 
-        configs
-    ) -> Tuple[float, float, float]:
-        """
-        Calculates the analytical Transfer Entropy as a reference, assuming the models
-        use only a single log-normal component (num_mix_components=1).
-        """
-        # CRITICAL: This function is only valid if the models output a single distribution.
-        assert model_yyx.num_mix_components == 1, "model_yyx must have num_mix_components=1 for analytical solution."
-        assert model_yy.num_mix_components == 1, "model_yy must have num_mix_components=1 for analytical solution."
-
-        te_estimates, H_yy, H_yyx = [], [], []
-
-        model_yy.eval()
-        model_yyx.eval()
-        with torch.no_grad():
-            for history, target in dl_yyx:
-                history = history.to(configs["device"])
-
-                # --- Get parameters for H(Y'|Y,X) ---
-                context_yyx = model_yyx.get_context(history)
-                dists_yyx = model_yyx.get_inter_time_dist(context_yyx)
-                
-                # Extract mu and sigma for the single log-normal
-                # .squeeze(-1) removes the unnecessary 'num_components' dimension
-                mu_yyx = dists_yyx.locs.squeeze(-1)
-                sigma_yyx = dists_yyx.scales.squeeze(-1)
-
-                # --- Get parameters for H(Y'|Y) ---
-                context_yy = model_yy.get_context(history[:, :, 0].unsqueeze(-1))
-                dists_yy = model_yy.get_inter_time_dist(context_yy)
-                
-                mu_yy = dists_yy.locs.squeeze(-1)
-                sigma_yy = dists_yy.scales.squeeze(-1)
-                # mean_log_inter_time, std_log_inter_time are the parameters for config_yyx and config_yy
-                # --- Calculate entropies using the analytical formula ---
-                h_yyx = lognormal_entropy_pytorch(mu_yyx, sigma_yyx,a=model_yyx.get_std_log_inter_time(), b=model_yyx.get_mean_log_inter_time())
-                h_yy = lognormal_entropy_pytorch(mu_yy, sigma_yy,a=model_yy.get_std_log_inter_time(), b=model_yy.get_mean_log_inter_time())
-
-                te_estimate = h_yy - h_yyx
-
-                te_estimates.extend(te_estimate.cpu().numpy())
-                H_yy.extend(h_yy.cpu().numpy())
-                H_yyx.extend(h_yyx.cpu().numpy())
-
-        return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
 
 # For hyperparameter optimization
 def CondH_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):

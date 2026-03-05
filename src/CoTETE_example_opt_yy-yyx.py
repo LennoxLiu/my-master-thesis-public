@@ -53,7 +53,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
             },
             "data_prep_config":{
-                "batch_size": 128,          # Number of sequences in a batch
+                "batch_size": 512,          # Number of sequences in a batch
                 "shuffle": False,                 # Whether to shuffle the time series before splitting into train/val/test
                 "total_time": time_series_length,              # in second, Total time of the sequences
                 "verbose": False

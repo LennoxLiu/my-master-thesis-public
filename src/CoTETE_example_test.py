@@ -3,8 +3,8 @@ import random
 import math
 import pickle
 import numpy as np
-from src.entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from src.entropy_tpp import save_dict_indented
+from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
+from entropy_tpp import save_dict_indented
 import torch
 import time
 import matplotlib.pyplot as plt
@@ -281,7 +281,7 @@ if __name__ == "__main__":
             "patience": 20
         },
         "data_prep_config":{
-            "batch_size": 128,          # Number of sequences in a batch
+            "batch_size": 512,          # Number of sequences in a batch
             "shuffle": False,                 # Whether to shuffle the time series before splitting into train/val/test
             "total_time": time_series_length,              # in second, Total time of the sequences
             "verbose": False
