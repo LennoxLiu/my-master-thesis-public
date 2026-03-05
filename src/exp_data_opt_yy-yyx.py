@@ -132,7 +132,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
 
 if __name__ == "__main__":
     # Define simulation parameters
-    seed=46
+    seed=47
     source_events_list = []
     target_events_list = []
     torch.manual_seed(seed)
@@ -173,7 +173,7 @@ if __name__ == "__main__":
                                 ,load_if_exists=True, study_name=f"ExpData_yy+yyx_{seed:02d}_{num_source_events:.1e}",
                                 pruner=pruner) # Set direction to 'maximize' for TE,  
 
-    study.optimize(objective_t, n_trials=5) # n_trials=None means run for unlimited trials
+    study.optimize(objective_t, n_trials=50) # n_trials=None means run for unlimited trials
 
     print("Best trial:")
     print(f"  Value: {study.best_value}")
