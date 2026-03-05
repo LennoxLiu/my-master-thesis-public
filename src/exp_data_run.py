@@ -15,7 +15,7 @@ seed=76  # For reproducibility
 # Load experimental data
 bc_data, pom_data = load_grouped_data()
 print(f"Loaded {len(bc_data)} BC neurons and {len(pom_data)} POm neurons.")
-time_series_length = 1*60   # in seconds, Length of the time series, in the same unit of data
+time_series_length = 15*60   # in seconds, Length of the time series, in the same unit of data
 
 # Data preprocessing, remove neurons with too few spikes
 min_spikes = time_series_length * 30  # Minimum number of spikes required 30 Hz

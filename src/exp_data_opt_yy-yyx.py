@@ -62,7 +62,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             "device": device,
             "verbose": False,  # Whether to print the training statistics
             "plot_histograms": False,  # Whether to plot the conditional histograms
-            "history_length": 8,             # in number of bins, Length of the history to use for the model
+            "history_length": 1024,     # in number of bins, Length of the history to use for the model
             "plot_pp": False,  # Whether to plot the PP plots
         }
         configs["model_config_yyx"]=configs["model_config_yy"]
@@ -132,7 +132,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
 
 if __name__ == "__main__":
     # Define simulation parameters
-    seed=42
+    seed=46
     source_events_list = []
     target_events_list = []
     torch.manual_seed(seed)
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     pom_data = [neuron for neuron in pom_data if len(neuron) >= min_spikes]
     print(f"After filtering, {len(bc_data)} BC neurons and {len(pom_data)} POm neurons remain.")
     
-    source_events_list.append(torch.tensor(bc_data[1], dtype=torch.float))
+    source_events_list.append(torch.tensor(bc_data[0], dtype=torch.float))
     target_events_list.append(torch.tensor(pom_data[0], dtype=torch.float))
 
     num_source_events = len(source_events_list[0])

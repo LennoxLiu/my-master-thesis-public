@@ -427,8 +427,19 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
 
     opt = torch.optim.Adam(model.parameters(), weight_decay=configs["train_config"]["L2_weight"], lr=configs["train_config"]["learning_rate"])
     # Use a learning rate scheduler
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        opt, mode='min', factor=0.75, patience=5, min_lr=1e-6
+    # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+    #     opt, mode='min', factor=0.75, patience=5, min_lr=1e-6
+    # )
+    # scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(
+    #     opt, T_0=10, T_mult=2, eta_min=1e-6
+    # )
+    total_steps = len(dl_train) * configs["train_config"]["max_epochs"]
+    scheduler = torch.optim.lr_scheduler.OneCycleLR(
+        opt, 
+        max_lr=configs["train_config"]["learning_rate"], 
+        total_steps=total_steps,
+        pct_start=0.1, # 10% of time spent warming up
+        anneal_strategy='cos'
     )
 
     def aggregate_next_loss_over_dataloader(dl):
@@ -506,9 +517,11 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
             training_val_losses.append(loss_val)
             
             # Step the scheduler
-            scheduler.step(loss_val)
+            # scheduler.step(loss_val)
+            scheduler.step()
 
-        if (best_loss - loss_val) < 1e-4:
+        # 0.05% relative improvement
+        if (best_loss - loss_val) < (0.0005 * abs(best_loss)):
             impatient += 1
             if loss_val < best_loss:
                 best_loss = loss_val
