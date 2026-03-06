@@ -589,7 +589,7 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
     return model, log_loss, step_tracker
 
 
-def EstimateTE_HazardEntropy_MC(
+def EstimateTE_Hazard_MC(
     model_yy,
     model_yyx,
     dl_yyx, # Dataloader providing (history, target)
@@ -666,7 +666,7 @@ def EstimateTE_HazardEntropy_MC(
 
     return mean_te, -mean_ln_hazard_yy, -mean_ln_hazard_yyx
 
-def Estimate_HazardEntropy(
+def Estimate_Hazard(
     model,
     dl, # Dataloader providing (history, target)
     device,
@@ -710,7 +710,7 @@ def Estimate_HazardEntropy(
     return mean_ln_hazard
 
 
-def Estimate_TE_HazardEntropy(
+def Estimate_TE_Hazard(
     model_yy,
     model_yyx,
     dl_yy, # Dataloader providing (history, target)
@@ -722,12 +722,12 @@ def Estimate_TE_HazardEntropy(
     using Monte Carlo integration to estimate the survival function S(tau_i)
     needed for each hazard rate lambda(tau_i).
     """
-    mean_ln_hazard_yy = Estimate_HazardEntropy(
+    mean_ln_hazard_yy = Estimate_Hazard(
         model_yy,
         dl_yy,
         device
     )
-    mean_ln_hazard_yyx = Estimate_HazardEntropy(
+    mean_ln_hazard_yyx = Estimate_Hazard(
         model_yyx,
         dl_yyx,
         device
@@ -1041,7 +1041,7 @@ def EstimateContinuousTE_MC(
     Estimate the continuous transfer entropy between two processes using the model.
     (This is the original, unmodified version).
     """
-    te_estimates, H_yy, H_yyx = [], [], []
+    te_estimates, ln_yy, ln_yyx = [], [], []
     model_yy.eval()
     model_yyx.eval()
     with torch.no_grad():
@@ -1068,16 +1068,16 @@ def EstimateContinuousTE_MC(
             te_estimate = h_yy - h_yyx
             
             te_estimates.extend(te_estimate)
-            H_yy.extend(h_yy)
-            H_yyx.extend(h_yyx)
+            ln_yy.extend(h_yy)
+            ln_yyx.extend(h_yyx)
 
-    return float(np.mean(te_estimates)), float(np.mean(H_yy)), float(np.mean(H_yyx))
+    return float(np.mean(te_estimates)), float(np.mean(ln_yy)), float(np.mean(ln_yyx))
     
 
 # For hyperparameter optimization
-def CondH_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):
+def Ln_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):
     """
-    Estimate the conditional entropy H(Y'|Y) of a temporal point process (TPP) using neural models."""
+    Estimate the natural logarithm of the expression with PDF of Y'|Y of a temporal point process (TPP) using neural models."""
 
     data_prep_config = deepcopy(configs["data_prep_config"])
     data_prep_config["history_length"] = configs["history_length"]
@@ -1101,14 +1101,14 @@ def CondH_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None)
                                                verbose = configs["verbose"], trial=trial)
     
     dl_train_yy, dl_val_yy, dl_test_yy = dls_yy
-    H_yy_test = Estimate_HazardEntropy(model_yy,  dl_test_yy, device=configs["device"])
+    ln_yy_test = Estimate_Hazard(model_yy,  dl_test_yy, device=configs["device"])
 
-    return H_yy_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yy
+    return ln_yy_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yy
 
 # For hyperparameter optimization
-def CondH_estimation_yyx(event_time, configs: dict, seed: int = 42, trial = None):
+def Ln_estimation_yyx(event_time, configs: dict, seed: int = 42, trial = None):
     """
-    Estimate the conditional entropy H(Y'|Y,X) of a temporal point process (TPP) using neural models."""
+    Estimate the the natural logarithm of the expression with PDF of Y'|Y,X of a temporal point process (TPP) using neural models."""
     data_prep_config = deepcopy(configs["data_prep_config"])
     data_prep_config["history_length"] = configs["history_length"]
     # Prepare data loaders
@@ -1131,9 +1131,9 @@ def CondH_estimation_yyx(event_time, configs: dict, seed: int = 42, trial = None
                                                   verbose = configs["verbose"], trial=trial)
     
     dl_train_yyx, dl_val_yyx, dl_test_yyx = dls_yyx
-    H_yyx_test = Estimate_HazardEntropy(model_yyx, dl_test_yyx, device=configs["device"])
+    ln_yyx_test = Estimate_Hazard(model_yyx, dl_test_yyx, device=configs["device"])
 
-    return H_yyx_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yyx
+    return ln_yyx_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yyx
 
 def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     """
@@ -1148,7 +1148,7 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
         seed (optional): Random seed for reproducibility.
     Returns:
         tuple:
-            - (TE_test, H_yy_test, H_yyx_test): Estimated transfer entropy values per second for the train, validation, and test sets.
+            - (TE_test, ln_yy_test, ln_yyx_test): Estimated transfer entropy values per second for the train, validation, and test sets.
             - (log_loss_yy, log_loss_yyx): Quantile losses for the two trained models.
     Raises:
         Returns NaN values and an error message in case of exceptions during model training or TE estimation.
@@ -1195,7 +1195,7 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     dl_train_yyx, dl_val_yyx, dl_test_yyx = dls_yyx
     dl_train_yy, dl_val_yy, dl_test_yy = dls_yy
     
-    TE_hazard, ln_yy_hazard, ln_yyx_hazard = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_test_yy, dl_test_yyx, device=configs["device"])
+    TE_hazard, ln_yy_hazard, ln_yyx_hazard = Estimate_TE_Hazard(model_yy, model_yyx, dl_test_yy, dl_test_yyx, device=configs["device"])
     print(f'[Test] Transfer Entropy (nats/event):\n'
         f' - ln_hazard_yy_test: {ln_yy_hazard:.5f}\n'
         f' - ln_hazard_yyx_test: {ln_yyx_hazard:.5f}\n'
@@ -1512,17 +1512,17 @@ if __name__ == "__main__":
     print("Number of events in process target:", len(arrival_times_p1))
     print("Number of events in process source:", len(arrival_times_p2))
 
-    (TE_test, H_yy_test, H_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
+    (TE_test, ln_yy_test, ln_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
             event_time=[arrival_times_p1, arrival_times_p2], 
             configs=configs, 
             seed=seed
     )
     print(f"Estimated Transfer Entropy (nats per event): {TE_test}")
     print(f"Estimated Transfer Entropy (nats per second): {TE_test * len(arrival_times_p1) / time_series_length}")
-    print(f"Estimated H(Y_t+1|Y_t) (nats per event): {H_yy_test}")
-    print(f"Estimated H(Y_t+1|Y_t) (nats per second): {H_yy_test * len(arrival_times_p1) / time_series_length}")
-    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per event): {H_yyx_test}")
-    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per second): {H_yyx_test * len(arrival_times_p1) / time_series_length}")
+    print(f"Estimated H(Y_t+1|Y_t) (nats per event): {ln_yy_test}")
+    print(f"Estimated H(Y_t+1|Y_t) (nats per second): {ln_yy_test * len(arrival_times_p1) / time_series_length}")
+    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per event): {ln_yyx_test}")
+    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per second): {ln_yyx_test * len(arrival_times_p1) / time_series_length}")
     print(f"Log Loss H(Y_t+1|Y_t): {log_loss_yy}")
     print(f"Log Loss H(Y_t+1|Y_t,X_t): {log_loss_yyx}")
 
