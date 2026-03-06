@@ -520,8 +520,8 @@ def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, devic
             # scheduler.step(loss_val)
             scheduler.step()
 
-        # 0.05% relative improvement
-        if (best_loss - loss_val) < (0.0005 * abs(best_loss)):
+        # 0.01% relative improvement
+        if (best_loss - loss_val) < (0.0001 * abs(best_loss)):
             impatient += 1
             if loss_val < best_loss:
                 best_loss = loss_val
@@ -1195,24 +1195,11 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     dl_train_yyx, dl_val_yyx, dl_test_yyx = dls_yyx
     dl_train_yy, dl_val_yy, dl_test_yy = dls_yy
     
-
-    TE_hazard, H_yy_hazard, H_yyx_hazard = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_test_yy, dl_test_yyx, device=configs["device"])
+    TE_hazard, ln_yy_hazard, ln_yyx_hazard = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_test_yy, dl_test_yyx, device=configs["device"])
     print(f'[Test] Transfer Entropy (nats/event):\n'
-        f' - ln_hazard_yy_test: {H_yy_hazard:.5f}\n'
-        f' - ln_hazard_yyx_test: {H_yyx_hazard:.5f}\n'
+        f' - ln_hazard_yy_test: {ln_yy_hazard:.5f}\n'
+        f' - ln_hazard_yyx_test: {ln_yyx_hazard:.5f}\n'
         f' - TE_test:  {TE_hazard:.5f}\n')
-
-    TE_hazard_train, H_yy_hazard_train, H_yyx_hazard_train = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_train_yy, dl_train_yyx, device=configs["device"])
-    print(f'[Training] Transfer Entropy (nats/event):\n'
-        f' - ln_hazard_yy_train: {H_yy_hazard_train:.5f}\n'
-        f' - ln_hazard_yyx_train: {H_yyx_hazard_train:.5f}\n'
-        f' - TE_train:  {TE_hazard_train:.5f}\n')
-
-    TE_hazard_val, H_yy_hazard_val, H_yyx_hazard_val = Estimate_TE_HazardEntropy(model_yy, model_yyx, dl_val_yy, dl_val_yyx, device=configs["device"])
-    print(f'[Validation] Transfer Entropy (nats/event):\n'
-        f' - ln_hazard_yy_val: {H_yy_hazard_val:.5f}\n'
-        f' - ln_hazard_yyx_val: {H_yyx_hazard_val:.5f}\n'
-        f' - TE_val:  {TE_hazard_val:.5f}\n')
     
     if configs["plot_histograms"]:
         print("Collecting data for conditional histograms...")
@@ -1228,114 +1215,236 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
 
     event_rate = len_target / configs["data_prep_config"]["total_time"]
     TE_hazard *= event_rate
-    H_yy_hazard *= event_rate
-    H_yyx_hazard *= event_rate
-    return (TE_hazard, H_yy_hazard, H_yyx_hazard), (log_loss_yy, log_loss_yyx)
+    ln_yy_hazard *= event_rate
+    ln_yyx_hazard *= event_rate
+    return (TE_hazard, ln_yy_hazard, ln_yyx_hazard), (log_loss_yy, log_loss_yyx)
 
+
+# def run_multiple_estimation(target_events, source_events, configs, n_runs=10, seed=42):
+#     """
+#     Runs TE estimation multiple times with different random seeds to get variance estimates.
+#     This mimics run_k_fold_estimation but uses prepare_dataloaders for consistent data splitting.
+#     """
+#     print(f"--- Starting {n_runs} Multiple Runs Estimation ---")
+    
+#     # time_series_length = configs["data_prep_config"]["total_time"]
+#     # len_target = len(target_events)
+    
+#     # Lists to store results from each run
+#     run_results = []
+
+#     # Run multiple estimations with different seeds
+#     for run in tqdm(range(n_runs)):
+#         print(f"\n--- Run {run+1}/{n_runs} ---")
+#         run_start_time = time.time()
+        
+#         # Use different seed for each run to get different train/val/test splits
+#         run_seed = seed + (run+1) * 1000
+        
+#         # Use the existing TE_estimation_tpp function which handles data preparation
+#         (TE_sec, ln_yy_sec, ln_yyx_sec), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
+#             event_time=[target_events, source_events], 
+#             configs=configs, 
+#             seed=run_seed
+#         )
+        
+#         run_end_time = time.time()
+#         run_duration = run_end_time - run_start_time
+        
+#         print(f"Run {run+1} Results: TE = {TE_sec:.10f}, h_yy = {ln_yy_sec:.3f}, h_yyx = {ln_yyx_sec:.3f}")
+#         print(f"Loss - yy: {log_loss_yy:.3f}, yyx: {log_loss_yyx:.3f}")
+#         print(f"Run {run+1} completed in {run_duration/60:.2f} minutes.")
+        
+#         # Store results
+#         run_results.append({
+#             "TE_sec": TE_sec,
+#             "ln_yy_sec": ln_yy_sec,
+#             "ln_yyx_sec": ln_yyx_sec,
+#             "loss_yy": log_loss_yy, 
+#             "loss_yyx": log_loss_yyx,
+#             "run_duration_sec": run_duration,
+#         })
+
+#         # save results after each run
+#         results_df = pd.DataFrame(run_results)
+#         results_df.to_csv("results/multiple_runs_results.csv", index=False)
+    
+#     # Aggregate and report final results
+#     results_df = pd.DataFrame(run_results)
+#     print("\n--- Multiple Runs Summary ---")
+#     print(results_df[["TE_sec", "ln_yy_sec", "ln_yyx_sec", "loss_yy", "loss_yyx"]].describe().T)
+    
+#     # The final reported TE is the mean across all runs
+#     mean_te = results_df['TE_sec'].mean()
+#     std_te = results_df['TE_sec'].std()
+#     print(f"\nFinal TE Estimate: {mean_te:.5f} ± {std_te:.5f} nats/second (mean ± std over {n_runs} runs)")
+    
+#     # Save detailed results
+#     results_df.to_csv("results/multiple_runs_results.csv", index=False)
+    
+#     # Create visualization plots
+#     # Plot 1: Conditional entropies
+#     fig1, ax1 = plt.subplots(figsize=(10, 6))
+#     df_h = results_df[["ln_yy_sec", "ln_yyx_sec"]]
+#     # df_h.to_csv("results/h_sec_multiple_runs.csv", index=False)
+#     df_h.plot(kind='box', figsize=(10, 6), ax=ax1)
+#     ax1.set_title("Conditional Entropy Estimation Results - Multiple Runs (nats/second)")
+#     ax1.set_ylabel("Conditional Entropy (nats per second)")
+#     ax1.grid()
+#     fig1.savefig("results/h_sec_multiple_runs.png")
+#     plt.close(fig1)
+
+#     # Plot 2: Transfer entropy
+#     fig2, ax2 = plt.subplots(figsize=(10, 6))
+#     df_te = results_df[["TE_sec"]]
+#     # df_te.to_csv("results/TE_sec_multiple_runs.csv", index=False)
+#     df_te.plot(kind='box', figsize=(10, 6), ax=ax2)
+#     ax2.set_title("Transfer Entropy Estimation Results - Multiple Runs (nats/second)")
+#     ax2.set_ylabel("Transfer Entropy (nats per second)")
+#     ax2.grid()
+#     fig2.savefig("results/TE_sec_multiple_runs.png")
+#     plt.close(fig2)
+
+#     # Plot 3: Log losses
+#     fig3, ax3 = plt.subplots(figsize=(10, 6))
+#     df_loss = results_df[['loss_yy', 'loss_yyx']]
+#     # df_loss.to_csv("results/log_loss_multiple_runs.csv", index=False)
+#     df_loss.plot(kind='box', ax=ax3)
+#     ax3.set_title("Log Losses for Marginal and Conditional Models - Multiple Runs")
+#     ax3.set_ylabel("Log Loss")
+#     ax3.grid()
+#     fig3.savefig("results/log_loss_multiple_runs.png")
+#     plt.close(fig3)
+
+
+#     print(f"\nResults saved to results/ directory")
+#     print(f"Average run duration: {results_df['run_duration_sec'].mean()/60:.2f} minutes")
+#     print(f"Total wall-clock time: {results_df['run_duration_sec'].sum()/60:.2f} minutes")
+    
+#     return results_df
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+import time
 
 def run_multiple_estimation(target_events, source_events, configs, n_runs=10, seed=42):
     """
-    Runs TE estimation multiple times with different random seeds to get variance estimates.
-    This mimics run_k_fold_estimation but uses prepare_dataloaders for consistent data splitting.
+    Runs TE estimation multiple times with weighted averaging based on validation loss.
+    Saves both per-run results and weighted summary statistics to CSV.
     """
     print(f"--- Starting {n_runs} Multiple Runs Estimation ---")
-    
-    # time_series_length = configs["data_prep_config"]["total_time"]
-    # len_target = len(target_events)
-    
-    # Lists to store results from each run
     run_results = []
 
-    # Run multiple estimations with different seeds
     for run in tqdm(range(n_runs)):
         print(f"\n--- Run {run+1}/{n_runs} ---")
         run_start_time = time.time()
-        
-        # Use different seed for each run to get different train/val/test splits
         run_seed = seed + (run+1) * 1000
         
-        # Use the existing TE_estimation_tpp function which handles data preparation
-        (TE_sec, H_yy_sec, H_yyx_sec), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
+        # TE_estimation_tpp returns stats and validation log losses
+        (TE_sec, ln_yy_sec, ln_yyx_sec), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
             event_time=[target_events, source_events], 
             configs=configs, 
             seed=run_seed
         )
         
-        run_end_time = time.time()
-        run_duration = run_end_time - run_start_time
+        run_duration = time.time() - run_start_time
         
-        print(f"Run {run+1} Results: TE = {TE_sec:.10f}, h_yy = {H_yy_sec:.3f}, h_yyx = {H_yyx_sec:.3f}")
+        print(f"Run {run+1} Results: TE = {TE_sec:.10f}, h_yy = {ln_yy_sec:.3f}, h_yyx = {ln_yyx_sec:.3f}")
         print(f"Loss - yy: {log_loss_yy:.3f}, yyx: {log_loss_yyx:.3f}")
         print(f"Run {run+1} completed in {run_duration/60:.2f} minutes.")
-        
-        # Store results
+
         run_results.append({
+            "run": run + 1,
             "TE_sec": TE_sec,
-            "h_yy_sec": H_yy_sec,
-            "h_yyx_sec": H_yyx_sec,
+            "ln_yy_sec": ln_yy_sec,
+            "ln_yyx_sec": ln_yyx_sec,
             "loss_yy": log_loss_yy, 
             "loss_yyx": log_loss_yyx,
             "run_duration_sec": run_duration,
         })
 
-        # save results after each run
-        results_df = pd.DataFrame(run_results)
-        results_df.to_csv("results/multiple_runs_results.csv", index=False)
-    
-    # Aggregate and report final results
+    # Convert to DataFrame
     results_df = pd.DataFrame(run_results)
+
+    # --- WEIGHTED CALCULATION ---
+    def calculate_weights(losses):
+        # Log-Sum-Exp trick for stability
+        shifted_losses = losses - np.min(losses)
+        exp_loss = np.exp(-shifted_losses)
+        return exp_loss / np.sum(exp_loss)
+
+    # Calculate weights based on specific losses
+    weights_yy = calculate_weights(results_df['loss_yy'].values)
+    weights_yyx = calculate_weights(results_df['loss_yyx'].values)
+
+    # 1. Weighted Means
+    w_h_yy = np.sum(weights_yy * results_df['ln_yy_sec'])
+    w_h_yyx = np.sum(weights_yyx * results_df['ln_yyx_sec'])
+    weighted_te = w_h_yy - w_h_yyx
+    
+    # 2. Weighted Standard Deviation (Unbiased Reliability Weighting)
+    def get_weighted_std(values, weights, w_mean):
+        variance = np.sum(weights * (values - w_mean)**2)
+        # Bessel's correction for weighted data
+        correction = 1 / (1 - np.sum(weights**2))
+        return np.sqrt(variance * correction)
+
+    std_te = get_weighted_std(results_df['TE_sec'].values, weights_yyx, weighted_te)
+    std_h_yy = get_weighted_std(results_df['ln_yy_sec'].values, weights_yy, w_h_yy)
+    std_h_yyx = get_weighted_std(results_df['ln_yyx_sec'].values, weights_yyx, w_h_yyx)
+
+    # --- SAVE WEIGHTS AND STATS TO DATAFRAME ---
+    # Add weights as columns so you can see which run contributed most
+    results_df['weight_yy'] = weights_yy
+    results_df['weight_yyx'] = weights_yyx
+
+    # Append a Summary Row at the bottom for easy CSV reading
+    summary_data = {
+        "run": "WEIGHTED_AVG",
+        "TE_sec": weighted_te,
+        "ln_yy_sec": w_h_yy,
+        "ln_yyx_sec": w_h_yyx,
+        "loss_yy": results_df['loss_yy'].mean(), # Simple mean for reference
+        "loss_yyx": results_df['loss_yyx'].mean(),
+        "run_duration_sec": results_df['run_duration_sec'].sum()
+    }
+    
+    # Also add a row for the Weighted STD
+    std_data = {
+        "run": "WEIGHTED_STD",
+        "TE_sec": std_te,
+        "ln_yy_sec": std_h_yy,
+        "ln_yyx_sec": std_h_yyx
+    }
+    
+    # Final CSV Output: Per-run results followed by the Weighted Summary
+    final_output_df = pd.concat([results_df, pd.DataFrame([summary_data, std_data])], ignore_index=True)
+    final_output_df.to_csv("results/multiple_runs_results.csv", index=False)
+
+    # --- REPORTING ---
     print("\n--- Multiple Runs Summary ---")
-    print(results_df[["TE_sec", "h_yy_sec", "h_yyx_sec", "loss_yy", "loss_yyx"]].describe().T)
+    print(results_df[["TE_sec", "ln_yy_sec", "ln_yyx_sec", "loss_yy", "loss_yyx"]].describe().T)
+    print(f"\nSimple Mean TE:   {results_df['TE_sec'].mean():.5f}")
+    print(f"Weighted Mean TE: {weighted_te:.5f} ± {std_te:.5f} nats/sec")
     
-    # The final reported TE is the mean across all runs
-    mean_te = results_df['TE_sec'].mean()
-    std_te = results_df['TE_sec'].std()
-    print(f"\nFinal TE Estimate: {mean_te:.5f} ± {std_te:.5f} nats/second (mean ± std over {n_runs} runs)")
+    # --- VISUALIZATION ---
+    fig, ax = plt.subplots(figsize=(10, 6))
+    results_df[["TE_sec"]].plot(kind='box', ax=ax)
+    ax.axhline(weighted_te, color='r', linestyle='--', label=f'Weighted Mean ({weighted_te:.4f})')
     
-    # Save detailed results
-    results_df.to_csv("results/multiple_runs_results.csv", index=False)
+    # Fill standard deviation across the ENTIRE x-axis
+    ax.axhspan(weighted_te - std_te, weighted_te + std_te, 
+               color='red', alpha=0.15, label='Weighted Std Dev', zorder=1)
     
-    # Create visualization plots
-    # Plot 1: Conditional entropies
-    fig1, ax1 = plt.subplots(figsize=(10, 6))
-    df_h = results_df[["h_yy_sec", "h_yyx_sec"]]
-    # df_h.to_csv("results/h_sec_multiple_runs.csv", index=False)
-    df_h.plot(kind='box', figsize=(10, 6), ax=ax1)
-    ax1.set_title("Conditional Entropy Estimation Results - Multiple Runs (nats/second)")
-    ax1.set_ylabel("Conditional Entropy (nats per second)")
-    ax1.grid()
-    fig1.savefig("results/h_sec_multiple_runs.png")
-    plt.close(fig1)
+    ax.set_title("Transfer Entropy - Multiple Runs (Weighted)")
+    ax.set_ylabel("TE (nats/sec)")
+    ax.legend()
+    fig.savefig("results/TE_weighted_boxplot.png")
+    plt.close(fig)
 
-    # Plot 2: Transfer entropy
-    fig2, ax2 = plt.subplots(figsize=(10, 6))
-    df_te = results_df[["TE_sec"]]
-    # df_te.to_csv("results/TE_sec_multiple_runs.csv", index=False)
-    df_te.plot(kind='box', figsize=(10, 6), ax=ax2)
-    ax2.set_title("Transfer Entropy Estimation Results - Multiple Runs (nats/second)")
-    ax2.set_ylabel("Transfer Entropy (nats per second)")
-    ax2.grid()
-    fig2.savefig("results/TE_sec_multiple_runs.png")
-    plt.close(fig2)
-
-    # Plot 3: Log losses
-    fig3, ax3 = plt.subplots(figsize=(10, 6))
-    df_loss = results_df[['loss_yy', 'loss_yyx']]
-    # df_loss.to_csv("results/log_loss_multiple_runs.csv", index=False)
-    df_loss.plot(kind='box', ax=ax3)
-    ax3.set_title("Log Losses for Marginal and Conditional Models - Multiple Runs")
-    ax3.set_ylabel("Log Loss")
-    ax3.grid()
-    fig3.savefig("results/log_loss_multiple_runs.png")
-    plt.close(fig3)
-
-
-    print(f"\nResults saved to results/ directory")
-    print(f"Average run duration: {results_df['run_duration_sec'].mean()/60:.2f} minutes")
-    print(f"Total wall-clock time: {results_df['run_duration_sec'].sum()/60:.2f} minutes")
-    
-    return results_df
-
+    print(f"\nResults saved to results/multiple_runs_results.csv")
+    return results_df, weighted_te
 
 
 if __name__ == "__main__":
@@ -1398,11 +1507,6 @@ if __name__ == "__main__":
         "history_length": 32,             # in number of bins, Length of the history to use for the model
     }
 
-    arrival_times_p1, arrival_times_p2 = simulate_mutually_exciting_hawkes(
-        mu1=0.1, alpha11=0, beta11=0, alpha12=1.5, beta12=0.8,
-        mu2=10, alpha22=0.1, beta22=0.8, alpha21=0.1, beta21=0.8,
-        T_end=time_series_length, seed=seed
-    )
     torch.manual_seed(seed+1)
     # arrival_times_poi=gen_poission_event_times(lambda_=len(arrival_times_p2)/time_series_length, T=time_series_length)
     print("Number of events in process target:", len(arrival_times_p1))

@@ -290,7 +290,7 @@ if __name__ == "__main__":
         "verbose": False,  # Whether to print the training statistics
         "plot_histograms": False,  # Whether to plot the conditional histograms
         "plot_pp": False,            # Whether to plot the probability - probability plots
-        "history_length": 256,             # in number of bins, Length of the history to use for the model
+        "history_length": 8,             # in number of bins, Length of the history to use for the model
     }
 
     # Save the config for reference
@@ -299,7 +299,7 @@ if __name__ == "__main__":
     config_plot = deepcopy(configs)
     config_plot["plot_pp"] = True
     start_time = time.time()
-    (TE_test, H_yy_test, H_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
+    (TE_test, ln_yy_test, ln_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
             event_time=[torch.tensor(target_events,dtype=torch.float), torch.tensor(source_events,dtype=torch.float)], 
             configs=config_plot, 
             seed=seed
@@ -308,8 +308,8 @@ if __name__ == "__main__":
     duration = end_time - start_time
     print(f"\n--- TE Estimation Completed in {duration/60:.2f} minutes ---")
     print(f"Estimated Transfer Entropy (nats per second): {TE_test}")
-    print(f"Estimated h_hazard(Y_t+1|Y_t) (nats per second): {H_yy_test}")
-    print(f"Estimated h_hazard(Y_t+1|Y_t,X_t) (nats per second): {H_yyx_test}")
+    print(f"Estimated ln_hazard(Y_t+1|Y_t) (nats per second): {ln_yy_test}")
+    print(f"Estimated ln_hazard(Y_t+1|Y_t,X_t) (nats per second): {ln_yyx_test}")
     print(f"Log Loss pdf (Y_t+1|Y_t): {log_loss_yy}")
     print(f"Log Loss pdf (Y_t+1|Y_t,X_t): {log_loss_yyx}")
 
