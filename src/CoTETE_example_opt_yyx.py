@@ -12,10 +12,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import torch
 from copy import deepcopy
-from piecewise_lognormal import simulate_processes, compute_reference
 import optuna
-from entropy_tpp import CondH_estimation_yyx
-from morphing_test import create_morphed_intensity_table
+from entropy_tpp import Ln_estimation_yyx
 
 
 def create_objective(arrival_times_target_list, arrival_times_source_list,
@@ -72,7 +70,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
         # For instance, if you have a main function that takes these as arguments:
         # te_train, te_val, te_test = calculate_te(param1, param2)
         
-        H_yyx_tests_sec = []
+        Ln_yyx_tests_sec = []
         log_yyx_losses = []
         for i in range(len(arrival_times_target_list)):
             arrival_times_target = arrival_times_target_list[i]
@@ -82,7 +80,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             print("Number of events in source process:", len(arrival_times_source))
 
             len_target = len(arrival_times_target)
-            h_yyx, log_loss_yyx = CondH_estimation_yyx(
+            ln_yyx, log_loss_yyx = Ln_estimation_yyx(
                 event_time=[arrival_times_target, arrival_times_source],
                 configs=deepcopy(configs),
                 seed=seed*(i+1),
@@ -90,19 +88,19 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             )
             log_yyx_losses.append(log_loss_yyx)
             
-            if  h_yyx == float('nan'):
+            if  ln_yyx == float('nan'):
                 print(f"Error during TE estimation for run {i+1}. Skipping this run.\n")
                 return None, None
             
-            h_yyx_sec = h_yyx * len_target / time_series_length
+            ln_yyx_sec = ln_yyx * len_target / time_series_length
         
-            print(f'Conditional entropy h_yyx for run {i+1}: {h_yyx:.5f} nats/event, {h_yyx_sec:.5f} nats/sec')
+            print(f'Conditional entropy ln_yyx for run {i+1}: {ln_yyx:.5f} nats/event, {ln_yyx_sec:.5f} nats/sec')
             print(f'Log loss for model yyx: {log_loss_yyx:.5f}')
 
-            trial.set_user_attr(f"h_yyx_test_sec_run_{i}", h_yyx_sec)
+            trial.set_user_attr(f"ln_yyx_test_sec_run_{i}", ln_yyx_sec)
             trial.set_user_attr(f"log_loss_yyx_run_{i}", log_loss_yyx)
             
-            H_yyx_tests_sec.append(h_yyx_sec)
+            Ln_yyx_tests_sec.append(ln_yyx_sec)
         
         # 3. Return the metric to optimize
         return  np.mean(log_yyx_losses)
