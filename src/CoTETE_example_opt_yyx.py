@@ -1,15 +1,7 @@
-import random
-import math
-import pickle
 import numpy as np
-from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from entropy_tpp import save_dict_indented
 import torch
-import time
-from CoTETE_example_test import generate_spike_trains_CoTETE
-from contextlib import redirect_stdout
+from src.CoTETE_example_run import generate_spike_trains_CoTETE
 import numpy as np
-import matplotlib.pyplot as plt
 import torch
 from copy import deepcopy
 import optuna

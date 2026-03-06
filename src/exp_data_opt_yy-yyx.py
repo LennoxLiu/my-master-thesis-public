@@ -6,7 +6,7 @@ from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
 from entropy_tpp import save_dict_indented
 import torch
 import time
-from CoTETE_example_test import generate_spike_trains_CoTETE
+from src.CoTETE_example_run import generate_spike_trains_CoTETE
 from contextlib import redirect_stdout
 import numpy as np
 import matplotlib.pyplot as plt
@@ -95,12 +95,12 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
                 # so Optuna knows to stop this trial.
                 raise optuna.TrialPruned()
             
-            # h_sec_yy, log_loss_yy = CondH_estimation_yy(
+            # h_sec_yy, log_loss_yy = Ln_estimation_yy(
             #     event_time=[arrival_times_target, arrival_times_source],
             #     configs=deepcopy(configs),
             #     seed=seed*(i+1)
             # )
-            # h_sec_yyx, log_loss_yyx = CondH_estimation_yyx(
+            # h_sec_yyx, log_loss_yyx = Ln_estimation_yyx(
             #     event_time=[arrival_times_target, arrival_times_source],
             #     configs=deepcopy(configs),
             #     seed=seed*(i+1)
