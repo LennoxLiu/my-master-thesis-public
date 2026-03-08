@@ -15,7 +15,7 @@ jl.seval("using CoTETE")
 CoTETE = jl.CoTETE
 print("CoTETE module loaded successfully.")
 
-from CoTETE_example_test import generate_spike_trains_CoTETE
+from src.CoTETE_example_run import generate_spike_trains_CoTETE
 import csv
 seed=52
 num_source_events = int(2e+4)

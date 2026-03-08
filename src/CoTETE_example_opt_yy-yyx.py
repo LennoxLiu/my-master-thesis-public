@@ -6,7 +6,7 @@ from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
 from entropy_tpp import save_dict_indented
 import torch
 import time
-from CoTETE_example_test import generate_spike_trains_CoTETE
+from src.CoTETE_example_run import generate_spike_trains_CoTETE
 from contextlib import redirect_stdout
 import numpy as np
 import matplotlib.pyplot as plt
@@ -53,7 +53,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
             },
             "data_prep_config":{
-                "batch_size": 128,          # Number of sequences in a batch
+                "batch_size": 512,          # Number of sequences in a batch
                 "shuffle": False,                 # Whether to shuffle the time series before splitting into train/val/test
                 "total_time": time_series_length,              # in second, Total time of the sequences
                 "verbose": False

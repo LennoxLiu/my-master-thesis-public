@@ -9,6 +9,9 @@ Check out `demo/demo.ipynb` for the demonstration of whole estimation process.
 
 
 ## Requirements
+
+Use `pip install -e .` to install all requirements in `setup.py`.
+
 ```
 python=3.12.9
 numpy=2.2.5
@@ -20,3 +23,5 @@ optuna=4.4.0
 pandas=2.2.3
 juliacall=0.9.28 (optional)
 ```
+
+Use `pip install -e .`

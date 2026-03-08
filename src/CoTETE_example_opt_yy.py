@@ -1,22 +1,11 @@
-import random
-import math
-import pickle
 import numpy as np
-from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from entropy_tpp import save_dict_indented
 import torch
-import time
-from CoTETE_example_test import generate_spike_trains_CoTETE
-from contextlib import redirect_stdout
+from src.CoTETE_example_run import generate_spike_trains_CoTETE
 import numpy as np
-import matplotlib.pyplot as plt
 import torch
 from copy import deepcopy
-from piecewise_lognormal import simulate_processes, compute_reference
 import optuna
-from entropy_tpp import CondH_estimation_yy
-from morphing_test import create_morphed_intensity_table
-
+from entropy_tpp import Ln_estimation_yy
 
 def create_objective(arrival_times_target_list, arrival_times_source_list,
                      time_series_length, device, seed):
@@ -72,7 +61,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
         # For instance, if you have a main function that takes these as arguments:
         # te_train, te_val, te_test = calculate_te(param1, param2)
         
-        H_yy_tests_sec = []
+        Ln_yy_tests_sec = []
         log_yy_losses = []
         for i in range(len(arrival_times_target_list)):
             arrival_times_target = arrival_times_target_list[i]
@@ -82,7 +71,7 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             print("Number of events in source process:", len(arrival_times_source))
 
             len_target = len(arrival_times_target)
-            h_yy, log_loss_yy = CondH_estimation_yy(
+            ln_yy, log_loss_yy = Ln_estimation_yy(
                 event_time=[arrival_times_target, arrival_times_source],
                 configs=deepcopy(configs),
                 seed=seed*(i+1),
@@ -90,19 +79,19 @@ def create_objective(arrival_times_target_list, arrival_times_source_list,
             )
             log_yy_losses.append(log_loss_yy)
             
-            if  h_yy == float('nan'):
+            if  ln_yy == float('nan'):
                 print(f"Error during TE estimation for run {i+1}. Skipping this run.\n")
                 return None, None
             
-            h_yy_sec = h_yy * len_target / time_series_length
+            ln_yy_sec = ln_yy * len_target / time_series_length
         
-            print(f'Conditional entropy h_yy for run {i+1}: {h_yy:.5f} nats/event, {h_yy_sec:.5f} nats/sec')
+            print(f'Conditional entropy ln_yy for run {i+1}: {ln_yy:.5f} nats/event, {ln_yy_sec:.5f} nats/sec')
             print(f'Log loss for model yyx: {log_loss_yy:.5f}')
 
-            trial.set_user_attr(f"h_yy_test_sec_run_{i}", h_yy_sec)
+            trial.set_user_attr(f"ln_yy_test_sec_run_{i}", ln_yy_sec)
             trial.set_user_attr(f"log_loss_yy_run_{i}", log_loss_yy)
             
-            H_yy_tests_sec.append(h_yy_sec)
+            Ln_yy_tests_sec.append(ln_yy_sec)
         
         # 3. Return the metric to optimize
         return  np.mean(log_yy_losses)
