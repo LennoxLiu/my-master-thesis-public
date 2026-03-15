@@ -21,4 +21,6 @@ conda activate RMDN-TE
 export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 
 # 4. Run the diagnostic Python script
-python check_env.py
+python hpc/check_env.py
+
+python src/entropy_tpp.py
