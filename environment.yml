@@ -1,15 +1,11 @@
 name: RMDN-TE
 channels:
-  - defaults
   - pytorch
   - nvidia
   - conda-forge
+  - defaults
 dependencies:
   - python=3.12
-  - pytorch
-  - pytorch-cuda=12.4
-  - torchaudio
-  - torchvision
   - matplotlib
   - numpy
   - scikit-learn
@@ -25,6 +21,12 @@ dependencies:
   - sparse
   - pipreqs
   - hyperopt
-  - jupyter_client[version='<8']
+  - jupyter_client<8
   - notebook
-  - pyzmq[version='<25']
+  - pyzmq<25
+  - pip
+  - pip:
+    - --index-url https://download.pytorch.org/whl/cu124
+    - torch
+    - torchvision
+    - torchaudio
