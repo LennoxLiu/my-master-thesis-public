@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=gpu_test
 #SBATCH --output=gpu_test_%j.out
-#SBATCH --partition=gpu          # Check your cluster's partition name
-#SBATCH --gres=gpu:1             # Requests 1 GPU
+#SBATCH --partition=gpu-single
+#SBATCH --cpus-per-task=4
+#SBATCH --gres=gpu:A40:1 
 #SBATCH --ntasks=1
 #SBATCH --mem=8G
 #SBATCH --time=00:10:00
