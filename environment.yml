@@ -1,0 +1,27 @@
+name: RMDN-TE
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch
+  - pytorch-cuda=12.4
+  - torchaudio
+  - torchvision
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - ipykernel
+  - tqdm
+  - pandas
+  - optuna
+  - optuna-dashboard
+  - filterpy
+  - tensorboard
+  - plotly
+  - sparse
+  - pipreqs
+  - hyperopt
+  - jupyter_client[version='<8']
+  - notebook
+  - pyzmq[version='<25']

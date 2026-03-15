@@ -1,0 +1,2 @@
+module load devel/miniforge/24.9.2
+module load devel/cuda/12.6
