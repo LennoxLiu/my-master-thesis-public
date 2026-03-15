@@ -3,7 +3,7 @@
 #SBATCH --output=hpc/logs/gpu_test_%j.out
 #SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:1 #--gres=gpu:A40:1
+#SBATCH --gres=gpu:A40:1
 #SBATCH --ntasks=1
 #SBATCH --mem=8G
 #SBATCH --time=00:10:00
