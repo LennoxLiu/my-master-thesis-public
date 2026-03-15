@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=gpu_test
-#SBATCH --output=gpu_test_%j.out
+#SBATCH --output=hpc/gpu_test_%j.out
 #SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:A40:1 
@@ -11,6 +11,7 @@
 # 1. Load the Miniforge and CUDA modules
 module load devel/miniforge/24.9.2
 module load devel/cuda/12.6
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
 
 # 2. Initialize Conda for this shell session
 source $(conda info --base)/etc/profile.d/conda.sh
