@@ -1400,38 +1400,30 @@ if __name__ == "__main__":
     }
 
     torch.manual_seed(seed+1)
-    # arrival_times_poi=gen_poission_event_times(lambda_=len(arrival_times_p2)/time_series_length, T=time_series_length)
-    print("Number of events in process target:", len(arrival_times_p1))
-    print("Number of events in process source:", len(arrival_times_p2))
+    arrival_times_poi=gen_poission_event_times(lambda_=10, T=time_series_length)
+    print("Number of events in process target:", len(arrival_times_poi))
+    print("Number of events in process source:", len(arrival_times_poi))
 
     (TE_test, ln_yy_test, ln_yyx_test), (log_loss_yy, log_loss_yyx) = TE_estimation_tpp(
-            event_time=[arrival_times_p1, arrival_times_p2], 
+            event_time=[arrival_times_poi, arrival_times_poi], 
             configs=configs, 
             seed=seed
     )
     print(f"Estimated Transfer Entropy (nats per event): {TE_test}")
-    print(f"Estimated Transfer Entropy (nats per second): {TE_test * len(arrival_times_p1) / time_series_length}")
+    print(f"Estimated Transfer Entropy (nats per second): {TE_test * len(arrival_times_poi) / time_series_length}")
     print(f"Estimated H(Y_t+1|Y_t) (nats per event): {ln_yy_test}")
-    print(f"Estimated H(Y_t+1|Y_t) (nats per second): {ln_yy_test * len(arrival_times_p1) / time_series_length}")
+    print(f"Estimated H(Y_t+1|Y_t) (nats per second): {ln_yy_test * len(arrival_times_poi) / time_series_length}")
     print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per event): {ln_yyx_test}")
-    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per second): {ln_yyx_test * len(arrival_times_p1) / time_series_length}")
+    print(f"Estimated H(Y_t+1|Y_t,X_t) (nats per second): {ln_yyx_test * len(arrival_times_poi) / time_series_length}")
     print(f"Log Loss H(Y_t+1|Y_t): {log_loss_yy}")
     print(f"Log Loss H(Y_t+1|Y_t,X_t): {log_loss_yyx}")
 
     # Run multiple estimations with different seeds for variance assessment
     run_multiple_estimation(
-        target_events=arrival_times_p1,
-        source_events=arrival_times_p2,
+        target_events=arrival_times_poi,
+        source_events=arrival_times_poi,
         configs=configs,
-        n_runs=20,  # Number of runs with different seeds
+        n_runs=2,  # Number of runs with different seeds
         seed=seed
     )
     
-    # # Run k-fold cross-validation for robust estimation
-    # run_k_fold_estimation(
-    #     target_events=arrival_times_p1,
-    #     source_events=arrival_times_p2,
-    #     configs=configs,
-    #     n_splits=5,  # You can choose the number of splits, 5 or 10 are common
-    #     seed=seed
-    # )
