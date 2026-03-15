@@ -1,7 +1,9 @@
 name: RMDN-TE
 channels:
   - defaults
+  - pytorch
   - nvidia
+  - conda-forge
 dependencies:
   - python=3.12
   - pytorch
