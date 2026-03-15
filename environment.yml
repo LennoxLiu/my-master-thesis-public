@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.12
   - pytorch
-  - pytorch-cuda=12.4
+  - pytorch-cuda=12.6
   - torchaudio
   - torchvision
   - matplotlib
