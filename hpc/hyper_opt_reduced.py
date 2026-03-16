@@ -8,6 +8,10 @@ import optuna
 from src.te_tpp import Ln_estimation_yy
 import argparse
 from hpc.hpc_header import get_task_params_reduced, read_event_times_reduced
+import json
+
+batch_size = 128
+history_length = 256
 
 def create_objective(arrival_times_target,
                      time_series_length, device, seed):
@@ -46,7 +50,7 @@ def create_objective(arrival_times_target,
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
             },
             "data_prep_config":{
-                "batch_size": 128,          # Number of sequences in a batch
+                "batch_size": batch_size,          # Number of sequences in a batch
                 "shuffle": False,                 # Whether to shuffle the time series before splitting into train/val/test
                 "total_time": time_series_length,              # in second, Total time of the sequences
                 "verbose": False
@@ -54,7 +58,7 @@ def create_objective(arrival_times_target,
             "device": device,
             "verbose": False,  # Whether to print the training statistics
             "plot_histograms": False,  # Whether to plot the conditional histograms
-            "history_length": 256,             # in number of bins, Length of the history to use for the model
+            "history_length": history_length,             # in number of bins, Length of the history to use for the model
             "plot_pp": False,  # Whether to plot the PP plots
         }
         
@@ -123,7 +127,7 @@ if __name__ == "__main__":
     if group_id is not None:
         print(f"Optimize task {task_id}: group_id: {group_id}, neuron_id: {neuron_id}")
         # Check if results/opt already has the result file for this task_id
-        result_file = f"results/opt/opt_reduced_{task_id}-finished.db"
+        result_file = f"opt_reduced_{task_id}_best_config.txt"
         if os.path.exists(result_file):
             print(f"Result file already exists: {result_file}")
             exit(0)  # Exit with code 0 to indicate successful completion, so that Slurm won't reschedule this task
@@ -164,7 +168,48 @@ if __name__ == "__main__":
     print(f"  Value: {study.best_value}")
     print(f"  Params: {study.best_params}")
 
-    # After optimization, save a finished file to indicate completion
-    finished_file = f"results/opt/opt_reduced_{task_id}-finished.db"
-    os.rename(f"results/opt/opt_reduced_{task_id}.db", finished_file)
-    print(f"Optimization finished. Result saved to {finished_file}")
+    # After optimization, save the best configuration to a JSON/TXT file for easy reference
+    # Reconstruct the full config using the best parameters
+    best = study.best_params
+    n_layers_yy = best["n_layers_yy"]
+    hidden_sizes_yy = [2 ** best[f"hidden_size_yy_l{i}"] for i in range(n_layers_yy)]
+
+    best_configs = {
+        "model_config_yy": {
+            "model_name": "LogNormMix",
+            "context_size": 2 ** best["context_size_yy"],
+            "num_mix_components": 2 ** best["num_mix_components_yy"],
+            "hidden_sizes": hidden_sizes_yy,
+            "context_extractor": best["context_extractor_yy"],
+            "activation_func": best["activation_func_yy"],
+        },
+        "train_config_yy": {
+            "L2_weight": best["L2_weight_yy"],
+            "L_entropy_weight": best["L_entropy_weight_yy"],
+            "L_sep_weight": best["L_sep_weight_yy"],
+            "L_scale_weight": best["L_scale_weight_yy"],
+            "learning_rate": best["learning_rate_yy"],
+            "max_epochs": 500,
+            "display_step": 5,
+            "patience": 20,
+        },
+        "data_prep_config": {
+            "batch_size": batch_size,
+            "shuffle": False,
+            "total_time": data_time_length,
+            "verbose": False
+        },
+        "device": device,
+        "verbose": False,
+        "plot_histograms": False,
+        "history_length": history_length,  # Use the variable from argparse rather than hardcoding 256
+        "plot_pp": False,
+    }
+
+    # Save to a readable JSON/TXT file
+    config_output_file = f"results/opt/opt_reduced_{task_id}_best_config.txt"
+    with open(config_output_file, "w") as f:
+        json.dump(best_configs, f, indent=4)
+    print(f"Full best configuration saved to {config_output_file}")
+
+    print(f"Optimization finished.")
