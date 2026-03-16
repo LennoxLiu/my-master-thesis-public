@@ -10,9 +10,6 @@ import argparse
 from hpc.hpc_header import get_task_params_reduced, read_event_times_reduced
 import json
 
-batch_size = 128
-history_length = 256
-
 def create_objective(arrival_times_target,
                      time_series_length, device, seed):
     """
@@ -107,6 +104,7 @@ if __name__ == "__main__":
     parser.add_argument("--data_time_length", type=int, default=15*60, help="Total time of the sequences in seconds")
     parser.add_argument("--seed", type=int, default=None, help="Random seed for reproducibility")
     parser.add_argument("--num_trials", type=int, default=50, help="Number of Optuna trials to run")
+    parser.add_argument("--batch_size", type=int, default=512, help="Batch size for training the model")
     args = parser.parse_args()
     
     data_file_path = args.data_file_path
@@ -115,6 +113,7 @@ if __name__ == "__main__":
     data_time_length = args.data_time_length # seconds
     seed=args.seed
     num_trials=args.num_trials
+    batch_size=args.batch_size
     
     if seed is not None:
         torch.manual_seed(seed)
