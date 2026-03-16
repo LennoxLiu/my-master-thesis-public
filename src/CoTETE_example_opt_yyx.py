@@ -8,7 +8,7 @@ import optuna
 from src.te_tpp import Ln_estimation_yyx
 
 
-def create_objective(arrival_times_target_list, arrival_times_source_list,
+def create_objective(arrival_times_source_list, arrival_times_target_list,
                      time_series_length, device, seed):
     """
     This outer function creates and returns the actual objective function.

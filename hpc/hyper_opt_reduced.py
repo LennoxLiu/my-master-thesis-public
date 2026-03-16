@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import torch
 import numpy as np
@@ -6,8 +7,9 @@ from copy import deepcopy
 import optuna
 from src.te_tpp import Ln_estimation_yy
 import argparse
+from hpc.hpc_header import get_task_params_reduced, read_event_times_reduced
 
-def create_objective(arrival_times_target, arrival_times_source,
+def create_objective(arrival_times_target,
                      time_series_length, device, seed):
     """
     This outer function creates and returns the actual objective function.
@@ -17,7 +19,7 @@ def create_objective(arrival_times_target, arrival_times_source,
     def objective(trial):
         # Suggest hyperparameters
 
-        n_layers_yy = trial.suggest_int("n_layers_yy", 1, 2) # From 1 to 5 hidden layers
+        n_layers_yy = trial.suggest_int("n_layers_yy", 1, 2) # how many hidden layers
         hidden_sizes_yy = []
         for i in range(n_layers_yy):
             # Suggest the size for each hidden layer dynamically
@@ -62,11 +64,10 @@ def create_objective(arrival_times_target, arrival_times_source,
         log_yy_losses = []
 
         print("Number of events in target process:", len(arrival_times_target))
-        print("Number of events in source process:", len(arrival_times_source))
-
+        
         len_target = len(arrival_times_target)
         ln_yy, log_loss_yy = Ln_estimation_yy(
-            event_time=[arrival_times_target, arrival_times_source],
+            event_time=[arrival_times_target, torch.zeros(0, dtype=torch.float)],  # Only target events are needed for the reduced model
             configs=deepcopy(configs),
             seed=seed,
             trial=trial
@@ -96,29 +97,48 @@ def create_objective(arrival_times_target, arrival_times_source,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--data_file_path", type=str, default="data/event_times_data.h5", help="Path to the HDF5 file containing event times")
     parser.add_argument("--task_id", type=int, required=True, help="Slurm Array Task ID")
     parser.add_argument("--history_length", type=int, default=256, help="History length for TE estimation")
+    parser.add_argument("--data_time_length", type=int, default=15*60, help="Total time of the sequences in seconds")
+    parser.add_argument("--seed", type=int, default=None, help="Random seed for reproducibility")
+    parser.add_argument("--num_trials", type=int, default=50, help="Number of Optuna trials to run")
     args = parser.parse_args()
     
+    data_file_path = args.data_file_path
     task_id = args.task_id
-    study_name = f"optimization_task_{task_id}"
     history_length = args.history_length
-
-    # Define simulation parameters
-    seed=52
-    data_time_length = 15*60 # seconds
-
-    source_events_list = []
-    target_events_list = []
-    torch.manual_seed(seed)
-    np.random.seed(seed)
+    data_time_length = args.data_time_length # seconds
+    seed=args.seed
+    num_trials=args.num_trials
     
-    source_events= torch.tensor(source_events, dtype=torch.float)
-    target_events= torch.tensor(target_events, dtype=torch.float)
+    if seed is not None:
+        torch.manual_seed(seed)
+        np.random.seed(seed)
+
+    os.makedirs("results/opt", exist_ok=True)
+
+    # Read task parameters from task file
+    group_id, neuron_id = get_task_params_reduced('hpc/tasks_reduced.csv', task_id)
+    if group_id is not None:
+        print(f"Optimize task {task_id}: group_id: {group_id}, neuron_id: {neuron_id}")
+        # Check if results/opt already has the result file for this task_id
+        result_file = f"results/opt/opt_reduced_{task_id}-finished.db"
+        if os.path.exists(result_file):
+            print(f"Result file already exists: {result_file}")
+            exit(0)  # Exit with code 0 to indicate successful completion, so that Slurm won't reschedule this task
+        
+        if not os.path.exists(f"results/opt/opt_reduced_{task_id}.db"):
+            print(f"Starting optimization for task {task_id}...")
+        else:
+            print(f"Resuming optimization for task {task_id}...")
+    
+    # Load event times for the specified group_id and neuron_id
+    target_events = read_event_times_reduced('data/event_times_data.h5', group_id, neuron_id)
+    target_events = torch.tensor(target_events, dtype=torch.float)
 
     # Print summary statistics
     print("\n--- Data Summary ---")
-    print(f"Total events for source process: {len(source_events)}")
     print(f"Total events for target process {len(target_events)}")
     print(f"Data Time: {data_time_length} seconds")
 
@@ -129,17 +149,22 @@ if __name__ == "__main__":
     # reduction_factor=3: Standard Hyperband setting
     pruner = optuna.pruners.HyperbandPruner(min_resource=10, max_resource=500)
 
-    objective_t = create_objective(source_events, target_events,
+    objective_t = create_objective(target_events,
                         data_time_length, device, seed)
 
     # Assuming 'objective' function is defined as above
     # ,load_if_exists=True to continue from an existing study
-    study = optuna.create_study(directions=["minimize"], storage="sqlite:///results/opt/opt_reduced_{task_id}.db"
-                                ,load_if_exists=True, study_name=f"opt_reduced-model_{seed:02d}_{num_source_events:.0e}",
-                                pruner=pruner) # Set direction to 'maximize' for TE,  
+    study = optuna.create_study(directions=["minimize"], storage=f"sqlite:///results/opt/opt_reduced_{task_id}.db"
+                                ,load_if_exists=True, study_name=f"opt_reduced-model_seed={seed:02d}_task={task_id}",
+                                pruner=pruner) 
 
-    study.optimize(objective_t, n_trials=50) # Run for unlimited trials
+    study.optimize(objective_t, n_trials=num_trials) # Run for unlimited trials
 
     print("Best trial:")
     print(f"  Value: {study.best_value}")
     print(f"  Params: {study.best_params}")
+
+    # After optimization, save a finished file to indicate completion
+    finished_file = f"results/opt/opt_reduced_{task_id}-finished.db"
+    os.rename(f"results/opt/opt_reduced_{task_id}.db", finished_file)
+    print(f"Optimization finished. Result saved to {finished_file}")

@@ -50,7 +50,7 @@ def convert_mat_to_h5(mat_path, h5_path):
             event_times = np.array(event_val).flatten().astype(np.float32)
 
             # 3. Assign unique neuron_id based on row index
-            neuron_id = f"{i:03d}"
+            neuron_id = str(i)
 
             # 4. Save to HDF5 structure: group_id/neuron_id
             if group_id not in h5f:
@@ -60,7 +60,8 @@ def convert_mat_to_h5(mat_path, h5_path):
                 
             grp.create_dataset(neuron_id, data=event_times, compression="gzip")
 
-    print(f"Conversion finished. Created {h5_path} with {len(sorted_data)} entries.")
+        print(f"Groups created: {list(h5f.keys())}")
 
-# Execution
+    print(f"Conversion finished. Created {h5_path} with {len(sorted_data)} sequences.")
+    # Execution
 convert_mat_to_h5('data/testFile.mat', 'data/event_times_data.h5')

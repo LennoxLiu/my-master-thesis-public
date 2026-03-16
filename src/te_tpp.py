@@ -245,6 +245,7 @@ def plot_pp(
     print("P-P plot saved to", file_path)
 
 # Event times should NOT insert zero at the beginning
+# Input: event_time: target then source, each is a 1D tensor of event times in seconds, sorted in ascending order
 def prepare_dataloaders(
     event_time, configs: dict, seed = None, device = 'cpu'
 ) -> Tuple[Tuple[DataLoader, DataLoader, DataLoader], Tuple[DataLoader, DataLoader, DataLoader],int]:
