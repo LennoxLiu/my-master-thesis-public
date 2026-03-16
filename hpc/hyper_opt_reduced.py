@@ -67,7 +67,7 @@ def create_objective(arrival_times_target,
         
         len_target = len(arrival_times_target)
         ln_yy, log_loss_yy = Ln_estimation_yy(
-            event_time=[arrival_times_target, torch.zeros(0, dtype=torch.float)],  # Only target events are needed for the reduced model
+            event_time=[arrival_times_target],  # Only target events are needed for the reduced model
             configs=deepcopy(configs),
             seed=seed,
             trial=trial
