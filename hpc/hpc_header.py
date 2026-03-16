@@ -84,7 +84,7 @@ def get_task_params_reduced(csv_path, task_id):
         print(f"An error occurred while reading the task file: {e}")
         return None, None
     
-    
+
 def read_event_times_reduced(h5_path, group_id, neuron_id):
     """
     Reads the event times for a specific neuron from an HDF5 file.
@@ -117,7 +117,7 @@ def read_event_times_reduced(h5_path, group_id, neuron_id):
 if __name__ == "__main__":
 
     # Before running slurm script, generate the tasks CSV file by selecting groups from the HDF5 file
-    # select_groups_and_generate_tasks_reduced('data/event_times_data.h5', 'hpc/tasks_reduced.csv')
+    select_groups_and_generate_tasks_reduced('data/event_times_data.h5', 'hpc/tasks_reduced.csv')
 
     # Example of how to read task parameters in the Slurm job script
     task_id = 5  # This would typically come from the Slurm environment variable, e.g., os.environ['SLURM_ARRAY_TASK_ID']

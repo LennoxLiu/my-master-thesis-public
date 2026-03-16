@@ -2,11 +2,11 @@
 #SBATCH --job-name=TE_reduced
 #SBATCH --output=hpc/logs/TE_reduced_%a.out
 #SBATCH --partition=gpu-single
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:1
-#SBATCH --array=0-1
-#SBATCH --mem=8G
-#SBATCH --time=00:20:00
+#SBATCH --array=1-2
+#SBATCH --mem=4G
+#SBATCH --time=01:30:00
 
 mkdir -p hpc/logs
  
@@ -26,7 +26,7 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 # Run the worker script for this specific array index
 python hpc/hyper_opt_reduced.py \
     --data_file_path "./data/event_times_data.h5" \
-    --num_trials 5 \
+    --num_trials 50 \
     --history_length 128 \
     --batch_size 512 \
     --data_time_length 900 \

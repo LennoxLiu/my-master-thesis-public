@@ -81,10 +81,10 @@ def create_objective(arrival_times_target,
         
         ln_yy_sec = ln_yy * len_target / time_series_length
     
-        print(f'Conditional entropy ln_yy : {ln_yy:.5f} nats/event, {ln_yy_sec:.5f} nats/sec')
-        print(f'Log loss for model yyx: {log_loss_yy:.5f}')
+        print(f'Reduced model ln_yy : {ln_yy_sec:.5f} nats/sec, {ln_yy:.5f} nats/event')
+        print(f'Reduced model Log loss : {log_loss_yy:.5f}')
 
-        trial.set_user_attr(f"ln_yy_test_sec", ln_yy_sec)
+        trial.set_user_attr(f"ln_yy_sec", ln_yy_sec)
         trial.set_user_attr(f"log_loss_yy", log_loss_yy)
         
         Ln_yy_tests_sec.append(ln_yy_sec)
