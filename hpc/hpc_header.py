@@ -84,7 +84,7 @@ def get_task_params_reduced(csv_path, task_id):
         print(f"An error occurred while reading the task file: {e}")
         return None, None
     
-
+    
 def read_event_times_reduced(h5_path, group_id, neuron_id):
     """
     Reads the event times for a specific neuron from an HDF5 file.

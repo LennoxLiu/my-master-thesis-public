@@ -47,7 +47,7 @@ def convert_mat_to_h5(mat_path, h5_path):
             event_val = row[1]
             
             # Convert to float array
-            event_times = np.array(event_val).flatten().astype(np.float32)
+            event_times = np.array(event_val).flatten().astype(np.float32) / 1000.0  # Convert ms to seconds
 
             # 3. Assign unique neuron_id based on row index
             neuron_id = str(i)

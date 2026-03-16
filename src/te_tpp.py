@@ -244,206 +244,331 @@ def plot_pp(
     plt.close(fig)
     print("P-P plot saved to", file_path)
 
-# Event times should NOT insert zero at the beginning
+# # Event times should NOT insert zero at the beginning
+# # Input: event_time: target then source, each is a 1D tensor of event times in seconds, sorted in ascending order
+# # Output: Tuple[Tuple[DataLoader, DataLoader, DataLoader], Tuple[DataLoader, DataLoader, DataLoader],int] or Tuple[Tuple[DataLoader, DataLoader, DataLoader], int]:
+# def prepare_dataloaders(event_time, configs: dict, seed = None, device = 'cpu'):
+#     if configs["verbose"]:
+#         print('Preparing data...')
+#     assert isinstance(event_time, list)
+#     assert all(isinstance(evt, torch.Tensor) for evt in event_time), "All event_time elements must be torch.Tensor"
+    
+#     if seed is not None:
+#         torch.manual_seed(seed)
+#         np.random.seed(seed)
+
+#     if len(event_time) == 1:
+#         print("Only one process provided, preparing dataloaders for the reduced model.")
+
+#         target_times = event_time[0][event_time[0]< configs["total_time"]]
+#         len_target = len(target_times)
+#         history_len = configs["history_length"]
+
+#         target_inter_times = torch.diff(target_times) # inter-event times at index i corresponds to event at target_times[i+1]
+
+#         histories_target_list = []
+#         targets_list = []
+
+#         # Iterate through each possible target event
+#         for target_idx in range(history_len + 1, len(target_times)):
+#             current_target_time = target_times[target_idx]
+            
+#             # Target value (the inter-event time we want to predict)
+#             target_val = target_inter_times[target_idx - 1]
+#             targets_list.append(target_val)
+
+#             # Target History: The last `history_len` inter-event times
+#             history_target = target_inter_times[target_idx - history_len - 1: target_idx - 1]
+#             histories_target_list.append(history_target)
+            
+#             # Stack the lists into final tensors
+#             targets = torch.stack(targets_list)
+
+#             num_small_targets = int((targets < MIN_TIME).sum().item())
+#             if num_small_targets > 0:
+#                 print(f"Number of targets below MIN_TIME={MIN_TIME}: {num_small_targets}")
+
+#             targets = targets.clamp(min=MIN_TIME)  # to avoid zero inter-event times
+#             histories_target = torch.stack(histories_target_list)
+            
+#             # Log-transform the inter-event times for better numerical stability
+#             histories = torch.log(histories_target.clamp(min=MIN_TIME))
+
+#             # Move data to device in advance
+#             histories = histories.to(device)
+#             targets = targets.to(device)
+            
+#             assert targets.shape[0] == histories.shape[0], "Targets and history must have the same length"
+#             seq_num = targets.shape[0]
+#             # Train/Val/Test split
+#             indices = np.arange(seq_num)
+#             shift = int(seq_num * np.random.rand())
+#             indices = np.roll(indices, shift)
+
+#             train_ratio=0.6
+#             val_ratio=0.2
+#             train_end = int(train_ratio * seq_num)  # 60% for training
+#             val_end = int((train_ratio+val_ratio) * seq_num)    # 20% for validation
+#             train_indices = indices[:train_end]
+#             val_indices = indices[train_end:val_end]
+#             test_indices = indices[val_end:]
+
+#             dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:].unsqueeze(-1), targets[train_indices]), batch_size=configs["batch_size"], shuffle=True)
+#             dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:].unsqueeze(-1), targets[val_indices]), batch_size=configs["batch_size"], shuffle=False)
+#             dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:].unsqueeze(-1), targets[test_indices]), batch_size=configs["batch_size"], shuffle=False)
+#             return (dl_train_yy, dl_val_yy, dl_test_yy), len_target
+
+    
+#     assert len(event_time) == 2, "Currently only support two processes for TE estimation"
+
+#     target_times = event_time[0][event_time[0]< configs["total_time"]]
+#     source_times = event_time[1][event_time[1]< configs["total_time"]]
+
+#     len_target = len(target_times)
+
+#     target_inter_times = torch.diff(target_times) # inter-event times at index i corresponds to event at target_times[i+1]
+#     source_inter_times = torch.diff(source_times)
+
+#     history_len = configs["history_length"]
+    
+#     # We will build three separate lists
+#     histories_target_list = []
+#     histories_source_list = []
+#     time_deltas_list = []
+#     targets_list = []
+
+#     # Initialize the source pointer
+#     source_idx = 0
+
+#     # Iterate through each possible target event
+#     for target_idx in range(history_len + 1, len(target_times)):
+#         current_target_time = target_times[target_idx]
+
+#         # Advance the source pointer to the correct position
+#         # We want source_times[source_idx] to be the most recent event strictly before current_target_time
+#         while source_idx < len(source_times) - 2 and source_times[source_idx + 1] < current_target_time:
+#             source_idx += 1
+
+#         # When source_idx == len(source_times) - 2, (source_idx + 1 = len(source_times) - 1 ) is the last source event,
+#         # since it must be the most recent event before current_target_time,
+#         # we do not need to advance further or drop it.
+
+#         # 1. NEW CHECK: We now need `history_len` inter-event times from the source.
+#         # This requires at least `history_len+1` events, so the final index `source_idx`
+#         # must be at least `history_len`.
+#         if source_idx >= history_len:
+            
+#             # --- This is a valid sample, construct all parts ---
+
+#             # Target value (the inter-event time we want to predict)
+#             target_val = target_inter_times[target_idx - 1]
+#             targets_list.append(target_val)
+
+#             # Target History: The last `history_len` inter-event times
+#             history_target = target_inter_times[target_idx - history_len - 1: target_idx - 1]
+#             histories_target_list.append(history_target)
+            
+#             # Source History: The last `history_len` inter-event times
+#             history_source = source_inter_times[source_idx - history_len + 1 : source_idx]
+#             histories_source_list.append(history_source)
+            
+#             # Additional Feature: Time elapsed from the closest source event
+#             time_since_last_source = current_target_time - source_times[source_idx]
+
+#             assert time_since_last_source >= 0.0, "Time since last source event should be non-negative, got {}".format(time_since_last_source)
+
+#             time_deltas_list.append(torch.tensor([time_since_last_source]))
+
+#     if not targets_list:
+#         raise ValueError("Could not find any valid sequences with the given history length and data.")
+
+   
+#     # Stack the lists into final tensors
+#     targets = torch.stack(targets_list)
+
+#     num_small_targets = int((targets < MIN_TIME).sum().item())
+#     if num_small_targets > 0:
+#         print(f"Number of targets below MIN_TIME={MIN_TIME}: {num_small_targets}")
+
+#     targets = targets.clamp(min=MIN_TIME)  # to avoid zero inter-event times
+#     histories_target = torch.stack(histories_target_list)
+#     histories_source = torch.stack(histories_source_list)
+#     time_deltas = torch.stack(time_deltas_list)
+
+#     histories_source = torch.hstack([histories_source, time_deltas])
+    
+#     if configs["shuffle"]:
+#         # SHUFFLE THE COMBINED TENSOR VERTICALLY
+#         # This keeps 'source' and 'time_deltas' aligned with each other,
+#         # but breaks their relationship with 'targets' and 'histories_target'.
+#         idx = torch.randperm(histories_source.size(0))
+#         histories_source = histories_source[idx]
+
+#     histories = torch.stack([histories_target, histories_source], dim=2)
+#     # Shape will be (seq_num, history_length, 2)
+    
+#     # Log-transform the inter-event times for better numerical stability
+#     histories = torch.log(histories.clamp(min=MIN_TIME))
+
+#     # Move data to device in advance
+#     histories = histories.to(device)
+#     targets = targets.to(device)
+
+#     assert targets.shape[0] == histories.shape[0], "Targets and history must have the same length"
+#     seq_num = targets.shape[0]
+#     # Train/Val/Test split
+#     indices = np.arange(seq_num)
+#     shift = int(seq_num * np.random.rand())
+#     indices = np.roll(indices, shift)
+
+#     train_ratio=0.6
+#     val_ratio=0.2
+#     train_end = int(train_ratio * seq_num)  # 60% for training
+#     val_end = int((train_ratio+val_ratio) * seq_num)    # 20% for validation
+#     train_indices = indices[:train_end]
+#     val_indices = indices[train_end:val_end]
+#     test_indices = indices[val_end:]
+#     train_dataset = TensorDataset(histories[train_indices], targets[train_indices])
+#     val_dataset = TensorDataset(histories[val_indices], targets[val_indices])
+#     test_dataset = TensorDataset(histories[test_indices], targets[test_indices])
+#     # get data loader
+#     dl_train = DataLoader(train_dataset, batch_size=configs["batch_size"], shuffle=True)
+#     dl_val = DataLoader(val_dataset, batch_size=configs["batch_size"], shuffle=False)
+#     dl_test = DataLoader(test_dataset, batch_size=configs["batch_size"], shuffle=False)
+    
+#     # if len(event_time) == 1:
+#     #     return (dl_train, dl_val, dl_test)
+#     # else:
+#     # If we have multiple neurons, return the dataloaders for the first neuron seperately
+#     dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:,0].unsqueeze(-1), targets[train_indices]), batch_size=configs["batch_size"], shuffle=True)
+#     dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:,0].unsqueeze(-1), targets[val_indices]), batch_size=configs["batch_size"], shuffle=False)
+#     dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:,0].unsqueeze(-1), targets[test_indices]), batch_size=configs["batch_size"], shuffle=False)
+#     return (dl_train, dl_val, dl_test), (dl_train_yy, dl_val_yy, dl_test_yy), len_target
+
 # Input: event_time: target then source, each is a 1D tensor of event times in seconds, sorted in ascending order
 # Output: Tuple[Tuple[DataLoader, DataLoader, DataLoader], Tuple[DataLoader, DataLoader, DataLoader],int] or Tuple[Tuple[DataLoader, DataLoader, DataLoader], int]:
-def prepare_dataloaders(event_time, configs: dict, seed = None, device = 'cpu'):
-    if configs["verbose"]:
+def prepare_dataloaders(event_time, configs: dict, seed=None, device='cpu'):
+    if configs.get("verbose"):
         print('Preparing data...')
+        
     assert isinstance(event_time, list)
     assert all(isinstance(evt, torch.Tensor) for evt in event_time), "All event_time elements must be torch.Tensor"
-    
+    assert len(event_time) in [1, 2], "Currently only support one or two processes for TE estimation"
+
     if seed is not None:
         torch.manual_seed(seed)
         np.random.seed(seed)
 
-    if len(event_time) == 1:
+    is_bivariate = len(event_time) == 2
+    if not is_bivariate:
         print("Only one process provided, preparing dataloaders for the reduced model.")
 
-        target_times = event_time[0][event_time[0]< configs["total_time"]]
-        len_target = len(target_times)
-        history_len = configs["history_length"]
-
-        target_inter_times = torch.diff(target_times) # inter-event times at index i corresponds to event at target_times[i+1]
-
-        histories_target_list = []
-        targets_list = []
-
-        # Iterate through each possible target event
-        for target_idx in range(history_len + 1, len(target_times)):
-            current_target_time = target_times[target_idx]
-            
-            # Target value (the inter-event time we want to predict)
-            target_val = target_inter_times[target_idx - 1]
-            targets_list.append(target_val)
-
-            # Target History: The last `history_len` inter-event times
-            history_target = target_inter_times[target_idx - history_len - 1: target_idx - 1]
-            histories_target_list.append(history_target)
-            
-            # Stack the lists into final tensors
-            targets = torch.stack(targets_list)
-
-            num_small_targets = int((targets < MIN_TIME).sum().item())
-            if num_small_targets > 0:
-                print(f"Number of targets below MIN_TIME={MIN_TIME}: {num_small_targets}")
-
-            targets = targets.clamp(min=MIN_TIME)  # to avoid zero inter-event times
-            histories_target = torch.stack(histories_target_list)
-            
-            # Log-transform the inter-event times for better numerical stability
-            histories = torch.log(histories_target.clamp(min=MIN_TIME))
-
-            # Move data to device in advance
-            histories = histories.to(device)
-            targets = targets.to(device)
-            
-            assert targets.shape[0] == histories.shape[0], "Targets and history must have the same length"
-            seq_num = targets.shape[0]
-            # Train/Val/Test split
-            indices = np.arange(seq_num)
-            shift = int(seq_num * np.random.rand())
-            indices = np.roll(indices, shift)
-
-            train_ratio=0.6
-            val_ratio=0.2
-            train_end = int(train_ratio * seq_num)  # 60% for training
-            val_end = int((train_ratio+val_ratio) * seq_num)    # 20% for validation
-            train_indices = indices[:train_end]
-            val_indices = indices[train_end:val_end]
-            test_indices = indices[val_end:]
-
-            dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:].unsqueeze(-1), targets[train_indices]), batch_size=configs["batch_size"], shuffle=True)
-            dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:].unsqueeze(-1), targets[val_indices]), batch_size=configs["batch_size"], shuffle=False)
-            dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:].unsqueeze(-1), targets[test_indices]), batch_size=configs["batch_size"], shuffle=False)
-            return (dl_train_yy, dl_val_yy, dl_test_yy), len_target
-
-    
-    assert len(event_time) == 2, "Currently only support two processes for TE estimation"
-
-    target_times = event_time[0][event_time[0]< configs["total_time"]]
-    source_times = event_time[1][event_time[1]< configs["total_time"]]
-
+    target_times = event_time[0][event_time[0] < configs["total_time"]]
     len_target = len(target_times)
-
-    target_inter_times = torch.diff(target_times) # inter-event times at index i corresponds to event at target_times[i+1]
-    source_inter_times = torch.diff(source_times)
-
+    target_inter_times = torch.diff(target_times)
     history_len = configs["history_length"]
-    
-    # We will build three separate lists
+
+    if is_bivariate:
+        source_times = event_time[1][event_time[1] < configs["total_time"]]
+        source_inter_times = torch.diff(source_times)
+        histories_source_list = []
+        time_deltas_list = []
+        source_idx = 0
+
     histories_target_list = []
-    histories_source_list = []
-    time_deltas_list = []
     targets_list = []
 
-    # Initialize the source pointer
-    source_idx = 0
-
     # Iterate through each possible target event
-    for target_idx in range(history_len + 1, len(target_times)):
+    for target_idx in range(history_len + 1, len_target):
         current_target_time = target_times[target_idx]
 
-        # Advance the source pointer to the correct position
-        # We want source_times[source_idx] to be the most recent event strictly before current_target_time
-        while source_idx < len(source_times) - 2 and source_times[source_idx + 1] < current_target_time:
-            source_idx += 1
+        if is_bivariate:
+            # Advance the source pointer to the correct position
+            while source_idx < len(source_times) - 2 and source_times[source_idx + 1] < current_target_time:
+                source_idx += 1
 
-        # When source_idx == len(source_times) - 2, (source_idx + 1 = len(source_times) - 1 ) is the last source event,
-        # since it must be the most recent event before current_target_time,
-        # we do not need to advance further or drop it.
+            # Require history_len inter-event times from the source
+            if source_idx < history_len:
+                continue
 
-        # 1. NEW CHECK: We now need `history_len` inter-event times from the source.
-        # This requires at least `history_len+1` events, so the final index `source_idx`
-        # must be at least `history_len`.
-        if source_idx >= history_len:
-            
-            # --- This is a valid sample, construct all parts ---
-
-            # Target value (the inter-event time we want to predict)
-            target_val = target_inter_times[target_idx - 1]
-            targets_list.append(target_val)
-
-            # Target History: The last `history_len` inter-event times
-            history_target = target_inter_times[target_idx - history_len - 1: target_idx - 1]
-            histories_target_list.append(history_target)
-            
-            # Source History: The last `history_len` inter-event times
+            # Source History & Time Delta
             history_source = source_inter_times[source_idx - history_len + 1 : source_idx]
             histories_source_list.append(history_source)
             
-            # Additional Feature: Time elapsed from the closest source event
             time_since_last_source = current_target_time - source_times[source_idx]
-
-            assert time_since_last_source >= 0.0, "Time since last source event should be non-negative, got {}".format(time_since_last_source)
-
+            assert time_since_last_source >= 0.0, f"Time since last source event should be non-negative, got {time_since_last_source}"
             time_deltas_list.append(torch.tensor([time_since_last_source]))
 
+        # Target value and History
+        target_val = target_inter_times[target_idx - 1]
+        targets_list.append(target_val)
+        
+        history_target = target_inter_times[target_idx - history_len - 1 : target_idx - 1]
+        histories_target_list.append(history_target)
+
     if not targets_list:
+        print("No valid sequences found with the given history length and data. Please check if the history length is too long or if there are enough events in the data.")
+        print(f"Total target events: {len_target}, History length: {history_len}")
         raise ValueError("Could not find any valid sequences with the given history length and data.")
 
-   
     # Stack the lists into final tensors
     targets = torch.stack(targets_list)
-
     num_small_targets = int((targets < MIN_TIME).sum().item())
     if num_small_targets > 0:
         print(f"Number of targets below MIN_TIME={MIN_TIME}: {num_small_targets}")
 
-    targets = targets.clamp(min=MIN_TIME)  # to avoid zero inter-event times
+    targets = targets.clamp(min=MIN_TIME)
     histories_target = torch.stack(histories_target_list)
-    histories_source = torch.stack(histories_source_list)
-    time_deltas = torch.stack(time_deltas_list)
 
-    histories_source = torch.hstack([histories_source, time_deltas])
-    
-    if configs["shuffle"]:
-        # SHUFFLE THE COMBINED TENSOR VERTICALLY
-        # This keeps 'source' and 'time_deltas' aligned with each other,
-        # but breaks their relationship with 'targets' and 'histories_target'.
-        idx = torch.randperm(histories_source.size(0))
-        histories_source = histories_source[idx]
+    if is_bivariate:
+        histories_source = torch.stack(histories_source_list)
+        time_deltas = torch.stack(time_deltas_list)
+        histories_source = torch.hstack([histories_source, time_deltas])
+        
+        if configs.get("shuffle", False):
+            idx = torch.randperm(histories_source.size(0))
+            histories_source = histories_source[idx]
 
-    histories = torch.stack([histories_target, histories_source], dim=2)
-    # Shape will be (seq_num, history_length, 2)
-    
-    # Log-transform the inter-event times for better numerical stability
-    histories = torch.log(histories.clamp(min=MIN_TIME))
+        histories = torch.stack([histories_target, histories_source], dim=2)
+    else:
+        # Ensures history is 3D (seq_num, history_len, 1) to prevent indexing errors later
+        histories = histories_target.unsqueeze(2)
 
-    # Move data to device in advance
-    histories = histories.to(device)
+    # Log-transform for numerical stability and move to device
+    histories = torch.log(histories.clamp(min=MIN_TIME)).to(device)
     targets = targets.to(device)
 
-    assert targets.shape[0] == histories.shape[0], "Targets and history must have the same length"
+    # Train/Val/Test split (Shared logic)
     seq_num = targets.shape[0]
-    # Train/Val/Test split
+    assert seq_num == histories.shape[0], "Targets and history must have the same length"
+    
     indices = np.arange(seq_num)
     shift = int(seq_num * np.random.rand())
     indices = np.roll(indices, shift)
 
-    train_ratio=0.6
-    val_ratio=0.2
-    train_end = int(train_ratio * seq_num)  # 60% for training
-    val_end = int((train_ratio+val_ratio) * seq_num)    # 20% for validation
+    train_end = int(0.6 * seq_num)
+    val_end = int(0.8 * seq_num)
+    
     train_indices = indices[:train_end]
     val_indices = indices[train_end:val_end]
     test_indices = indices[val_end:]
-    train_dataset = TensorDataset(histories[train_indices], targets[train_indices])
-    val_dataset = TensorDataset(histories[val_indices], targets[val_indices])
-    test_dataset = TensorDataset(histories[test_indices], targets[test_indices])
-    # get data loader
-    dl_train = DataLoader(train_dataset, batch_size=configs["batch_size"], shuffle=True)
-    dl_val = DataLoader(val_dataset, batch_size=configs["batch_size"], shuffle=False)
-    dl_test = DataLoader(test_dataset, batch_size=configs["batch_size"], shuffle=False)
+
+    batch_size = configs["batch_size"]
+
+    # Dataloaders for target-only features (Feature index 0)
+    histories_yy = histories[:, :, 0].unsqueeze(-1)
+    dl_train_yy = DataLoader(TensorDataset(histories_yy[train_indices], targets[train_indices]), batch_size=batch_size, shuffle=True)
+    dl_val_yy = DataLoader(TensorDataset(histories_yy[val_indices], targets[val_indices]), batch_size=batch_size, shuffle=False)
+    dl_test_yy = DataLoader(TensorDataset(histories_yy[test_indices], targets[test_indices]), batch_size=batch_size, shuffle=False)
+
+    if is_bivariate:
+        dl_train = DataLoader(TensorDataset(histories[train_indices], targets[train_indices]), batch_size=batch_size, shuffle=True)
+        dl_val = DataLoader(TensorDataset(histories[val_indices], targets[val_indices]), batch_size=batch_size, shuffle=False)
+        dl_test = DataLoader(TensorDataset(histories[test_indices], targets[test_indices]), batch_size=batch_size, shuffle=False)
+        return (dl_train, dl_val, dl_test), (dl_train_yy, dl_val_yy, dl_test_yy), len_target
     
-    # if len(event_time) == 1:
-    #     return (dl_train, dl_val, dl_test)
-    # else:
-    # If we have multiple neurons, return the dataloaders for the first neuron seperately
-    dl_train_yy = DataLoader(TensorDataset(histories[train_indices,:,0].unsqueeze(-1), targets[train_indices]), batch_size=configs["batch_size"], shuffle=True)
-    dl_val_yy = DataLoader(TensorDataset(histories[val_indices,:,0].unsqueeze(-1), targets[val_indices]), batch_size=configs["batch_size"], shuffle=False)
-    dl_test_yy = DataLoader(TensorDataset(histories[test_indices,:,0].unsqueeze(-1), targets[test_indices]), batch_size=configs["batch_size"], shuffle=False)
-    return (dl_train, dl_val, dl_test), (dl_train_yy, dl_val_yy, dl_test_yy), len_target
+    return (dl_train_yy, dl_val_yy, dl_test_yy), len_target
+
 
 # event time in seconds
 def train_tpp_model(dl_train, dl_val, dl_test, configs: dict, seed = None, device = 'cpu', 
@@ -1146,7 +1271,7 @@ def Ln_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):
     data_prep_config = deepcopy(configs["data_prep_config"])
     data_prep_config["history_length"] = configs["history_length"]
     # Prepare data loaders
-    _, dls_yy, len_target  = prepare_dataloaders(
+    dls_yy, len_target  = prepare_dataloaders(
         event_time=event_time, 
         configs=data_prep_config, 
         seed=seed,
