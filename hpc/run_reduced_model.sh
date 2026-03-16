@@ -24,4 +24,4 @@ conda activate RMDN-TE
 export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 
 # Run the worker script for this specific array index
-python hyper_opt_reduced.py --data_file_path "./data/event_times_data.h5" --num_trials 10 --history_length 128 --data_time_length 300 --task_id $SLURM_ARRAY_TASK_ID --seed 42 
+python hpc/hyper_opt_reduced.py --data_file_path "./data/event_times_data.h5" --num_trials 10 --history_length 128 --data_time_length 300 --task_id $SLURM_ARRAY_TASK_ID --seed 42 
