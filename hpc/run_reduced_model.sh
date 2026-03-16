@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --array=0-1
 #SBATCH --mem=4G
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -33,3 +33,5 @@ python hpc/hyper_opt_reduced.py \
     --data_time_length 900 \
     --task_id $SLURM_ARRAY_TASK_ID \
     --seed 42
+
+# Multiple runs with different seeds
