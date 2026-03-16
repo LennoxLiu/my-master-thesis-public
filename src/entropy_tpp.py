@@ -15,6 +15,7 @@ import pandas as pd
 import json
 import copy
 import os
+from scipy.stats import rankdata
 
 QUAD_MIN=1e-32 
 QUAD_MAX=1e32
@@ -1220,9 +1221,11 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     return (TE_hazard, ln_yy_hazard, ln_yyx_hazard), (log_loss_yy, log_loss_yyx)
 
 
+
+
 def run_multiple_estimation(target_events, source_events, configs, n_runs=10, seed=42):
     """
-    Runs TE estimation multiple times with weighted averaging based on validation loss.
+    Runs TE estimation multiple times with rank-sum weighted averaging based on validation loss.
     Saves both per-run results and weighted summary statistics to CSV.
     """
     print(f"--- Starting {n_runs} Multiple Runs Estimation ---")
@@ -1259,12 +1262,11 @@ def run_multiple_estimation(target_events, source_events, configs, n_runs=10, se
     # Convert to DataFrame
     results_df = pd.DataFrame(run_results)
 
-    # --- WEIGHTED CALCULATION ---
+    # --- WEIGHTED CALCULATION (RANK-SUM) ---
     def calculate_weights(losses):
-        # Log-Sum-Exp trick for stability
-        shifted_losses = losses - np.min(losses)
-        exp_loss = np.exp(-shifted_losses)
-        return exp_loss / np.sum(exp_loss)
+        # Rank negative losses so the lowest loss gets the highest rank
+        ranks = rankdata(-np.array(losses))
+        return ranks / np.sum(ranks)
 
     # Calculate weights based on specific losses
     weights_yy = calculate_weights(results_df['loss_yy'].values)
@@ -1329,7 +1331,7 @@ def run_multiple_estimation(target_events, source_events, configs, n_runs=10, se
     ax.axhspan(weighted_te - std_te, weighted_te + std_te, 
                color='red', alpha=0.15, label='Weighted Std Dev', zorder=1)
     
-    ax.set_title("Transfer Entropy - Multiple Runs (Weighted)")
+    ax.set_title("Transfer Entropy - Multiple Runs (Rank-Sum Weighted)")
     ax.set_ylabel("TE (nats/sec)")
     ax.legend()
     fig.savefig("results/TE_weighted_boxplot.png")
