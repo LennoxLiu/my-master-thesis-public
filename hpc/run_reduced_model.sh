@@ -3,7 +3,7 @@
 #SBATCH --output=hpc/logs/TE_reduced_%a.out
 #SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=1
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 #SBATCH --array=1-2
 #SBATCH --mem=8G
 #SBATCH --time=01:30:00
