@@ -6,8 +6,8 @@ from copy import deepcopy
 from exp_data_loader import load_grouped_data, get_list_by_length_criteria
 from piecewise_lognormal import simulate_processes, compute_reference
 import optuna
-from entropy_tpp import run_multiple_estimation
-from entropy_tpp import save_dict_indented
+from src.te_tpp import run_multiple_estimation
+from src.te_tpp import save_dict_indented
 
 # Define simulation parameters
 seed=76  # For reproducibility

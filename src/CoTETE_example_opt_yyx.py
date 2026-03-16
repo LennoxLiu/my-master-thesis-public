@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from copy import deepcopy
 import optuna
-from entropy_tpp import Ln_estimation_yyx
+from src.te_tpp import Ln_estimation_yyx
 
 
 def create_objective(arrival_times_target_list, arrival_times_source_list,
