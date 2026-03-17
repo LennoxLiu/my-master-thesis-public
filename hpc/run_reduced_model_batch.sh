@@ -3,7 +3,7 @@
 #SBATCH --output=hpc/logs/TE_reduced_arrayjob%a.out
 #SBATCH --partition=devel
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:A40:1
+#SBATCH --gres=gpu:1
 #SBATCH --array=0
 #SBATCH --mem-per-cpu=4gb
 #SBATCH --time=00:30:00
