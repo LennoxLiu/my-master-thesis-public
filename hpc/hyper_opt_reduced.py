@@ -135,6 +135,9 @@ if __name__ == "__main__":
             print(f"Starting optimization for task {task_id}...")
         else:
             print(f"Resuming optimization for task {task_id}...")
+    else:
+        print(f"Warning: Task ID {task_id} not found in task file. Exiting.")
+        exit(0)  # Exit with code 0 to indicate successful completion, so that Slurm won't reschedule this task
     
     # Load event times for the specified group_id and neuron_id
     target_events = read_event_times_reduced('data/event_times_data.h5', group_id, neuron_id)
