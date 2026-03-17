@@ -51,6 +51,3 @@ wait # Wait for all tasks to finish
 nvidia-smi >> hpc/logs/gpu_usage_reduced_${SLURM_ARRAY_TASK_ID}.log
 
 nvidia-cuda-mps-control -q # Shut down daemon
-
-
-# Multiple runs with different seeds

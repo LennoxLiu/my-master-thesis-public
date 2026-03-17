@@ -3,7 +3,9 @@ import h5py
 import numpy as np
 import os
 
-def convert_mat_to_h5(mat_path, h5_path):
+# Converts MATLAB sortedData to HDF5 format for efficient storage and access.
+# Filters out neurons with fewer than #min_events events for stability in downstream analyses.
+def convert_mat_to_h5(mat_path, h5_path, min_events=1000):
     """
     Converts MATLAB sortedData to HDF5.
     Column 2 -> event_times (float array)
@@ -28,11 +30,23 @@ def convert_mat_to_h5(mat_path, h5_path):
     if sorted_data.ndim == 2 and sorted_data.shape[0] == 1 and sorted_data.shape[1] == 1:
         sorted_data = sorted_data[0, 0]
 
+    filtered_count = 0
     with h5py.File(h5_path, 'w') as h5f:
         for i in range(len(sorted_data)):
             row = sorted_data[i]
             
-            # 1. Extract Group ID (Column 4 / Index 3)
+            # 1. Extract Event Times (Column 2 / Index 1)
+            event_val = row[1]
+            
+            # Convert to float array
+            event_times = np.array(event_val).flatten().astype(np.float32) / 1000.0  # Convert ms to seconds
+
+            # Filter: Skip if there are fewer than 1000 events
+            if len(event_times) < min_events:
+                filtered_count += 1
+                continue
+
+            # 2. Extract Group ID (Column 4 / Index 3)
             # Handles MATLAB's tendency to wrap strings in nested arrays
             group_val = row[3]
             if isinstance(group_val, np.ndarray):
@@ -42,12 +56,6 @@ def convert_mat_to_h5(mat_path, h5_path):
             
             if not group_id:
                 group_id = "unassigned"
-
-            # 2. Extract Event Times (Column 2 / Index 1)
-            event_val = row[1]
-            
-            # Convert to float array
-            event_times = np.array(event_val).flatten().astype(np.float32) / 1000.0  # Convert ms to seconds
 
             # 3. Assign unique neuron_id based on row index
             neuron_id = str(i)
@@ -62,6 +70,7 @@ def convert_mat_to_h5(mat_path, h5_path):
 
         print(f"Groups created: {list(h5f.keys())}")
 
+    print(f"Filtered out {filtered_count} neurons with fewer than {min_events} events.")
     print(f"Conversion finished. Created {h5_path} with {len(sorted_data)} sequences.")
     # Execution
-convert_mat_to_h5('data/testFile.mat', 'data/event_times_data.h5')
+convert_mat_to_h5('data/testFile.mat', 'data/event_times_data.h5', min_events=1500)
