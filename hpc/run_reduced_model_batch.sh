@@ -44,7 +44,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
         --seed 42 &
 done
 
-wait # Wait for all 4 to finish
+wait # Wait for all tasks to finish
 
 # Log GPU state right before shutdown to verify utilization
 nvidia-smi >> hpc/logs/gpu_usage_reduced_${SLURM_ARRAY_TASK_ID}.log
