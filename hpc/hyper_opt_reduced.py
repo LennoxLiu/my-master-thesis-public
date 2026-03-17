@@ -119,7 +119,7 @@ if __name__ == "__main__":
         torch.manual_seed(seed)
         np.random.seed(seed)
 
-    os.makedirs("results/opt", exist_ok=True)
+    os.makedirs("results/opt-reduced", exist_ok=True)
 
     # Read task parameters from task file
     group_id, neuron_id = get_task_params_reduced('hpc/tasks_reduced.csv', task_id)
@@ -209,7 +209,7 @@ if __name__ == "__main__":
     }
 
     # Save to a readable JSON/TXT file
-    config_output_file = f"results/opt/opt_reduced_{task_id}_best_config.txt"
+    config_output_file = f"results/opt-reduced/opt_reduced_{task_id}_best_config.txt"
     with open(config_output_file, "w") as f:
         json.dump(best_configs, f, indent=4)
     print(f"Full best configuration saved to {config_output_file}")
