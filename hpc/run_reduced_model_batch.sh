@@ -39,7 +39,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
         --num_trials 5 \
         --history_length 128 \
         --batch_size 512 \
-        --data_time_length 450 \
+        --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
         --seed 42 &
 done
