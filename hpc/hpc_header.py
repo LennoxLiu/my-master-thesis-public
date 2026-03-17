@@ -113,18 +113,18 @@ def read_event_times_reduced(h5_path, group_id, neuron_id):
     except Exception as e:
         print(f"Failed to read HDF5 file: {e}")
         return None
-    
+
 if __name__ == "__main__":
 
     # Before running slurm script, generate the tasks CSV file by selecting groups from the HDF5 file
     select_groups_and_generate_tasks_reduced('data/event_times_data.h5', 'hpc/tasks_reduced.csv')
 
-    # Example of how to read task parameters in the Slurm job script
-    task_id = 5  # This would typically come from the Slurm environment variable, e.g., os.environ['SLURM_ARRAY_TASK_ID']
-    group_id, neuron_id = get_task_params_reduced('hpc/tasks_reduced.csv', task_id)
-    if group_id is not None:
-        print(f"Lookup task {task_id}: group_id: {group_id}, neuron_id: {neuron_id}")
+    # # Example of how to read task parameters in the Slurm job script
+    # task_id = 5  # This would typically come from the Slurm environment variable, e.g., os.environ['SLURM_ARRAY_TASK_ID']
+    # group_id, neuron_id = get_task_params_reduced('hpc/tasks_reduced.csv', task_id)
+    # if group_id is not None:
+    #     print(f"Lookup task {task_id}: group_id: {group_id}, neuron_id: {neuron_id}")
 
-    event_times = read_event_times_reduced('data/event_times_data.h5', group_id, neuron_id)
-    print(f"Event times for {group_id}/{neuron_id}: {event_times[:10]}...")  # Print first 10 event times for verification
+    # event_times = read_event_times_reduced('data/event_times_data.h5', group_id, neuron_id)
+    # print(f"Event times for {group_id}/{neuron_id}: {event_times[:10]}...")  # Print first 10 event times for verification
 
