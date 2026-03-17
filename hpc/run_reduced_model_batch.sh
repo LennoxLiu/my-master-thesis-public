@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=TE_reduced
 #SBATCH --output=hpc/logs/TE_reduced_arrayjob%a.out
-#SBATCH --partition=gpu-single
+#SBATCH --partition=devel
 #SBATCH --cpus-per-task=16
 #SBATCH --gres=gpu:A40:1
 #SBATCH --array=0
