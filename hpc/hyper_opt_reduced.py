@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser.add_argument("--task_id", type=int, required=True, help="Slurm Array Task ID")
     parser.add_argument("--history_length", type=int, default=256, help="History length for TE estimation")
     parser.add_argument("--data_time_length", type=int, default=15*60, help="Total time of the sequences in seconds")
-    parser.add_argument("--seed", type=int, default=None, help="Random seed for reproducibility")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
     parser.add_argument("--num_trials", type=int, default=50, help="Number of Optuna trials to run")
     parser.add_argument("--batch_size", type=int, default=512, help="Batch size for training the model")
     args = parser.parse_args()
@@ -115,9 +115,8 @@ if __name__ == "__main__":
     num_trials=args.num_trials
     batch_size=args.batch_size
     
-    if seed is not None:
-        torch.manual_seed(seed)
-        np.random.seed(seed)
+    torch.manual_seed(seed)
+    np.random.seed(seed)
 
     os.makedirs("results/opt-reduced", exist_ok=True)
 

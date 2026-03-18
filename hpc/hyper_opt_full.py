@@ -81,17 +81,15 @@ if __name__ == "__main__":
     parser.add_argument("--task_id", type=int, required=True)
     parser.add_argument("--history_length", type=int, default=256)
     parser.add_argument("--data_time_length", type=int, default=15*60)
-    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--num_trials", type=int, default=50)
     parser.add_argument("--batch_size", type=int, default=512)
     args = parser.parse_args()
     
-    if args.seed is not None:
-        torch.manual_seed(args.seed)
-        np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    np.random.seed(args.seed)
 
     os.makedirs("results/opt-full", exist_ok=True)
-    os.makedirs("results/opt", exist_ok=True)
 
     s_group, s_neuron, t_group, t_neuron = get_task_params_full('hpc/tasks_full.csv', args.task_id)
     
@@ -104,7 +102,7 @@ if __name__ == "__main__":
         print(f"Result file already exists: {result_file}")
         exit(0)
             
-    db_path = f"results/opt/opt_full_{args.task_id}.db"
+    db_path = f"results/opt-full/opt_full_{args.task_id}.db"
     
     source_events, target_events = read_event_times_full(args.data_file_path, s_group, s_neuron, t_group, t_neuron)
     
@@ -127,7 +125,7 @@ if __name__ == "__main__":
         directions=["minimize"], 
         storage=f"sqlite:///{db_path}",
         load_if_exists=True, 
-        study_name=f"opt_full-model_seed={args.seed if args.seed else 0:02d}_task={args.task_id}",
+        study_name=f"opt_full-model_seed={args.seed}_task={args.task_id}",
         pruner=pruner
     ) 
 
