@@ -76,7 +76,7 @@ def create_objective(arrival_times_target,
         log_yy_losses.append(log_loss_yy)
         
         if  ln_yy == float('nan'):
-            print(f"Error during TE estimation.\n")
+            print(f"Error during Ln_yy estimation.\n")
             return None, None
         
         ln_yy_sec = ln_yy * len_target / time_series_length
