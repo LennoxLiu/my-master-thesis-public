@@ -2,7 +2,7 @@
 #SBATCH --job-name=TE_full_opt
 #SBATCH --output=hpc/logs/TE_full_opt_arrayjob%a.out
 #SBATCH --partition=devel
-#SBATCH --cpus-per-task=64
+#SBATCH --cpus-per-task=32
 #SBATCH --gres=gpu:1
 #SBATCH --array=0
 #SBATCH --mem-per-cpu=3gb
