@@ -1,0 +1,33 @@
+{
+    "model_config_yyx": {
+        "model_name": "LogNormMix",
+        "context_size": 16,
+        "num_mix_components": 8,
+        "hidden_sizes": [
+            32
+        ],
+        "context_extractor": "lstm",
+        "activation_func": "ReLU"
+    },
+    "train_config_yyx": {
+        "L2_weight": 9.044217943037375e-09,
+        "L_entropy_weight": 7.164750957816428e-09,
+        "L_sep_weight": 1.081785278351349e-07,
+        "L_scale_weight": 4.568078118606742e-05,
+        "learning_rate": 0.0029567751540125393,
+        "max_epochs": 500,
+        "display_step": 5,
+        "patience": 20
+    },
+    "data_prep_config": {
+        "batch_size": 512,
+        "shuffle": false,
+        "total_time": 900,
+        "verbose": false
+    },
+    "device": "cuda",
+    "verbose": false,
+    "plot_histograms": false,
+    "history_length": 128,
+    "plot_pp": false
+}

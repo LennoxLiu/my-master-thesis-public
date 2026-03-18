@@ -1,0 +1,1291 @@
+Warning: Failed writing log files to directory [/var/log/nvidia-mps]. No logs will be available.
+[I 2026-03-18 22:02:48,886] Using an existing study with name 'opt_full-model_seed=42_task=162' instead of creating a new one.
+[I 2026-03-18 22:02:48,898] Using an existing study with name 'opt_full-model_seed=42_task=168' instead of creating a new one.
+[I 2026-03-18 22:02:48,899] Using an existing study with name 'opt_full-model_seed=42_task=169' instead of creating a new one.
+[I 2026-03-18 22:02:48,932] Using an existing study with name 'opt_full-model_seed=42_task=161' instead of creating a new one.
+[I 2026-03-18 22:02:48,938] Using an existing study with name 'opt_full-model_seed=42_task=173' instead of creating a new one.
+[I 2026-03-18 22:02:48,943] Using an existing study with name 'opt_full-model_seed=42_task=171' instead of creating a new one.
+[I 2026-03-18 22:02:48,957] Using an existing study with name 'opt_full-model_seed=42_task=160' instead of creating a new one.
+[I 2026-03-18 22:02:48,976] Using an existing study with name 'opt_full-model_seed=42_task=174' instead of creating a new one.
+[I 2026-03-18 22:02:48,984] Using an existing study with name 'opt_full-model_seed=42_task=165' instead of creating a new one.
+[I 2026-03-18 22:02:49,013] Using an existing study with name 'opt_full-model_seed=42_task=172' instead of creating a new one.
+[I 2026-03-18 22:02:49,054] Using an existing study with name 'opt_full-model_seed=42_task=175' instead of creating a new one.
+[I 2026-03-18 22:02:49,107] Using an existing study with name 'opt_full-model_seed=42_task=167' instead of creating a new one.
+[I 2026-03-18 22:02:49,310] Using an existing study with name 'opt_full-model_seed=42_task=164' instead of creating a new one.
+[I 2026-03-18 22:02:49,384] Using an existing study with name 'opt_full-model_seed=42_task=170' instead of creating a new one.
+[I 2026-03-18 22:02:49,397] Using an existing study with name 'opt_full-model_seed=42_task=166' instead of creating a new one.
+[I 2026-03-18 22:02:49,430] Using an existing study with name 'opt_full-model_seed=42_task=163' instead of creating a new one.
+[I 2026-03-18 22:03:28,394] Trial 21 pruned. 
+[I 2026-03-18 22:03:28,437] Trial 20 pruned. 
+[I 2026-03-18 22:03:30,225] Trial 17 pruned. 
+[I 2026-03-18 22:03:35,871] Trial 14 pruned. 
+[I 2026-03-18 22:03:37,037] Trial 14 pruned. 
+[I 2026-03-18 22:03:43,948] Trial 15 pruned. 
+[I 2026-03-18 22:03:44,698] Trial 15 pruned. 
+[I 2026-03-18 22:03:46,306] Trial 21 pruned. 
+[I 2026-03-18 22:03:48,381] Trial 23 pruned. 
+[I 2026-03-18 22:03:53,001] Trial 16 pruned. 
+[I 2026-03-18 22:04:00,925] Trial 17 pruned. 
+[I 2026-03-18 22:04:01,912] Trial 16 pruned. 
+[I 2026-03-18 22:04:07,450] Trial 43 pruned. 
+[I 2026-03-18 22:04:10,402] Trial 17 pruned. 
+[I 2026-03-18 22:04:17,814] Trial 18 pruned. 
+[I 2026-03-18 22:04:34,368] Trial 22 pruned. 
+[I 2026-03-18 22:04:34,991] Trial 19 pruned. 
+[I 2026-03-18 22:04:41,036] Trial 24 finished with value: -2.5511102316762146 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.332952472288953e-08, 'L_entropy_weight_yyx': 1.9636286246817003e-08, 'L_sep_weight_yyx': 1.965081296431003e-09, 'L_scale_weight_yyx': 1.931900105978233e-06, 'learning_rate_yyx': 0.009938614616702018}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:04:42,857] Trial 20 pruned. 
+[I 2026-03-18 22:04:46,373] Trial 31 pruned. 
+[I 2026-03-18 22:04:50,586] Trial 21 pruned. 
+[I 2026-03-18 22:04:55,270] Trial 44 pruned. 
+[I 2026-03-18 22:04:55,786] Trial 18 finished with value: -2.3958004742730785 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 6.856779290364179e-05, 'L_entropy_weight_yyx': 9.522506682244779e-05, 'L_sep_weight_yyx': 2.1103390032051517e-07, 'L_scale_weight_yyx': 0.00010626038048268354, 'learning_rate_yyx': 0.003785845326151588}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:04:57,147] Trial 19 finished with value: -2.4312495233354747 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00016115558535895105, 'L_entropy_weight_yyx': 3.1276142761823176e-07, 'L_sep_weight_yyx': 2.766294846421767e-07, 'L_scale_weight_yyx': 2.859714777969926e-06, 'learning_rate_yyx': 0.006775621065082862}. Best is trial 19 with value: -2.4312495233354747.
+[I 2026-03-18 22:04:58,958] Trial 25 pruned. 
+[I 2026-03-18 22:05:04,449] Trial 31 finished with value: -2.760363606335645 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 2, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0008715624769040677, 'L_entropy_weight_yyx': 3.7974148135847696e-10, 'L_sep_weight_yyx': 1.5571938610197753e-09, 'L_scale_weight_yyx': 9.388136331885489e-10, 'learning_rate_yyx': 0.009414372492697637}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:05:09,362] Trial 22 finished with value: -2.411661374750258 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0006680566950709151, 'L_entropy_weight_yyx': 8.155020868791366e-06, 'L_sep_weight_yyx': 6.674170948884905e-06, 'L_scale_weight_yyx': 2.025191456947291e-05, 'learning_rate_yyx': 0.00956188917035086}. Best is trial 22 with value: -2.411661374750258.
+[I 2026-03-18 22:05:12,503] Trial 45 pruned. 
+[I 2026-03-18 22:05:13,178] Trial 20 pruned. 
+[I 2026-03-18 22:05:15,706] Trial 18 finished with value: -2.732095023627825 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.3273069672043947e-06, 'L_entropy_weight_yyx': 1.1431002463097332e-09, 'L_sep_weight_yyx': 4.126567501530877e-06, 'L_scale_weight_yyx': 2.2009331827580318e-08, 'learning_rate_yyx': 0.007358365083810109}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:05:17,395] Trial 23 pruned. 
+[I 2026-03-18 22:05:18,092] Trial 32 pruned. 
+[I 2026-03-18 22:05:20,559] Trial 23 pruned. 
+[I 2026-03-18 22:05:23,976] Trial 15 pruned. 
+[I 2026-03-18 22:05:26,091] Trial 24 pruned. 
+[I 2026-03-18 22:05:26,294] Trial 24 finished with value: -2.762977451047229 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 5.609469362995083e-10, 'L_entropy_weight_yyx': 1.2248402881241847e-05, 'L_sep_weight_yyx': 0.00014364160487271584, 'L_scale_weight_yyx': 1.9391883398925247e-06, 'learning_rate_yyx': 0.009881754085539351}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:05:26,460] Trial 19 pruned. 
+[I 2026-03-18 22:05:31,398] Trial 16 pruned. 
+[I 2026-03-18 22:05:31,778] Trial 33 pruned. 
+[I 2026-03-18 22:05:34,169] Trial 25 pruned. 
+[I 2026-03-18 22:05:37,221] Trial 20 pruned. 
+[I 2026-03-18 22:05:37,652] Trial 22 pruned. 
+[I 2026-03-18 22:05:38,701] Trial 24 pruned. 
+[I 2026-03-18 22:05:40,833] Trial 26 finished with value: -2.765893650054932 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.0857764759747803e-07, 'L_entropy_weight_yyx': 2.597707657405907e-10, 'L_sep_weight_yyx': 2.394584069532878e-07, 'L_scale_weight_yyx': 6.928747411893163e-07, 'learning_rate_yyx': 0.007474409135425704}. Best is trial 22 with value: -2.767345984776815.
+[I 2026-03-18 22:05:41,809] Trial 26 pruned. 
+[I 2026-03-18 22:05:45,386] Trial 34 pruned. 
+[I 2026-03-18 22:05:47,676] Trial 21 pruned. 
+[I 2026-03-18 22:05:48,757] Trial 22 finished with value: -2.387913775511225 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0009857032234998403, 'L_entropy_weight_yyx': 8.953585406284238e-08, 'L_sep_weight_yyx': 0.0008595131298775977, 'L_scale_weight_yyx': 2.1008838832284703e-05, 'learning_rate_yyx': 0.005596168842626652}. Best is trial 4 with value: -2.393031095621557.
+[I 2026-03-18 22:05:49,084] Trial 18 finished with value: -2.407855743722817 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 2, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.5982697290350302e-08, 'L_entropy_weight_yyx': 2.1887189817654266e-05, 'L_sep_weight_yyx': 2.353774063440334e-06, 'L_scale_weight_yyx': 7.095357079356647e-10, 'learning_rate_yyx': 0.009728752889017573}. Best is trial 10 with value: -2.4114769060587147.
+[I 2026-03-18 22:05:49,634] Trial 27 pruned. 
+[I 2026-03-18 22:05:53,837] Trial 25 pruned. 
+[I 2026-03-18 22:05:56,102] Trial 25 pruned. 
+[I 2026-03-18 22:05:56,821] Trial 46 pruned. 
+[I 2026-03-18 22:05:57,942] Trial 19 pruned. 
+[I 2026-03-18 22:05:58,145] Trial 35 pruned. 
+[I 2026-03-18 22:06:06,366] Trial 28 pruned. 
+[I 2026-03-18 22:06:10,953] Trial 36 pruned. 
+[I 2026-03-18 22:06:13,114] Trial 27 pruned. 
+[I 2026-03-18 22:06:13,298] Trial 22 pruned. 
+[I 2026-03-18 22:06:14,142] Trial 47 pruned. 
+[I 2026-03-18 22:06:16,517] Trial 20 pruned. 
+[I 2026-03-18 22:06:17,311] Trial 26 pruned. 
+[I 2026-03-18 22:06:24,178] Trial 29 pruned. 
+[I 2026-03-18 22:06:26,713] Trial 27 pruned. 
+[I 2026-03-18 22:06:28,758] Trial 28 pruned. 
+[I 2026-03-18 22:06:36,654] Trial 28 pruned. 
+[I 2026-03-18 22:06:45,556] Trial 32 finished with value: -2.7602533350653826 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 2, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0008931942277425684, 'L_entropy_weight_yyx': 3.783181242000545e-10, 'L_sep_weight_yyx': 1.1100829084027447e-09, 'L_scale_weight_yyx': 1.3468187101475315e-09, 'learning_rate_yyx': 0.009267073585758534}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:06:46,388] Trial 29 pruned. 
+[I 2026-03-18 22:06:52,306] Trial 19 finished with value: -2.3935050856678615 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 8.474916308821018e-08, 'L_entropy_weight_yyx': 7.846860063550251e-06, 'L_sep_weight_yyx': 1.358026050002933e-05, 'L_scale_weight_yyx': 0.0002317108514097011, 'learning_rate_yyx': 0.003795406703507034}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:06:58,067] Trial 26 finished with value: -2.5330370654424557 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.887412273965111e-08, 'L_entropy_weight_yyx': 1.9610844553366693e-08, 'L_sep_weight_yyx': 9.692700939482971e-10, 'L_scale_weight_yyx': 7.407949304221506e-08, 'learning_rate_yyx': 0.004663829337658037}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:07:00,857] Trial 20 pruned. 
+[I 2026-03-18 22:07:03,048] Trial 21 pruned. 
+[I 2026-03-18 22:07:03,296] Trial 29 pruned. 
+[I 2026-03-18 22:07:05,117] Trial 27 pruned. 
+[I 2026-03-18 22:07:08,815] Trial 21 pruned. 
+[I 2026-03-18 22:07:09,146] Trial 26 pruned. 
+[I 2026-03-18 22:07:09,740] Trial 30 pruned. 
+[I 2026-03-18 22:07:10,271] Trial 33 pruned. 
+[I 2026-03-18 22:07:16,675] Trial 30 pruned. 
+[I 2026-03-18 22:07:20,189] Trial 37 pruned. 
+[I 2026-03-18 22:07:20,837] Trial 22 pruned. 
+[I 2026-03-18 22:07:21,659] Trial 27 pruned. 
+[I 2026-03-18 22:07:30,958] Trial 31 pruned. 
+[I 2026-03-18 22:07:32,159] Trial 31 pruned. 
+[I 2026-03-18 22:07:35,759] Trial 28 pruned. 
+[I 2026-03-18 22:07:38,836] Trial 16 finished with value: -2.760574472121496 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.4059898973453353e-06, 'L_entropy_weight_yyx': 1.1227792351763711e-07, 'L_sep_weight_yyx': 2.641767870132979e-09, 'L_scale_weight_yyx': 8.326184444149442e-07, 'learning_rate_yyx': 0.0007486176563438921}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:07:40,476] Trial 21 finished with value: -2.4227099520986877 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0001632340946312332, 'L_entropy_weight_yyx': 1.70417881878472e-06, 'L_sep_weight_yyx': 3.3613720979018495e-09, 'L_scale_weight_yyx': 0.0009736872247926324, 'learning_rate_yyx': 0.006719882536824667}. Best is trial 19 with value: -2.4312495233354747.
+[I 2026-03-18 22:07:42,565] Trial 23 finished with value: -2.4292163799128685 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.1731548830824035e-05, 'L_entropy_weight_yyx': 3.701958443831907e-05, 'L_sep_weight_yyx': 4.162170596970468e-05, 'L_scale_weight_yyx': 1.0959566965758226e-09, 'learning_rate_yyx': 0.009680949286603154}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:07:43,445] Trial 23 finished with value: -2.386398890126585 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00020821397183096467, 'L_entropy_weight_yyx': 1.9256668099874252e-08, 'L_sep_weight_yyx': 0.00016410007482813713, 'L_scale_weight_yyx': 1.1523523583533732e-05, 'learning_rate_yyx': 0.007997883429145765}. Best is trial 4 with value: -2.393031095621557.
+[I 2026-03-18 22:07:48,712] Trial 29 pruned. 
+[I 2026-03-18 22:07:49,854] Trial 28 pruned. 
+[I 2026-03-18 22:07:57,409] Trial 17 finished with value: -2.394564459385016 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.99101954469368e-06, 'L_entropy_weight_yyx': 1.2268397164287076e-07, 'L_sep_weight_yyx': 0.00010818645868734505, 'L_scale_weight_yyx': 7.820888450549498e-06, 'learning_rate_yyx': 0.0027080833392985684}. Best is trial 17 with value: -2.394564459385016.
+[I 2026-03-18 22:08:02,510] Trial 30 pruned. 
+[I 2026-03-18 22:08:03,985] Trial 24 pruned. 
+[I 2026-03-18 22:08:07,036] Trial 23 finished with value: -2.762704361224311 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.53534480038057e-10, 'L_entropy_weight_yyx': 0.0004384620330891749, 'L_sep_weight_yyx': 6.940365372342998e-10, 'L_scale_weight_yyx': 6.7412244529933055e-06, 'learning_rate_yyx': 0.00839097593583157}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:08:07,303] Trial 29 pruned. 
+[I 2026-03-18 22:08:13,844] Trial 25 pruned. 
+[I 2026-03-18 22:08:13,960] Trial 34 pruned. 
+[I 2026-03-18 22:08:15,359] Trial 30 pruned. 
+[I 2026-03-18 22:08:15,462] Trial 31 pruned. 
+[I 2026-03-18 22:08:19,247] Trial 48 finished with value: -2.3961076261814953 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 2, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.56456020641853e-09, 'L_entropy_weight_yyx': 2.0589883591610793e-05, 'L_sep_weight_yyx': 1.6763540648505945e-06, 'L_scale_weight_yyx': 1.7557789281676973e-06, 'learning_rate_yyx': 0.006583778447084433}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:08:19,428] Trial 30 finished with value: -2.4084342687085107 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.8678338152299977e-08, 'L_entropy_weight_yyx': 1.9895529634104818e-05, 'L_sep_weight_yyx': 0.00040239849847344876, 'L_scale_weight_yyx': 1.9812605079103973e-09, 'learning_rate_yyx': 0.006201419706309376}. Best is trial 22 with value: -2.411661374750258.
+[I 2026-03-18 22:08:22,725] Trial 31 pruned. 
+[I 2026-03-18 22:08:23,905] Trial 35 pruned. 
+[I 2026-03-18 22:08:26,998] Trial 24 pruned. 
+[I 2026-03-18 22:08:27,457] Trial 32 pruned. 
+[I 2026-03-18 22:08:35,089] Trial 36 pruned. 
+[I 2026-03-18 22:08:43,506] Trial 25 pruned. 
+[I 2026-03-18 22:08:43,920] Trial 18 pruned. 
+[I 2026-03-18 22:08:52,126] Trial 38 finished with value: -2.726612222331408 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 2, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.045410177757001e-05, 'L_entropy_weight_yyx': 0.00014829126790818017, 'L_sep_weight_yyx': 2.6209550234906272e-05, 'L_scale_weight_yyx': 4.152630833231015e-09, 'learning_rate_yyx': 0.00860628258956399}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:08:52,276] Trial 22 finished with value: -2.3911726092386774 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.134500289137379e-06, 'L_entropy_weight_yyx': 0.0002226918589104303, 'L_sep_weight_yyx': 0.00010345829827772977, 'L_scale_weight_yyx': 3.2823279415318764e-05, 'learning_rate_yyx': 0.006747215029833839}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:08:56,168] Trial 32 finished with value: -2.7631274541219075 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.4175087108593746e-07, 'L_entropy_weight_yyx': 1.0833736660804093e-08, 'L_sep_weight_yyx': 2.782929905900075e-09, 'L_scale_weight_yyx': 5.482766678810004e-07, 'learning_rate_yyx': 0.006592531027148439}. Best is trial 22 with value: -2.767345984776815.
+[I 2026-03-18 22:09:06,642] Trial 49 pruned. 
+[I 2026-03-18 22:09:08,208] Trial 26 pruned. 
+[I 2026-03-18 22:09:08,221] Trial 33 pruned. 
+[I 2026-03-18 22:09:10,176] Trial 32 pruned. 
+[I 2026-03-18 22:09:10,363] Trial 23 pruned. 
+[I 2026-03-18 22:09:17,781] Trial 23 finished with value: -2.4089740713847054 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.315704253922809e-07, 'L_entropy_weight_yyx': 0.00020134452352069354, 'L_sep_weight_yyx': 8.608212336064789e-06, 'L_scale_weight_yyx': 4.6056530531876223e-10, 'learning_rate_yyx': 0.0033360422533025174}. Best is trial 10 with value: -2.4114769060587147.
+[I 2026-03-18 22:09:18,465] Trial 24 finished with value: -2.729345658597007 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.5806271832887823e-09, 'L_entropy_weight_yyx': 0.0008589286133964374, 'L_sep_weight_yyx': 1.1633456292517973e-10, 'L_scale_weight_yyx': 3.851581149945554e-10, 'learning_rate_yyx': 0.0050686049681867625}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:09:24,478] Trial 33 pruned. 
+[I 2026-03-18 22:09:26,692] Trial 33 pruned. 
+[I 2026-03-18 22:09:26,728] Trial 50 pruned. 
+[I 2026-03-18 22:09:29,094] Trial 26 pruned. 
+[I 2026-03-18 22:09:29,312] Trial 19 pruned. 
+[I 2026-03-18 22:09:30,942] Trial 27 pruned. 
+[I 2026-03-18 22:09:33,681] Trial 32 pruned. 
+[I 2026-03-18 22:09:35,273] Trial 24 pruned. 
+[I 2026-03-18 22:09:35,477] Trial 51 pruned. 
+[I 2026-03-18 22:09:37,470] Trial 22 finished with value: -2.4230125709377828 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 3.567922824437115e-07, 'L_entropy_weight_yyx': 1.3603310499919825e-07, 'L_sep_weight_yyx': 1.0233772974913896e-06, 'L_scale_weight_yyx': 6.347843854361475e-07, 'learning_rate_yyx': 0.008173390556418}. Best is trial 19 with value: -2.4312495233354747.
+[I 2026-03-18 22:09:43,080] Trial 34 pruned. 
+[I 2026-03-18 22:09:45,912] Trial 25 pruned. 
+[I 2026-03-18 22:09:46,625] Trial 27 pruned. 
+[I 2026-03-18 22:09:52,973] Trial 52 pruned. 
+[I 2026-03-18 22:09:54,053] Trial 37 finished with value: -2.7274015620430525 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 2, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 3.5974702546319384e-06, 'L_entropy_weight_yyx': 8.392812977165665e-09, 'L_sep_weight_yyx': 2.5118618133135825e-06, 'L_scale_weight_yyx': 3.1056842959619336e-10, 'learning_rate_yyx': 0.00996514658436203}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:09:57,443] Trial 31 finished with value: -2.4096588111163477 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 4.0162142969770435e-05, 'L_entropy_weight_yyx': 0.0002057093050472339, 'L_sep_weight_yyx': 2.741086853661889e-06, 'L_scale_weight_yyx': 1.3146309893898217e-06, 'learning_rate_yyx': 0.008219974986179747}. Best is trial 22 with value: -2.411661374750258.
+[I 2026-03-18 22:09:59,687] Trial 24 pruned. 
+[I 2026-03-18 22:10:01,428] Trial 39 pruned. 
+[I 2026-03-18 22:10:01,440] Trial 33 pruned. 
+[I 2026-03-18 22:10:04,294] Trial 28 pruned. 
+[I 2026-03-18 22:10:04,529] Trial 38 pruned. 
+[I 2026-03-18 22:10:12,247] Trial 29 pruned. 
+[I 2026-03-18 22:10:15,573] Trial 34 pruned. 
+[I 2026-03-18 22:10:15,810] Trial 20 finished with value: -2.35928227351262 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.383298464612494e-05, 'L_entropy_weight_yyx': 5.993393224278626e-06, 'L_sep_weight_yyx': 0.0007877261984164724, 'L_scale_weight_yyx': 4.820615772994975e-06, 'learning_rate_yyx': 0.004885042591700194}. Best is trial 17 with value: -2.394564459385016.
+[I 2026-03-18 22:10:15,938] Trial 39 pruned. 
+[I 2026-03-18 22:10:18,378] Trial 34 pruned. 
+[I 2026-03-18 22:10:19,353] Trial 25 pruned. 
+[I 2026-03-18 22:10:23,178] Trial 23 pruned. 
+[I 2026-03-18 22:10:26,055] Trial 40 pruned. 
+[I 2026-03-18 22:10:27,737] Trial 26 pruned. 
+[I 2026-03-18 22:10:27,740] Trial 28 pruned. 
+[I 2026-03-18 22:10:28,217] Trial 30 pruned. 
+[I 2026-03-18 22:10:28,933] Trial 35 pruned. 
+[I 2026-03-18 22:10:34,324] Trial 34 finished with value: -2.764094273249308 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 7.610869972266635e-07, 'L_entropy_weight_yyx': 2.6494999571797846e-08, 'L_sep_weight_yyx': 0.0005103881089572771, 'L_scale_weight_yyx': 4.118121794250189e-06, 'learning_rate_yyx': 0.008637699574892452}. Best is trial 22 with value: -2.767345984776815.
+[I 2026-03-18 22:10:37,669] Trial 53 pruned. 
+[I 2026-03-18 22:10:42,604] Trial 40 pruned. 
+[I 2026-03-18 22:10:45,424] Trial 27 pruned. 
+[I 2026-03-18 22:10:45,755] Trial 31 pruned. 
+[I 2026-03-18 22:10:48,272] Trial 25 finished with value: -2.4120091389134988 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 8.793462232013464e-07, 'L_entropy_weight_yyx': 2.474747300954741e-07, 'L_sep_weight_yyx': 0.00022828320360110223, 'L_scale_weight_yyx': 2.911393206498991e-10, 'learning_rate_yyx': 0.009748580323923242}. Best is trial 25 with value: -2.4120091389134988.
+[I 2026-03-18 22:10:51,317] Trial 41 pruned. 
+[I 2026-03-18 22:10:59,333] Trial 35 pruned. 
+[I 2026-03-18 22:11:02,625] Trial 21 pruned. 
+[I 2026-03-18 22:11:05,692] Trial 28 pruned. 
+[I 2026-03-18 22:11:08,119] Trial 26 pruned. 
+[I 2026-03-18 22:11:10,040] Trial 36 pruned. 
+[I 2026-03-18 22:11:12,609] Trial 35 pruned. 
+[I 2026-03-18 22:11:13,107] Trial 29 pruned. 
+[I 2026-03-18 22:11:15,854] Trial 42 pruned. 
+[I 2026-03-18 22:11:20,200] Trial 17 pruned. 
+[I 2026-03-18 22:11:20,908] Trial 54 pruned. 
+[I 2026-03-18 22:11:21,153] Trial 35 finished with value: -2.5411648948495134 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 5.331481342373464e-08, 'L_entropy_weight_yyx': 3.6759467171744187e-06, 'L_sep_weight_yyx': 2.557022974675127e-10, 'L_scale_weight_yyx': 3.691277883909958e-07, 'learning_rate_yyx': 0.008214801954095447}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:11:21,256] Trial 22 pruned. 
+[I 2026-03-18 22:11:29,150] Trial 26 finished with value: -2.7566545177338457 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 6, 'context_size_yyx': 2, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.507277064802836e-08, 'L_entropy_weight_yyx': 6.632003808395718e-07, 'L_sep_weight_yyx': 2.0340837347260666e-09, 'L_scale_weight_yyx': 1.6940850277824048e-06, 'learning_rate_yyx': 0.00643149190871353}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:11:30,626] Trial 30 pruned. 
+[I 2026-03-18 22:11:34,158] Trial 36 pruned. 
+[I 2026-03-18 22:11:35,166] Trial 37 pruned. 
+[I 2026-03-18 22:11:37,579] Trial 55 pruned. 
+[I 2026-03-18 22:11:46,346] Trial 38 pruned. 
+[I 2026-03-18 22:11:50,199] Trial 31 pruned. 
+[I 2026-03-18 22:11:53,645] Trial 36 pruned. 
+[I 2026-03-18 22:12:00,285] Trial 32 pruned. 
+[I 2026-03-18 22:12:01,087] Trial 32 finished with value: -2.420807459084574 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0006657484064059313, 'L_entropy_weight_yyx': 0.0001920467174291304, 'L_sep_weight_yyx': 7.071450300496416e-06, 'L_scale_weight_yyx': 9.536617288408877e-06, 'learning_rate_yyx': 0.009696802107368386}. Best is trial 32 with value: -2.420807459084574.
+[I 2026-03-18 22:12:08,672] Trial 37 pruned. 
+[I 2026-03-18 22:12:08,876] Trial 23 pruned. 
+[I 2026-03-18 22:12:12,749] Trial 39 pruned. 
+[I 2026-03-18 22:12:18,611] Trial 24 finished with value: -2.4319235459143473 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0001642703970573848, 'L_entropy_weight_yyx': 2.7993759061903945e-08, 'L_sep_weight_yyx': 2.9379302671447267e-05, 'L_scale_weight_yyx': 9.22408258666709e-07, 'learning_rate_yyx': 0.006267766773167837}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:12:23,605] Trial 56 pruned. 
+[I 2026-03-18 22:12:29,229] Trial 41 finished with value: -2.762175885368796 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.2220668947779574e-08, 'L_entropy_weight_yyx': 1.9345058183489535e-09, 'L_sep_weight_yyx': 2.134413713811809e-07, 'L_scale_weight_yyx': 5.444265419258843e-09, 'learning_rate_yyx': 0.006976573497318861}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:12:31,430] Trial 57 pruned. 
+[I 2026-03-18 22:12:38,598] Trial 58 pruned. 
+[I 2026-03-18 22:12:39,430] Trial 40 pruned. 
+[I 2026-03-18 22:12:39,665] Trial 42 pruned. 
+[I 2026-03-18 22:12:40,819] Trial 27 pruned. 
+[I 2026-03-18 22:12:45,868] Trial 33 pruned. 
+[I 2026-03-18 22:12:47,818] Trial 32 finished with value: -2.429333228647056 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 3.1533100096704327e-05, 'L_entropy_weight_yyx': 5.707943360502384e-05, 'L_sep_weight_yyx': 3.3784234140913316e-05, 'L_scale_weight_yyx': 7.823604844951961e-10, 'learning_rate_yyx': 0.009960489567550784}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:12:53,873] Trial 34 pruned. 
+[I 2026-03-18 22:12:55,092] Trial 59 pruned. 
+[I 2026-03-18 22:12:55,173] Trial 33 pruned. 
+[I 2026-03-18 22:12:58,937] Trial 37 finished with value: -2.3895696441016727 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 1, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 3.541514754072763e-05, 'L_entropy_weight_yyx': 2.5581021561581558e-06, 'L_sep_weight_yyx': 6.639677245199334e-09, 'L_scale_weight_yyx': 2.864671140096806e-07, 'learning_rate_yyx': 0.009458962266117971}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:12:59,861] Trial 27 finished with value: -2.4082925068963434 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 7.746582318416523e-07, 'L_entropy_weight_yyx': 9.722681239987216e-07, 'L_sep_weight_yyx': 0.0007634760859779423, 'L_scale_weight_yyx': 1.7448820665342787e-09, 'learning_rate_yyx': 0.009985245312280327}. Best is trial 25 with value: -2.4120091389134988.
+[I 2026-03-18 22:13:01,322] Trial 35 pruned. 
+[I 2026-03-18 22:13:05,036] Trial 25 pruned. 
+[I 2026-03-18 22:13:05,089] Trial 41 pruned. 
+[I 2026-03-18 22:13:05,858] Trial 43 pruned. 
+[I 2026-03-18 22:13:06,074] Trial 28 pruned. 
+[I 2026-03-18 22:13:08,239] Trial 28 pruned. 
+[I 2026-03-18 22:13:09,809] Trial 36 pruned. 
+[I 2026-03-18 22:13:12,749] Trial 60 pruned. 
+[I 2026-03-18 22:13:13,227] Trial 26 pruned. 
+[I 2026-03-18 22:13:14,080] Trial 29 finished with value: -2.3960325303152223 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 4.56503820953928e-05, 'L_entropy_weight_yyx': 1.3980720952163084e-09, 'L_sep_weight_yyx': 1.8225069179023877e-05, 'L_scale_weight_yyx': 1.1056055883723772e-07, 'learning_rate_yyx': 0.00840084441896404}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:13:16,481] Trial 29 pruned. 
+[I 2026-03-18 22:13:18,763] Trial 37 pruned. 
+[I 2026-03-18 22:13:21,348] Trial 27 pruned. 
+[I 2026-03-18 22:13:24,384] Trial 30 pruned. 
+[I 2026-03-18 22:13:27,351] Trial 38 pruned. 
+[I 2026-03-18 22:13:30,062] Trial 61 pruned. 
+[I 2026-03-18 22:13:31,485] Trial 29 pruned. 
+[I 2026-03-18 22:13:32,361] Trial 31 pruned. 
+[I 2026-03-18 22:13:51,085] Trial 32 pruned. 
+[I 2026-03-18 22:13:59,077] Trial 33 pruned. 
+[I 2026-03-18 22:14:06,588] Trial 43 finished with value: -2.765257325237063 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.959913234158461e-05, 'L_entropy_weight_yyx': 2.350337195853492e-05, 'L_sep_weight_yyx': 6.466319548149738e-08, 'L_scale_weight_yyx': 9.46287912459128e-09, 'learning_rate_yyx': 0.00978349431339157}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:14:07,354] Trial 38 finished with value: -2.729883740984794 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 3.246450075265209e-08, 'L_entropy_weight_yyx': 4.122408833217185e-06, 'L_sep_weight_yyx': 5.56705543598786e-10, 'L_scale_weight_yyx': 2.436352226756621e-07, 'learning_rate_yyx': 0.00526899125829296}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:14:07,580] Trial 24 finished with value: -2.3633543043870193 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.106235683912634e-06, 'L_entropy_weight_yyx': 9.112328658727455e-10, 'L_sep_weight_yyx': 1.551502512911612e-06, 'L_scale_weight_yyx': 2.1146672539495774e-05, 'learning_rate_yyx': 0.0013639574322304388}. Best is trial 17 with value: -2.394564459385016.
+[I 2026-03-18 22:14:11,010] Trial 34 finished with value: -2.402629504057039 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00040096064904272994, 'L_entropy_weight_yyx': 1.8214908145105158e-09, 'L_sep_weight_yyx': 9.821096183932797e-06, 'L_scale_weight_yyx': 3.591289415264229e-09, 'learning_rate_yyx': 0.00898479580264361}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:14:12,226] Trial 28 pruned. 
+[I 2026-03-18 22:14:14,610] Trial 62 pruned. 
+[I 2026-03-18 22:14:15,414] Trial 25 pruned. 
+[I 2026-03-18 22:14:17,471] Trial 44 pruned. 
+[I 2026-03-18 22:14:18,162] Trial 34 pruned. 
+[I 2026-03-18 22:14:19,310] Trial 35 pruned. 
+[I 2026-03-18 22:14:22,011] Trial 18 finished with value: -2.7303554490150344 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.2454439752533914e-10, 'L_entropy_weight_yyx': 8.046492520274282e-06, 'L_sep_weight_yyx': 5.285849052598945e-09, 'L_scale_weight_yyx': 0.00023862279305246261, 'learning_rate_yyx': 0.0012606040429872466}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:14:22,492] Trial 39 pruned. 
+[I 2026-03-18 22:14:26,458] Trial 35 pruned. 
+[I 2026-03-18 22:14:27,547] Trial 36 pruned. 
+[I 2026-03-18 22:14:30,177] Trial 45 pruned. 
+[I 2026-03-18 22:14:31,868] Trial 63 pruned. 
+[I 2026-03-18 22:14:35,656] Trial 37 pruned. 
+[I 2026-03-18 22:14:36,704] Trial 40 pruned. 
+[I 2026-03-18 22:14:38,486] Trial 30 pruned. 
+[I 2026-03-18 22:14:42,459] Trial 42 finished with value: -2.765803035100301 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 9.550722750655734e-07, 'L_entropy_weight_yyx': 2.5261058417829884e-08, 'L_sep_weight_yyx': 0.0008321769580698285, 'L_scale_weight_yyx': 4.261956429574316e-07, 'learning_rate_yyx': 0.008744081666776576}. Best is trial 22 with value: -2.767345984776815.
+[I 2026-03-18 22:14:49,004] Trial 19 pruned. 
+[I 2026-03-18 22:14:50,031] Trial 33 finished with value: -2.398423529417661 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 3.437783878094552e-10, 'L_entropy_weight_yyx': 1.4201461785512062e-06, 'L_sep_weight_yyx': 0.00013772014319438439, 'L_scale_weight_yyx': 4.2879411773728205e-06, 'learning_rate_yyx': 0.002710584925309028}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:14:50,529] Trial 64 pruned. 
+[I 2026-03-18 22:14:53,696] Trial 38 pruned. 
+[I 2026-03-18 22:14:59,211] Trial 34 pruned. 
+[I 2026-03-18 22:15:01,921] Trial 26 pruned. 
+[I 2026-03-18 22:15:01,978] Trial 39 pruned. 
+[I 2026-03-18 22:15:03,091] Trial 29 pruned. 
+[I 2026-03-18 22:15:09,451] Trial 41 pruned. 
+[I 2026-03-18 22:15:10,200] Trial 38 pruned. 
+[I 2026-03-18 22:15:10,248] Trial 40 pruned. 
+[I 2026-03-18 22:15:10,780] Trial 36 finished with value: -2.550738342268356 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.036144083277164e-08, 'L_entropy_weight_yyx': 3.254348206733426e-05, 'L_sep_weight_yyx': 2.3259658259232822e-10, 'L_scale_weight_yyx': 1.2588198668845604e-07, 'learning_rate_yyx': 0.004857393251827755}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:15:11,330] Trial 30 pruned. 
+[I 2026-03-18 22:15:18,405] Trial 20 pruned. 
+[I 2026-03-18 22:15:19,097] Trial 27 pruned. 
+[I 2026-03-18 22:15:19,152] Trial 41 pruned. 
+[I 2026-03-18 22:15:21,797] Trial 36 pruned. 
+[I 2026-03-18 22:15:31,205] Trial 21 pruned. 
+[I 2026-03-18 22:15:39,050] Trial 28 pruned. 
+[I 2026-03-18 22:15:39,977] Trial 46 pruned. 
+[I 2026-03-18 22:15:41,822] Trial 39 pruned. 
+[I 2026-03-18 22:15:43,482] Trial 37 pruned. 
+[I 2026-03-18 22:15:43,943] Trial 30 pruned. 
+[I 2026-03-18 22:15:45,977] Trial 35 pruned. 
+[I 2026-03-18 22:15:48,030] Trial 31 pruned. 
+[I 2026-03-18 22:15:49,980] Trial 40 pruned. 
+[I 2026-03-18 22:15:52,515] Trial 31 pruned. 
+[I 2026-03-18 22:15:53,123] Trial 38 pruned. 
+[I 2026-03-18 22:15:54,446] Trial 36 pruned. 
+[I 2026-03-18 22:16:03,440] Trial 39 pruned. 
+[I 2026-03-18 22:16:09,885] Trial 42 pruned. 
+[I 2026-03-18 22:16:10,576] Trial 43 finished with value: -2.7644059816996256 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 4.581802337001512e-06, 'L_entropy_weight_yyx': 7.231547050163622e-08, 'L_sep_weight_yyx': 0.0004412665078703464, 'L_scale_weight_yyx': 4.7187636077626503e-07, 'learning_rate_yyx': 0.008533297583320398}. Best is trial 22 with value: -2.767345984776815.
+[I 2026-03-18 22:16:25,556] Trial 40 pruned. 
+[I 2026-03-18 22:16:28,492] Trial 43 pruned. 
+[I 2026-03-18 22:16:30,655] Trial 29 pruned. 
+[I 2026-03-18 22:16:35,756] Trial 41 pruned. 
+[I 2026-03-18 22:16:39,319] Trial 41 pruned. 
+[I 2026-03-18 22:16:39,331] Trial 30 pruned. 
+[I 2026-03-18 22:16:41,877] Trial 37 finished with value: -2.365909551944003 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.3724771590285775e-08, 'L_entropy_weight_yyx': 7.959352604552902e-08, 'L_sep_weight_yyx': 0.0004089466157746208, 'L_scale_weight_yyx': 1.3798095075138674e-05, 'learning_rate_yyx': 0.007976643288900711}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:16:45,148] Trial 42 pruned. 
+[I 2026-03-18 22:16:46,071] Trial 44 pruned. 
+[I 2026-03-18 22:16:47,587] Trial 31 pruned. 
+[I 2026-03-18 22:16:53,014] Trial 31 finished with value: -2.4215287710919315 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0004890968640817366, 'L_entropy_weight_yyx': 1.1500674403320291e-06, 'L_sep_weight_yyx': 3.480171254876213e-08, 'L_scale_weight_yyx': 8.639027418166478e-06, 'learning_rate_yyx': 0.005701699139246873}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:16:54,854] Trial 42 finished with value: -2.7632047231385535 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 7.930892543507328e-09, 'L_entropy_weight_yyx': 3.3917654696691326e-06, 'L_sep_weight_yyx': 3.865697220607566e-06, 'L_scale_weight_yyx': 2.174589798786443e-09, 'learning_rate_yyx': 0.00727954288361492}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:16:54,964] Trial 43 pruned. 
+[I 2026-03-18 22:16:55,529] Trial 32 pruned. 
+[I 2026-03-18 22:16:56,919] Trial 32 pruned. 
+[I 2026-03-18 22:17:01,380] Trial 65 pruned. 
+[I 2026-03-18 22:17:01,719] Trial 39 finished with value: -2.395087982623646 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 4.6319402662461454e-07, 'L_entropy_weight_yyx': 4.003638998928863e-05, 'L_sep_weight_yyx': 1.0148409923672311e-05, 'L_scale_weight_yyx': 1.411330961384075e-06, 'learning_rate_yyx': 0.0065759404880258365}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:17:02,753] Trial 44 finished with value: -2.76513111802659 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.333384840152725e-05, 'L_entropy_weight_yyx': 2.642403511673206e-05, 'L_sep_weight_yyx': 6.504818597357637e-08, 'L_scale_weight_yyx': 1.0209248139506518e-07, 'learning_rate_yyx': 0.00940289738556605}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:17:05,394] Trial 22 finished with value: -2.7657637336263443 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.903619289219994e-10, 'L_entropy_weight_yyx': 4.724290363822528e-06, 'L_sep_weight_yyx': 7.953848780669682e-05, 'L_scale_weight_yyx': 5.694890834034214e-06, 'learning_rate_yyx': 0.007595061312844012}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:17:06,459] Trial 33 pruned. 
+[I 2026-03-18 22:17:08,481] Trial 37 finished with value: -2.5472354190657365 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 5.5450622072670626e-08, 'L_entropy_weight_yyx': 4.004551657062445e-05, 'L_sep_weight_yyx': 2.5387218911674177e-10, 'L_scale_weight_yyx': 1.578114161600439e-07, 'learning_rate_yyx': 0.005558153697248181}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:17:09,301] Trial 66 pruned. 
+[I 2026-03-18 22:17:15,466] Trial 34 pruned. 
+[I 2026-03-18 22:17:16,245] Trial 38 pruned. 
+[I 2026-03-18 22:17:17,668] Trial 44 finished with value: -2.767513561248779 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 9.470330399238711e-07, 'L_entropy_weight_yyx': 7.928896746363139e-09, 'L_sep_weight_yyx': 0.00015572097059166493, 'L_scale_weight_yyx': 1.662900204608337e-07, 'learning_rate_yyx': 0.008350360367241324}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:17:17,923] Trial 44 pruned. 
+[I 2026-03-18 22:17:19,644] Trial 40 pruned. 
+[I 2026-03-18 22:17:22,154] Trial 33 pruned. 
+[I 2026-03-18 22:17:26,871] Trial 67 pruned. 
+[I 2026-03-18 22:17:28,703] Trial 41 pruned. 
+[I 2026-03-18 22:17:29,318] Trial 38 pruned. 
+[I 2026-03-18 22:17:29,915] Trial 47 finished with value: -2.7623324552321815 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00031278361676712984, 'L_entropy_weight_yyx': 1.0237713746795867e-09, 'L_sep_weight_yyx': 1.7184516705553848e-06, 'L_scale_weight_yyx': 2.3557592802937077e-09, 'learning_rate_yyx': 0.009116827617871906}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:17:38,410] Trial 39 pruned. 
+[I 2026-03-18 22:17:40,118] Trial 32 pruned. 
+[I 2026-03-18 22:17:40,191] Trial 45 pruned. 
+[I 2026-03-18 22:17:44,068] Trial 48 pruned. 
+[I 2026-03-18 22:17:47,440] Trial 40 pruned. 
+[I 2026-03-18 22:17:47,575] Trial 32 finished with value: -2.3918022294549064 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0003778109785417255, 'L_entropy_weight_yyx': 1.2827020310954585e-09, 'L_sep_weight_yyx': 0.000221667888858129, 'L_scale_weight_yyx': 1.567362520726725e-07, 'learning_rate_yyx': 0.009975599949764883}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:17:49,882] Trial 34 pruned. 
+[I 2026-03-18 22:17:58,052] Trial 49 pruned. 
+[I 2026-03-18 22:17:59,659] Trial 33 pruned. 
+[I 2026-03-18 22:18:01,859] Trial 39 pruned. 
+[I 2026-03-18 22:18:02,068] Trial 46 pruned. 
+[I 2026-03-18 22:18:02,801] Trial 35 pruned. 
+[I 2026-03-18 22:18:03,084] Trial 35 pruned. 
+[I 2026-03-18 22:18:10,181] Trial 40 pruned. 
+[I 2026-03-18 22:18:12,092] Trial 47 pruned. 
+[I 2026-03-18 22:18:18,638] Trial 41 pruned. 
+[I 2026-03-18 22:18:19,705] Trial 43 pruned. 
+[I 2026-03-18 22:18:22,024] Trial 48 pruned. 
+[I 2026-03-18 22:18:26,425] Trial 42 pruned. 
+[I 2026-03-18 22:18:29,491] Trial 50 pruned. 
+[I 2026-03-18 22:18:31,300] Trial 45 finished with value: -2.7668162027994794 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.16631122816422e-06, 'L_entropy_weight_yyx': 8.129495092727164e-09, 'L_sep_weight_yyx': 0.00015776897549636294, 'L_scale_weight_yyx': 1.8433571366136217e-07, 'learning_rate_yyx': 0.008526567904090425}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:18:31,641] Trial 45 finished with value: -2.4301297581313985 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.278518094967749e-05, 'L_entropy_weight_yyx': 0.00011785675472366015, 'L_sep_weight_yyx': 1.040280780896854e-05, 'L_scale_weight_yyx': 1.0722944005475138e-10, 'learning_rate_yyx': 0.007969781972470433}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:18:36,929] Trial 33 pruned. 
+[I 2026-03-18 22:18:42,163] Trial 49 pruned. 
+[I 2026-03-18 22:18:43,045] Trial 51 pruned. 
+[I 2026-03-18 22:18:43,190] Trial 42 finished with value: -2.411442157994167 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0009784866848686733, 'L_entropy_weight_yyx': 0.00027998948672428546, 'L_sep_weight_yyx': 7.66800092627887e-06, 'L_scale_weight_yyx': 2.374003061847885e-06, 'learning_rate_yyx': 0.009908617938263222}. Best is trial 32 with value: -2.420807459084574.
+[I 2026-03-18 22:18:46,852] Trial 34 pruned. 
+[I 2026-03-18 22:18:51,103] Trial 46 pruned. 
+[I 2026-03-18 22:18:51,353] Trial 23 finished with value: -2.7647729905985168 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.199814314522627e-10, 'L_entropy_weight_yyx': 2.653367358254719e-06, 'L_sep_weight_yyx': 0.00010714195516375356, 'L_scale_weight_yyx': 2.501116175986577e-06, 'learning_rate_yyx': 0.005558398761190055}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:18:52,780] Trial 50 pruned. 
+[I 2026-03-18 22:18:55,154] Trial 35 pruned. 
+[I 2026-03-18 22:18:55,548] Trial 42 finished with value: -2.3898413217364136 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.1389999294703308e-06, 'L_entropy_weight_yyx': 1.2427833181979255e-05, 'L_sep_weight_yyx': 3.447838159159436e-07, 'L_scale_weight_yyx': 1.0895679721020088e-06, 'learning_rate_yyx': 0.0070045856000947645}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:19:02,790] Trial 43 pruned. 
+[I 2026-03-18 22:19:11,983] Trial 43 pruned. 
+[I 2026-03-18 22:19:14,045] Trial 51 pruned. 
+[I 2026-03-18 22:19:14,411] Trial 41 finished with value: -2.361455254166867 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 2, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.3657208323943302e-07, 'L_entropy_weight_yyx': 0.00038476316165120353, 'L_sep_weight_yyx': 0.00011925472085325031, 'L_scale_weight_yyx': 0.00047502570651910625, 'learning_rate_yyx': 0.0048323941082114305}. Best is trial 13 with value: -2.4034606761310786.
+[I 2026-03-18 22:19:14,471] Trial 45 finished with value: -2.761332045506387 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.224108496182221e-05, 'L_entropy_weight_yyx': 0.00030660672392309753, 'L_sep_weight_yyx': 6.497421821776874e-08, 'L_scale_weight_yyx': 8.361364896791542e-08, 'learning_rate_yyx': 0.00995119472682808}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:19:18,061] Trial 24 pruned. 
+[I 2026-03-18 22:19:25,373] Trial 36 finished with value: -2.366979010166266 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 6.012505069863005e-05, 'L_entropy_weight_yyx': 3.17191323662407e-09, 'L_sep_weight_yyx': 3.5718865081195725e-09, 'L_scale_weight_yyx': 1.1223653104543894e-07, 'learning_rate_yyx': 0.006569431314889951}. Best is trial 17 with value: -2.394564459385016.
+[I 2026-03-18 22:19:25,816] Trial 42 pruned. 
+[I 2026-03-18 22:19:42,630] Trial 46 finished with value: -2.7661441961924234 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.6703613950220832e-06, 'L_entropy_weight_yyx': 5.796386653259872e-09, 'L_sep_weight_yyx': 0.000882146300908229, 'L_scale_weight_yyx': 1.4655019131175903e-07, 'learning_rate_yyx': 0.00841877697436255}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:19:49,101] Trial 34 finished with value: -2.362825401984451 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00012061703300971008, 'L_entropy_weight_yyx': 1.3618309684759666e-10, 'L_sep_weight_yyx': 0.00017669969078656442, 'L_scale_weight_yyx': 9.912257002482618e-09, 'learning_rate_yyx': 0.009890852082393466}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:19:50,057] Trial 68 finished with value: -2.3929939093866244 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.86959257956446e-05, 'L_entropy_weight_yyx': 3.9953512966520426e-09, 'L_sep_weight_yyx': 3.136320996360887e-06, 'L_scale_weight_yyx': 6.11930747637427e-07, 'learning_rate_yyx': 0.0054778313150421944}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:19:50,069] Trial 43 pruned. 
+[I 2026-03-18 22:19:52,052] Trial 36 finished with value: -2.758224781507499 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 2, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 9.584590425520174e-09, 'L_entropy_weight_yyx': 3.151049052699507e-07, 'L_sep_weight_yyx': 2.2931645595646483e-05, 'L_scale_weight_yyx': 1.0961647323646046e-09, 'learning_rate_yyx': 0.005888676925760959}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:19:52,552] Trial 44 finished with value: -2.762785744375163 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 3.3674616449866054e-10, 'L_entropy_weight_yyx': 0.00013855097387647933, 'L_sep_weight_yyx': 2.2468929299861258e-05, 'L_scale_weight_yyx': 3.3234596881233366e-09, 'learning_rate_yyx': 0.008722495030553857}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:20:05,732] Trial 45 pruned. 
+[I 2026-03-18 22:20:06,692] Trial 47 finished with value: -2.424401766319852 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.423489812380511e-05, 'L_entropy_weight_yyx': 0.0006110953005341767, 'L_sep_weight_yyx': 1.5060658175480664e-05, 'L_scale_weight_yyx': 1.024316402817678e-10, 'learning_rate_yyx': 0.00499166748443589}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:20:08,068] Trial 69 pruned. 
+[I 2026-03-18 22:20:10,963] Trial 44 pruned. 
+[I 2026-03-18 22:20:11,768] Trial 36 finished with value: -2.3917442146184866 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 8.418932122235647e-10, 'L_entropy_weight_yyx': 9.748409009517222e-08, 'L_sep_weight_yyx': 2.1913776643141415e-05, 'L_scale_weight_yyx': 2.3626174012745343e-06, 'learning_rate_yyx': 0.006814965787744332}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:20:17,641] Trial 37 pruned. 
+[I 2026-03-18 22:20:24,272] Trial 43 finished with value: -2.389304209232208 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.6561469535481987e-06, 'L_entropy_weight_yyx': 1.0950746880389904e-06, 'L_sep_weight_yyx': 8.341294792035657e-06, 'L_scale_weight_yyx': 3.858257418062529e-06, 'learning_rate_yyx': 0.005526646690604772}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:20:26,167] Trial 48 pruned. 
+[I 2026-03-18 22:20:29,243] Trial 38 pruned. 
+[I 2026-03-18 22:20:32,895] Trial 25 pruned. 
+[I 2026-03-18 22:20:34,153] Trial 49 pruned. 
+[I 2026-03-18 22:20:40,793] Trial 39 pruned. 
+[I 2026-03-18 22:20:42,620] Trial 50 pruned. 
+[I 2026-03-18 22:20:51,985] Trial 40 pruned. 
+[I 2026-03-18 22:20:53,167] Trial 47 finished with value: -2.7672316392262775 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.1609724023984026e-06, 'L_entropy_weight_yyx': 1.8811049373141577e-10, 'L_sep_weight_yyx': 7.677156752084054e-05, 'L_scale_weight_yyx': 2.0110739509624852e-07, 'learning_rate_yyx': 0.006807700790621402}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:20:55,108] Trial 52 finished with value: -2.762171307732077 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0004072257876989967, 'L_entropy_weight_yyx': 1.8485403198507897e-09, 'L_sep_weight_yyx': 4.0708142549475335e-09, 'L_scale_weight_yyx': 2.4651092503921148e-09, 'learning_rate_yyx': 0.009134632995140566}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:21:00,191] Trial 37 pruned. 
+[I 2026-03-18 22:21:01,512] Trial 26 pruned. 
+[I 2026-03-18 22:21:04,780] Trial 48 pruned. 
+[I 2026-03-18 22:21:06,285] Trial 44 finished with value: -2.412614586857921 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00044988115509178383, 'L_entropy_weight_yyx': 0.00032903194247677363, 'L_sep_weight_yyx': 7.037707059797633e-06, 'L_scale_weight_yyx': 2.4923377704097387e-05, 'learning_rate_yyx': 0.008272342470686209}. Best is trial 32 with value: -2.420807459084574.
+[I 2026-03-18 22:21:09,109] Trial 45 pruned. 
+[I 2026-03-18 22:21:09,478] Trial 44 finished with value: -2.5477835720575714 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 9.321179920955972e-08, 'L_entropy_weight_yyx': 8.945548815448573e-06, 'L_sep_weight_yyx': 3.012008448729859e-10, 'L_scale_weight_yyx': 3.1251900172115057e-06, 'learning_rate_yyx': 0.006136424020049732}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:21:12,721] Trial 44 pruned. 
+[I 2026-03-18 22:21:18,600] Trial 41 pruned. 
+[I 2026-03-18 22:21:21,917] Trial 45 pruned. 
+[I 2026-03-18 22:21:22,804] Trial 52 finished with value: -2.4083147343901015 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 9.106468904300069e-07, 'L_entropy_weight_yyx': 1.274211981860223e-06, 'L_sep_weight_yyx': 0.0006087832699264169, 'L_scale_weight_yyx': 1.5803299774529523e-09, 'learning_rate_yyx': 0.009874091039043163}. Best is trial 25 with value: -2.4120091389134988.
+[I 2026-03-18 22:21:25,355] Trial 45 pruned. 
+[I 2026-03-18 22:21:26,874] Trial 53 pruned. 
+[I 2026-03-18 22:21:27,008] Trial 45 pruned. 
+[I 2026-03-18 22:21:28,349] Trial 35 finished with value: -2.3633004534772932 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 5.89482437580127e-07, 'L_entropy_weight_yyx': 5.163126632475813e-10, 'L_sep_weight_yyx': 3.661303042420028e-05, 'L_scale_weight_yyx': 1.9171979704647607e-07, 'learning_rate_yyx': 0.006885859659056902}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:21:29,830] Trial 46 pruned. 
+[I 2026-03-18 22:21:30,699] Trial 51 pruned. 
+[I 2026-03-18 22:21:31,039] Trial 42 pruned. 
+[I 2026-03-18 22:21:32,841] Trial 27 pruned. 
+[I 2026-03-18 22:21:35,103] Trial 70 finished with value: -2.397656632056904 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.336209808845811e-05, 'L_entropy_weight_yyx': 2.722550666387214e-09, 'L_sep_weight_yyx': 4.1254171721210556e-05, 'L_scale_weight_yyx': 6.524337380984673e-07, 'learning_rate_yyx': 0.0061201770942160855}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:21:35,767] Trial 46 pruned. 
+[I 2026-03-18 22:21:36,538] Trial 36 pruned. 
+[I 2026-03-18 22:21:37,825] Trial 46 finished with value: -2.764696324421236 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 4.694494725313068e-09, 'L_entropy_weight_yyx': 1.6566058563052907e-07, 'L_sep_weight_yyx': 7.772612108659706e-05, 'L_scale_weight_yyx': 4.6399101741903437e-10, 'learning_rate_yyx': 0.00980598422240601}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:21:41,392] Trial 46 pruned. 
+[I 2026-03-18 22:21:41,901] Trial 54 pruned. 
+[I 2026-03-18 22:21:43,063] Trial 46 pruned. 
+[I 2026-03-18 22:21:44,152] Trial 47 pruned. 
+[I 2026-03-18 22:21:45,048] Trial 37 pruned. 
+[I 2026-03-18 22:21:46,832] Trial 28 pruned. 
+[I 2026-03-18 22:21:47,706] Trial 38 pruned. 
+[I 2026-03-18 22:21:50,182] Trial 47 pruned. 
+[I 2026-03-18 22:21:52,058] Trial 48 pruned. 
+[I 2026-03-18 22:21:53,221] Trial 38 pruned. 
+[I 2026-03-18 22:21:55,236] Trial 37 pruned. 
+[I 2026-03-18 22:22:00,387] Trial 47 pruned. 
+[I 2026-03-18 22:22:00,465] Trial 47 pruned. 
+[I 2026-03-18 22:22:02,032] Trial 46 finished with value: -2.765928298266016 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.603680839698349e-10, 'L_entropy_weight_yyx': 2.6922196834335124e-05, 'L_sep_weight_yyx': 2.8388691662985457e-08, 'L_scale_weight_yyx': 6.263597463946252e-09, 'learning_rate_yyx': 0.008176154757512594}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:22:02,989] Trial 29 pruned. 
+[I 2026-03-18 22:22:03,034] Trial 48 pruned. 
+[I 2026-03-18 22:22:06,117] Trial 39 pruned. 
+[I 2026-03-18 22:22:08,821] Trial 48 pruned. 
+[I 2026-03-18 22:22:09,768] Trial 48 pruned. 
+[I 2026-03-18 22:22:12,847] Trial 39 pruned. 
+[I 2026-03-18 22:22:13,869] Trial 49 pruned. 
+[I 2026-03-18 22:22:16,416] Trial 49 pruned. 
+[I 2026-03-18 22:22:16,992] Trial 52 pruned. 
+[I 2026-03-18 22:22:17,393] Trial 49 pruned. 
+[I 2026-03-18 22:22:34,701] Trial 50 pruned. 
+[I 2026-03-18 22:22:39,304] Trial 30 pruned. 
+[I 2026-03-18 22:22:39,908] Trial 50 pruned. 
+[I 2026-03-18 22:22:42,235] Trial 51 pruned. 
+[I 2026-03-18 22:22:46,796] Trial 38 pruned. 
+[I 2026-03-18 22:22:59,558] Trial 49 pruned. 
+[I 2026-03-18 22:23:01,564] Trial 40 pruned. 
+[I 2026-03-18 22:23:01,953] Trial 52 pruned. 
+[I 2026-03-18 22:23:06,272] Trial 51 pruned. 
+[I 2026-03-18 22:23:10,954] Trial 41 pruned. 
+[I 2026-03-18 22:23:11,042] Trial 53 pruned. 
+[I 2026-03-18 22:23:13,082] Trial 55 pruned. 
+[I 2026-03-18 22:23:13,093] Trial 31 pruned. 
+[I 2026-03-18 22:23:18,771] Trial 40 finished with value: -2.4211540212303224 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 7.112427563769674e-05, 'L_entropy_weight_yyx': 9.158951860424881e-09, 'L_sep_weight_yyx': 6.178057316127616e-06, 'L_scale_weight_yyx': 2.03288713047904e-08, 'learning_rate_yyx': 0.008707156281966458}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:23:20,238] Trial 42 pruned. 
+[I 2026-03-18 22:23:20,658] Trial 54 pruned. 
+[I 2026-03-18 22:23:21,202] Trial 71 finished with value: -2.3973418265627005 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.845963172435367e-05, 'L_entropy_weight_yyx': 6.18023724857199e-08, 'L_sep_weight_yyx': 3.64034035316338e-05, 'L_scale_weight_yyx': 6.870314573723383e-07, 'learning_rate_yyx': 0.0037697127659746398}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:23:22,277] Trial 53 finished with value: -2.4078493098622746 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 3.20134501515109e-07, 'L_entropy_weight_yyx': 3.4071857714164716e-06, 'L_sep_weight_yyx': 0.0004318112083997923, 'L_scale_weight_yyx': 1.8076249601346192e-10, 'learning_rate_yyx': 0.008720525519273572}. Best is trial 25 with value: -2.4120091389134988.
+[I 2026-03-18 22:23:28,120] Trial 56 pruned. 
+[I 2026-03-18 22:23:30,012] Trial 72 pruned. 
+[I 2026-03-18 22:23:37,386] Trial 41 pruned. 
+[I 2026-03-18 22:23:38,341] Trial 43 pruned. 
+[I 2026-03-18 22:23:42,041] Trial 55 pruned. 
+[I 2026-03-18 22:23:42,177] Trial 49 finished with value: -2.5392533797650767 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.8519255298590612e-06, 'L_entropy_weight_yyx': 2.072111431709918e-09, 'L_sep_weight_yyx': 3.598863523888082e-05, 'L_scale_weight_yyx': 2.707228920590315e-06, 'learning_rate_yyx': 0.00352994874723545}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:23:42,775] Trial 54 pruned. 
+[I 2026-03-18 22:23:44,286] Trial 57 pruned. 
+[I 2026-03-18 22:23:50,511] Trial 50 pruned. 
+[I 2026-03-18 22:23:58,448] Trial 51 pruned. 
+[I 2026-03-18 22:24:01,264] Trial 39 finished with value: -2.3880865911688525 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 6.868782584320528e-08, 'L_entropy_weight_yyx': 8.516094861280415e-10, 'L_sep_weight_yyx': 6.293783515691007e-10, 'L_scale_weight_yyx': 1.0915973630861706e-07, 'learning_rate_yyx': 0.00880472523982237}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:24:01,356] Trial 55 pruned. 
+[I 2026-03-18 22:24:01,846] Trial 47 pruned. 
+[I 2026-03-18 22:24:05,632] Trial 52 pruned. 
+[I 2026-03-18 22:24:07,903] Trial 47 finished with value: -2.766333777911969 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.4171589205318937e-10, 'L_entropy_weight_yyx': 2.3985750300997003e-05, 'L_sep_weight_yyx': 1.062242034612082e-09, 'L_scale_weight_yyx': 4.074887154560912e-09, 'learning_rate_yyx': 0.008469717380696015}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:24:09,857] Trial 56 pruned. 
+[I 2026-03-18 22:24:17,291] Trial 52 finished with value: -2.766386397679647 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.290849964984405e-07, 'L_entropy_weight_yyx': 2.2830810608336367e-10, 'L_sep_weight_yyx': 0.0002038363089130451, 'L_scale_weight_yyx': 1.027879793544497e-06, 'learning_rate_yyx': 0.007880405340521217}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:24:17,561] Trial 73 pruned. 
+[I 2026-03-18 22:24:26,015] Trial 42 pruned. 
+[I 2026-03-18 22:24:26,336] Trial 74 pruned. 
+[I 2026-03-18 22:24:27,812] Trial 57 pruned. 
+[I 2026-03-18 22:24:31,532] Trial 50 finished with value: -2.7654384763081206 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 8.748961055202735e-10, 'L_entropy_weight_yyx': 6.486529267688793e-09, 'L_sep_weight_yyx': 5.081008986805927e-05, 'L_scale_weight_yyx': 0.0005058907899439168, 'learning_rate_yyx': 0.008875483496231653}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:24:35,394] Trial 53 finished with value: -2.432399727866621 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.7430816043472235e-06, 'L_entropy_weight_yyx': 2.5760942276401194e-05, 'L_sep_weight_yyx': 6.11730762135128e-06, 'L_scale_weight_yyx': 4.1271117732746964e-09, 'learning_rate_yyx': 0.007132680574045781}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:24:37,797] Trial 48 pruned. 
+[I 2026-03-18 22:24:44,290] Trial 51 pruned. 
+[I 2026-03-18 22:24:45,282] Trial 50 finished with value: -2.399918803371732 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00010539767119916967, 'L_entropy_weight_yyx': 3.308140003291803e-08, 'L_sep_weight_yyx': 0.0004387848257302382, 'L_scale_weight_yyx': 1.4205096309536347e-09, 'learning_rate_yyx': 0.005705532967608539}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:24:55,273] Trial 32 finished with value: -2.7653399570669004 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.386796225838263e-06, 'L_entropy_weight_yyx': 5.999238907232247e-06, 'L_sep_weight_yyx': 6.818902814596477e-05, 'L_scale_weight_yyx': 8.886578413386234e-06, 'learning_rate_yyx': 0.009523281586409122}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:25:02,565] Trial 48 pruned. 
+[I 2026-03-18 22:25:05,065] Trial 49 pruned. 
+[I 2026-03-18 22:25:05,638] Trial 51 pruned. 
+[I 2026-03-18 22:25:12,659] Trial 49 pruned. 
+[I 2026-03-18 22:25:15,809] Trial 75 pruned. 
+[I 2026-03-18 22:25:16,234] Trial 58 pruned. 
+[I 2026-03-18 22:25:17,762] Trial 40 finished with value: -2.388861345139156 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.3188413376715653e-06, 'L_entropy_weight_yyx': 2.873743067694947e-09, 'L_sep_weight_yyx': 6.153977069838807e-06, 'L_scale_weight_yyx': 1.8961113761091727e-09, 'learning_rate_yyx': 0.009769403512148061}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:25:18,722] Trial 53 finished with value: -2.536664419386822 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 9.239508287810165e-08, 'L_entropy_weight_yyx': 1.827450394869794e-05, 'L_sep_weight_yyx': 4.0695258059870794e-10, 'L_scale_weight_yyx': 5.490809596008265e-07, 'learning_rate_yyx': 0.008602176647534333}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:25:21,420] Trial 54 pruned. 
+[I 2026-03-18 22:25:24,362] Trial 33 pruned. 
+[I 2026-03-18 22:25:25,728] Trial 41 pruned. 
+[I 2026-03-18 22:25:26,126] Trial 53 finished with value: -2.7666392803192137 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 3.554957145205042e-07, 'L_entropy_weight_yyx': 1.3295267366442798e-09, 'L_sep_weight_yyx': 0.00025538769640109823, 'L_scale_weight_yyx': 1.2129640575510863e-07, 'learning_rate_yyx': 0.008276146689707832}. Best is trial 44 with value: -2.767513561248779.
+[I 2026-03-18 22:25:29,119] Trial 55 pruned. 
+[I 2026-03-18 22:25:31,510] Trial 50 pruned. 
+[I 2026-03-18 22:25:34,488] Trial 76 pruned. 
+[I 2026-03-18 22:25:54,894] Trial 43 finished with value: -2.7632603409266707 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 2, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 5.6090248914536825e-06, 'L_entropy_weight_yyx': 0.00010623292166596539, 'L_sep_weight_yyx': 6.441599294224868e-07, 'L_scale_weight_yyx': 7.151416966370588e-05, 'learning_rate_yyx': 0.0017525472176245721}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:25:57,168] Trial 51 pruned. 
+[I 2026-03-18 22:26:01,597] Trial 56 pruned. 
+[I 2026-03-18 22:26:05,531] Trial 54 pruned. 
+[I 2026-03-18 22:26:08,974] Trial 44 finished with value: -2.4022889279096553 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 2, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.0001614021784712975, 'L_entropy_weight_yyx': 2.2382568153379617e-09, 'L_sep_weight_yyx': 9.456010396635542e-10, 'L_scale_weight_yyx': 4.6281093663028715e-09, 'learning_rate_yyx': 0.009048969544386163}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:26:09,814] Trial 57 pruned. 
+[I 2026-03-18 22:26:10,480] Trial 50 pruned. 
+[I 2026-03-18 22:26:12,618] Trial 42 pruned. 
+[I 2026-03-18 22:26:17,681] Trial 58 pruned. 
+[I 2026-03-18 22:26:19,873] Trial 44 pruned. 
+[I 2026-03-18 22:26:21,635] Trial 52 pruned. 
+[I 2026-03-18 22:26:22,369] Trial 55 pruned. 
+[I 2026-03-18 22:26:31,053] Trial 45 pruned. 
+[I 2026-03-18 22:26:32,727] Trial 51 pruned. 
+[I 2026-03-18 22:26:36,015] Trial 54 pruned. 
+[I 2026-03-18 22:26:39,269] Trial 34 finished with value: -2.765001868455631 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.0549233374796765e-05, 'L_entropy_weight_yyx': 1.5491055245660373e-05, 'L_sep_weight_yyx': 7.965502131982225e-06, 'L_scale_weight_yyx': 0.0001543747327582634, 'learning_rate_yyx': 0.009512067035857377}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:26:41,785] Trial 46 pruned. 
+[I 2026-03-18 22:26:49,432] Trial 52 finished with value: -2.4001850361886374 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 4.9925952338987225e-05, 'L_entropy_weight_yyx': 2.638993242182022e-08, 'L_sep_weight_yyx': 0.00014771546615519727, 'L_scale_weight_yyx': 2.2635309047966527e-09, 'learning_rate_yyx': 0.006001642279371994}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:26:59,199] Trial 43 finished with value: -2.420974893227146 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 9.805870175152033e-07, 'L_entropy_weight_yyx': 3.221278055399108e-08, 'L_sep_weight_yyx': 2.9289890100982118e-06, 'L_scale_weight_yyx': 3.4909722763544583e-07, 'learning_rate_yyx': 0.007652398168412522}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:27:03,023] Trial 59 pruned. 
+[I 2026-03-18 22:27:06,880] Trial 56 pruned. 
+[I 2026-03-18 22:27:07,373] Trial 47 pruned. 
+[I 2026-03-18 22:27:09,490] Trial 53 pruned. 
+[I 2026-03-18 22:27:11,320] Trial 60 pruned. 
+[I 2026-03-18 22:27:12,400] Trial 59 finished with value: -2.4200970521907217 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.7759389193146246e-07, 'L_entropy_weight_yyx': 1.0747036276809654e-07, 'L_sep_weight_yyx': 0.0009025703791915203, 'L_scale_weight_yyx': 3.093717717457304e-09, 'learning_rate_yyx': 0.00909330239467397}. Best is trial 59 with value: -2.4200970521907217.
+[I 2026-03-18 22:27:13,580] Trial 45 finished with value: -2.35527102739383 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 2, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.007322896071949e-05, 'L_entropy_weight_yyx': 7.2422886464717254e-09, 'L_sep_weight_yyx': 3.8295869682966563e-10, 'L_scale_weight_yyx': 8.583135850087948e-09, 'learning_rate_yyx': 0.008258512902210578}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:27:16,784] Trial 52 finished with value: -2.7548620007209657 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.6212353329850382e-09, 'L_entropy_weight_yyx': 2.827383731058487e-05, 'L_sep_weight_yyx': 3.475439314994931e-08, 'L_scale_weight_yyx': 2.6981967374104515e-08, 'learning_rate_yyx': 0.00887978302328119}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:27:17,575] Trial 44 pruned. 
+[I 2026-03-18 22:27:18,488] Trial 54 pruned. 
+[I 2026-03-18 22:27:19,028] Trial 48 pruned. 
+[I 2026-03-18 22:27:20,713] Trial 60 pruned. 
+[I 2026-03-18 22:27:20,808] Trial 77 finished with value: -2.3971957367710606 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00023659331692007563, 'L_entropy_weight_yyx': 4.1232248340267426e-07, 'L_sep_weight_yyx': 3.901796354087992e-05, 'L_scale_weight_yyx': 4.830484308784205e-07, 'learning_rate_yyx': 0.005498873256141498}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:27:22,626] Trial 46 pruned. 
+[I 2026-03-18 22:27:23,638] Trial 57 pruned. 
+[I 2026-03-18 22:27:25,513] Trial 45 pruned. 
+[I 2026-03-18 22:27:26,268] Trial 43 finished with value: -2.388009699069626 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.2687421535599628e-06, 'L_entropy_weight_yyx': 9.994400639617727e-10, 'L_sep_weight_yyx': 3.909244490979329e-08, 'L_scale_weight_yyx': 4.6484516721556307e-10, 'learning_rate_yyx': 0.007339979506336407}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:27:28,835] Trial 78 pruned. 
+[I 2026-03-18 22:27:29,953] Trial 49 pruned. 
+[I 2026-03-18 22:27:32,631] Trial 58 finished with value: -2.7615964022549715 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.3204844951329462e-08, 'L_entropy_weight_yyx': 5.67569327378497e-09, 'L_sep_weight_yyx': 4.007342894019612e-06, 'L_scale_weight_yyx': 4.448347611322741e-10, 'learning_rate_yyx': 0.0028465983720810514}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:27:34,936] Trial 44 pruned. 
+[I 2026-03-18 22:27:57,284] Trial 50 pruned. 
+[I 2026-03-18 22:27:57,710] Trial 61 pruned. 
+[I 2026-03-18 22:28:00,555] Trial 55 finished with value: -2.7679802735646564 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.9573621862263983e-07, 'L_entropy_weight_yyx': 2.3078084119720905e-10, 'L_sep_weight_yyx': 5.816415189129721e-05, 'L_scale_weight_yyx': 5.891146737259718e-08, 'learning_rate_yyx': 0.006800524548406749}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:28:02,296] Trial 59 pruned. 
+[I 2026-03-18 22:28:04,750] Trial 35 pruned. 
+[I 2026-03-18 22:28:08,913] Trial 51 pruned. 
+[I 2026-03-18 22:28:11,452] Trial 61 pruned. 
+[I 2026-03-18 22:28:19,141] Trial 79 pruned. 
+[I 2026-03-18 22:28:20,271] Trial 52 pruned. 
+[I 2026-03-18 22:28:22,894] Trial 56 finished with value: -2.4357100493222648 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 7.346452934077488e-08, 'L_entropy_weight_yyx': 9.647841124002904e-06, 'L_sep_weight_yyx': 1.254379353669038e-06, 'L_scale_weight_yyx': 1.266974994262522e-08, 'learning_rate_yyx': 0.006201025413511014}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:28:26,627] Trial 53 pruned. 
+[I 2026-03-18 22:28:31,650] Trial 52 finished with value: -2.4036061299406994 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0004199158374968098, 'L_entropy_weight_yyx': 3.375397525516094e-05, 'L_sep_weight_yyx': 8.785321729192488e-06, 'L_scale_weight_yyx': 4.264654928625538e-05, 'learning_rate_yyx': 0.009805722461464026}. Best is trial 52 with value: -2.4036061299406994.
+[I 2026-03-18 22:28:41,831] Trial 57 pruned. 
+[I 2026-03-18 22:28:48,715] Trial 53 pruned. 
+[I 2026-03-18 22:28:50,365] Trial 53 finished with value: -2.765602932587425 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.9013214329239602e-09, 'L_entropy_weight_yyx': 1.500217969531275e-08, 'L_sep_weight_yyx': 0.0006062798311189752, 'L_scale_weight_yyx': 0.0009384417980933199, 'learning_rate_yyx': 0.009028228911482576}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:28:54,599] Trial 54 pruned. 
+[I 2026-03-18 22:28:59,352] Trial 58 pruned. 
+[I 2026-03-18 22:29:02,780] Trial 54 pruned. 
+[I 2026-03-18 22:29:07,765] Trial 47 finished with value: -2.3922650459485175 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.6199846510700556e-05, 'L_entropy_weight_yyx': 2.0507358088667248e-08, 'L_sep_weight_yyx': 1.025778251949167e-10, 'L_scale_weight_yyx': 8.65882121133514e-10, 'learning_rate_yyx': 0.009251391615983642}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:29:09,483] Trial 45 finished with value: -2.3898860883505075 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.00013071975196684286, 'L_entropy_weight_yyx': 1.7800767936815775e-10, 'L_sep_weight_yyx': 8.369604084039883e-05, 'L_scale_weight_yyx': 2.5778976843841053e-07, 'learning_rate_yyx': 0.008600860341035986}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:29:13,708] Trial 56 pruned. 
+[I 2026-03-18 22:29:15,277] Trial 54 pruned. 
+[I 2026-03-18 22:29:17,224] Trial 48 pruned. 
+[I 2026-03-18 22:29:17,838] Trial 46 pruned. 
+[I 2026-03-18 22:29:20,143] Trial 60 pruned. 
+[I 2026-03-18 22:29:20,344] Trial 55 pruned. 
+[I 2026-03-18 22:29:29,505] Trial 55 pruned. 
+[I 2026-03-18 22:29:32,237] Trial 36 finished with value: -2.7649777090378502 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 9.758375101063468e-07, 'L_entropy_weight_yyx': 5.558452468289293e-06, 'L_sep_weight_yyx': 4.9954845908246224e-05, 'L_scale_weight_yyx': 0.0002861461212668341, 'learning_rate_yyx': 0.0069534505684389425}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:29:35,382] Trial 58 pruned. 
+[I 2026-03-18 22:29:35,868] Trial 47 pruned. 
+[I 2026-03-18 22:29:38,152] Trial 49 pruned. 
+[I 2026-03-18 22:29:38,727] Trial 55 finished with value: -2.4024873648934166 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.776809341948363e-05, 'L_entropy_weight_yyx': 1.3671971296437335e-09, 'L_sep_weight_yyx': 0.00024841886318030445, 'L_scale_weight_yyx': 5.646028810307623e-09, 'learning_rate_yyx': 0.00568748683339785}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:29:43,171] Trial 80 finished with value: -2.397726623629105 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0001530263026197306, 'L_entropy_weight_yyx': 7.695942759167773e-08, 'L_sep_weight_yyx': 1.2077352206048577e-05, 'L_scale_weight_yyx': 1.2607194515877703e-06, 'learning_rate_yyx': 0.007423972256838938}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:29:43,755] Trial 55 pruned. 
+[I 2026-03-18 22:29:43,851] Trial 37 pruned. 
+[I 2026-03-18 22:29:45,760] Trial 59 pruned. 
+[I 2026-03-18 22:29:46,888] Trial 50 pruned. 
+[I 2026-03-18 22:29:47,349] Trial 61 pruned. 
+[I 2026-03-18 22:29:53,499] Trial 48 pruned. 
+[I 2026-03-18 22:29:55,320] Trial 46 pruned. 
+[I 2026-03-18 22:29:56,679] Trial 51 pruned. 
+[I 2026-03-18 22:29:57,166] Trial 56 pruned. 
+[I 2026-03-18 22:29:59,563] Trial 62 pruned. 
+[I 2026-03-18 22:30:00,895] Trial 49 pruned. 
+[I 2026-03-18 22:30:00,897] Trial 81 pruned. 
+[I 2026-03-18 22:30:08,673] Trial 57 pruned. 
+[I 2026-03-18 22:30:09,125] Trial 62 finished with value: -2.4190809584155524 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.7095060032429476e-06, 'L_entropy_weight_yyx': 1.9105335656671658e-07, 'L_sep_weight_yyx': 0.0008000014446424444, 'L_scale_weight_yyx': 1.8502358691882515e-10, 'learning_rate_yyx': 0.009445918612816915}. Best is trial 59 with value: -2.4200970521907217.
+[I 2026-03-18 22:30:19,160] Trial 59 pruned. 
+[I 2026-03-18 22:30:19,412] Trial 50 pruned. 
+[I 2026-03-18 22:30:20,009] Trial 62 pruned. 
+[I 2026-03-18 22:30:27,001] Trial 60 pruned. 
+[I 2026-03-18 22:30:28,009] Trial 63 pruned. 
+[I 2026-03-18 22:30:28,081] Trial 51 pruned. 
+[I 2026-03-18 22:30:30,400] Trial 57 pruned. 
+[I 2026-03-18 22:30:39,104] Trial 63 pruned. 
+[I 2026-03-18 22:30:41,160] Trial 64 pruned. 
+[I 2026-03-18 22:30:41,808] Trial 56 pruned. 
+[I 2026-03-18 22:30:43,167] Trial 61 pruned. 
+[I 2026-03-18 22:30:52,184] Trial 47 pruned. 
+[I 2026-03-18 22:30:56,120] Trial 58 pruned. 
+[I 2026-03-18 22:30:56,476] Trial 64 pruned. 
+[I 2026-03-18 22:30:58,901] Trial 62 pruned. 
+[I 2026-03-18 22:31:06,325] Trial 63 pruned. 
+[I 2026-03-18 22:31:13,344] Trial 65 pruned. 
+[I 2026-03-18 22:31:23,776] Trial 53 finished with value: -2.4049037025927396 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00027778647897374605, 'L_entropy_weight_yyx': 6.1659581751891276e-06, 'L_sep_weight_yyx': 0.0004396868462285885, 'L_scale_weight_yyx': 4.264666108385226e-05, 'learning_rate_yyx': 0.006429659049952056}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:31:30,633] Trial 58 finished with value: -2.7611650603087137 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 5.3126517277496085e-08, 'L_entropy_weight_yyx': 0.0005156428315493822, 'L_sep_weight_yyx': 3.409031042695349e-10, 'L_scale_weight_yyx': 5.54311909098601e-10, 'learning_rate_yyx': 0.0077164349231866524}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:31:32,312] Trial 66 pruned. 
+[I 2026-03-18 22:31:32,865] Trial 82 finished with value: -2.397775320226318 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00021802150294596332, 'L_entropy_weight_yyx': 3.028738129491862e-06, 'L_sep_weight_yyx': 1.221211129265521e-05, 'L_scale_weight_yyx': 1.2012312161673786e-06, 'learning_rate_yyx': 0.006197454817571225}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:31:35,543] Trial 56 finished with value: -2.387247585755255 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0009830497759059844, 'L_entropy_weight_yyx': 8.183745908958588e-10, 'L_sep_weight_yyx': 0.00025812099910198986, 'L_scale_weight_yyx': 5.363644201433643e-09, 'learning_rate_yyx': 0.005625168211838795}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:31:41,174] Trial 83 pruned. 
+[I 2026-03-18 22:31:43,773] Trial 57 pruned. 
+[I 2026-03-18 22:31:44,607] Trial 56 finished with value: -2.7642854406140023 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 2, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.2436001248654718e-10, 'L_entropy_weight_yyx': 2.2836936800503208e-05, 'L_sep_weight_yyx': 1.395017832471238e-08, 'L_scale_weight_yyx': 8.624451583677969e-07, 'learning_rate_yyx': 0.009154794706437227}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:31:48,407] Trial 52 finished with value: -2.388871353466084 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.9435479375742244e-06, 'L_entropy_weight_yyx': 6.160260937700011e-09, 'L_sep_weight_yyx': 6.601107852007617e-06, 'L_scale_weight_yyx': 3.375176144950637e-09, 'learning_rate_yyx': 0.00926745541804609}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:31:50,757] Trial 67 pruned. 
+[I 2026-03-18 22:31:54,981] Trial 64 pruned. 
+[I 2026-03-18 22:31:57,012] Trial 63 finished with value: -2.4201736292888207 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.905828798057179e-06, 'L_entropy_weight_yyx': 5.090226664855097e-08, 'L_sep_weight_yyx': 0.0009058167780106727, 'L_scale_weight_yyx': 2.3288400296538083e-10, 'learning_rate_yyx': 0.008945241258042098}. Best is trial 63 with value: -2.4201736292888207.
+
+Source events: 20158
+Target events: 11540
+Full model ln_yyx : 953.76182 nats/sec, 74.38350 nats/event
+Full model Log loss : -2.40786
+Full model ln_yyx : 949.08385 nats/sec, 74.01867 nats/event
+Full model Log loss : -2.40897
+Full model ln_yyx : 956.55036 nats/sec, 74.60098 nats/event
+Full model Log loss : -2.41201
+Full model ln_yyx : 960.29850 nats/sec, 74.89330 nats/event
+Full model Log loss : -2.40829
+Full model ln_yyx : 960.66120 nats/sec, 74.92158 nats/event
+Full model Log loss : -2.40831
+Full model ln_yyx : 951.84656 nats/sec, 74.23413 nats/event
+Full model Log loss : -2.40785
+Full model ln_yyx : 956.72203 nats/sec, 74.61437 nats/event
+Full model Log loss : -2.42010
+Full model ln_yyx : 957.03588 nats/sec, 74.63885 nats/event
+Full model Log loss : -2.41908
+Full model ln_yyx : 956.08559 nats/sec, 74.56473 nats/event
+Full model Log loss : -2.42017
+Optimization finished. Config saved to results/opt-full/opt_full_168_best_config.txt
+[I 2026-03-18 22:31:58,342] Trial 57 pruned. 
+[I 2026-03-18 22:31:59,322] Trial 59 pruned. 
+[I 2026-03-18 22:32:02,903] Trial 65 pruned. 
+[I 2026-03-18 22:32:10,085] Trial 58 pruned. 
+[I 2026-03-18 22:32:10,520] Trial 66 pruned. 
+[I 2026-03-18 22:32:10,945] Trial 60 pruned. 
+[I 2026-03-18 22:32:11,715] Trial 60 finished with value: -2.4303487937899386 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 8.054512884274198e-07, 'L_entropy_weight_yyx': 2.7586741996343257e-06, 'L_sep_weight_yyx': 3.789808315641145e-07, 'L_scale_weight_yyx': 5.2211937926879755e-09, 'learning_rate_yyx': 0.007319055867976265}. Best is trial 11 with value: -2.43991066579963.
+[I 2026-03-18 22:32:12,572] Trial 52 finished with value: -2.3933592497996794 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.8241493624483684e-05, 'L_entropy_weight_yyx': 1.3309631000034597e-08, 'L_sep_weight_yyx': 1.5974882379724243e-10, 'L_scale_weight_yyx': 9.220668742857475e-10, 'learning_rate_yyx': 0.009561305788020898}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:32:17,890] Trial 67 pruned. 
+[I 2026-03-18 22:32:19,887] Trial 65 finished with value: -2.7626483774440174 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.081461744627482e-09, 'L_entropy_weight_yyx': 1.4339045661964444e-08, 'L_sep_weight_yyx': 2.727472626503474e-06, 'L_scale_weight_yyx': 1.7024153684973995e-10, 'learning_rate_yyx': 0.009013865070991925}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:32:21,670] Trial 59 finished with value: -2.7663268089294433 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 7.083541172243481e-07, 'L_entropy_weight_yyx': 8.322876136372661e-10, 'L_sep_weight_yyx': 3.0062140835227494e-05, 'L_scale_weight_yyx': 1.3770356935000749e-07, 'learning_rate_yyx': 0.004245390125384097}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:32:26,941] Trial 38 finished with value: -2.7327241701128586 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 2, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 3.660240802139358e-10, 'L_entropy_weight_yyx': 2.2708205758591846e-05, 'L_sep_weight_yyx': 6.705108553493794e-07, 'L_scale_weight_yyx': 1.0315322346875974e-07, 'learning_rate_yyx': 0.008106336526649726}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:32:28,310] Trial 58 pruned. 
+[I 2026-03-18 22:32:29,133] Trial 61 pruned. 
+[I 2026-03-18 22:32:39,856] Trial 68 finished with value: -2.38545240031963 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 5.064407894453559e-05, 'L_entropy_weight_yyx': 1.8074442093055985e-07, 'L_sep_weight_yyx': 2.0522758207223143e-07, 'L_scale_weight_yyx': 0.00016296397178610885, 'learning_rate_yyx': 0.009924731418727406}. Best is trial 32 with value: -2.420807459084574.
+[I 2026-03-18 22:32:47,734] Trial 69 pruned. 
+[I 2026-03-18 22:32:48,943] Trial 62 pruned. 
+[I 2026-03-18 22:32:54,514] Trial 57 pruned. 
+[I 2026-03-18 22:32:55,122] Trial 70 pruned. 
+[I 2026-03-18 22:33:01,293] Trial 48 finished with value: -2.4298988738847944 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0008723452401159307, 'L_entropy_weight_yyx': 3.124544096995368e-09, 'L_sep_weight_yyx': 1.8198134556122795e-08, 'L_scale_weight_yyx': 0.00029536823793100845, 'learning_rate_yyx': 0.007570766682720081}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:33:01,601] Trial 84 finished with value: -2.3979405754954466 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0002635883439706351, 'L_entropy_weight_yyx': 2.7977891430179393e-07, 'L_sep_weight_yyx': 6.731659286454974e-06, 'L_scale_weight_yyx': 1.1672628402998883e-06, 'learning_rate_yyx': 0.007987987552408182}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:33:11,805] Trial 71 pruned. 
+
+Source events: 20158
+Target events: 10752
+Full model ln_yyx : 888.97382 nats/sec, 74.41187 nats/event
+Full model Log loss : -2.41166
+Full model ln_yyx : 890.56699 nats/sec, 74.54523 nats/event
+Full model Log loss : -2.40843
+Full model ln_yyx : 889.13881 nats/sec, 74.42568 nats/event
+Full model Log loss : -2.40966
+Full model ln_yyx : 887.58255 nats/sec, 74.29541 nats/event
+Full model Log loss : -2.42081
+Full model ln_yyx : 889.19026 nats/sec, 74.42999 nats/event
+Full model Log loss : -2.41144
+Full model ln_yyx : 892.65902 nats/sec, 74.72034 nats/event
+Full model Log loss : -2.41261
+Full model ln_yyx : 884.24035 nats/sec, 74.01565 nats/event
+Full model Log loss : -2.38545
+Optimization finished. Config saved to results/opt-full/opt_full_161_best_config.txt
+[I 2026-03-18 22:33:14,591] Trial 60 finished with value: -2.763467868169149 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.022766571580355e-07, 'L_entropy_weight_yyx': 3.9396893499356836e-10, 'L_sep_weight_yyx': 8.410848216816779e-06, 'L_scale_weight_yyx': 6.241906294952041e-08, 'learning_rate_yyx': 0.00913956850544471}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:33:19,102] Trial 61 pruned. 
+[I 2026-03-18 22:33:19,997] Trial 49 pruned. 
+[I 2026-03-18 22:33:21,078] Trial 53 finished with value: -2.389843881359291 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 9.829804589406146e-05, 'L_entropy_weight_yyx': 6.088393103827409e-09, 'L_sep_weight_yyx': 0.00028714242115278365, 'L_scale_weight_yyx': 2.3685665687243563e-08, 'learning_rate_yyx': 0.00891284829296006}. Best is trial 29 with value: -2.3960325303152223.
+[I 2026-03-18 22:33:21,569] Trial 85 pruned. 
+[I 2026-03-18 22:33:24,915] Trial 54 finished with value: -2.400039700260216 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00027597329846882544, 'L_entropy_weight_yyx': 3.679584186476551e-05, 'L_sep_weight_yyx': 0.0004854917476048379, 'L_scale_weight_yyx': 3.4023469322569566e-05, 'learning_rate_yyx': 0.009956404055270393}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:33:36,670] Trial 63 pruned. 
+
+Source events: 20158
+Target events: 8618
+Full model ln_yyx : 716.11871 nats/sec, 74.78613 nats/event
+Full model Log loss : -2.42922
+Full model ln_yyx : 716.42242 nats/sec, 74.81784 nats/event
+Full model Log loss : -2.42933
+Full model ln_yyx : 708.37781 nats/sec, 73.97772 nats/event
+Full model Log loss : -2.40263
+Full model ln_yyx : 711.79359 nats/sec, 74.33444 nats/event
+Full model Log loss : -2.43013
+Full model ln_yyx : 717.77066 nats/sec, 74.95864 nats/event
+Full model Log loss : -2.42440
+Full model ln_yyx : 721.21616 nats/sec, 75.31847 nats/event
+Full model Log loss : -2.43240
+Full model ln_yyx : 719.68973 nats/sec, 75.15906 nats/event
+Full model Log loss : -2.43571
+Full model ln_yyx : 718.53056 nats/sec, 75.03800 nats/event
+Full model Log loss : -2.43035
+Optimization finished. Config saved to results/opt-full/opt_full_165_best_config.txt
+[I 2026-03-18 22:33:37,213] Trial 68 finished with value: -2.541671931431899 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 8.044477456274315e-09, 'L_entropy_weight_yyx': 4.303683951391082e-08, 'L_sep_weight_yyx': 1.5874206385718397e-10, 'L_scale_weight_yyx': 5.869434954570112e-10, 'learning_rate_yyx': 0.008965294723808232}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:33:38,741] Trial 61 pruned. 
+[I 2026-03-18 22:33:39,236] Trial 50 pruned. 
+[I 2026-03-18 22:33:49,350] Trial 59 finished with value: -2.7669037334246385 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 5.748372741434422e-10, 'L_entropy_weight_yyx': 0.0004367015793824083, 'L_sep_weight_yyx': 0.0005374928461945771, 'L_scale_weight_yyx': 0.00010928264590652098, 'learning_rate_yyx': 0.007882011309157163}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:33:49,386] Trial 66 finished with value: -2.7626257503733918 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.3564791316033285e-09, 'L_entropy_weight_yyx': 1.5062576748422322e-08, 'L_sep_weight_yyx': 2.891081811322312e-06, 'L_scale_weight_yyx': 4.613879147325478e-09, 'learning_rate_yyx': 0.008805762987795732}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:33:49,726] Trial 59 finished with value: -2.398303538706021 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00037922743198805947, 'L_entropy_weight_yyx': 4.480006754989467e-08, 'L_sep_weight_yyx': 2.2779869989168803e-05, 'L_scale_weight_yyx': 1.3047037402915868e-08, 'learning_rate_yyx': 0.007694641206918348}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:33:51,601] Trial 69 pruned. 
+[I 2026-03-18 22:33:57,318] Trial 51 pruned. 
+[I 2026-03-18 22:33:59,236] Trial 67 pruned. 
+[I 2026-03-18 22:34:00,178] Trial 60 pruned. 
+[I 2026-03-18 22:34:00,509] Trial 54 pruned. 
+[I 2026-03-18 22:34:04,891] Trial 55 pruned. 
+[I 2026-03-18 22:34:05,127] Trial 70 pruned. 
+[I 2026-03-18 22:34:06,672] Trial 53 finished with value: -2.3935891958383415 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.648403239284016e-05, 'L_entropy_weight_yyx': 1.7923632165934043e-08, 'L_sep_weight_yyx': 5.145734101419723e-10, 'L_scale_weight_yyx': 1.9776964942122673e-08, 'learning_rate_yyx': 0.009822299335448814}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:34:21,798] Trial 68 pruned. 
+[I 2026-03-18 22:34:31,302] Trial 69 pruned. 
+[I 2026-03-18 22:34:34,583] Trial 60 pruned. 
+[I 2026-03-18 22:34:36,345] Trial 62 finished with value: -2.7678240458170573 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.5261118306068508e-07, 'L_entropy_weight_yyx': 2.1019668192706115e-10, 'L_sep_weight_yyx': 7.532845559563619e-05, 'L_scale_weight_yyx': 3.597161142357416e-07, 'learning_rate_yyx': 0.007837895829920685}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:34:41,486] Trial 70 pruned. 
+[I 2026-03-18 22:34:42,666] Trial 61 pruned. 
+[I 2026-03-18 22:34:45,298] Trial 52 pruned. 
+[I 2026-03-18 22:34:46,159] Trial 86 finished with value: -2.397562370476446 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.4664502007476966e-05, 'L_entropy_weight_yyx': 3.467086573007383e-06, 'L_sep_weight_yyx': 2.144809595844182e-05, 'L_scale_weight_yyx': 4.5183818315746726e-07, 'learning_rate_yyx': 0.007345975181740933}. Best is trial 0 with value: -2.4076941594397367.
+[I 2026-03-18 22:34:52,728] Trial 71 pruned. 
+[I 2026-03-18 22:35:00,708] Trial 56 finished with value: -2.3942444458477676 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0005617940946807803, 'L_entropy_weight_yyx': 5.035497119115297e-05, 'L_sep_weight_yyx': 0.00033566973561570136, 'L_scale_weight_yyx': 3.928176479340409e-05, 'learning_rate_yyx': 0.009916516936701798}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:35:01,736] Trial 39 finished with value: -2.7617907985403765 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.6072600016323906e-09, 'L_entropy_weight_yyx': 1.2228490278567576e-06, 'L_sep_weight_yyx': 1.956950349472195e-05, 'L_scale_weight_yyx': 1.4945519933002002e-06, 'learning_rate_yyx': 0.004661991565696457}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:35:04,385] Trial 72 pruned. 
+[I 2026-03-18 22:35:07,297] Trial 54 finished with value: -2.36227787898137 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.9843703669061256e-05, 'L_entropy_weight_yyx': 8.477909260721298e-09, 'L_sep_weight_yyx': 6.238540756002021e-10, 'L_scale_weight_yyx': 4.512394783423335e-09, 'learning_rate_yyx': 0.009533883545140473}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:35:16,735] Trial 58 finished with value: -2.765134888968204 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.5283916889357903e-10, 'L_entropy_weight_yyx': 0.00021554973858661468, 'L_sep_weight_yyx': 4.073358525498954e-09, 'L_scale_weight_yyx': 1.6412049029718016e-08, 'learning_rate_yyx': 0.008052986504039643}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:35:24,454] Trial 40 pruned. 
+[I 2026-03-18 22:35:28,121] Trial 55 finished with value: -2.400930198925506 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.00019408113751166297, 'L_entropy_weight_yyx': 1.0364415226177532e-09, 'L_sep_weight_yyx': 0.0007170320186724693, 'L_scale_weight_yyx': 1.0993417498337715e-07, 'learning_rate_yyx': 0.008564229709802142}. Best is trial 55 with value: -2.400930198925506.
+[I 2026-03-18 22:35:30,058] Trial 71 finished with value: -2.5412271270205946 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.9693262469769744e-08, 'L_entropy_weight_yyx': 2.283939543305603e-08, 'L_sep_weight_yyx': 1.8495726491059717e-10, 'L_scale_weight_yyx': 1.1703595512628017e-10, 'learning_rate_yyx': 0.007771088513496373}. Best is trial 24 with value: -2.5511102316762146.
+[I 2026-03-18 22:35:30,613] Trial 53 pruned. 
+[I 2026-03-18 22:35:31,152] Trial 87 pruned. 
+[I 2026-03-18 22:35:34,341] Trial 62 finished with value: -2.7642651627994317 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 2, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.849613769807627e-10, 'L_entropy_weight_yyx': 0.0003964711629885357, 'L_sep_weight_yyx': 5.582865995198873e-09, 'L_scale_weight_yyx': 7.73880165837607e-06, 'learning_rate_yyx': 0.008199878451865154}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:35:37,145] Trial 63 pruned. 
+[I 2026-03-18 22:35:38,716] Trial 59 pruned. 
+[I 2026-03-18 22:35:41,479] Trial 61 finished with value: -2.762021238898883 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.0002738791186537695, 'L_entropy_weight_yyx': 0.0006264770250557783, 'L_sep_weight_yyx': 0.00024962563778314716, 'L_scale_weight_yyx': 1.0918543127857797e-06, 'learning_rate_yyx': 0.004528453022490576}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:35:46,254] Trial 88 pruned. 
+[I 2026-03-18 22:35:50,454] Trial 62 finished with value: -2.3985544071231737 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0003792143250516319, 'L_entropy_weight_yyx': 4.049418858379944e-08, 'L_sep_weight_yyx': 2.042721975605761e-05, 'L_scale_weight_yyx': 1.3440514821753484e-08, 'learning_rate_yyx': 0.008095781299881517}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:35:52,786] Trial 89 pruned. 
+[I 2026-03-18 22:35:58,030] Trial 55 finished with value: -2.3616885923727966 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.6108433808989377e-05, 'L_entropy_weight_yyx': 1.846799658093037e-08, 'L_sep_weight_yyx': 1.0938887357096677e-09, 'L_scale_weight_yyx': 1.51455318352596e-08, 'learning_rate_yyx': 0.007984205037034599}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:35:59,784] Trial 64 pruned. 
+[I 2026-03-18 22:36:00,062] Trial 90 pruned. 
+[I 2026-03-18 22:36:00,460] Trial 60 pruned. 
+[I 2026-03-18 22:36:07,570] Trial 56 pruned. 
+[I 2026-03-18 22:36:09,831] Trial 72 pruned. 
+[I 2026-03-18 22:36:10,243] Trial 65 pruned. 
+[I 2026-03-18 22:36:14,142] Trial 73 pruned. 
+[I 2026-03-18 22:36:14,903] Trial 91 pruned. 
+[I 2026-03-18 22:36:16,602] Trial 54 pruned. 
+[I 2026-03-18 22:36:22,537] Trial 57 pruned. 
+[I 2026-03-18 22:36:22,596] Trial 61 pruned. 
+[I 2026-03-18 22:36:27,478] Trial 41 pruned. 
+[I 2026-03-18 22:36:34,441] Trial 55 pruned. 
+[I 2026-03-18 22:36:39,291] Trial 58 pruned. 
+[I 2026-03-18 22:36:42,065] Trial 56 pruned. 
+[I 2026-03-18 22:36:45,450] Trial 62 pruned. 
+[I 2026-03-18 22:36:45,736] Trial 57 finished with value: -2.3947384280977353 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00016670004437221092, 'L_entropy_weight_yyx': 1.549969784629606e-05, 'L_sep_weight_yyx': 7.279987972789202e-05, 'L_scale_weight_yyx': 1.804005001167154e-05, 'learning_rate_yyx': 0.0062636908889512665}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:36:46,699] Trial 59 pruned. 
+[I 2026-03-18 22:36:50,181] Trial 57 pruned. 
+[I 2026-03-18 22:36:54,563] Trial 63 pruned. 
+[I 2026-03-18 22:37:00,102] Trial 58 pruned. 
+[I 2026-03-18 22:37:00,887] Trial 63 finished with value: -2.3988524013774515 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0003790527661663115, 'L_entropy_weight_yyx': 1.2116123335663389e-07, 'L_sep_weight_yyx': 0.00019385452099885886, 'L_scale_weight_yyx': 2.1546378085687088e-08, 'learning_rate_yyx': 0.008829457389268892}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:37:04,317] Trial 64 pruned. 
+[I 2026-03-18 22:37:13,294] Trial 62 finished with value: -2.766711041032414 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.7981678676553913e-08, 'L_entropy_weight_yyx': 0.00017893125111046514, 'L_sep_weight_yyx': 0.00011688749085325639, 'L_scale_weight_yyx': 0.000868866038305425, 'learning_rate_yyx': 0.007760604713682399}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:37:13,675] Trial 65 pruned. 
+[I 2026-03-18 22:37:15,542] Trial 73 finished with value: -2.539683586895515 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.4085869700940047e-08, 'L_entropy_weight_yyx': 7.819455343223883e-08, 'L_sep_weight_yyx': 2.8609731555795577e-10, 'L_scale_weight_yyx': 4.378117263101377e-10, 'learning_rate_yyx': 0.009133059730005279}. Best is trial 24 with value: -2.5511102316762146.
+
+Source events: 20158
+Target events: 1872
+Full model ln_yyx : 159.47269 nats/sec, 76.66956 nats/event
+Full model Log loss : -2.55111
+Full model ln_yyx : 157.03002 nats/sec, 75.49520 nats/event
+Full model Log loss : -2.53304
+Full model ln_yyx : 158.88324 nats/sec, 76.38618 nats/event
+Full model Log loss : -2.54116
+Full model ln_yyx : 157.95385 nats/sec, 75.93935 nats/event
+Full model Log loss : -2.55074
+Full model ln_yyx : 159.05362 nats/sec, 76.46808 nats/event
+Full model Log loss : -2.54724
+Full model ln_yyx : 158.20818 nats/sec, 76.06163 nats/event
+Full model Log loss : -2.54778
+Full model ln_yyx : 159.55589 nats/sec, 76.70956 nats/event
+Full model Log loss : -2.53925
+Full model ln_yyx : 158.61264 nats/sec, 76.25608 nats/event
+Full model Log loss : -2.53666
+Full model ln_yyx : 158.84351 nats/sec, 76.36707 nats/event
+Full model Log loss : -2.54167
+Full model ln_yyx : 158.61114 nats/sec, 76.25535 nats/event
+Full model Log loss : -2.54123
+Full model ln_yyx : 158.70171 nats/sec, 76.29890 nats/event
+Full model Log loss : -2.53968
+Optimization finished. Config saved to results/opt-full/opt_full_164_best_config.txt
+[I 2026-03-18 22:37:20,002] Trial 92 finished with value: -2.3979629039030432 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 9.677513006440433e-06, 'L_entropy_weight_yyx': 3.776783223576652e-07, 'L_sep_weight_yyx': 1.1640278911679367e-05, 'L_scale_weight_yyx': 3.592909216144175e-07, 'learning_rate_yyx': 0.009219969031574446}. Best is trial 0 with value: -2.4076941594397367.
+
+Source events: 20158
+Target events: 18269
+Full model ln_yyx : 1512.69520 nats/sec, 74.52108 nats/event
+Full model Log loss : -2.39611
+Full model ln_yyx : 1510.71242 nats/sec, 74.42340 nats/event
+Full model Log loss : -2.39299
+Full model ln_yyx : 1505.33805 nats/sec, 74.15864 nats/event
+Full model Log loss : -2.39766
+Full model ln_yyx : 1514.39189 nats/sec, 74.60467 nats/event
+Full model Log loss : -2.39734
+Full model ln_yyx : 1500.63611 nats/sec, 73.92701 nats/event
+Full model Log loss : -2.39720
+Full model ln_yyx : 1503.58219 nats/sec, 74.07214 nats/event
+Full model Log loss : -2.39773
+Full model ln_yyx : 1504.93660 nats/sec, 74.13887 nats/event
+Full model Log loss : -2.39778
+Full model ln_yyx : 1503.78331 nats/sec, 74.08205 nats/event
+Full model Log loss : -2.39794
+Full model ln_yyx : 1504.08876 nats/sec, 74.09710 nats/event
+Full model Log loss : -2.39756
+Full model ln_yyx : 1507.88046 nats/sec, 74.28389 nats/event
+Full model Log loss : -2.39796
+Optimization finished. Config saved to results/opt-full/opt_full_162_best_config.txt
+[I 2026-03-18 22:37:22,565] Trial 42 finished with value: -2.764953724688315 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 5.8270496947578516e-05, 'L_entropy_weight_yyx': 1.6879743414124245e-05, 'L_sep_weight_yyx': 5.4399732764473906e-06, 'L_scale_weight_yyx': 0.00018558264221428249, 'learning_rate_yyx': 0.009803510570160953}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:37:22,919] Trial 66 finished with value: -2.765490245819092 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 6.22628706566336e-07, 'L_entropy_weight_yyx': 3.5211513231935637e-10, 'L_sep_weight_yyx': 1.1732046385896367e-05, 'L_scale_weight_yyx': 1.0846650987793546e-07, 'learning_rate_yyx': 0.007526765846891637}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:37:26,430] Trial 60 pruned. 
+[I 2026-03-18 22:37:38,716] Trial 63 finished with value: -2.76446336007727 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 2, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.620797105460802e-10, 'L_entropy_weight_yyx': 8.314261907991979e-05, 'L_sep_weight_yyx': 6.102641930262892e-09, 'L_scale_weight_yyx': 5.477240243433059e-05, 'learning_rate_yyx': 0.006531621950956166}. Best is trial 7 with value: -2.766072426816335.
+[I 2026-03-18 22:37:49,263] Trial 56 finished with value: -2.3910745161007614 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.6787391553531606e-06, 'L_entropy_weight_yyx': 1.3465894831621805e-09, 'L_sep_weight_yyx': 1.952806997196306e-10, 'L_scale_weight_yyx': 5.930887490986196e-10, 'learning_rate_yyx': 0.006216722584174905}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:37:59,821] Trial 64 pruned. 
+[I 2026-03-18 22:38:00,158] Trial 64 finished with value: -2.3867780797391696 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 1, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 6.837190458196586e-05, 'L_entropy_weight_yyx': 1.2196460431091434e-07, 'L_sep_weight_yyx': 0.0002135877880375905, 'L_scale_weight_yyx': 2.7984548566475174e-08, 'learning_rate_yyx': 0.009025947842940507}. Best is trial 11 with value: -2.4030680672323603.
+[I 2026-03-18 22:38:03,016] Trial 74 finished with value: -2.7617659461689503 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0006171722044003242, 'L_entropy_weight_yyx': 3.4705347341383513e-09, 'L_sep_weight_yyx': 7.859873252356857e-06, 'L_scale_weight_yyx': 8.211926540687081e-10, 'learning_rate_yyx': 0.005868128976705449}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:38:13,328] Trial 66 finished with value: -2.751478050001222 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 1, 'num_mix_components_yyx': 1, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.70655845654245e-08, 'L_entropy_weight_yyx': 3.718055963924475e-05, 'L_sep_weight_yyx': 4.392692348703103e-09, 'L_scale_weight_yyx': 2.253030894679119e-08, 'learning_rate_yyx': 0.00995440034150932}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:38:16,635] Trial 43 pruned. 
+[I 2026-03-18 22:38:23,212] Trial 59 finished with value: -2.394277884405272 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.00043331659854701555, 'L_entropy_weight_yyx': 3.5433114032036104e-05, 'L_sep_weight_yyx': 2.035303463821822e-06, 'L_scale_weight_yyx': 0.00022538590894196438, 'learning_rate_yyx': 0.00840570795560177}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:38:30,587] Trial 67 pruned. 
+[I 2026-03-18 22:38:37,518] Trial 58 finished with value: -2.430235459017205 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00014381548243591356, 'L_entropy_weight_yyx': 2.4391552878372585e-09, 'L_sep_weight_yyx': 5.1022496825469185e-09, 'L_scale_weight_yyx': 6.792968383049488e-08, 'learning_rate_yyx': 0.00876436123778875}. Best is trial 24 with value: -2.4319235459143473.
+[I 2026-03-18 22:38:37,668] Trial 63 finished with value: -2.766508888906413 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.644295995391149e-08, 'L_entropy_weight_yyx': 0.0001434108464980948, 'L_sep_weight_yyx': 0.0004079620005010468, 'L_scale_weight_yyx': 0.0009688214474430465, 'learning_rate_yyx': 0.007748760711126874}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:38:42,234] Trial 68 pruned. 
+[I 2026-03-18 22:38:43,454] Trial 59 pruned. 
+[I 2026-03-18 22:38:43,795] Trial 65 pruned. 
+[I 2026-03-18 22:38:45,356] Trial 61 finished with value: -2.3906118171568744 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.0009103986467406964, 'L_entropy_weight_yyx': 1.0491556122273856e-10, 'L_sep_weight_yyx': 4.61570554354827e-05, 'L_scale_weight_yyx': 1.6225495287170525e-07, 'learning_rate_yyx': 0.008745538863546285}. Best is trial 55 with value: -2.400930198925506.
+[I 2026-03-18 22:38:48,998] Trial 60 pruned. 
+[I 2026-03-18 22:38:52,939] Trial 65 pruned. 
+[I 2026-03-18 22:38:54,656] Trial 61 pruned. 
+[I 2026-03-18 22:38:56,790] Trial 75 pruned. 
+[I 2026-03-18 22:39:11,674] Trial 57 finished with value: -2.385216549604367 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 1.2914704150681894e-07, 'L_entropy_weight_yyx': 1.1624269087439382e-08, 'L_sep_weight_yyx': 2.0625167512484146e-10, 'L_scale_weight_yyx': 2.5988515303108333e-09, 'learning_rate_yyx': 0.007074552241359429}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:39:13,131] Trial 44 pruned. 
+[I 2026-03-18 22:39:15,318] Trial 60 finished with value: -2.3945655343102468 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00011825754223899102, 'L_entropy_weight_yyx': 9.510009290727498e-05, 'L_sep_weight_yyx': 0.00029063496978230444, 'L_scale_weight_yyx': 0.0008517089270492714, 'learning_rate_yyx': 0.007632278588944613}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:39:21,866] Trial 45 pruned. 
+[I 2026-03-18 22:39:26,310] Trial 58 pruned. 
+[I 2026-03-18 22:39:26,595] Trial 66 pruned. 
+[I 2026-03-18 22:39:27,160] Trial 62 pruned. 
+[I 2026-03-18 22:39:28,564] Trial 61 pruned. 
+[I 2026-03-18 22:39:33,749] Trial 67 pruned. 
+[I 2026-03-18 22:39:46,548] Trial 66 pruned. 
+
+Source events: 39192
+Target events: 12731
+Full model ln_yyx : 2274.09171 nats/sec, 160.76369 nats/event
+Full model Log loss : -2.73210
+Full model ln_yyx : 2317.10357 nats/sec, 163.80435 nats/event
+Full model Log loss : -2.76270
+Full model ln_yyx : 2272.28908 nats/sec, 160.63626 nats/event
+Full model Log loss : -2.72935
+Full model ln_yyx : 2312.19096 nats/sec, 163.45706 nats/event
+Full model Log loss : -2.75665
+Full model ln_yyx : 2296.97111 nats/sec, 162.38112 nats/event
+Full model Log loss : -2.75822
+Full model ln_yyx : 2306.31246 nats/sec, 163.04149 nats/event
+Full model Log loss : -2.76326
+Full model ln_yyx : 2326.87594 nats/sec, 164.49520 nats/event
+Full model Log loss : -2.76117
+Full model ln_yyx : 2304.17668 nats/sec, 162.89050 nats/event
+Full model Log loss : -2.76427
+Full model ln_yyx : 2299.89802 nats/sec, 162.58803 nats/event
+Full model Log loss : -2.76446
+Optimization finished. Config saved to results/opt-full/opt_full_171_best_config.txt
+[I 2026-03-18 22:39:50,335] Trial 68 pruned. 
+[I 2026-03-18 22:39:51,764] Trial 69 finished with value: -2.7667562484741213 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 6.6189493132832105e-06, 'L_entropy_weight_yyx': 5.907640733031178e-10, 'L_sep_weight_yyx': 2.1258877562321763e-05, 'L_scale_weight_yyx': 1.637543215558078e-08, 'learning_rate_yyx': 0.008252088075775321}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:39:54,787] Trial 64 finished with value: -2.7664765668244495 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.3829648578976377e-08, 'L_entropy_weight_yyx': 0.0001611544251481799, 'L_sep_weight_yyx': 0.00015193827779177202, 'L_scale_weight_yyx': 4.084250766523422e-05, 'learning_rate_yyx': 0.007717247620967761}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:39:59,088] Trial 63 pruned. 
+[I 2026-03-18 22:40:00,576] Trial 62 finished with value: -2.3914231327964868 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.000283869376881704, 'L_entropy_weight_yyx': 1.0725356001268903e-10, 'L_sep_weight_yyx': 5.210331716130503e-05, 'L_scale_weight_yyx': 1.606615271752993e-07, 'learning_rate_yyx': 0.009198320401695834}. Best is trial 55 with value: -2.400930198925506.
+[I 2026-03-18 22:40:04,371] Trial 64 pruned. 
+[I 2026-03-18 22:40:07,064] Trial 59 finished with value: -2.3584638077173476 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 3.861843568274883e-06, 'L_entropy_weight_yyx': 1.433936129682691e-10, 'L_sep_weight_yyx': 2.758579818264188e-10, 'L_scale_weight_yyx': 4.1618534224974283e-10, 'learning_rate_yyx': 0.005453913878113362}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:40:09,577] Trial 65 pruned. 
+[I 2026-03-18 22:40:11,690] Trial 70 pruned. 
+[I 2026-03-18 22:40:12,340] Trial 63 pruned. 
+[I 2026-03-18 22:40:14,789] Trial 76 finished with value: -2.762550313205005 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0002670048797620436, 'L_entropy_weight_yyx': 5.866472260963167e-10, 'L_sep_weight_yyx': 8.356009427899068e-06, 'L_scale_weight_yyx': 5.8477569817052784e-06, 'learning_rate_yyx': 0.009997657108841526}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:40:24,882] Trial 77 pruned. 
+[I 2026-03-18 22:40:30,818] Trial 71 pruned. 
+[I 2026-03-18 22:40:34,475] Trial 62 finished with value: -2.40357121914694 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0007981195649290237, 'L_entropy_weight_yyx': 1.188393659071695e-05, 'L_sep_weight_yyx': 0.0004373881684896874, 'L_scale_weight_yyx': 3.899176901956964e-05, 'learning_rate_yyx': 0.00899473221185443}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:40:37,235] Trial 60 pruned. 
+[I 2026-03-18 22:40:39,957] Trial 66 pruned. 
+[I 2026-03-18 22:40:50,299] Trial 67 pruned. 
+[I 2026-03-18 22:40:54,367] Trial 69 finished with value: -2.3909004796196087 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 4.3546255185625614e-05, 'L_entropy_weight_yyx': 5.372021366921201e-10, 'L_sep_weight_yyx': 0.0001556217412067979, 'L_scale_weight_yyx': 5.495994318913637e-09, 'learning_rate_yyx': 0.008740598806314984}. Best is trial 11 with value: -2.4030680672323603.
+
+Source events: 20158
+Target events: 12539
+Full model ln_yyx : 1034.47678 nats/sec, 74.25067 nats/event
+Full model Log loss : -2.38957
+Full model ln_yyx : 1036.40749 nats/sec, 74.38925 nats/event
+Full model Log loss : -2.39509
+Full model ln_yyx : 1026.22572 nats/sec, 73.65844 nats/event
+Full model Log loss : -2.38984
+Full model ln_yyx : 1036.46013 nats/sec, 74.39302 nats/event
+Full model Log loss : -2.38930
+Full model ln_yyx : 1041.60030 nats/sec, 74.76196 nats/event
+Full model Log loss : -2.39992
+Full model ln_yyx : 1042.30018 nats/sec, 74.81220 nats/event
+Full model Log loss : -2.40019
+Full model ln_yyx : 1033.26463 nats/sec, 74.16366 nats/event
+Full model Log loss : -2.40249
+Full model ln_yyx : 1028.84508 nats/sec, 73.84645 nats/event
+Full model Log loss : -2.38725
+Full model ln_yyx : 1036.88079 nats/sec, 74.42322 nats/event
+Full model Log loss : -2.39830
+Full model ln_yyx : 1038.22034 nats/sec, 74.51936 nats/event
+Full model Log loss : -2.39855
+Full model ln_yyx : 1039.32813 nats/sec, 74.59888 nats/event
+Full model Log loss : -2.39885
+Full model ln_yyx : 1034.71991 nats/sec, 74.26812 nats/event
+Full model Log loss : -2.38678
+Full model ln_yyx : 1032.61054 nats/sec, 74.11671 nats/event
+Full model Log loss : -2.39090
+Optimization finished. Config saved to results/opt-full/opt_full_167_best_config.txt
+[I 2026-03-18 22:40:55,227] Trial 68 pruned. 
+
+Source events: 20158
+Target events: 9421
+Full model ln_yyx : 779.22466 nats/sec, 74.44031 nats/event
+Full model Log loss : -2.43125
+Full model ln_yyx : 783.38359 nats/sec, 74.83762 nats/event
+Full model Log loss : -2.42271
+Full model ln_yyx : 782.65237 nats/sec, 74.76777 nats/event
+Full model Log loss : -2.42301
+Full model ln_yyx : 780.62448 nats/sec, 74.57404 nats/event
+Full model Log loss : -2.43192
+Full model ln_yyx : 780.13658 nats/sec, 74.52743 nats/event
+Full model Log loss : -2.42153
+Full model ln_yyx : 774.02435 nats/sec, 73.94352 nats/event
+Full model Log loss : -2.39174
+Full model ln_yyx : 787.23050 nats/sec, 75.20512 nats/event
+Full model Log loss : -2.42115
+Full model ln_yyx : 782.08692 nats/sec, 74.71375 nats/event
+Full model Log loss : -2.42097
+Full model ln_yyx : 780.24511 nats/sec, 74.53780 nats/event
+Full model Log loss : -2.42990
+Full model ln_yyx : 782.97253 nats/sec, 74.79835 nats/event
+Full model Log loss : -2.43024
+Optimization finished. Config saved to results/opt-full/opt_full_166_best_config.txt
+[I 2026-03-18 22:40:57,298] Trial 46 finished with value: -2.763681694737003 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.32480913085103e-07, 'L_entropy_weight_yyx': 3.374660562029472e-05, 'L_sep_weight_yyx': 0.00012465304165719146, 'L_scale_weight_yyx': 1.2156227777151924e-08, 'learning_rate_yyx': 0.006474513896223818}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:41:02,364] Trial 64 finished with value: -2.3869533983524294 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.00030051383646394935, 'L_entropy_weight_yyx': 1.8616938419505203e-10, 'L_sep_weight_yyx': 0.0001296967449503555, 'L_scale_weight_yyx': 3.2906468889226633e-07, 'learning_rate_yyx': 0.00967971969740276}. Best is trial 55 with value: -2.400930198925506.
+[I 2026-03-18 22:41:05,755] Trial 61 pruned. 
+[I 2026-03-18 22:41:10,300] Trial 62 pruned. 
+[I 2026-03-18 22:41:10,919] Trial 65 finished with value: -2.7667033937518317 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 2.030483461029749e-08, 'L_entropy_weight_yyx': 0.00016114442169413878, 'L_sep_weight_yyx': 0.00010867589177085119, 'L_scale_weight_yyx': 3.579837859369096e-05, 'learning_rate_yyx': 0.007786321985708258}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:41:12,428] Trial 67 finished with value: -2.7635338298968652 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.9185127525525993e-09, 'L_entropy_weight_yyx': 0.0005658549621929985, 'L_sep_weight_yyx': 5.09743982507943e-10, 'L_scale_weight_yyx': 6.702864224018134e-09, 'learning_rate_yyx': 0.0026124499632756357}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:41:19,470] Trial 72 finished with value: -2.7666109085083006 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 2.4842923809150992e-06, 'L_entropy_weight_yyx': 5.446660394381187e-10, 'L_sep_weight_yyx': 4.1840526396299555e-05, 'L_scale_weight_yyx': 1.7605450955044237e-07, 'learning_rate_yyx': 0.008207140288124234}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:41:29,133] Trial 68 pruned. 
+[I 2026-03-18 22:41:31,410] Trial 63 finished with value: -2.4036861318853044 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00081431388089181, 'L_entropy_weight_yyx': 6.115396265943203e-05, 'L_sep_weight_yyx': 0.0005689013003591854, 'L_scale_weight_yyx': 4.309370537505218e-05, 'learning_rate_yyx': 0.009067623985424118}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:41:36,845] Trial 69 pruned. 
+[I 2026-03-18 22:41:45,368] Trial 65 finished with value: -2.3868174258483057 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 0.0005286853455593913, 'L_entropy_weight_yyx': 3.9615494659479815e-10, 'L_sep_weight_yyx': 9.722557380433179e-05, 'L_scale_weight_yyx': 1.2932107115377014e-07, 'learning_rate_yyx': 0.00840600848609758}. Best is trial 55 with value: -2.400930198925506.
+[I 2026-03-18 22:41:49,819] Trial 66 pruned. 
+[I 2026-03-18 22:41:54,538] Trial 67 pruned. 
+[I 2026-03-18 22:41:57,457] Trial 78 finished with value: -2.759236577487884 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 2, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 3, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.214150673120871e-05, 'L_entropy_weight_yyx': 3.728273452515405e-10, 'L_sep_weight_yyx': 3.447667217067393e-05, 'L_scale_weight_yyx': 1.4645938496063816e-05, 'learning_rate_yyx': 0.00853103252565198}. Best is trial 25 with value: -2.762886536950096.
+[I 2026-03-18 22:41:59,034] Trial 68 pruned. 
+[I 2026-03-18 22:42:04,353] Trial 73 finished with value: -2.7679184754689534 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.717690547924941e-07, 'L_entropy_weight_yyx': 1.42712787601802e-09, 'L_sep_weight_yyx': 0.0001932149919458792, 'L_scale_weight_yyx': 7.632610312245948e-08, 'learning_rate_yyx': 0.009214349712331739}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:42:09,811] Trial 47 finished with value: -2.7647611973649364 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.850202221303525e-05, 'L_entropy_weight_yyx': 0.0001643547417141395, 'L_sep_weight_yyx': 2.8640096709802767e-05, 'L_scale_weight_yyx': 0.00013436984921254714, 'learning_rate_yyx': 0.0076249490396132795}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:42:22,160] Trial 70 pruned. 
+[I 2026-03-18 22:42:22,183] Trial 63 finished with value: -2.3932118264222755 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00021563709285617885, 'L_entropy_weight_yyx': 2.3643970854039992e-07, 'L_sep_weight_yyx': 2.510617922355784e-06, 'L_scale_weight_yyx': 9.350834415944479e-08, 'learning_rate_yyx': 0.009053459647476577}. Best is trial 44 with value: -2.4022889279096553.
+[I 2026-03-18 22:42:23,032] Trial 64 finished with value: -2.4032604050140733 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0009689823180859046, 'L_entropy_weight_yyx': 5.912653146468295e-05, 'L_sep_weight_yyx': 0.0004986695850775849, 'L_scale_weight_yyx': 4.374612761428504e-05, 'learning_rate_yyx': 0.008852498623960463}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:42:23,655] Trial 66 finished with value: -2.7641697272747625 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 6.349993828939163e-08, 'L_entropy_weight_yyx': 7.490294780129675e-05, 'L_sep_weight_yyx': 0.0001103514757907257, 'L_scale_weight_yyx': 1.1382985870921311e-05, 'learning_rate_yyx': 0.006060217713107763}. Best is trial 0 with value: -2.7678615354442075.
+[I 2026-03-18 22:42:25,694] Trial 69 pruned. 
+[I 2026-03-18 22:42:27,345] Trial 48 pruned. 
+[I 2026-03-18 22:42:35,535] Trial 49 pruned. 
+[I 2026-03-18 22:42:36,232] Trial 70 pruned. 
+
+Source events: 20158
+Target events: 27060
+Full model ln_yyx : 2239.13666 nats/sec, 74.47239 nats/event
+Full model Log loss : -2.38791
+Full model ln_yyx : 2231.93358 nats/sec, 74.23282 nats/event
+Full model Log loss : -2.38640
+Full model ln_yyx : 2237.95485 nats/sec, 74.43309 nats/event
+Full model Log loss : -2.39603
+Full model ln_yyx : 2239.67704 nats/sec, 74.49037 nats/event
+Full model Log loss : -2.39180
+Full model ln_yyx : 2218.96380 nats/sec, 73.80146 nats/event
+Full model Log loss : -2.36283
+Full model ln_yyx : 2211.49876 nats/sec, 73.55317 nats/event
+Full model Log loss : -2.36330
+Full model ln_yyx : 2217.15094 nats/sec, 73.74116 nats/event
+Full model Log loss : -2.38809
+Full model ln_yyx : 2237.44754 nats/sec, 74.41622 nats/event
+Full model Log loss : -2.38886
+Full model ln_yyx : 2231.37427 nats/sec, 74.21422 nats/event
+Full model Log loss : -2.38801
+Full model ln_yyx : 2232.58010 nats/sec, 74.25433 nats/event
+Full model Log loss : -2.38989
+Full model ln_yyx : 2236.06810 nats/sec, 74.37034 nats/event
+Full model Log loss : -2.38887
+Full model ln_yyx : 2231.03957 nats/sec, 74.20309 nats/event
+Full model Log loss : -2.38984
+Full model ln_yyx : 2227.99290 nats/sec, 74.10176 nats/event
+Full model Log loss : -2.40093
+Full model ln_yyx : 2243.51307 nats/sec, 74.61795 nats/event
+Full model Log loss : -2.39061
+Full model ln_yyx : 2228.23216 nats/sec, 74.10972 nats/event
+Full model Log loss : -2.39142
+Full model ln_yyx : 2243.83493 nats/sec, 74.62866 nats/event
+Full model Log loss : -2.38695
+Full model ln_yyx : 2221.87899 nats/sec, 73.89841 nats/event
+Full model Log loss : -2.38682
+Optimization finished. Config saved to results/opt-full/opt_full_160_best_config.txt
+[I 2026-03-18 22:42:41,145] Trial 67 pruned. 
+[I 2026-03-18 22:42:43,588] Trial 79 pruned. 
+[I 2026-03-18 22:42:50,811] Trial 74 finished with value: -2.7679246107737225 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.3698056514545486e-07, 'L_entropy_weight_yyx': 2.9669586957863934e-10, 'L_sep_weight_yyx': 0.00017534580241122355, 'L_scale_weight_yyx': 8.068443194643205e-08, 'learning_rate_yyx': 0.0093052448910154}. Best is trial 55 with value: -2.7679802735646564.
+[I 2026-03-18 22:42:54,117] Trial 64 finished with value: -2.362754360101162 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 4, 'num_mix_components_yyx': 3, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.00023457654004985568, 'L_entropy_weight_yyx': 7.681277095637324e-07, 'L_sep_weight_yyx': 2.292225415405818e-06, 'L_scale_weight_yyx': 3.860357420611429e-08, 'learning_rate_yyx': 0.009002677592022949}. Best is trial 44 with value: -2.4022889279096553.
+
+Source events: 20158
+Target events: 16159
+Full model ln_yyx : 1333.58035 nats/sec, 74.27578 nats/event
+Full model Log loss : -2.39456
+Full model ln_yyx : 1316.09453 nats/sec, 73.30188 nats/event
+Full model Log loss : -2.35928
+Full model ln_yyx : 1320.52880 nats/sec, 73.54885 nats/event
+Full model Log loss : -2.36335
+Full model ln_yyx : 1319.49900 nats/sec, 73.49150 nats/event
+Full model Log loss : -2.36698
+Full model ln_yyx : 1332.81606 nats/sec, 74.23321 nats/event
+Full model Log loss : -2.40229
+Full model ln_yyx : 1314.39200 nats/sec, 73.20706 nats/event
+Full model Log loss : -2.35527
+Full model ln_yyx : 1342.94628 nats/sec, 74.79743 nats/event
+Full model Log loss : -2.39227
+Full model ln_yyx : 1332.68783 nats/sec, 74.22607 nats/event
+Full model Log loss : -2.39336
+Full model ln_yyx : 1332.45005 nats/sec, 74.21283 nats/event
+Full model Log loss : -2.39359
+Full model ln_yyx : 1320.48533 nats/sec, 73.54643 nats/event
+Full model Log loss : -2.36228
+Full model ln_yyx : 1319.83866 nats/sec, 73.51042 nats/event
+Full model Log loss : -2.36169
+Full model ln_yyx : 1338.31229 nats/sec, 74.53933 nats/event
+Full model Log loss : -2.39107
+Full model ln_yyx : 1328.85126 nats/sec, 74.01239 nats/event
+Full model Log loss : -2.38522
+Full model ln_yyx : 1318.03917 nats/sec, 73.41019 nats/event
+Full model Log loss : -2.35846
+Full model ln_yyx : 1329.17627 nats/sec, 74.03049 nats/event
+Full model Log loss : -2.39321
+Full model ln_yyx : 1315.51001 nats/sec, 73.26932 nats/event
+Full model Log loss : -2.36275
+Optimization finished. Config saved to results/opt-full/opt_full_169_best_config.txt
+[I 2026-03-18 22:43:21,022] Trial 65 finished with value: -2.4038363782938 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0008267639517589301, 'L_entropy_weight_yyx': 1.324683971317586e-05, 'L_sep_weight_yyx': 0.00021292121167019358, 'L_scale_weight_yyx': 8.447336254532563e-05, 'learning_rate_yyx': 0.008763876503903156}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:43:21,485] Trial 50 pruned. 
+[I 2026-03-18 22:43:27,010] Trial 68 pruned. 
+[I 2026-03-18 22:43:34,171] Trial 75 finished with value: -2.7679280757904055 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 1.0306792404162924e-07, 'L_entropy_weight_yyx': 2.66696206003806e-10, 'L_sep_weight_yyx': 0.00015000428395211927, 'L_scale_weight_yyx': 8.958355322569133e-08, 'learning_rate_yyx': 0.009227107181705467}. Best is trial 55 with value: -2.7679802735646564.
+
+Source events: 39192
+Target events: 14713
+Full model ln_yyx : 2653.32416 nats/sec, 162.30488 nats/event
+Full model Log loss : -2.76589
+Full model ln_yyx : 2676.73062 nats/sec, 163.73667 nats/event
+Full model Log loss : -2.76313
+Full model ln_yyx : 2680.61855 nats/sec, 163.97449 nats/event
+Full model Log loss : -2.76409
+Full model ln_yyx : 2665.01449 nats/sec, 163.01998 nats/event
+Full model Log loss : -2.76580
+Full model ln_yyx : 2675.28352 nats/sec, 163.64815 nats/event
+Full model Log loss : -2.76441
+Full model ln_yyx : 2655.43642 nats/sec, 162.43409 nats/event
+Full model Log loss : -2.76751
+Full model ln_yyx : 2661.01353 nats/sec, 162.77524 nats/event
+Full model Log loss : -2.76682
+Full model ln_yyx : 2680.83784 nats/sec, 163.98791 nats/event
+Full model Log loss : -2.76614
+Full model ln_yyx : 2655.19773 nats/sec, 162.41949 nats/event
+Full model Log loss : -2.76723
+Full model ln_yyx : 2665.04065 nats/sec, 163.02159 nats/event
+Full model Log loss : -2.76639
+Full model ln_yyx : 2674.39088 nats/sec, 163.59354 nats/event
+Full model Log loss : -2.76664
+Full model ln_yyx : 2650.44279 nats/sec, 162.12863 nats/event
+Full model Log loss : -2.76798
+Full model ln_yyx : 2655.19667 nats/sec, 162.41942 nats/event
+Full model Log loss : -2.76633
+Full model ln_yyx : 2654.20470 nats/sec, 162.35875 nats/event
+Full model Log loss : -2.76347
+Full model ln_yyx : 2639.36708 nats/sec, 161.45112 nats/event
+Full model Log loss : -2.76782
+Full model ln_yyx : 2654.07672 nats/sec, 162.35092 nats/event
+Full model Log loss : -2.76549
+Full model ln_yyx : 2674.47472 nats/sec, 163.59867 nats/event
+Full model Log loss : -2.76676
+Full model ln_yyx : 2663.23632 nats/sec, 162.91121 nats/event
+Full model Log loss : -2.76661
+Full model ln_yyx : 2651.19802 nats/sec, 162.17483 nats/event
+Full model Log loss : -2.76792
+Full model ln_yyx : 2651.76707 nats/sec, 162.20964 nats/event
+Full model Log loss : -2.76792
+Full model ln_yyx : 2651.38972 nats/sec, 162.18655 nats/event
+Full model Log loss : -2.76793
+Optimization finished. Config saved to results/opt-full/opt_full_172_best_config.txt
+[I 2026-03-18 22:43:39,849] Trial 80 finished with value: -2.72849780403994 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 5, 'context_size_yyx': 3, 'num_mix_components_yyx': 2, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.00014430950474579235, 'L_entropy_weight_yyx': 7.180121974552448e-10, 'L_sep_weight_yyx': 8.109367604948556e-05, 'L_scale_weight_yyx': 7.219384538433715e-05, 'learning_rate_yyx': 0.006548381688418618}. Best is trial 25 with value: -2.762886536950096.
+
+Source events: 39192
+Target events: 3403
+Full model ln_yyx : 613.69353 nats/sec, 162.30508 nats/event
+Full model Log loss : -2.76036
+Full model ln_yyx : 613.87182 nats/sec, 162.35223 nats/event
+Full model Log loss : -2.76025
+Full model ln_yyx : 603.43675 nats/sec, 159.59244 nats/event
+Full model Log loss : -2.72740
+Full model ln_yyx : 615.63382 nats/sec, 162.81823 nats/event
+Full model Log loss : -2.76218
+Full model ln_yyx : 615.13597 nats/sec, 162.68656 nats/event
+Full model Log loss : -2.76233
+Full model ln_yyx : 615.09992 nats/sec, 162.67703 nats/event
+Full model Log loss : -2.76217
+Full model ln_yyx : 610.32571 nats/sec, 161.41438 nats/event
+Full model Log loss : -2.76160
+Full model ln_yyx : 612.77205 nats/sec, 162.06137 nats/event
+Full model Log loss : -2.76265
+Full model ln_yyx : 612.56793 nats/sec, 162.00739 nats/event
+Full model Log loss : -2.76263
+Full model ln_yyx : 615.77796 nats/sec, 162.85635 nats/event
+Full model Log loss : -2.76177
+Full model ln_yyx : 612.98805 nats/sec, 162.11850 nats/event
+Full model Log loss : -2.76255
+Full model ln_yyx : 617.10387 nats/sec, 163.20702 nats/event
+Full model Log loss : -2.75924
+Full model ln_yyx : 605.80807 nats/sec, 160.21959 nats/event
+Full model Log loss : -2.72850
+Optimization finished. Config saved to results/opt-full/opt_full_173_best_config.txt
+[I 2026-03-18 22:43:40,826] Trial 71 finished with value: -2.766279982327172 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.958168852016601e-10, 'L_entropy_weight_yyx': 0.0003733011765732254, 'L_sep_weight_yyx': 9.00533793988908e-09, 'L_scale_weight_yyx': 4.2426391584386964e-08, 'learning_rate_yyx': 0.006439252489311881}. Best is trial 6 with value: -2.7665796528518882.
+[I 2026-03-18 22:43:43,712] Trial 69 pruned. 
+[I 2026-03-18 22:44:14,844] Trial 66 finished with value: -2.3948874528633803 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 6, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'GELU', 'L2_weight_yyx': 0.0009959219377175367, 'L_entropy_weight_yyx': 1.1977112358275692e-05, 'L_sep_weight_yyx': 0.0002229430149349842, 'L_scale_weight_yyx': 6.924124944789201e-05, 'learning_rate_yyx': 0.008887263927373495}. Best is trial 53 with value: -2.4049037025927396.
+[I 2026-03-18 22:44:23,752] Trial 67 pruned. 
+
+Source events: 20158
+Target events: 13628
+Full model ln_yyx : 1124.48112 nats/sec, 74.26130 nats/event
+Full model Log loss : -2.39580
+Full model ln_yyx : 1120.82940 nats/sec, 74.02014 nats/event
+Full model Log loss : -2.39351
+Full model ln_yyx : 1121.12339 nats/sec, 74.03955 nats/event
+Full model Log loss : -2.39117
+Full model ln_yyx : 1120.91747 nats/sec, 74.02596 nats/event
+Full model Log loss : -2.39842
+Full model ln_yyx : 1118.64304 nats/sec, 73.87575 nats/event
+Full model Log loss : -2.36591
+Full model ln_yyx : 1114.77710 nats/sec, 73.62044 nats/event
+Full model Log loss : -2.36146
+Full model ln_yyx : 1118.95022 nats/sec, 73.89604 nats/event
+Full model Log loss : -2.40361
+Full model ln_yyx : 1128.90565 nats/sec, 74.55350 nats/event
+Full model Log loss : -2.40490
+Full model ln_yyx : 1130.48363 nats/sec, 74.65771 nats/event
+Full model Log loss : -2.40004
+Full model ln_yyx : 1128.44616 nats/sec, 74.52315 nats/event
+Full model Log loss : -2.39424
+Full model ln_yyx : 1135.18645 nats/sec, 74.96829 nats/event
+Full model Log loss : -2.39474
+Full model ln_yyx : 1115.14827 nats/sec, 73.64495 nats/event
+Full model Log loss : -2.39428
+Full model ln_yyx : 1127.20350 nats/sec, 74.44109 nats/event
+Full model Log loss : -2.39457
+Full model ln_yyx : 1122.96265 nats/sec, 74.16102 nats/event
+Full model Log loss : -2.40357
+Full model ln_yyx : 1123.23887 nats/sec, 74.17926 nats/event
+Full model Log loss : -2.40369
+Full model ln_yyx : 1121.05193 nats/sec, 74.03484 nats/event
+Full model Log loss : -2.40326
+Full model ln_yyx : 1118.09450 nats/sec, 73.83952 nats/event
+Full model Log loss : -2.40384
+Full model ln_yyx : 1121.99546 nats/sec, 74.09715 nats/event
+Full model Log loss : -2.39489
+Optimization finished. Config saved to results/opt-full/opt_full_163_best_config.txt
+[I 2026-03-18 22:44:28,095] Trial 70 pruned. 
+[I 2026-03-18 22:44:44,203] Trial 71 pruned. 
+[I 2026-03-18 22:44:59,331] Trial 72 finished with value: -2.766630823097587 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 4, 'hidden_size_yyx_l1': 3, 'context_size_yyx': 3, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 5.056747524278874e-10, 'L_entropy_weight_yyx': 0.000448208321156497, 'L_sep_weight_yyx': 8.648695918310274e-09, 'L_scale_weight_yyx': 3.736840480318916e-08, 'learning_rate_yyx': 0.006849946777730734}. Best is trial 72 with value: -2.766630823097587.
+[I 2026-03-18 22:45:05,954] Trial 73 pruned. 
+[I 2026-03-18 22:45:12,613] Trial 74 pruned. 
+[I 2026-03-18 22:45:19,224] Trial 75 pruned. 
+[I 2026-03-18 22:45:25,764] Trial 76 pruned. 
+[I 2026-03-18 22:45:41,181] Trial 77 pruned. 
+[I 2026-03-18 22:45:44,275] Trial 72 finished with value: -2.7665960774442806 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 5, 'hidden_size_yyx_l1': 6, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'gru', 'activation_func_yyx': 'ReLU', 'L2_weight_yyx': 4.244130808776865e-08, 'L_entropy_weight_yyx': 0.00016081079646461185, 'L_sep_weight_yyx': 0.00012278837591041098, 'L_scale_weight_yyx': 4.3327908737067556e-05, 'learning_rate_yyx': 0.008169977935234787}. Best is trial 0 with value: -2.7678615354442075.
+
+Source events: 39192
+Target events: 40082
+Full model ln_yyx : 7307.97653 nats/sec, 164.09308 nats/event
+Full model Log loss : -2.76298
+Full model ln_yyx : 7116.75912 nats/sec, 159.79949 nats/event
+Full model Log loss : -2.72988
+Full model ln_yyx : 7279.69690 nats/sec, 163.45809 nats/event
+Full model Log loss : -2.76320
+Full model ln_yyx : 7225.19951 nats/sec, 162.23441 nats/event
+Full model Log loss : -2.76279
+Full model ln_yyx : 7235.83571 nats/sec, 162.47323 nats/event
+Full model Log loss : -2.76470
+Full model ln_yyx : 7256.09490 nats/sec, 162.92813 nats/event
+Full model Log loss : -2.76544
+Full model ln_yyx : 7248.38681 nats/sec, 162.75506 nats/event
+Full model Log loss : -2.76560
+Full model ln_yyx : 7248.61090 nats/sec, 162.76009 nats/event
+Full model Log loss : -2.76690
+Full model ln_yyx : 7293.25395 nats/sec, 163.76250 nats/event
+Full model Log loss : -2.76202
+Full model ln_yyx : 7230.53240 nats/sec, 162.35415 nats/event
+Full model Log loss : -2.76671
+Full model ln_yyx : 7228.98904 nats/sec, 162.31950 nats/event
+Full model Log loss : -2.76651
+Full model ln_yyx : 7224.40309 nats/sec, 162.21653 nats/event
+Full model Log loss : -2.76648
+Full model ln_yyx : 7216.76534 nats/sec, 162.04503 nats/event
+Full model Log loss : -2.76670
+Full model ln_yyx : 7248.39554 nats/sec, 162.75525 nats/event
+Full model Log loss : -2.76417
+Full model ln_yyx : 7226.80641 nats/sec, 162.27049 nats/event
+Full model Log loss : -2.76660
+Optimization finished. Config saved to results/opt-full/opt_full_175_best_config.txt
+[I 2026-03-18 22:45:47,557] Trial 51 finished with value: -2.7658621219799135 and parameters: {'n_layers_yyx': 2, 'hidden_size_yyx_l0': 3, 'hidden_size_yyx_l1': 4, 'context_size_yyx': 1, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 0.0005208285195940369, 'L_entropy_weight_yyx': 6.113008358798847e-05, 'L_sep_weight_yyx': 1.0101308685708024e-05, 'L_scale_weight_yyx': 4.902235018077993e-07, 'learning_rate_yyx': 0.0017292800733652298}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:45:47,842] Trial 78 pruned. 
+[I 2026-03-18 22:45:54,024] Trial 52 pruned. 
+[I 2026-03-18 22:46:02,807] Trial 79 pruned. 
+[I 2026-03-18 22:46:08,946] Trial 53 pruned. 
+[I 2026-03-18 22:46:15,576] Trial 54 pruned. 
+[I 2026-03-18 22:46:18,168] Trial 80 pruned. 
+
+Source events: 39192
+Target events: 29032
+Full model ln_yyx : 5172.77013 nats/sec, 160.35730 nats/event
+Full model Log loss : -2.72661
+Full model ln_yyx : 5231.01081 nats/sec, 162.16278 nats/event
+Full model Log loss : -2.76526
+Full model ln_yyx : 5249.20482 nats/sec, 162.72680 nats/event
+Full model Log loss : -2.76513
+Full model ln_yyx : 5287.56280 nats/sec, 163.91590 nats/event
+Full model Log loss : -2.76133
+Full model ln_yyx : 5243.11284 nats/sec, 162.53794 nats/event
+Full model Log loss : -2.76593
+Full model ln_yyx : 5230.54108 nats/sec, 162.14821 nats/event
+Full model Log loss : -2.76633
+Full model ln_yyx : 5223.23894 nats/sec, 161.92185 nats/event
+Full model Log loss : -2.75486
+Full model ln_yyx : 5256.56814 nats/sec, 162.95506 nats/event
+Full model Log loss : -2.76429
+Full model ln_yyx : 5251.70602 nats/sec, 162.80433 nats/event
+Full model Log loss : -2.76513
+Full model ln_yyx : 5274.50338 nats/sec, 163.51106 nats/event
+Full model Log loss : -2.75148
+Full model ln_yyx : 5246.69272 nats/sec, 162.64892 nats/event
+Full model Log loss : -2.76353
+Full model ln_yyx : 5215.04375 nats/sec, 161.66779 nats/event
+Full model Log loss : -2.76628
+Full model ln_yyx : 5212.64276 nats/sec, 161.59336 nats/event
+Full model Log loss : -2.76663
+Optimization finished. Config saved to results/opt-full/opt_full_174_best_config.txt
+[I 2026-03-18 22:46:22,047] Trial 55 pruned. 
+[I 2026-03-18 22:47:02,423] Trial 56 pruned. 
+[I 2026-03-18 22:47:44,665] Trial 57 pruned. 
+[I 2026-03-18 22:48:23,934] Trial 58 pruned. 
+[I 2026-03-18 22:49:03,374] Trial 59 pruned. 
+[I 2026-03-18 22:49:09,886] Trial 60 pruned. 
+[I 2026-03-18 22:49:24,181] Trial 61 pruned. 
+[I 2026-03-18 22:49:39,015] Trial 62 pruned. 
+[I 2026-03-18 22:49:45,227] Trial 63 pruned. 
+[I 2026-03-18 22:50:21,062] Trial 64 finished with value: -2.7642459715205345 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 5, 'context_size_yyx': 4, 'num_mix_components_yyx': 4, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 1.0788187159679378e-06, 'L_entropy_weight_yyx': 1.140196544829628e-05, 'L_sep_weight_yyx': 1.8100705820457405e-05, 'L_scale_weight_yyx': 0.0007774306797822474, 'learning_rate_yyx': 0.007271042015636066}. Best is trial 8 with value: -2.7663050128086293.
+[I 2026-03-18 22:51:25,332] Trial 65 finished with value: -2.764513300730321 and parameters: {'n_layers_yyx': 1, 'hidden_size_yyx_l0': 4, 'context_size_yyx': 4, 'num_mix_components_yyx': 5, 'context_extractor_yyx': 'lstm', 'activation_func_yyx': 'Tanh', 'L2_weight_yyx': 2.9346663876753655e-07, 'L_entropy_weight_yyx': 3.504606268003638e-05, 'L_sep_weight_yyx': 7.357452270355324e-06, 'L_scale_weight_yyx': 3.567016769884657e-05, 'learning_rate_yyx': 0.0055343559420981785}. Best is trial 8 with value: -2.7663050128086293.
+
+Source events: 39192
+Target events: 20800
+Full model ln_yyx : 3747.74747 nats/sec, 162.16215 nats/event
+Full model Log loss : -2.76057
+Full model ln_yyx : 3699.88407 nats/sec, 160.09114 nats/event
+Full model Log loss : -2.73036
+Full model ln_yyx : 3742.38774 nats/sec, 161.93024 nats/event
+Full model Log loss : -2.76576
+Full model ln_yyx : 3770.58856 nats/sec, 163.15047 nats/event
+Full model Log loss : -2.76477
+Full model ln_yyx : 3751.59291 nats/sec, 162.32854 nats/event
+Full model Log loss : -2.76534
+Full model ln_yyx : 3732.56376 nats/sec, 161.50516 nats/event
+Full model Log loss : -2.76500
+Full model ln_yyx : 3748.00725 nats/sec, 162.17339 nats/event
+Full model Log loss : -2.76498
+Full model ln_yyx : 3701.62664 nats/sec, 160.16654 nats/event
+Full model Log loss : -2.73272
+Full model ln_yyx : 3764.53316 nats/sec, 162.88845 nats/event
+Full model Log loss : -2.76179
+Full model ln_yyx : 3733.49803 nats/sec, 161.54559 nats/event
+Full model Log loss : -2.76495
+Full model ln_yyx : 3752.09986 nats/sec, 162.35047 nats/event
+Full model Log loss : -2.76368
+Full model ln_yyx : 3755.88332 nats/sec, 162.51418 nats/event
+Full model Log loss : -2.76476
+Full model ln_yyx : 3729.51779 nats/sec, 161.37337 nats/event
+Full model Log loss : -2.76586
+Full model ln_yyx : 3727.81705 nats/sec, 161.29978 nats/event
+Full model Log loss : -2.76425
+Full model ln_yyx : 3760.05933 nats/sec, 162.69487 nats/event
+Full model Log loss : -2.76451
+Optimization finished. Config saved to results/opt-full/opt_full_170_best_config.txt

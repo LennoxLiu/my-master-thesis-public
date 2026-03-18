@@ -1,0 +1,1081 @@
+Warning: Failed writing log files to directory [/var/log/nvidia-mps]. No logs will be available.
+Multiple runs task 20: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 49
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 3403
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 0: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 46
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 20800
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 22: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 51
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 40082
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 19: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 48
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 14713
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 1: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 47
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 12731
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 13: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 59
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 9421
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 5: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 51
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 40082
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 10: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 56
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 13628
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 14: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 60
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 12539
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 3: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 49
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 3403
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+Multiple runs task 12: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 58
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 8618
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 7: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 53
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 27060
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 17: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 46
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 20800
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 23: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 52
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 38515
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 11: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 57
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 1872
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 9: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 55
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 18269
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 15: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 61
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 11540
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 16: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 62
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 16159
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 4: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 50
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 29032
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 8: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 54
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 10752
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 2: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 48
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 14713
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 21: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 50
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 29032
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 18: source_group: BC, source_neuron: 1, target_group: POm, target_neuron: 47
+
+--- Data Summary ---
+Total events for source process 1783
+Total events for target process 12731
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s]Multiple runs task 6: source_group: BC, source_neuron: 0, target_group: POm, target_neuron: 52
+
+--- Data Summary ---
+Total events for source process 31112
+Total events for target process 38515
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 5) ---
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:21<01:26, 21.74s/it] 20%|██        | 1/5 [00:22<01:28, 22.25s/it] 20%|██        | 1/5 [00:23<01:34, 23.51s/it] 20%|██        | 1/5 [00:23<01:34, 23.71s/it] 20%|██        | 1/5 [00:24<01:38, 24.63s/it] 20%|██        | 1/5 [00:27<01:48, 27.19s/it] 40%|████      | 2/5 [00:28<00:38, 12.78s/it] 40%|████      | 2/5 [00:29<00:40, 13.36s/it] 40%|████      | 2/5 [00:30<00:40, 13.65s/it] 20%|██        | 1/5 [00:30<02:01, 30.45s/it] 60%|██████    | 3/5 [00:32<00:17,  8.73s/it] 40%|████      | 2/5 [00:33<00:45, 15.32s/it] 60%|██████    | 3/5 [00:34<00:18,  9.50s/it] 40%|████      | 2/5 [00:37<00:52, 17.60s/it] 80%|████████  | 4/5 [00:38<00:07,  7.59s/it] 60%|██████    | 3/5 [00:38<00:22, 11.30s/it] 40%|████      | 2/5 [00:39<00:52, 17.67s/it] 80%|████████  | 4/5 [00:39<00:08,  8.04s/it] 80%|████████  | 4/5 [00:45<00:09,  9.46s/it] 40%|████      | 2/5 [00:45<01:06, 22.20s/it]100%|██████████| 5/5 [00:45<00:00,  7.31s/it]100%|██████████| 5/5 [00:45<00:00,  9.19s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.660
+Loss - yyx: -0.332
+Run 1 completed in 0.36 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.569
+Loss - yyx: -0.916
+Run 2 completed in 0.12 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.946
+Loss - yyx: -0.438
+Run 3 completed in 0.08 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.328
+Loss - yyx: -0.742
+Run 4 completed in 0.10 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.625
+Loss - yyx: -0.994
+Run 5 completed in 0.10 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.225420  0.414329  ...  3.327637  3.569387  3.624792
+loss_yyx      5.0 -0.684419  0.290666  ... -0.742447 -0.437589 -0.332022
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_23.csv
+ 60%|██████    | 3/5 [00:48<00:30, 15.22s/it]100%|██████████| 5/5 [00:48<00:00,  8.66s/it]100%|██████████| 5/5 [00:48<00:00,  9.74s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.741
+Loss - yyx: -0.365
+Run 1 completed in 0.37 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.546
+Loss - yyx: -0.907
+Run 2 completed in 0.10 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.986
+Loss - yyx: -0.449
+Run 3 completed in 0.07 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.398
+Loss - yyx: -0.741
+Run 4 completed in 0.10 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.683
+Loss - yyx: -0.976
+Run 5 completed in 0.18 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.270578  0.394890  ...  3.397571  3.546136  3.682646
+loss_yyx      5.0 -0.687572  0.271597  ... -0.741388 -0.448693 -0.365151
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_19.csv
+ 60%|██████    | 3/5 [00:51<00:30, 15.30s/it]100%|██████████| 5/5 [00:52<00:00,  8.48s/it]100%|██████████| 5/5 [00:52<00:00, 10.43s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.868
+Loss - yyx: -0.436
+Run 1 completed in 0.39 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.609
+Loss - yyx: -0.945
+Run 2 completed in 0.11 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.964
+Loss - yyx: -0.426
+Run 3 completed in 0.14 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.450
+Loss - yyx: -0.790
+Run 4 completed in 0.11 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.717
+Loss - yyx: -1.017
+Run 5 completed in 0.11 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.321421  0.383523  ...  3.449628  3.608533  3.716806
+loss_yyx      5.0 -0.722629  0.278637  ... -0.789711 -0.435570 -0.426317
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_22.csv
+ 60%|██████    | 3/5 [00:52<00:32, 16.49s/it] 60%|██████    | 3/5 [00:56<00:33, 16.80s/it] 80%|████████  | 4/5 [01:00<00:12, 12.79s/it] 80%|████████  | 4/5 [01:01<00:14, 14.47s/it] 80%|████████  | 4/5 [01:12<00:16, 16.43s/it] 80%|████████  | 4/5 [01:12<00:17, 17.71s/it]100%|██████████| 5/5 [01:12<00:00, 13.14s/it]100%|██████████| 5/5 [01:12<00:00, 14.47s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.929
+Loss - yyx: -0.417
+Run 1 completed in 0.39 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.518
+Loss - yyx: -0.893
+Run 2 completed in 0.16 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.986
+Loss - yyx: -0.443
+Run 3 completed in 0.25 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.402
+Loss - yyx: -0.752
+Run 4 completed in 0.22 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.704
+Loss - yyx: -0.983
+Run 5 completed in 0.18 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.307901  0.338111  ...  3.402186  3.518482  3.703891
+loss_yyx      5.0 -0.697378  0.257743  ... -0.751806 -0.442851 -0.417099
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_21.csv
+100%|██████████| 5/5 [01:20<00:00, 15.25s/it]100%|██████████| 5/5 [01:20<00:00, 16.04s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.872
+Loss - yyx: -0.428
+Run 1 completed in 0.51 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.515
+Loss - yyx: -0.907
+Run 2 completed in 0.14 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 3.061
+Loss - yyx: -0.442
+Run 3 completed in 0.21 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.376
+Loss - yyx: -0.760
+Run 4 completed in 0.15 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.620
+Loss - yyx: -0.985
+Run 5 completed in 0.33 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.288859  0.313801  ...  3.376157  3.515453  3.619649
+loss_yyx      5.0 -0.704150  0.258975  ... -0.759565 -0.441632 -0.427793
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_17.csv
+100%|██████████| 5/5 [01:22<00:00, 14.99s/it]100%|██████████| 5/5 [01:22<00:00, 16.45s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.815
+Loss - yyx: -0.439
+Run 1 completed in 0.41 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.566
+Loss - yyx: -0.934
+Run 2 completed in 0.21 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.958
+Loss - yyx: -0.422
+Run 3 completed in 0.25 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.467
+Loss - yyx: -0.778
+Run 4 completed in 0.33 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.675
+Loss - yyx: -1.000
+Run 5 completed in 0.17 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.296365  0.384234  ...  3.466930  3.566347  3.674646
+loss_yyx      5.0 -0.714686  0.271507  ... -0.778404 -0.439419 -0.421912
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_18.csv
+100%|██████████| 5/5 [01:24<00:00, 14.91s/it]100%|██████████| 5/5 [01:24<00:00, 16.87s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 2.929
+Loss - yyx: -0.423
+Run 1 completed in 0.45 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 3.574
+Loss - yyx: -0.940
+Run 2 completed in 0.31 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 2.980
+Loss - yyx: -0.450
+Run 3 completed in 0.17 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 3.343
+Loss - yyx: -0.756
+Run 4 completed in 0.26 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 3.689
+Loss - yyx: -1.005
+Run 5 completed in 0.20 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec    5.0  3.302944  0.342417  ...  3.342852  3.574241  3.689262
+loss_yyx      5.0 -0.714844  0.270396  ... -0.756066 -0.449984 -0.422573
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_20.csv
+ 20%|██        | 1/5 [01:45<07:02, 105.67s/it] 20%|██        | 1/5 [01:52<07:29, 112.29s/it] 20%|██        | 1/5 [02:06<08:24, 126.01s/it] 20%|██        | 1/5 [02:11<08:45, 131.36s/it] 20%|██        | 1/5 [02:21<09:25, 141.39s/it] 20%|██        | 1/5 [02:21<09:27, 141.95s/it] 20%|██        | 1/5 [02:24<09:36, 144.00s/it] 20%|██        | 1/5 [02:24<09:39, 144.75s/it] 20%|██        | 1/5 [02:27<09:50, 147.51s/it] 20%|██        | 1/5 [02:31<10:07, 151.79s/it] 20%|██        | 1/5 [02:35<10:22, 155.51s/it] 20%|██        | 1/5 [02:50<11:21, 170.37s/it] 20%|██        | 1/5 [02:51<11:26, 171.50s/it] 20%|██        | 1/5 [03:00<12:00, 180.19s/it] 20%|██        | 1/5 [03:11<12:44, 191.12s/it] 20%|██        | 1/5 [03:15<13:01, 195.35s/it] 40%|████      | 2/5 [03:16<04:50, 96.95s/it]  40%|████      | 2/5 [03:24<05:01, 100.45s/it] 20%|██        | 1/5 [03:28<13:54, 208.56s/it] 40%|████      | 2/5 [03:32<04:54, 98.23s/it]  40%|████      | 2/5 [03:54<05:31, 110.54s/it] 40%|████      | 2/5 [04:05<06:07, 122.33s/it] 40%|████      | 2/5 [04:10<06:06, 122.17s/it] 40%|████      | 2/5 [04:10<06:05, 121.86s/it] 40%|████      | 2/5 [04:24<06:32, 130.93s/it] 60%|██████    | 3/5 [04:36<02:58, 89.09s/it] 40%|████      | 2/5 [04:38<07:01, 140.40s/it] 40%|████      | 2/5 [04:46<07:06, 142.27s/it] 40%|████      | 2/5 [04:50<07:16, 145.50s/it] 60%|██████    | 3/5 [04:53<03:10, 95.19s/it]  40%|████      | 2/5 [05:19<07:52, 157.59s/it] 60%|██████    | 3/5 [05:25<03:23, 101.51s/it] 40%|████      | 2/5 [05:38<08:21, 167.07s/it] 80%|████████  | 4/5 [05:39<01:18, 78.97s/it] 60%|██████    | 3/5 [05:43<03:42, 111.25s/it] 40%|████      | 2/5 [05:49<08:35, 171.74s/it] 60%|██████    | 3/5 [05:51<03:53, 116.91s/it] 40%|████      | 2/5 [05:53<08:53, 177.71s/it] 60%|██████    | 3/5 [05:55<03:44, 112.33s/it] 80%|████████  | 4/5 [05:55<01:22, 82.21s/it] 60%|██████    | 3/5 [06:02<03:54, 117.48s/it] 60%|██████    | 3/5 [06:09<03:56, 118.12s/it] 60%|██████    | 3/5 [06:15<03:56, 118.33s/it] 60%|██████    | 3/5 [06:18<04:09, 124.50s/it] 40%|████      | 2/5 [06:30<09:46, 195.44s/it] 60%|██████    | 3/5 [06:53<04:17, 128.55s/it] 60%|██████    | 3/5 [07:07<04:43, 141.56s/it]100%|██████████| 5/5 [07:09<00:00, 82.83s/it]100%|██████████| 5/5 [07:09<00:00, 85.88s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.450
+Loss - yyx: -2.775
+Run 1 completed in 1.76 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.560
+Loss - yyx: -2.747
+Run 2 completed in 1.51 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.074
+Loss - yyx: -2.802
+Run 3 completed in 1.33 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 128.743
+Loss - yyx: -2.802
+Run 4 completed in 1.06 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.756
+Loss - yyx: -2.717
+Run 5 completed in 1.49 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.316590  1.168765  ...  128.742841  128.755989  129.560309
+loss_yyx      5.0   -2.768663  0.036619  ...   -2.775247   -2.747343   -2.717045
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_8.csv
+ 80%|████████  | 4/5 [07:09<01:32, 92.80s/it]  80%|████████  | 4/5 [07:13<01:39, 99.23s/it]  80%|████████  | 4/5 [07:13<01:42, 102.76s/it] 80%|████████  | 4/5 [07:17<01:45, 105.66s/it] 80%|████████  | 4/5 [07:20<01:39, 99.95s/it]  60%|██████    | 3/5 [07:36<04:49, 144.87s/it] 40%|████      | 2/5 [07:38<11:38, 232.99s/it]100%|██████████| 5/5 [07:44<00:00, 91.80s/it]100%|██████████| 5/5 [07:44<00:00, 92.90s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 127.316
+Loss - yyx: -2.773
+Run 1 completed in 1.87 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.436
+Loss - yyx: -2.759
+Run 2 completed in 1.54 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.357
+Loss - yyx: -2.805
+Run 3 completed in 1.48 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 129.284
+Loss - yyx: -2.803
+Run 4 completed in 1.04 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.909
+Loss - yyx: -2.720
+Run 5 completed in 1.81 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.860543  1.151393  ...  128.908895  129.283891  130.436382
+loss_yyx      5.0   -2.772159  0.035015  ...   -2.772973   -2.759440   -2.720203
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_0.csv
+ 80%|████████  | 4/5 [07:50<01:51, 111.12s/it] 60%|██████    | 3/5 [08:00<05:06, 153.39s/it] 80%|████████  | 4/5 [08:03<01:58, 118.78s/it] 60%|██████    | 3/5 [08:05<05:13, 156.98s/it] 80%|████████  | 4/5 [08:08<01:47, 107.53s/it]100%|██████████| 5/5 [08:29<00:00, 92.94s/it] 100%|██████████| 5/5 [08:29<00:00, 101.82s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.373
+Loss - yyx: -2.768
+Run 1 completed in 2.10 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.590
+Loss - yyx: -2.733
+Run 2 completed in 2.00 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.349
+Loss - yyx: -2.799
+Run 3 completed in 1.63 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.641
+Loss - yyx: -2.782
+Run 4 completed in 1.50 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 127.460
+Loss - yyx: -2.708
+Run 5 completed in 1.26 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  127.882465  1.188286  ...  127.641433  128.348516  129.589761
+loss_yyx      5.0   -2.757950  0.036867  ...   -2.767617   -2.732889   -2.708346
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_3.csv
+100%|██████████| 5/5 [08:37<00:00, 91.78s/it]100%|██████████| 5/5 [08:37<00:00, 103.52s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 127.385
+Loss - yyx: -2.777
+Run 1 completed in 2.40 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.605
+Loss - yyx: -2.744
+Run 2 completed in 1.77 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 129.680
+Loss - yyx: -2.806
+Run 3 completed in 2.13 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.534
+Loss - yyx: -2.789
+Run 4 completed in 1.04 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.858
+Loss - yyx: -2.708
+Run 5 completed in 1.29 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.612470  1.101459  ...  128.857738  129.605062  129.679843
+loss_yyx      5.0   -2.764767  0.039165  ...   -2.776825   -2.744105   -2.707684
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_12.csv
+ 80%|████████  | 4/5 [08:40<02:17, 137.54s/it] 60%|██████    | 3/5 [08:44<05:34, 167.08s/it]100%|██████████| 5/5 [08:56<00:00, 97.98s/it]100%|██████████| 5/5 [08:56<00:00, 107.36s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.855
+Loss - yyx: -2.777
+Run 1 completed in 2.46 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.013
+Loss - yyx: -2.750
+Run 2 completed in 2.31 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.238
+Loss - yyx: -2.800
+Run 3 completed in 1.50 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.326
+Loss - yyx: -2.783
+Run 4 completed in 0.89 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.922
+Loss - yyx: -2.722
+Run 5 completed in 1.79 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.270899  1.260658  ...  128.237544  128.922378  130.013047
+loss_yyx      5.0   -2.766495  0.030639  ...   -2.776766   -2.750141   -2.722139
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_13.csv
+ 80%|████████  | 4/5 [08:57<01:59, 119.70s/it]100%|██████████| 5/5 [08:57<00:00, 101.00s/it]100%|██████████| 5/5 [08:57<00:00, 107.51s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.819
+Loss - yyx: -2.776
+Run 1 completed in 2.37 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.814
+Loss - yyx: -2.748
+Run 2 completed in 1.81 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 129.639
+Loss - yyx: -2.803
+Run 3 completed in 1.87 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.771
+Loss - yyx: -2.797
+Run 4 completed in 1.19 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.831
+Loss - yyx: -2.722
+Run 5 completed in 1.74 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.574876  1.270812  ...  128.830705  129.639101  129.813717
+loss_yyx      5.0   -2.769305  0.034221  ...   -2.776220   -2.748431   -2.721540
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_15.csv
+ 80%|████████  | 4/5 [09:04<02:11, 131.87s/it]100%|██████████| 5/5 [09:16<00:00, 110.47s/it]100%|██████████| 5/5 [09:16<00:00, 111.27s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.439
+Loss - yyx: -2.770
+Run 1 completed in 2.59 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.845
+Loss - yyx: -2.764
+Run 2 completed in 1.32 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 129.539
+Loss - yyx: -2.802
+Run 3 completed in 1.51 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.885
+Loss - yyx: -2.806
+Run 4 completed in 1.87 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 129.103
+Loss - yyx: -2.719
+Run 5 completed in 1.98 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.562086  1.401573  ...  129.103177  129.538926  129.844599
+loss_yyx      5.0   -2.772141  0.034901  ...   -2.769757   -2.764125   -2.719285
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_5.csv
+100%|██████████| 5/5 [09:22<00:00, 104.40s/it]100%|██████████| 5/5 [09:22<00:00, 112.51s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.067
+Loss - yyx: -2.768
+Run 1 completed in 2.19 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.760
+Loss - yyx: -2.759
+Run 2 completed in 2.45 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.646
+Loss - yyx: -2.800
+Run 3 completed in 1.53 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 129.336
+Loss - yyx: -2.808
+Run 4 completed in 1.67 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 129.626
+Loss - yyx: -2.719
+Run 5 completed in 1.54 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.687037  1.526475  ...  129.336308  129.626270  129.759582
+loss_yyx      5.0   -2.770888  0.035442  ...   -2.767679   -2.759362   -2.719391
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_10.csv
+100%|██████████| 5/5 [09:28<00:00, 106.49s/it]100%|██████████| 5/5 [09:28<00:00, 113.71s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.589
+Loss - yyx: -2.781
+Run 1 completed in 2.36 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.628
+Loss - yyx: -2.767
+Run 2 completed in 2.06 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.951
+Loss - yyx: -2.804
+Run 3 completed in 1.50 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 128.786
+Loss - yyx: -2.818
+Run 4 completed in 2.14 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.442
+Loss - yyx: -2.727
+Run 5 completed in 1.41 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.679263  1.441462  ...  128.785782  128.951136  130.628467
+loss_yyx      5.0   -2.779462  0.035256  ...   -2.781339   -2.767138   -2.727108
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_6.csv
+ 80%|████████  | 4/5 [09:40<02:12, 132.59s/it]100%|██████████| 5/5 [09:43<00:00, 102.91s/it]100%|██████████| 5/5 [09:43<00:00, 116.67s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 127.745
+Loss - yyx: -2.779
+Run 1 completed in 2.86 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.992
+Loss - yyx: -2.765
+Run 2 completed in 2.46 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.944
+Loss - yyx: -2.803
+Run 3 completed in 1.57 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 128.655
+Loss - yyx: -2.806
+Run 4 completed in 1.26 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 129.073
+Loss - yyx: -2.726
+Run 5 completed in 1.58 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%        75%         max
+ln_yyx_sec    5.0  129.081716  1.187010  ...  128.944226  129.07260  130.991739
+loss_yyx      5.0   -2.775715  0.032494  ...   -2.779115   -2.76542   -2.725827
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_16.csv
+ 80%|████████  | 4/5 [09:49<02:15, 135.77s/it]100%|██████████| 5/5 [10:01<00:00, 99.49s/it] 100%|██████████| 5/5 [10:01<00:00, 120.26s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.640
+Loss - yyx: -2.776
+Run 1 completed in 3.00 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.397
+Loss - yyx: -2.763
+Run 2 completed in 2.63 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.947
+Loss - yyx: -2.804
+Run 3 completed in 1.97 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 129.262
+Loss - yyx: -2.803
+Run 4 completed in 1.35 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.960
+Loss - yyx: -2.720
+Run 5 completed in 1.06 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.841028  1.366420  ...  128.959504  129.261581  130.397404
+loss_yyx      5.0   -2.773103  0.034488  ...   -2.775723   -2.763371   -2.719864
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_1.csv
+ 60%|██████    | 3/5 [10:06<06:28, 194.21s/it]100%|██████████| 5/5 [10:18<00:00, 110.91s/it]100%|██████████| 5/5 [10:18<00:00, 123.68s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.575
+Loss - yyx: -2.772
+Run 1 completed in 2.41 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.781
+Loss - yyx: -2.766
+Run 2 completed in 2.43 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.283
+Loss - yyx: -2.803
+Run 3 completed in 2.28 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 129.523
+Loss - yyx: -2.811
+Run 4 completed in 1.95 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 129.346
+Loss - yyx: -2.721
+Run 5 completed in 1.23 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.701656  1.318486  ...  129.346475  129.523488  129.780699
+loss_yyx      5.0   -2.774390  0.035535  ...   -2.771698   -2.765536   -2.721123
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_7.csv
+100%|██████████| 5/5 [10:19<00:00, 123.34s/it]100%|██████████| 5/5 [10:19<00:00, 123.80s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 127.977
+Loss - yyx: -2.770
+Run 1 completed in 2.53 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.656
+Loss - yyx: -2.746
+Run 2 completed in 1.01 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.274
+Loss - yyx: -2.797
+Run 3 completed in 2.32 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.090
+Loss - yyx: -2.801
+Run 4 completed in 2.82 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 129.965
+Loss - yyx: -2.723
+Run 5 completed in 1.64 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.792473  1.473093  ...  128.274290  129.964684  130.656468
+loss_yyx      5.0   -2.767717  0.033272  ...   -2.770194   -2.746244   -2.723499
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_14.csv
+100%|██████████| 5/5 [10:52<00:00, 110.50s/it]100%|██████████| 5/5 [10:52<00:00, 130.41s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.872
+Loss - yyx: -2.765
+Run 1 completed in 2.84 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.316
+Loss - yyx: -2.762
+Run 2 completed in 3.05 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.618
+Loss - yyx: -2.805
+Run 3 completed in 2.21 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.608
+Loss - yyx: -2.799
+Run 4 completed in 1.59 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.094
+Loss - yyx: -2.717
+Run 5 completed in 1.19 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.101726  0.934969  ...  128.094060  128.618435  129.316003
+loss_yyx      5.0   -2.769946  0.035225  ...   -2.765344   -2.762367   -2.717338
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_4.csv
+ 80%|████████  | 4/5 [10:54<02:32, 152.76s/it]100%|██████████| 5/5 [11:00<00:00, 112.31s/it]100%|██████████| 5/5 [11:00<00:00, 132.07s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.219
+Loss - yyx: -2.791
+Run 1 completed in 3.18 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 128.513
+Loss - yyx: -2.707
+Run 2 completed in 2.64 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 126.879
+Loss - yyx: -2.764
+Run 3 completed in 2.19 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 128.772
+Loss - yyx: -2.832
+Run 4 completed in 1.81 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.226
+Loss - yyx: -2.761
+Run 5 completed in 1.18 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  127.721691  1.112426  ...  128.226085  128.512763  128.771545
+loss_yyx      5.0   -2.771046  0.045640  ...   -2.764031   -2.760924   -2.707365
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_11.csv
+ 80%|████████  | 4/5 [11:05<02:20, 140.75s/it]100%|██████████| 5/5 [11:53<00:00, 118.75s/it]100%|██████████| 5/5 [11:53<00:00, 142.69s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 126.352
+Loss - yyx: -2.771
+Run 1 completed in 3.26 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 130.210
+Loss - yyx: -2.757
+Run 2 completed in 3.26 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.168
+Loss - yyx: -2.795
+Run 3 completed in 2.22 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 128.907
+Loss - yyx: -2.803
+Run 4 completed in 2.18 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 127.739
+Loss - yyx: -2.691
+Run 5 completed in 0.97 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  128.275134  1.426229  ...  128.167816  128.906853  130.209532
+loss_yyx      5.0   -2.763471  0.044323  ...   -2.771104   -2.757218   -2.691234
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_9.csv
+100%|██████████| 5/5 [12:29<00:00, 120.34s/it]100%|██████████| 5/5 [12:29<00:00, 149.93s/it]
+
+--- Run 1/5 ---
+Run 1 : ln_yyx = 125.485
+Loss - yyx: -2.761
+Run 1 completed in 3.48 minutes.
+
+--- Run 2/5 ---
+Run 2 : ln_yyx = 129.380
+Loss - yyx: -2.765
+Run 2 completed in 4.17 minutes.
+
+--- Run 3/5 ---
+Run 3 : ln_yyx = 128.711
+Loss - yyx: -2.803
+Run 3 completed in 2.47 minutes.
+
+--- Run 4/5 ---
+Run 4 : ln_yyx = 127.722
+Loss - yyx: -2.776
+Run 4 completed in 0.98 minutes.
+
+--- Run 5/5 ---
+Run 5 : ln_yyx = 128.597
+Loss - yyx: -2.718
+Run 5 completed in 1.40 minutes.
+
+--- Multiple Runs Summary ---
+            count        mean       std  ...         50%         75%         max
+ln_yyx_sec    5.0  127.979035  1.513921  ...  128.597253  128.710998  129.379912
+loss_yyx      5.0   -2.764577  0.030586  ...   -2.765230   -2.760587   -2.718440
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_2.csv
