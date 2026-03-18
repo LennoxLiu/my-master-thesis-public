@@ -42,7 +42,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
         --batch_size 512 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
-        --seed 42 &
+        --seed 43 &
 done
 
 wait # Wait for all tasks to finish
