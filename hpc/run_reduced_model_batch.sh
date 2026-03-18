@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --array=0
 #SBATCH --mem-per-cpu=3gb
-#SBATCH --time=00:10:00
+#SBATCH --time=00:15:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -37,7 +37,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/multi_runs_reduced.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_runs 2 \
+        --num_runs 5 \
         --history_length 128 \
         --batch_size 512 \
         --data_time_length 60 \
