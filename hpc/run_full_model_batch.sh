@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=TE_full_runs
 #SBATCH --output=hpc/logs/TE_full_runs_arrayjob%a.out
-#SBATCH --partition=devel
+#SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=12
 #SBATCH --gres=gpu:1
-#SBATCH --array=0
+#SBATCH --array=0-16
 #SBATCH --mem-per-cpu=3328M
 #SBATCH --time=02:00:00
 #SBATCH --account=bw20g013
