@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=TE_reduced
 #SBATCH --output=hpc/logs/TE_reduced_arrayjob%a.out
-#SBATCH --partition=devel
+#SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=16
 #SBATCH --gres=gpu:1
 #SBATCH --array=0
 #SBATCH --mem-per-cpu=3gb
-#SBATCH --time=00:10:00
+#SBATCH --time=02:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -35,12 +35,12 @@ TASKS_PER_JOB=32
 for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     CURRENT_TASK_ID=$((SLURM_ARRAY_TASK_ID * TASKS_PER_JOB + i))
     
-    python hpc/multi_runs_reduced.py \
+    python hpc/hyper_opt_reduced.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_runs 2 \
+        --num_trials 50 \
         --history_length 128 \
         --batch_size 512 \
-        --data_time_length 60 \
+        --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
         --seed 42 &
 done
