@@ -95,6 +95,7 @@ def run_multiple_estimation_reduced(target_events, configs, task_id, n_runs=10, 
     return results_df
 
 
+# User needs to make sure same parameters (except --num_runs) are used for the multiple runs as the runs continues after interruption. The best way is to use the same command line arguments for the multiple runs as the optimization.
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_file_path", type=str, default="data/event_times_data.h5", help="Path to the HDF5 file containing event times")
