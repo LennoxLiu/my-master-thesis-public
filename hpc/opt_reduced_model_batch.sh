@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=TE_reduced
-#SBATCH --output=hpc/logs/TE_reduced_arrayjob%a.out
+#SBATCH --job-name=TE_reduced_opt
+#SBATCH --output=hpc/logs/TE_reduced_opt_arrayjob%a.out
 #SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=16
 #SBATCH --gres=gpu:1
@@ -48,6 +48,6 @@ done
 wait # Wait for all tasks to finish
 
 # Log GPU state right before shutdown to verify utilization
-nvidia-smi >> hpc/logs/gpu_usage_reduced_${SLURM_ARRAY_TASK_ID}.log
+nvidia-smi >> hpc/logs/gpu_usage_opt_reduced_${SLURM_ARRAY_TASK_ID}.log
 
 nvidia-cuda-mps-control -q # Shut down daemon
