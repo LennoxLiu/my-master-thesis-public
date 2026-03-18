@@ -4,8 +4,8 @@
 #SBATCH --partition=devel
 #SBATCH --cpus-per-task=12
 #SBATCH --gres=gpu:1
-#SBATCH --array=0-1
-#SBATCH --mem-per-cpu=3gb
+#SBATCH --array=0
+#SBATCH --mem-per-cpu=3328M
 #SBATCH --time=00:30:00
 #SBATCH --account=bw20g013
 
