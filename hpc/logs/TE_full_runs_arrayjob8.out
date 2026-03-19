@@ -1,0 +1,6481 @@
+Warning: Failed writing log files to directory [/var/log/nvidia-mps]. No logs will be available.
+Multiple runs task 211: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 5
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 32635
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 196: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 55
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 18269
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 193: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 52
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 38515
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 200: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 59
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 9421
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 199: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 58
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 8618
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 205: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 1
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 1783
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 213: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 7
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 20158
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 202: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 61
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 11540
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+Multiple runs task 197: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 56
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 13628
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 198: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 57
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 1872
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+Multiple runs task 212: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 6
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 24874
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 206: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 10
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 20315
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+Multiple runs task 210: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 4
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 10683
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 207: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 11
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 3828
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 214: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 8
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 39192
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 192: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 51
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 40082
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 209: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 3
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 5634
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 215: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 9
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 3618
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 203: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 62
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 16159
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 201: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 60
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 12539
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 195: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 54
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 10752
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 194: source_group: BC, source_neuron: 9, target_group: POm, target_neuron: 53
+
+--- Data Summary ---
+Total events for source process 3618
+Total events for target process 27060
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 204: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 0
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 31112
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]Multiple runs task 208: source_group: POm, source_neuron: 46, target_group: BC, target_neuron: 12
+
+--- Data Summary ---
+Total events for source process 20800
+Total events for target process 54211
+Data Time: 900 seconds
+Using device: cuda
+Overwriting history_length: 128
+Overwriting data_time_length: 900
+--- Starting Multiple Runs Estimation (Runs 1 to 50) ---
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [01:21<1:06:22, 81.28s/it]  2%|▏         | 1/50 [01:22<1:07:04, 82.13s/it]  2%|▏         | 1/50 [01:23<1:08:13, 83.55s/it]  2%|▏         | 1/50 [01:24<1:08:49, 84.27s/it]  2%|▏         | 1/50 [01:23<1:08:17, 83.63s/it]  2%|▏         | 1/50 [01:27<1:11:12, 87.19s/it]  2%|▏         | 1/50 [01:27<1:11:21, 87.37s/it]  2%|▏         | 1/50 [01:28<1:12:26, 88.71s/it]  2%|▏         | 1/50 [01:32<1:15:12, 92.09s/it]  2%|▏         | 1/50 [01:33<1:16:27, 93.61s/it]  4%|▍         | 2/50 [01:35<33:25, 41.79s/it]    2%|▏         | 1/50 [01:38<1:20:11, 98.20s/it]  4%|▍         | 2/50 [01:39<35:23, 44.24s/it]    4%|▍         | 2/50 [01:42<36:33, 45.70s/it]    2%|▏         | 1/50 [01:42<1:23:22, 102.09s/it]  4%|▍         | 2/50 [01:43<36:35, 45.73s/it]    4%|▍         | 2/50 [01:43<36:11, 45.24s/it]    4%|▍         | 2/50 [01:46<38:24, 48.02s/it]    4%|▍         | 2/50 [01:48<38:32, 48.17s/it]    6%|▌         | 3/50 [01:48<22:27, 28.67s/it]  4%|▍         | 2/50 [01:50<39:49, 49.78s/it]    4%|▍         | 2/50 [01:54<40:45, 50.95s/it]    4%|▍         | 2/50 [01:56<41:02, 51.31s/it]    6%|▌         | 3/50 [01:59<25:55, 33.09s/it]  8%|▊         | 4/50 [01:59<16:35, 21.65s/it]  6%|▌         | 3/50 [02:02<26:23, 33.70s/it]  4%|▍         | 2/50 [02:04<44:05, 55.12s/it]     4%|▍         | 2/50 [02:04<45:27, 56.83s/it]    6%|▌         | 3/50 [02:07<27:32, 35.15s/it]  6%|▌         | 3/50 [02:07<28:00, 35.76s/it]  6%|▌         | 3/50 [02:09<27:53, 35.60s/it] 10%|█         | 5/50 [02:09<13:06, 17.49s/it]  6%|▌         | 3/50 [02:12<30:05, 38.41s/it]  6%|▌         | 3/50 [02:16<29:32, 37.71s/it]  8%|▊         | 4/50 [02:17<20:44, 27.05s/it]  6%|▌         | 3/50 [02:17<29:07, 37.19s/it]  8%|▊         | 4/50 [02:20<21:13, 27.69s/it] 12%|█▏        | 6/50 [02:21<11:29, 15.67s/it]  6%|▌         | 3/50 [02:21<32:45, 41.81s/it]  8%|▊         | 4/50 [02:22<20:50, 27.18s/it]  6%|▌         | 3/50 [02:26<31:25, 40.12s/it]  8%|▊         | 4/50 [02:30<23:16, 30.36s/it]  2%|▏         | 1/50 [02:31<2:03:34, 151.31s/it]  2%|▏         | 1/50 [02:31<2:03:24, 151.12s/it]  8%|▊         | 4/50 [02:32<23:24, 30.52s/it] 10%|█         | 5/50 [02:33<17:18, 23.07s/it]  8%|▊         | 4/50 [02:34<22:57, 29.94s/it] 10%|█         | 5/50 [02:34<16:58, 22.63s/it] 14%|█▍        | 7/50 [02:35<10:42, 14.95s/it] 10%|█         | 5/50 [02:35<16:25, 21.89s/it]  8%|▊         | 4/50 [02:37<25:15, 32.94s/it]  6%|▌         | 3/50 [02:38<36:22, 46.44s/it]  2%|▏         | 1/50 [02:43<2:13:19, 163.24s/it]  2%|▏         | 1/50 [02:45<2:15:05, 165.41s/it]  2%|▏         | 1/50 [02:47<2:16:38, 167.32s/it] 16%|█▌        | 8/50 [02:47<09:50, 14.05s/it] 10%|█         | 5/50 [02:48<18:53, 25.19s/it]  8%|▊         | 4/50 [02:49<27:06, 35.37s/it]  8%|▊         | 4/50 [02:49<27:50, 36.32s/it] 10%|█         | 5/50 [02:50<18:52, 25.17s/it] 10%|█         | 5/50 [02:52<19:59, 26.66s/it] 12%|█▏        | 6/50 [02:52<15:18, 20.88s/it] 12%|█▏        | 6/50 [02:54<15:30, 21.16s/it] 10%|█         | 5/50 [02:55<21:28, 28.62s/it] 18%|█▊        | 9/50 [02:59<09:16, 13.58s/it]  8%|▊         | 4/50 [03:00<28:46, 37.54s/it] 12%|█▏        | 6/50 [03:04<18:51, 25.71s/it]  2%|▏         | 1/50 [03:04<2:30:44, 184.58s/it] 14%|█▍        | 7/50 [03:05<13:17, 18.55s/it]  8%|▊         | 4/50 [03:06<30:01, 39.17s/it] 12%|█▏        | 6/50 [03:12<17:29, 23.86s/it]  2%|▏         | 1/50 [03:11<2:36:42, 191.89s/it] 20%|██        | 10/50 [03:11<08:45, 13.13s/it] 12%|█▏        | 6/50 [03:13<18:24, 25.10s/it] 12%|█▏        | 6/50 [03:17<19:08, 26.11s/it] 14%|█▍        | 7/50 [03:18<15:40, 21.87s/it] 14%|█▍        | 7/50 [03:19<15:51, 22.13s/it] 10%|█         | 5/50 [03:17<25:14, 33.66s/it] 16%|█▌        | 8/50 [03:20<12:01, 17.19s/it] 10%|█         | 5/50 [03:19<23:18, 31.07s/it] 12%|█▏        | 6/50 [03:21<20:12, 27.56s/it] 22%|██▏       | 11/50 [03:22<08:01, 12.35s/it] 10%|█         | 5/50 [03:22<25:57, 34.62s/it] 18%|█▊        | 9/50 [03:27<09:45, 14.28s/it] 14%|█▍        | 7/50 [03:31<16:01, 22.36s/it] 24%|██▍       | 12/50 [03:32<07:26, 11.76s/it] 14%|█▍        | 7/50 [03:33<16:51, 23.53s/it] 10%|█         | 5/50 [03:32<25:51, 34.47s/it] 14%|█▍        | 7/50 [03:37<17:17, 24.13s/it] 12%|█▏        | 6/50 [03:37<21:03, 28.72s/it] 14%|█▍        | 7/50 [03:39<17:32, 24.48s/it] 16%|█▌        | 8/50 [03:40<15:24, 22.00s/it] 12%|█▏        | 6/50 [03:41<20:32, 28.02s/it] 16%|█▌        | 8/50 [03:42<15:49, 22.60s/it]  4%|▍         | 2/50 [03:42<1:23:35, 104.48s/it] 26%|██▌       | 13/50 [03:45<07:22, 11.95s/it] 20%|██        | 10/50 [03:45<10:16, 15.40s/it] 16%|█▌        | 8/50 [03:50<14:47, 21.13s/it] 16%|█▌        | 8/50 [03:50<14:28, 20.67s/it] 18%|█▊        | 9/50 [03:51<12:39, 18.52s/it] 12%|█▏        | 6/50 [03:52<24:11, 32.99s/it]  4%|▍         | 2/50 [03:53<1:26:22, 107.98s/it]  2%|▏         | 1/50 [03:53<3:10:45, 233.59s/it] 28%|██▊       | 14/50 [03:55<06:49, 11.37s/it] 16%|█▌        | 8/50 [03:56<16:19, 23.31s/it] 12%|█▏        | 6/50 [03:56<22:27, 30.63s/it] 14%|█▍        | 7/50 [03:56<16:59, 23.71s/it] 18%|█▊        | 9/50 [03:57<13:48, 20.20s/it] 14%|█▍        | 7/50 [03:57<18:39, 26.04s/it]  4%|▍         | 2/50 [03:58<1:29:07, 111.40s/it]  2%|▏         | 1/50 [03:59<3:15:16, 239.12s/it] 16%|█▌        | 8/50 [04:02<16:45, 23.95s/it] 30%|███       | 15/50 [04:02<05:57, 10.21s/it] 22%|██▏       | 11/50 [04:03<10:32, 16.22s/it]  2%|▏         | 1/50 [04:06<3:21:07, 246.27s/it] 18%|█▊        | 9/50 [04:10<13:57, 20.42s/it] 14%|█▍        | 7/50 [04:10<20:06, 28.05s/it] 18%|█▊        | 9/50 [04:11<14:36, 21.37s/it] 32%|███▏      | 16/50 [04:12<05:38,  9.97s/it]  2%|▏         | 1/50 [04:12<3:26:19, 252.64s/it] 20%|██        | 10/50 [04:15<13:26, 20.16s/it] 20%|██        | 10/50 [04:15<12:59, 19.48s/it] 24%|██▍       | 12/50 [04:16<09:31, 15.04s/it] 16%|█▌        | 8/50 [04:17<16:48, 24.01s/it] 18%|█▊        | 9/50 [04:21<16:16, 23.81s/it] 14%|█▍        | 7/50 [04:22<20:56, 29.23s/it]  4%|▍         | 2/50 [04:23<1:40:33, 125.70s/it] 18%|█▊        | 9/50 [04:24<16:03, 23.50s/it]  2%|▏         | 1/50 [04:28<3:39:03, 268.23s/it] 22%|██▏       | 11/50 [04:29<11:54, 18.32s/it] 26%|██▌       | 13/50 [04:29<08:55, 14.48s/it] 34%|███▍      | 17/50 [04:30<06:48, 12.37s/it] 16%|█▌        | 8/50 [04:34<18:37, 26.60s/it] 16%|█▌        | 8/50 [04:34<19:37, 28.03s/it] 20%|██        | 10/50 [04:34<14:27, 21.68s/it] 20%|██        | 10/50 [04:38<15:15, 22.88s/it] 18%|█▊        | 9/50 [04:37<15:30, 22.69s/it] 22%|██▏       | 11/50 [04:42<14:10, 21.82s/it] 20%|██        | 10/50 [04:43<15:28, 23.20s/it] 36%|███▌      | 18/50 [04:44<06:52, 12.88s/it] 20%|██        | 10/50 [04:44<14:49, 22.25s/it]  4%|▍         | 2/50 [04:46<1:53:37, 142.04s/it] 24%|██▍       | 12/50 [04:48<11:40, 18.44s/it] 28%|██▊       | 14/50 [04:50<09:54, 16.51s/it] 22%|██▏       | 11/50 [04:50<12:57, 19.94s/it] 16%|█▌        | 8/50 [04:51<20:21, 29.08s/it] 20%|██        | 10/50 [04:53<13:54, 20.86s/it] 18%|█▊        | 9/50 [04:54<16:54, 24.76s/it] 38%|███▊      | 19/50 [04:55<06:20, 12.28s/it]  6%|▌         | 3/50 [04:55<1:10:21, 89.81s/it]  24%|██▍       | 12/50 [04:56<12:22, 19.55s/it] 22%|██▏       | 11/50 [05:00<14:50, 22.83s/it] 22%|██▏       | 11/50 [05:00<13:56, 21.46s/it] 40%|████      | 20/50 [05:07<06:06, 12.20s/it] 30%|███       | 15/50 [05:07<09:43, 16.67s/it] 18%|█▊        | 9/50 [05:07<17:04, 24.99s/it] 22%|██▏       | 11/50 [05:08<14:49, 22.80s/it] 26%|██▌       | 13/50 [05:11<12:19, 19.98s/it] 20%|██        | 10/50 [05:11<14:54, 22.37s/it] 26%|██▌       | 13/50 [05:12<11:23, 18.46s/it] 24%|██▍       | 12/50 [05:13<13:12, 20.87s/it] 22%|██▏       | 11/50 [05:13<13:22, 20.59s/it] 18%|█▊        | 9/50 [05:14<21:43, 31.80s/it]  4%|▍         | 2/50 [05:15<2:02:11, 152.73s/it]  6%|▌         | 3/50 [05:16<1:15:55, 96.92s/it]  24%|██▍       | 12/50 [05:18<13:25, 21.20s/it] 32%|███▏      | 16/50 [05:17<08:18, 14.68s/it] 42%|████▏     | 21/50 [05:18<05:46, 11.95s/it]  4%|▍         | 2/50 [05:19<1:56:36, 145.75s/it] 24%|██▍       | 12/50 [05:21<13:31, 21.35s/it] 28%|██▊       | 14/50 [05:25<10:05, 16.82s/it] 44%|████▍     | 22/50 [05:28<05:17, 11.34s/it] 24%|██▍       | 12/50 [05:29<12:07, 19.15s/it] 28%|██▊       | 14/50 [05:32<12:05, 20.15s/it] 24%|██▍       | 12/50 [05:33<14:56, 23.60s/it] 20%|██        | 10/50 [05:36<17:32, 26.32s/it] 22%|██▏       | 11/50 [05:37<15:12, 23.39s/it] 34%|███▍      | 17/50 [05:38<09:05, 16.52s/it] 46%|████▌     | 23/50 [05:39<05:00, 11.14s/it] 26%|██▌       | 13/50 [05:39<13:45, 22.32s/it] 20%|██        | 10/50 [05:42<20:31, 30.80s/it]  6%|▌         | 3/50 [05:44<1:22:13, 104.96s/it] 26%|██▌       | 13/50 [05:44<13:18, 21.59s/it]  4%|▍         | 2/50 [05:44<2:06:26, 158.05s/it] 30%|███       | 15/50 [05:48<10:50, 18.60s/it] 26%|██▌       | 13/50 [05:49<14:52, 24.12s/it] 30%|███       | 15/50 [05:49<11:15, 19.31s/it] 26%|██▌       | 13/50 [05:50<12:10, 19.75s/it] 48%|████▊     | 24/50 [05:51<05:01, 11.60s/it]  4%|▍         | 2/50 [05:53<2:11:40, 164.59s/it] 22%|██▏       | 11/50 [05:55<15:34, 23.96s/it]  4%|▍         | 2/50 [05:55<2:20:19, 175.41s/it]  8%|▊         | 4/50 [05:56<1:00:19, 78.68s/it] 36%|███▌      | 18/50 [05:59<09:30, 17.83s/it] 32%|███▏      | 16/50 [05:59<09:15, 16.35s/it] 28%|██▊       | 14/50 [06:02<13:33, 22.59s/it] 50%|█████     | 25/50 [06:05<05:09, 12.37s/it] 26%|██▌       | 13/50 [06:05<16:07, 26.14s/it] 28%|██▊       | 14/50 [06:05<10:58, 18.29s/it] 24%|██▍       | 12/50 [06:06<15:53, 25.10s/it] 28%|██▊       | 14/50 [06:07<13:27, 22.42s/it] 32%|███▏      | 16/50 [06:10<11:14, 19.82s/it] 22%|██▏       | 11/50 [06:09<19:15, 29.62s/it] 38%|███▊      | 19/50 [06:13<08:36, 16.67s/it] 28%|██▊       | 14/50 [06:15<14:42, 24.52s/it]  6%|▌         | 3/50 [06:14<1:36:09, 122.75s/it] 30%|███       | 15/50 [06:16<11:36, 19.91s/it] 52%|█████▏    | 26/50 [06:18<04:56, 12.36s/it] 30%|███       | 15/50 [06:22<10:23, 17.81s/it] 24%|██▍       | 12/50 [06:23<16:02, 25.32s/it] 40%|████      | 20/50 [06:26<07:44, 15.50s/it] 30%|███       | 15/50 [06:28<12:45, 21.86s/it] 54%|█████▍    | 27/50 [06:28<04:29, 11.72s/it] 34%|███▍      | 17/50 [06:29<11:14, 20.45s/it]  4%|▍         | 2/50 [06:29<2:25:39, 182.07s/it] 30%|███       | 15/50 [06:31<12:45, 21.88s/it] 34%|███▍      | 17/50 [06:31<11:03, 20.10s/it]  8%|▊         | 4/50 [06:33<1:03:37, 82.99s/it]  28%|██▊       | 14/50 [06:34<16:08, 26.89s/it] 32%|███▏      | 16/50 [06:36<11:19, 19.99s/it] 42%|████▏     | 21/50 [06:37<06:49, 14.11s/it] 24%|██▍       | 12/50 [06:38<18:34, 29.32s/it]  4%|▍         | 2/50 [06:38<2:34:22, 192.97s/it] 56%|█████▌    | 28/50 [06:39<04:13, 11.50s/it] 26%|██▌       | 13/50 [06:40<17:07, 27.76s/it] 32%|███▏      | 16/50 [06:46<11:16, 19.90s/it] 32%|███▏      | 16/50 [06:45<10:57, 19.35s/it] 30%|███       | 15/50 [06:49<13:36, 23.33s/it] 36%|███▌      | 18/50 [06:52<11:15, 21.11s/it] 44%|████▍     | 22/50 [06:53<06:55, 14.83s/it] 32%|███▏      | 16/50 [06:55<13:18, 23.48s/it] 58%|█████▊    | 29/50 [06:55<04:31, 12.94s/it]  6%|▌         | 3/50 [06:56<1:46:53, 136.45s/it] 36%|███▌      | 18/50 [06:58<11:49, 22.16s/it] 34%|███▍      | 17/50 [07:00<11:36, 21.10s/it] 26%|██▌       | 13/50 [07:01<17:54, 29.03s/it] 46%|████▌     | 23/50 [07:06<06:23, 14.20s/it] 26%|██▌       | 13/50 [07:07<18:02, 29.27s/it]  6%|▌         | 3/50 [07:08<1:40:52, 128.77s/it] 60%|██████    | 30/50 [07:08<04:15, 12.76s/it] 28%|██▊       | 14/50 [07:08<16:41, 27.82s/it] 38%|███▊      | 19/50 [07:09<10:18, 19.94s/it] 32%|███▏      | 16/50 [07:09<12:41, 22.41s/it] 34%|███▍      | 17/50 [07:10<11:38, 21.18s/it] 34%|███▍      | 17/50 [07:11<11:52, 21.59s/it] 38%|███▊      | 19/50 [07:16<10:44, 20.79s/it] 36%|███▌      | 18/50 [07:15<10:21, 19.42s/it] 48%|████▊     | 24/50 [07:17<05:47, 13.36s/it] 62%|██████▏   | 31/50 [07:19<03:53, 12.32s/it] 34%|███▍      | 17/50 [07:21<13:23, 24.35s/it]  8%|▊         | 4/50 [07:21<1:22:36, 107.74s/it] 40%|████      | 20/50 [07:22<08:56, 17.89s/it] 28%|██▊       | 14/50 [07:22<16:06, 26.85s/it] 30%|███       | 15/50 [07:30<15:16, 26.19s/it] 38%|███▊      | 19/50 [07:31<09:31, 18.44s/it]  8%|▊         | 4/50 [07:31<1:20:11, 104.60s/it] 40%|████      | 20/50 [07:33<09:51, 19.73s/it] 64%|██████▍   | 32/50 [07:33<03:49, 12.74s/it] 50%|█████     | 25/50 [07:33<05:54, 14.16s/it] 34%|███▍      | 17/50 [07:34<12:50, 23.34s/it] 36%|███▌      | 18/50 [07:36<11:29, 21.53s/it] 36%|███▌      | 18/50 [07:35<11:54, 22.32s/it] 42%|████▏     | 21/50 [07:39<08:27, 17.50s/it] 36%|███▌      | 18/50 [07:40<12:37, 23.66s/it] 10%|█         | 5/50 [07:40<1:05:41, 87.60s/it]  6%|▌         | 3/50 [07:42<1:48:54, 139.03s/it]  6%|▌         | 3/50 [07:43<1:58:15, 150.96s/it] 66%|██████▌   | 33/50 [07:44<03:30, 12.37s/it] 28%|██▊       | 14/50 [07:44<18:58, 31.62s/it] 40%|████      | 20/50 [07:45<08:33, 17.11s/it] 52%|█████▏    | 26/50 [07:47<05:39, 14.15s/it] 30%|███       | 15/50 [07:50<15:49, 27.14s/it] 44%|████▍     | 22/50 [07:52<07:35, 16.29s/it] 42%|████▏     | 21/50 [07:53<09:38, 19.94s/it] 36%|███▌      | 18/50 [07:53<11:45, 22.03s/it] 38%|███▊      | 19/50 [07:57<10:56, 21.18s/it] 54%|█████▍    | 27/50 [07:58<05:02, 13.16s/it] 32%|███▏      | 16/50 [07:58<15:09, 26.74s/it] 68%|██████▊   | 34/50 [07:59<03:28, 13.03s/it] 38%|███▊      | 19/50 [07:58<11:40, 22.59s/it] 30%|███       | 15/50 [08:01<15:54, 27.26s/it] 42%|████▏     | 21/50 [08:06<08:42, 18.02s/it] 38%|███▊      | 19/50 [08:06<12:35, 24.37s/it]  6%|▌         | 3/50 [08:07<1:58:33, 151.34s/it] 32%|███▏      | 16/50 [08:08<13:41, 24.17s/it] 46%|████▌     | 23/50 [08:11<07:38, 16.98s/it] 10%|█         | 5/50 [08:12<1:06:27, 88.60s/it] 70%|███████   | 35/50 [08:12<03:14, 12.98s/it] 32%|███▏      | 16/50 [08:14<12:58, 22.90s/it] 40%|████      | 20/50 [08:15<10:13, 20.45s/it]  6%|▌         | 3/50 [08:15<2:04:44, 159.25s/it] 56%|█████▌    | 28/50 [08:16<05:21, 14.60s/it] 44%|████▍     | 22/50 [08:17<09:49, 21.07s/it] 40%|████      | 20/50 [08:19<10:54, 21.82s/it] 44%|████▍     | 22/50 [08:23<08:16, 17.72s/it] 38%|███▊      | 19/50 [08:22<12:27, 24.10s/it] 72%|███████▏  | 36/50 [08:25<03:03, 13.12s/it] 34%|███▍      | 17/50 [08:26<12:22, 22.51s/it] 34%|███▍      | 17/50 [08:28<15:09, 27.56s/it] 42%|████▏     | 21/50 [08:30<09:02, 18.70s/it]  8%|▊         | 4/50 [08:32<1:32:24, 120.52s/it] 48%|████▊     | 24/50 [08:33<08:01, 18.51s/it]  6%|▌         | 3/50 [08:34<2:02:09, 155.94s/it] 46%|████▌     | 23/50 [08:36<09:11, 20.44s/it] 34%|███▍      | 17/50 [08:35<12:22, 22.50s/it] 74%|███████▍  | 37/50 [08:38<02:49, 13.04s/it] 46%|████▌     | 23/50 [08:39<07:49, 17.40s/it] 40%|████      | 20/50 [08:45<14:26, 28.90s/it] 58%|█████▊    | 29/50 [08:45<06:37, 18.93s/it] 40%|████      | 20/50 [08:45<11:47, 23.59s/it] 10%|█         | 5/50 [08:46<1:14:48, 99.75s/it]  44%|████▍     | 22/50 [08:47<08:31, 18.28s/it] 10%|█         | 5/50 [08:48<1:10:53, 94.53s/it]  76%|███████▌  | 38/50 [08:49<02:31, 12.59s/it] 42%|████▏     | 21/50 [08:50<11:53, 24.60s/it]  8%|▊         | 4/50 [08:50<1:30:53, 118.55s/it] 48%|████▊     | 24/50 [08:53<08:22, 19.34s/it] 36%|███▌      | 18/50 [08:52<12:30, 23.45s/it] 50%|█████     | 25/50 [08:57<08:22, 20.12s/it] 78%|███████▊  | 39/50 [09:01<02:13, 12.15s/it] 36%|███▌      | 18/50 [09:02<15:45, 29.56s/it] 42%|████▏     | 21/50 [09:02<12:15, 25.36s/it]  8%|▊         | 4/50 [09:03<1:28:57, 116.03s/it] 60%|██████    | 30/50 [09:05<06:25, 19.29s/it] 48%|████▊     | 24/50 [09:07<08:54, 20.55s/it] 42%|████▏     | 21/50 [09:07<11:11, 23.15s/it] 36%|███▌      | 18/50 [09:09<13:49, 25.91s/it]  8%|▊         | 4/50 [09:09<1:36:05, 125.34s/it] 46%|████▌     | 23/50 [09:12<09:02, 20.08s/it] 44%|████▍     | 22/50 [09:11<10:58, 23.53s/it] 80%|████████  | 40/50 [09:13<02:01, 12.20s/it] 50%|█████     | 25/50 [09:14<08:20, 20.01s/it] 52%|█████▏    | 26/50 [09:15<07:50, 19.59s/it] 44%|████▍     | 22/50 [09:18<10:28, 22.45s/it] 38%|███▊      | 19/50 [09:21<11:07, 21.54s/it] 38%|███▊      | 19/50 [09:22<13:12, 25.55s/it] 82%|████████▏ | 41/50 [09:24<01:46, 11.79s/it] 48%|████▊     | 24/50 [09:27<08:06, 18.73s/it] 50%|█████     | 25/50 [09:27<08:26, 20.26s/it] 38%|███▊      | 19/50 [09:28<14:45, 28.57s/it] 62%|██████▏   | 31/50 [09:29<06:30, 20.55s/it] 54%|█████▍    | 27/50 [09:29<06:51, 17.88s/it] 44%|████▍     | 22/50 [09:28<10:32, 22.60s/it] 52%|█████▏    | 26/50 [09:32<07:41, 19.23s/it] 46%|████▌     | 23/50 [09:32<10:21, 23.01s/it] 46%|████▌     | 23/50 [09:35<09:20, 20.77s/it]  6%|▌         | 3/50 [09:34<2:25:16, 185.46s/it] 84%|████████▍ | 42/50 [09:37<01:37, 12.18s/it] 52%|█████▏    | 26/50 [09:41<07:24, 18.53s/it] 50%|█████     | 25/50 [09:43<07:28, 17.94s/it] 64%|██████▍   | 32/50 [09:43<05:35, 18.64s/it] 86%|████████▌ | 43/50 [09:48<01:22, 11.82s/it] 40%|████      | 20/50 [09:48<12:57, 25.91s/it] 54%|█████▍    | 27/50 [09:49<07:08, 18.62s/it] 40%|████      | 20/50 [09:48<12:46, 25.56s/it] 46%|████▌     | 23/50 [09:52<10:15, 22.81s/it] 56%|█████▌    | 28/50 [09:53<07:16, 19.84s/it] 48%|████▊     | 24/50 [09:53<09:40, 22.34s/it] 40%|████      | 20/50 [09:55<12:39, 25.32s/it] 48%|████▊     | 24/50 [09:56<09:02, 20.86s/it] 12%|█▏        | 6/50 [09:55<1:02:39, 85.45s/it] 12%|█▏        | 6/50 [09:57<1:16:37, 104.48s/it] 54%|█████▍    | 27/50 [09:59<06:59, 18.25s/it] 88%|████████▊ | 44/50 [09:59<01:10, 11.77s/it]  8%|▊         | 4/50 [10:00<1:45:35, 137.73s/it] 66%|██████▌   | 33/50 [10:00<05:11, 18.30s/it] 52%|█████▏    | 26/50 [10:03<07:19, 18.31s/it] 50%|█████     | 25/50 [10:08<08:25, 20.23s/it] 56%|█████▌    | 28/50 [10:12<07:17, 19.88s/it] 12%|█▏        | 6/50 [10:12<1:13:01, 99.58s/it] 90%|█████████ | 45/50 [10:12<01:00, 12.17s/it] 48%|████▊     | 24/50 [10:13<09:41, 22.35s/it] 50%|█████     | 25/50 [10:14<08:19, 19.98s/it] 42%|████▏     | 21/50 [10:13<12:20, 25.53s/it] 42%|████▏     | 21/50 [10:14<11:18, 23.40s/it]  8%|▊         | 4/50 [10:15<1:48:44, 141.83s/it] 56%|█████▌    | 28/50 [10:15<06:28, 17.67s/it] 58%|█████▊    | 29/50 [10:16<07:17, 20.83s/it] 42%|████▏     | 21/50 [10:16<12:53, 26.67s/it] 68%|██████▊   | 34/50 [10:17<04:41, 17.62s/it] 10%|█         | 5/50 [10:19<1:26:44, 115.66s/it] 54%|█████▍    | 27/50 [10:22<07:09, 18.68s/it] 52%|█████▏    | 26/50 [10:23<07:24, 18.53s/it] 92%|█████████▏| 46/50 [10:29<00:53, 13.47s/it] 10%|█         | 5/50 [10:30<1:19:13, 105.63s/it] 44%|████▍     | 22/50 [10:34<11:14, 24.10s/it] 50%|█████     | 25/50 [10:34<09:11, 22.05s/it] 70%|███████   | 35/50 [10:35<04:30, 18.01s/it] 44%|████▍     | 22/50 [10:35<10:37, 22.78s/it] 58%|█████▊    | 29/50 [10:37<07:32, 21.55s/it] 60%|██████    | 30/50 [10:37<06:54, 20.71s/it] 52%|█████▏    | 26/50 [10:38<08:25, 21.05s/it] 10%|█         | 5/50 [10:38<1:25:52, 114.51s/it] 58%|█████▊    | 29/50 [10:40<06:58, 19.94s/it] 94%|█████████▍| 47/50 [10:40<00:38, 12.84s/it] 56%|█████▌    | 28/50 [10:42<06:56, 18.94s/it] 44%|████▍     | 22/50 [10:44<12:33, 26.91s/it] 12%|█▏        | 6/50 [10:46<1:17:59, 106.35s/it] 52%|█████▏    | 26/50 [10:45<07:31, 18.81s/it] 72%|███████▏  | 36/50 [10:49<03:52, 16.61s/it] 46%|████▌     | 23/50 [10:53<09:35, 21.33s/it]  8%|▊         | 4/50 [10:54<1:54:39, 149.56s/it] 54%|█████▍    | 27/50 [10:54<08:29, 22.16s/it] 96%|█████████▌| 48/50 [10:55<00:26, 13.32s/it] 60%|██████    | 30/50 [10:58<07:09, 21.47s/it] 62%|██████▏   | 31/50 [11:00<06:46, 21.40s/it] 58%|█████▊    | 29/50 [11:02<06:49, 19.52s/it] 54%|█████▍    | 27/50 [11:01<06:50, 17.86s/it] 60%|██████    | 30/50 [11:02<06:49, 20.45s/it] 74%|███████▍  | 37/50 [11:02<03:24, 15.71s/it] 54%|█████▍    | 27/50 [11:04<08:39, 22.58s/it] 98%|█████████▊| 49/50 [11:06<00:12, 12.70s/it] 10%|█         | 5/50 [11:07<1:31:57, 122.61s/it] 46%|████▌     | 23/50 [11:07<12:05, 26.86s/it] 14%|█▍        | 7/50 [11:11<1:01:40, 86.06s/it] 14%|█▍        | 7/50 [11:12<1:07:54, 94.76s/it]  56%|█████▌    | 28/50 [11:12<07:43, 21.08s/it] 46%|████▌     | 23/50 [11:13<12:24, 27.59s/it] 48%|████▊     | 24/50 [11:14<09:09, 21.15s/it] 14%|█▍        | 7/50 [11:14<59:44, 83.35s/it]   56%|█████▌    | 28/50 [11:17<07:18, 19.91s/it] 60%|██████    | 30/50 [11:19<06:14, 18.72s/it] 64%|██████▍   | 32/50 [11:20<06:16, 20.89s/it] 56%|█████▌    | 28/50 [11:19<06:32, 17.82s/it] 62%|██████▏   | 31/50 [11:21<06:22, 20.14s/it] 76%|███████▌  | 38/50 [11:21<03:20, 16.67s/it]100%|██████████| 50/50 [11:22<00:00, 13.55s/it]100%|██████████| 50/50 [11:22<00:00, 13.64s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.305
+Loss - yyx: -0.914
+Run 1 completed in 1.35 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.242
+Loss - yyx: -0.889
+Run 2 completed in 0.24 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.323
+Loss - yyx: -0.839
+Run 3 completed in 0.22 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.185
+Loss - yyx: -1.228
+Run 4 completed in 0.18 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.370
+Loss - yyx: -1.225
+Run 5 completed in 0.17 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.416
+Loss - yyx: -0.900
+Run 6 completed in 0.20 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 8.000
+Loss - yyx: -1.121
+Run 7 completed in 0.22 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.363
+Loss - yyx: -0.876
+Run 8 completed in 0.20 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.756
+Loss - yyx: -0.658
+Run 9 completed in 0.21 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.866
+Loss - yyx: -1.079
+Run 10 completed in 0.20 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.920
+Loss - yyx: -0.743
+Run 11 completed in 0.18 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.563
+Loss - yyx: -0.914
+Run 12 completed in 0.17 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 7.020
+Loss - yyx: -0.742
+Run 13 completed in 0.21 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.201
+Loss - yyx: -1.207
+Run 14 completed in 0.17 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.050
+Loss - yyx: -1.136
+Run 15 completed in 0.13 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.343
+Loss - yyx: -1.247
+Run 16 completed in 0.16 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.709
+Loss - yyx: -0.966
+Run 17 completed in 0.30 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.436
+Loss - yyx: -0.937
+Run 18 completed in 0.23 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.269
+Loss - yyx: -1.217
+Run 19 completed in 0.18 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.455
+Loss - yyx: -0.906
+Run 20 completed in 0.20 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 8.005
+Loss - yyx: -1.121
+Run 21 completed in 0.19 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.317
+Loss - yyx: -1.237
+Run 22 completed in 0.17 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.832
+Loss - yyx: -0.664
+Run 23 completed in 0.18 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.277
+Loss - yyx: -1.162
+Run 24 completed in 0.21 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.602
+Loss - yyx: -0.957
+Run 25 completed in 0.24 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.878
+Loss - yyx: -0.714
+Run 26 completed in 0.21 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.691
+Loss - yyx: -0.661
+Run 27 completed in 0.17 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.752
+Loss - yyx: -0.685
+Run 28 completed in 0.18 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 6.977
+Loss - yyx: -0.762
+Run 29 completed in 0.27 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.733
+Loss - yyx: -0.993
+Run 30 completed in 0.21 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.426
+Loss - yyx: -0.898
+Run 31 completed in 0.19 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.305
+Loss - yyx: -0.838
+Run 32 completed in 0.23 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.178
+Loss - yyx: -0.759
+Run 33 completed in 0.19 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.602
+Loss - yyx: -0.944
+Run 34 completed in 0.24 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.420
+Loss - yyx: -0.916
+Run 35 completed in 0.21 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.891
+Loss - yyx: -0.696
+Run 36 completed in 0.22 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.334
+Loss - yyx: -1.229
+Run 37 completed in 0.21 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.721
+Loss - yyx: -0.879
+Run 38 completed in 0.19 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.825
+Loss - yyx: -0.696
+Run 39 completed in 0.19 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.359
+Loss - yyx: -1.252
+Run 40 completed in 0.20 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.067
+Loss - yyx: -1.196
+Run 41 completed in 0.18 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.652
+Loss - yyx: -0.963
+Run 42 completed in 0.22 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.792
+Loss - yyx: -0.978
+Run 43 completed in 0.18 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.138
+Loss - yyx: -0.803
+Run 44 completed in 0.19 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.861
+Loss - yyx: -0.736
+Run 45 completed in 0.22 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.642
+Loss - yyx: -1.028
+Run 46 completed in 0.28 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.499
+Loss - yyx: -0.933
+Run 47 completed in 0.19 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.319
+Loss - yyx: -0.869
+Run 48 completed in 0.24 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 7.983
+Loss - yyx: -1.151
+Run 49 completed in 0.19 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.218
+Loss - yyx: -0.915
+Run 50 completed in 0.26 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.541792  0.508590  ...  7.476921  7.995657  8.370192
+loss_yyx     50.0 -0.947552  0.185342  ... -0.915779 -0.811352 -0.658292
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_192.csv
+ 12%|█▏        | 6/50 [11:22<1:11:41, 97.76s/it]  62%|██████▏   | 31/50 [11:24<07:09, 22.61s/it] 58%|█████▊    | 29/50 [11:35<06:43, 19.23s/it] 10%|█         | 5/50 [11:37<1:32:08, 122.85s/it] 62%|██████▏   | 31/50 [11:39<06:03, 19.14s/it] 64%|██████▍   | 32/50 [11:40<06:13, 20.74s/it] 64%|██████▍   | 32/50 [11:40<05:52, 19.58s/it] 66%|██████▌   | 33/50 [11:40<05:50, 20.64s/it] 78%|███████▊  | 39/50 [11:40<03:09, 17.24s/it] 48%|████▊     | 24/50 [11:43<12:45, 29.46s/it] 48%|████▊     | 24/50 [11:44<12:24, 28.64s/it] 50%|█████     | 25/50 [11:44<09:57, 23.89s/it] 58%|█████▊    | 29/50 [11:45<07:07, 20.36s/it] 58%|█████▊    | 29/50 [11:46<08:40, 24.79s/it]  8%|▊         | 4/50 [11:50<2:07:06, 165.79s/it] 66%|██████▌   | 33/50 [11:53<05:13, 18.46s/it] 60%|██████    | 30/50 [11:55<06:28, 19.45s/it] 68%|██████▊   | 34/50 [11:56<05:11, 19.46s/it] 80%|████████  | 40/50 [11:58<02:53, 17.39s/it] 64%|██████▍   | 32/50 [12:00<05:51, 19.53s/it] 66%|██████▌   | 33/50 [12:01<05:41, 20.09s/it] 50%|█████     | 25/50 [12:01<10:51, 26.06s/it] 16%|█▌        | 8/50 [12:03<52:45, 75.38s/it]   60%|██████    | 30/50 [12:02<06:29, 19.45s/it] 52%|█████▏    | 26/50 [12:06<09:18, 23.29s/it] 82%|████████▏ | 41/50 [12:11<02:25, 16.13s/it] 60%|██████    | 30/50 [12:11<08:21, 25.08s/it] 70%|███████   | 35/50 [12:13<04:37, 18.51s/it] 52%|█████▏    | 26/50 [12:14<08:54, 22.27s/it] 62%|██████▏   | 31/50 [12:16<06:16, 19.84s/it] 50%|█████     | 25/50 [12:16<12:17, 29.50s/it] 68%|██████▊   | 34/50 [12:17<05:20, 20.03s/it] 66%|██████▌   | 33/50 [12:19<05:31, 19.53s/it] 16%|█▌        | 8/50 [12:20<54:21, 77.65s/it] 68%|██████▊   | 34/50 [12:22<05:24, 20.30s/it] 10%|█         | 5/50 [12:23<1:42:39, 136.87s/it] 62%|██████▏   | 31/50 [12:22<06:12, 19.58s/it] 14%|█▍        | 7/50 [12:28<1:15:19, 105.10s/it] 84%|████████▍ | 42/50 [12:29<02:14, 16.77s/it] 12%|█▏        | 6/50 [12:29<1:20:53, 110.31s/it] 54%|█████▍    | 27/50 [12:29<08:55, 23.27s/it] 64%|██████▍   | 32/50 [12:30<05:27, 18.18s/it] 68%|██████▊   | 34/50 [12:32<04:41, 17.57s/it] 72%|███████▏  | 36/50 [12:32<04:22, 18.74s/it] 52%|█████▏    | 26/50 [12:33<10:20, 25.86s/it] 64%|██████▍   | 32/50 [12:36<05:20, 17.83s/it] 70%|███████   | 35/50 [12:38<05:07, 20.49s/it] 16%|█▌        | 8/50 [12:38<1:04:28, 92.11s/it] 70%|███████   | 35/50 [12:41<05:00, 20.04s/it] 54%|█████▍    | 27/50 [12:42<09:08, 23.84s/it] 62%|██████▏   | 31/50 [12:43<08:34, 27.06s/it] 74%|███████▍  | 37/50 [12:45<03:41, 17.04s/it] 14%|█▍        | 7/50 [12:46<1:06:41, 93.07s/it] 70%|███████   | 35/50 [12:47<04:11, 16.77s/it] 66%|██████▌   | 33/50 [12:47<05:04, 17.92s/it] 86%|████████▌ | 43/50 [12:49<02:03, 17.59s/it] 66%|██████▌   | 33/50 [12:50<04:42, 16.62s/it] 12%|█▏        | 6/50 [12:53<1:29:08, 121.56s/it] 72%|███████▏  | 36/50 [12:55<04:30, 19.36s/it] 10%|█         | 5/50 [12:55<1:44:19, 139.10s/it] 72%|███████▏  | 36/50 [12:57<04:21, 18.66s/it] 12%|█▏        | 6/50 [12:57<1:19:32, 108.47s/it] 18%|█▊        | 9/50 [12:58<47:06, 68.95s/it] 54%|█████▍    | 27/50 [13:00<09:59, 26.08s/it] 56%|█████▌    | 28/50 [12:59<09:18, 25.38s/it] 68%|██████▊   | 34/50 [13:06<04:22, 16.43s/it] 88%|████████▊ | 44/50 [13:07<01:46, 17.81s/it] 72%|███████▏  | 36/50 [13:08<04:10, 17.86s/it] 76%|███████▌  | 38/50 [13:10<03:53, 19.47s/it] 74%|███████▍  | 37/50 [13:14<04:07, 19.05s/it] 68%|██████▊   | 34/50 [13:14<05:29, 20.59s/it] 56%|█████▌    | 28/50 [13:14<08:19, 22.70s/it] 64%|██████▍   | 32/50 [13:14<08:29, 28.30s/it] 56%|█████▌    | 28/50 [13:16<09:51, 26.87s/it] 74%|███████▍  | 37/50 [13:17<04:10, 19.29s/it] 74%|███████▍  | 37/50 [13:20<03:29, 16.09s/it] 90%|█████████ | 45/50 [13:21<01:24, 16.84s/it] 58%|█████▊    | 29/50 [13:22<08:32, 24.42s/it] 78%|███████▊  | 39/50 [13:23<03:11, 17.38s/it] 12%|█▏        | 6/50 [13:27<1:22:12, 112.09s/it] 76%|███████▌  | 38/50 [13:29<03:34, 17.89s/it] 70%|███████   | 35/50 [13:29<04:36, 18.42s/it] 12%|█▏        | 6/50 [13:31<1:35:10, 129.79s/it] 18%|█▊        | 9/50 [13:33<52:08, 76.31s/it] 76%|███████▌  | 38/50 [13:34<03:43, 18.61s/it] 76%|███████▌  | 38/50 [13:38<03:19, 16.61s/it] 66%|██████▌   | 33/50 [13:37<07:31, 26.58s/it] 60%|██████    | 30/50 [13:38<07:18, 21.95s/it] 58%|█████▊    | 29/50 [13:38<08:55, 25.51s/it] 70%|███████   | 35/50 [13:40<05:30, 22.05s/it] 92%|█████████▏| 46/50 [13:39<01:08, 17.15s/it] 58%|█████▊    | 29/50 [13:39<08:11, 23.39s/it] 80%|████████  | 40/50 [13:41<02:56, 17.66s/it] 78%|███████▊  | 39/50 [13:49<03:23, 18.48s/it] 78%|███████▊  | 39/50 [13:49<03:12, 17.45s/it] 72%|███████▏  | 36/50 [13:50<04:27, 19.11s/it] 18%|█▊        | 9/50 [13:54<59:29, 87.05s/it]   82%|████████▏ | 41/50 [13:55<02:30, 16.67s/it] 78%|███████▊  | 39/50 [13:56<03:09, 17.18s/it] 94%|█████████▍| 47/50 [13:56<00:51, 17.00s/it] 60%|██████    | 30/50 [13:56<07:44, 23.20s/it] 80%|████████  | 40/50 [13:58<02:36, 15.70s/it] 62%|██████▏   | 31/50 [13:57<06:38, 21.00s/it] 72%|███████▏  | 36/50 [14:02<05:09, 22.11s/it] 60%|██████    | 30/50 [14:06<08:04, 24.23s/it] 80%|████████  | 40/50 [14:06<02:52, 17.26s/it] 68%|██████▊   | 34/50 [14:06<07:15, 27.24s/it] 74%|███████▍  | 37/50 [14:06<03:56, 18.23s/it] 96%|█████████▌| 48/50 [14:10<00:32, 16.06s/it] 80%|████████  | 40/50 [14:12<02:47, 16.78s/it] 10%|█         | 5/50 [14:12<1:57:51, 157.15s/it] 16%|█▌        | 8/50 [14:13<1:13:29, 104.98s/it] 20%|██        | 10/50 [14:14<47:30, 71.26s/it] 14%|█▍        | 7/50 [14:14<1:17:35, 108.27s/it] 62%|██████▏   | 31/50 [14:15<06:58, 22.03s/it] 84%|████████▍ | 42/50 [14:16<02:22, 17.86s/it] 82%|████████▏ | 41/50 [14:18<02:32, 16.92s/it] 14%|█▍        | 7/50 [14:18<1:18:48, 109.96s/it] 64%|██████▍   | 32/50 [14:19<06:27, 21.53s/it] 74%|███████▍  | 37/50 [14:20<04:32, 20.98s/it] 98%|█████████▊| 49/50 [14:26<00:16, 16.04s/it] 82%|████████▏ | 41/50 [14:27<02:45, 18.35s/it] 70%|███████   | 35/50 [14:27<06:21, 25.43s/it] 76%|███████▌  | 38/50 [14:27<03:50, 19.24s/it] 82%|████████▏ | 41/50 [14:33<02:42, 18.10s/it] 62%|██████▏   | 31/50 [14:38<08:25, 26.59s/it] 84%|████████▍ | 42/50 [14:39<02:26, 18.30s/it] 76%|███████▌  | 38/50 [14:40<04:07, 20.61s/it] 66%|██████▌   | 33/50 [14:41<06:05, 21.48s/it] 86%|████████▌ | 43/50 [14:41<02:21, 20.16s/it]100%|██████████| 50/50 [14:42<00:00, 16.00s/it]100%|██████████| 50/50 [14:42<00:00, 17.65s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.439
+Loss - yyx: -0.895
+Run 1 completed in 1.40 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.218
+Loss - yyx: -0.918
+Run 2 completed in 0.31 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.257
+Loss - yyx: -0.820
+Run 3 completed in 0.32 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.279
+Loss - yyx: -1.243
+Run 4 completed in 0.31 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.255
+Loss - yyx: -1.233
+Run 5 completed in 0.23 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.719
+Loss - yyx: -0.914
+Run 6 completed in 0.29 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.990
+Loss - yyx: -1.115
+Run 7 completed in 0.23 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.243
+Loss - yyx: -0.896
+Run 8 completed in 0.24 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.610
+Loss - yyx: -0.663
+Run 9 completed in 0.13 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.735
+Loss - yyx: -1.077
+Run 10 completed in 0.30 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.773
+Loss - yyx: -0.751
+Run 11 completed in 0.30 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.399
+Loss - yyx: -0.899
+Run 12 completed in 0.21 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 7.041
+Loss - yyx: -0.749
+Run 13 completed in 0.22 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.135
+Loss - yyx: -1.208
+Run 14 completed in 0.35 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.137
+Loss - yyx: -1.162
+Run 15 completed in 0.28 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.306
+Loss - yyx: -1.246
+Run 16 completed in 0.17 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.637
+Loss - yyx: -0.960
+Run 17 completed in 0.35 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.610
+Loss - yyx: -0.945
+Run 18 completed in 0.35 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.317
+Loss - yyx: -1.240
+Run 19 completed in 0.23 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.532
+Loss - yyx: -0.932
+Run 20 completed in 0.21 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 8.006
+Loss - yyx: -1.121
+Run 21 completed in 0.18 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.277
+Loss - yyx: -1.259
+Run 22 completed in 0.28 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.594
+Loss - yyx: -0.671
+Run 23 completed in 0.21 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.104
+Loss - yyx: -1.148
+Run 24 completed in 0.19 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.688
+Loss - yyx: -0.993
+Run 25 completed in 0.27 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.707
+Loss - yyx: -0.727
+Run 26 completed in 0.23 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.695
+Loss - yyx: -0.675
+Run 27 completed in 0.18 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.696
+Loss - yyx: -0.715
+Run 28 completed in 0.30 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.049
+Loss - yyx: -0.774
+Run 29 completed in 0.48 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.713
+Loss - yyx: -1.003
+Run 30 completed in 0.34 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.568
+Loss - yyx: -0.938
+Run 31 completed in 0.39 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.037
+Loss - yyx: -0.838
+Run 32 completed in 0.24 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.058
+Loss - yyx: -0.770
+Run 33 completed in 0.29 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.658
+Loss - yyx: -0.967
+Run 34 completed in 0.27 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.550
+Loss - yyx: -0.948
+Run 35 completed in 0.32 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.728
+Loss - yyx: -0.713
+Run 36 completed in 0.22 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.327
+Loss - yyx: -1.241
+Run 37 completed in 0.23 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.372
+Loss - yyx: -0.875
+Run 38 completed in 0.31 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.714
+Loss - yyx: -0.699
+Run 39 completed in 0.31 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.471
+Loss - yyx: -1.270
+Run 40 completed in 0.30 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.188
+Loss - yyx: -1.209
+Run 41 completed in 0.22 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.556
+Loss - yyx: -0.962
+Run 42 completed in 0.30 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.556
+Loss - yyx: -0.975
+Run 43 completed in 0.32 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 6.913
+Loss - yyx: -0.795
+Run 44 completed in 0.31 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 7.130
+Loss - yyx: -0.775
+Run 45 completed in 0.24 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.886
+Loss - yyx: -1.058
+Run 46 completed in 0.30 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.450
+Loss - yyx: -0.968
+Run 47 completed in 0.28 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.432
+Loss - yyx: -0.858
+Run 48 completed in 0.23 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.087
+Loss - yyx: -1.175
+Run 49 completed in 0.27 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.641
+Loss - yyx: -0.941
+Run 50 completed in 0.27 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.529618  0.542522  ...  7.556299  8.002277  8.471356
+loss_yyx     50.0 -0.958574  0.185622  ... -0.942845 -0.801099 -0.663388
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_202.csv
+ 64%|██████▍   | 32/50 [14:42<07:00, 23.38s/it] 78%|███████▊  | 39/50 [14:43<03:20, 18.26s/it] 20%|██        | 10/50 [14:44<50:22, 75.56s/it] 20%|██        | 10/50 [14:51<51:05, 76.64s/it] 72%|███████▏  | 36/50 [14:54<06:02, 25.88s/it] 84%|████████▍ | 42/50 [14:55<02:50, 21.34s/it] 86%|████████▌ | 43/50 [14:56<02:05, 17.92s/it] 84%|████████▍ | 42/50 [14:57<02:39, 19.88s/it] 78%|███████▊  | 39/50 [14:58<03:38, 19.87s/it] 64%|██████▍   | 32/50 [14:58<07:25, 24.78s/it] 16%|█▌        | 8/50 [14:58<1:13:56, 105.63s/it] 80%|████████  | 40/50 [15:00<02:57, 17.75s/it] 14%|█▍        | 7/50 [15:01<1:23:40, 116.76s/it] 14%|█▍        | 7/50 [15:02<1:16:26, 106.66s/it] 16%|█▌        | 8/50 [15:02<1:02:23, 89.13s/it]  66%|██████▌   | 33/50 [15:04<06:31, 23.02s/it] 88%|████████▊ | 44/50 [15:05<02:07, 21.19s/it] 74%|███████▍  | 37/50 [15:07<04:46, 22.02s/it] 86%|████████▌ | 43/50 [15:13<02:23, 20.43s/it] 68%|██████▊   | 34/50 [15:14<06:40, 25.06s/it] 80%|████████  | 40/50 [15:15<03:10, 19.07s/it] 86%|████████▌ | 43/50 [15:16<02:16, 19.56s/it] 16%|█▌        | 8/50 [15:16<1:05:15, 93.22s/it]  88%|████████▊ | 44/50 [15:18<01:55, 19.22s/it] 14%|█▍        | 7/50 [15:18<1:25:17, 119.02s/it] 90%|█████████ | 45/50 [15:21<01:37, 19.50s/it] 68%|██████▊   | 34/50 [15:21<05:41, 21.33s/it] 66%|██████▌   | 33/50 [15:23<06:58, 24.61s/it] 22%|██▏       | 11/50 [15:22<41:36, 64.01s/it] 76%|███████▌  | 38/50 [15:22<04:00, 20.05s/it] 88%|████████▊ | 44/50 [15:26<01:48, 18.11s/it] 82%|████████▏ | 41/50 [15:27<03:05, 20.58s/it] 90%|█████████ | 45/50 [15:33<01:29, 17.99s/it] 70%|███████   | 35/50 [15:34<04:40, 18.70s/it] 82%|████████▏ | 41/50 [15:35<02:53, 19.24s/it] 88%|████████▊ | 44/50 [15:36<01:57, 19.64s/it] 92%|█████████▏| 46/50 [15:38<01:15, 18.80s/it] 12%|█▏        | 6/50 [15:40<1:48:38, 148.16s/it] 78%|███████▊  | 39/50 [15:41<03:34, 19.51s/it] 68%|██████▊   | 34/50 [15:43<06:12, 23.25s/it] 90%|█████████ | 45/50 [15:46<01:33, 18.65s/it] 70%|███████   | 35/50 [15:45<06:44, 26.95s/it] 92%|█████████▏| 46/50 [15:49<01:08, 17.11s/it] 84%|████████▍ | 42/50 [15:48<02:44, 20.56s/it] 22%|██▏       | 11/50 [15:55<52:09, 80.25s/it] 84%|████████▍ | 42/50 [15:55<02:35, 19.47s/it] 12%|█▏        | 6/50 [15:55<1:41:52, 138.92s/it] 94%|█████████▍| 47/50 [15:59<00:58, 19.45s/it] 90%|█████████ | 45/50 [15:59<01:44, 20.87s/it] 72%|███████▏  | 36/50 [16:00<04:53, 20.98s/it] 72%|███████▏  | 36/50 [16:01<05:27, 23.42s/it] 80%|████████  | 40/50 [16:01<03:19, 19.91s/it] 70%|███████   | 35/50 [16:02<05:32, 22.15s/it] 94%|█████████▍| 47/50 [16:08<00:53, 17.84s/it] 92%|█████████▏| 46/50 [16:08<01:18, 19.52s/it] 74%|███████▍  | 37/50 [16:07<03:38, 16.79s/it] 18%|█▊        | 9/50 [16:08<1:14:00, 108.31s/it] 86%|████████▌ | 43/50 [16:10<02:27, 21.09s/it] 86%|████████▌ | 43/50 [16:11<02:09, 18.52s/it] 92%|█████████▏| 46/50 [16:16<01:18, 19.58s/it] 96%|█████████▌| 48/50 [16:15<00:37, 18.61s/it] 82%|████████▏ | 41/50 [16:19<02:52, 19.19s/it] 74%|███████▍  | 37/50 [16:22<04:56, 22.82s/it] 72%|███████▏  | 36/50 [16:23<05:05, 21.85s/it] 96%|█████████▌| 48/50 [16:25<00:34, 17.50s/it] 94%|█████████▍| 47/50 [16:26<00:57, 19.17s/it] 98%|█████████▊| 49/50 [16:27<00:16, 16.62s/it] 16%|█▌        | 8/50 [16:29<1:12:38, 103.78s/it] 24%|██▍       | 12/50 [16:29<41:12, 65.07s/it] 88%|████████▊ | 44/50 [16:31<01:53, 18.91s/it] 88%|████████▊ | 44/50 [16:30<02:05, 20.88s/it] 76%|███████▌  | 38/50 [16:35<03:59, 19.96s/it] 84%|████████▍ | 42/50 [16:36<02:28, 18.60s/it] 98%|█████████▊| 49/50 [16:39<00:16, 16.65s/it] 94%|█████████▍| 47/50 [16:39<01:02, 20.75s/it] 74%|███████▍  | 37/50 [16:40<04:22, 20.22s/it] 22%|██▏       | 11/50 [16:46<57:30, 88.48s/it] 76%|███████▌  | 38/50 [16:46<04:39, 23.30s/it] 16%|█▌        | 8/50 [16:47<1:19:27, 113.52s/it] 90%|█████████ | 45/50 [16:51<01:43, 20.79s/it] 86%|████████▌ | 43/50 [16:51<02:02, 17.57s/it] 18%|█▊        | 9/50 [16:53<1:14:13, 108.63s/it] 78%|███████▊  | 39/50 [16:53<03:34, 19.51s/it] 96%|█████████▌| 48/50 [16:57<00:45, 22.73s/it]100%|██████████| 50/50 [16:57<00:00, 20.52s/it]100%|██████████| 50/50 [16:57<00:00, 20.35s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.525
+Loss - yyx: -0.907
+Run 1 completed in 1.46 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.376
+Loss - yyx: -0.913
+Run 2 completed in 0.35 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.301
+Loss - yyx: -0.824
+Run 3 completed in 0.33 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.222
+Loss - yyx: -1.228
+Run 4 completed in 0.25 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.335
+Loss - yyx: -1.235
+Run 5 completed in 0.21 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.482
+Loss - yyx: -0.918
+Run 6 completed in 0.33 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.908
+Loss - yyx: -1.121
+Run 7 completed in 0.39 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.405
+Loss - yyx: -0.895
+Run 8 completed in 0.40 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.775
+Loss - yyx: -0.682
+Run 9 completed in 0.25 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.873
+Loss - yyx: -1.082
+Run 10 completed in 0.30 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.852
+Loss - yyx: -0.749
+Run 11 completed in 0.45 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.471
+Loss - yyx: -0.904
+Run 12 completed in 0.24 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.922
+Loss - yyx: -0.744
+Run 13 completed in 0.27 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.192
+Loss - yyx: -1.210
+Run 14 completed in 0.22 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.334
+Loss - yyx: -1.174
+Run 15 completed in 0.38 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.329
+Loss - yyx: -1.254
+Run 16 completed in 0.19 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.567
+Loss - yyx: -0.966
+Run 17 completed in 0.50 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.509
+Loss - yyx: -0.949
+Run 18 completed in 0.38 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.313
+Loss - yyx: -1.241
+Run 19 completed in 0.29 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.400
+Loss - yyx: -0.914
+Run 20 completed in 0.22 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 8.084
+Loss - yyx: -1.120
+Run 21 completed in 0.28 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.332
+Loss - yyx: -1.249
+Run 22 completed in 0.22 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.755
+Loss - yyx: -0.669
+Run 23 completed in 0.31 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.006
+Loss - yyx: -1.154
+Run 24 completed in 0.37 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.695
+Loss - yyx: -0.987
+Run 25 completed in 0.40 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.817
+Loss - yyx: -0.730
+Run 26 completed in 0.31 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.759
+Loss - yyx: -0.688
+Run 27 completed in 0.23 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.733
+Loss - yyx: -0.703
+Run 28 completed in 0.41 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.017
+Loss - yyx: -0.786
+Run 29 completed in 0.39 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.762
+Loss - yyx: -1.013
+Run 30 completed in 0.34 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.480
+Loss - yyx: -0.932
+Run 31 completed in 0.38 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.218
+Loss - yyx: -0.846
+Run 32 completed in 0.33 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.216
+Loss - yyx: -0.776
+Run 33 completed in 0.33 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.649
+Loss - yyx: -0.969
+Run 34 completed in 0.28 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.590
+Loss - yyx: -0.927
+Run 35 completed in 0.27 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.774
+Loss - yyx: -0.721
+Run 36 completed in 0.32 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.304
+Loss - yyx: -1.229
+Run 37 completed in 0.22 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.409
+Loss - yyx: -0.889
+Run 38 completed in 0.42 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.743
+Loss - yyx: -0.706
+Run 39 completed in 0.21 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.527
+Loss - yyx: -1.266
+Run 40 completed in 0.31 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.145
+Loss - yyx: -1.201
+Run 41 completed in 0.24 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.556
+Loss - yyx: -0.956
+Run 42 completed in 0.34 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.629
+Loss - yyx: -0.966
+Run 43 completed in 0.43 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.163
+Loss - yyx: -0.800
+Run 44 completed in 0.39 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.993
+Loss - yyx: -0.774
+Run 45 completed in 0.26 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.899
+Loss - yyx: -1.045
+Run 46 completed in 0.29 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.607
+Loss - yyx: -0.957
+Run 47 completed in 0.35 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.340
+Loss - yyx: -0.862
+Run 48 completed in 0.28 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.028
+Loss - yyx: -1.161
+Run 49 completed in 0.20 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.617
+Loss - yyx: -0.947
+Run 50 completed in 0.49 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.558779  0.521301  ...  7.540911  7.981486  8.527296
+loss_yyx     50.0 -0.958793  0.182959  ... -0.939800 -0.806142 -0.668911
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_197.csv
+ 16%|█▌        | 8/50 [16:58<1:16:48, 109.74s/it] 96%|█████████▌| 48/50 [17:01<00:42, 21.06s/it] 90%|█████████ | 45/50 [17:04<01:56, 23.25s/it] 78%|███████▊  | 39/50 [17:05<03:59, 21.74s/it] 76%|███████▌  | 38/50 [17:07<04:28, 22.33s/it]100%|██████████| 50/50 [17:09<00:00, 20.63s/it]100%|██████████| 50/50 [17:09<00:00, 20.60s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.479
+Loss - yyx: -0.903
+Run 1 completed in 1.37 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.348
+Loss - yyx: -0.921
+Run 2 completed in 0.30 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.377
+Loss - yyx: -0.817
+Run 3 completed in 0.33 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.177
+Loss - yyx: -1.235
+Run 4 completed in 0.30 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.329
+Loss - yyx: -1.234
+Run 5 completed in 0.27 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.399
+Loss - yyx: -0.902
+Run 6 completed in 0.51 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.917
+Loss - yyx: -1.118
+Run 7 completed in 0.25 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.313
+Loss - yyx: -0.874
+Run 8 completed in 0.36 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.766
+Loss - yyx: -0.676
+Run 9 completed in 0.18 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.886
+Loss - yyx: -1.086
+Run 10 completed in 0.40 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.881
+Loss - yyx: -0.743
+Run 11 completed in 0.24 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.467
+Loss - yyx: -0.899
+Run 12 completed in 0.31 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.784
+Loss - yyx: -0.751
+Run 13 completed in 0.39 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.201
+Loss - yyx: -1.214
+Run 14 completed in 0.34 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.194
+Loss - yyx: -1.171
+Run 15 completed in 0.29 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.419
+Loss - yyx: -1.271
+Run 16 completed in 0.35 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.689
+Loss - yyx: -0.979
+Run 17 completed in 0.35 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.632
+Loss - yyx: -0.939
+Run 18 completed in 0.45 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.367
+Loss - yyx: -1.242
+Run 19 completed in 0.29 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.595
+Loss - yyx: -0.934
+Run 20 completed in 0.29 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.874
+Loss - yyx: -1.103
+Run 21 completed in 0.34 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.425
+Loss - yyx: -1.277
+Run 22 completed in 0.40 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.714
+Loss - yyx: -0.692
+Run 23 completed in 0.32 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 7.971
+Loss - yyx: -1.144
+Run 24 completed in 0.28 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.662
+Loss - yyx: -0.981
+Run 25 completed in 0.36 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.803
+Loss - yyx: -0.721
+Run 26 completed in 0.29 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.702
+Loss - yyx: -0.706
+Run 27 completed in 0.29 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.800
+Loss - yyx: -0.719
+Run 28 completed in 0.38 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.078
+Loss - yyx: -0.788
+Run 29 completed in 0.42 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.784
+Loss - yyx: -1.007
+Run 30 completed in 0.35 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.496
+Loss - yyx: -0.927
+Run 31 completed in 0.42 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.126
+Loss - yyx: -0.819
+Run 32 completed in 0.27 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.041
+Loss - yyx: -0.759
+Run 33 completed in 0.22 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.644
+Loss - yyx: -0.956
+Run 34 completed in 0.39 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.632
+Loss - yyx: -0.941
+Run 35 completed in 0.36 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.865
+Loss - yyx: -0.718
+Run 36 completed in 0.28 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.260
+Loss - yyx: -1.236
+Run 37 completed in 0.31 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.421
+Loss - yyx: -0.893
+Run 38 completed in 0.25 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.774
+Loss - yyx: -0.710
+Run 39 completed in 0.33 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 7.691
+Loss - yyx: -1.178
+Run 40 completed in 0.15 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.205
+Loss - yyx: -1.211
+Run 41 completed in 0.33 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.668
+Loss - yyx: -0.970
+Run 42 completed in 0.36 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.582
+Loss - yyx: -0.965
+Run 43 completed in 0.28 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.062
+Loss - yyx: -0.811
+Run 44 completed in 0.37 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.966
+Loss - yyx: -0.771
+Run 45 completed in 0.25 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.898
+Loss - yyx: -1.046
+Run 46 completed in 0.25 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.450
+Loss - yyx: -0.944
+Run 47 completed in 0.33 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.248
+Loss - yyx: -0.845
+Run 48 completed in 0.28 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.234
+Loss - yyx: -1.177
+Run 49 completed in 0.24 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.660
+Loss - yyx: -0.947
+Run 50 completed in 0.50 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.539081  0.515358  ...  7.588598  7.894731  8.424816
+loss_yyx     50.0 -0.957431  0.182240  ... -0.939870 -0.812570 -0.675873
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_196.csv
+ 24%|██▍       | 12/50 [17:12<50:14, 79.33s/it] 92%|█████████▏| 46/50 [17:12<01:23, 20.81s/it] 20%|██        | 10/50 [17:14<1:03:30, 95.25s/it] 88%|████████▊ | 44/50 [17:14<01:54, 19.13s/it] 98%|█████████▊| 49/50 [17:18<00:19, 19.66s/it] 80%|████████  | 40/50 [17:17<03:27, 20.79s/it] 18%|█▊        | 9/50 [17:19<1:10:00, 102.45s/it] 92%|█████████▏| 46/50 [17:20<01:23, 20.86s/it] 98%|█████████▊| 49/50 [17:20<00:22, 22.89s/it] 78%|███████▊  | 39/50 [17:20<03:36, 19.64s/it] 80%|████████  | 40/50 [17:20<03:19, 19.96s/it] 94%|█████████▍| 47/50 [17:28<00:57, 19.30s/it] 18%|█▊        | 9/50 [17:29<1:13:14, 107.19s/it] 94%|█████████▍| 47/50 [17:35<00:57, 19.21s/it] 82%|████████▏ | 41/50 [17:35<02:45, 18.42s/it]100%|██████████| 50/50 [17:38<00:00, 21.34s/it]100%|██████████| 50/50 [17:38<00:00, 21.17s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.466
+Loss - yyx: -0.910
+Run 1 completed in 1.45 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.310
+Loss - yyx: -0.919
+Run 2 completed in 0.39 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.250
+Loss - yyx: -0.831
+Run 3 completed in 0.31 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.057
+Loss - yyx: -1.222
+Run 4 completed in 0.38 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.341
+Loss - yyx: -1.249
+Run 5 completed in 0.33 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.467
+Loss - yyx: -0.920
+Run 6 completed in 0.42 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.931
+Loss - yyx: -1.127
+Run 7 completed in 0.33 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.239
+Loss - yyx: -0.867
+Run 8 completed in 0.22 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.757
+Loss - yyx: -0.675
+Run 9 completed in 0.33 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.812
+Loss - yyx: -1.082
+Run 10 completed in 0.41 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.933
+Loss - yyx: -0.744
+Run 11 completed in 0.27 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.488
+Loss - yyx: -0.907
+Run 12 completed in 0.38 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.938
+Loss - yyx: -0.748
+Run 13 completed in 0.43 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.131
+Loss - yyx: -1.207
+Run 14 completed in 0.39 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 7.941
+Loss - yyx: -1.144
+Run 15 completed in 0.23 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.488
+Loss - yyx: -1.278
+Run 16 completed in 0.34 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.665
+Loss - yyx: -0.970
+Run 17 completed in 0.39 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.617
+Loss - yyx: -0.943
+Run 18 completed in 0.26 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.150
+Loss - yyx: -1.229
+Run 19 completed in 0.27 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.399
+Loss - yyx: -0.919
+Run 20 completed in 0.23 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.893
+Loss - yyx: -1.111
+Run 21 completed in 0.34 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.187
+Loss - yyx: -1.232
+Run 22 completed in 0.28 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.718
+Loss - yyx: -0.689
+Run 23 completed in 0.28 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 7.917
+Loss - yyx: -1.140
+Run 24 completed in 0.46 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.610
+Loss - yyx: -0.977
+Run 25 completed in 0.33 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.896
+Loss - yyx: -0.696
+Run 26 completed in 0.24 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.783
+Loss - yyx: -0.702
+Run 27 completed in 0.29 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.899
+Loss - yyx: -0.709
+Run 28 completed in 0.27 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.061
+Loss - yyx: -0.786
+Run 29 completed in 0.42 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.759
+Loss - yyx: -1.008
+Run 30 completed in 0.36 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.368
+Loss - yyx: -0.912
+Run 31 completed in 0.32 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.123
+Loss - yyx: -0.846
+Run 32 completed in 0.30 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 6.977
+Loss - yyx: -0.761
+Run 33 completed in 0.35 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.578
+Loss - yyx: -0.964
+Run 34 completed in 0.35 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.500
+Loss - yyx: -0.924
+Run 35 completed in 0.32 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.734
+Loss - yyx: -0.710
+Run 36 completed in 0.26 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.417
+Loss - yyx: -1.249
+Run 37 completed in 0.35 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.286
+Loss - yyx: -0.860
+Run 38 completed in 0.28 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.768
+Loss - yyx: -0.686
+Run 39 completed in 0.25 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.306
+Loss - yyx: -1.259
+Run 40 completed in 0.28 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 7.966
+Loss - yyx: -1.187
+Run 41 completed in 0.35 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.528
+Loss - yyx: -0.955
+Run 42 completed in 0.47 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.623
+Loss - yyx: -0.958
+Run 43 completed in 0.30 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.050
+Loss - yyx: -0.787
+Run 44 completed in 0.21 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 7.043
+Loss - yyx: -0.778
+Run 45 completed in 0.33 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.880
+Loss - yyx: -1.052
+Run 46 completed in 0.36 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.491
+Loss - yyx: -0.961
+Run 47 completed in 0.31 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.323
+Loss - yyx: -0.864
+Run 48 completed in 0.52 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.243
+Loss - yyx: -1.182
+Run 49 completed in 0.39 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.585
+Loss - yyx: -0.945
+Run 50 completed in 0.30 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.517836  0.496654  ...  7.495338  7.910808  8.487786
+loss_yyx     50.0 -0.955630  0.184301  ... -0.933522 -0.798272 -0.675011
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_199.csv
+100%|██████████| 50/50 [17:40<00:00, 20.43s/it]100%|██████████| 50/50 [17:40<00:00, 21.21s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.645
+Loss - yyx: -0.904
+Run 1 completed in 1.53 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.417
+Loss - yyx: -0.909
+Run 2 completed in 0.37 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.285
+Loss - yyx: -0.816
+Run 3 completed in 0.37 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.087
+Loss - yyx: -1.226
+Run 4 completed in 0.30 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.252
+Loss - yyx: -1.231
+Run 5 completed in 0.28 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.519
+Loss - yyx: -0.907
+Run 6 completed in 0.35 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.931
+Loss - yyx: -1.115
+Run 7 completed in 0.32 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.353
+Loss - yyx: -0.894
+Run 8 completed in 0.31 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.721
+Loss - yyx: -0.683
+Run 9 completed in 0.37 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.850
+Loss - yyx: -1.082
+Run 10 completed in 0.44 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.857
+Loss - yyx: -0.755
+Run 11 completed in 0.38 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.483
+Loss - yyx: -0.903
+Run 12 completed in 0.29 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 7.109
+Loss - yyx: -0.748
+Run 13 completed in 0.51 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.153
+Loss - yyx: -1.208
+Run 14 completed in 0.31 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.038
+Loss - yyx: -1.153
+Run 15 completed in 0.34 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.396
+Loss - yyx: -1.270
+Run 16 completed in 0.45 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.499
+Loss - yyx: -0.958
+Run 17 completed in 0.44 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.569
+Loss - yyx: -0.943
+Run 18 completed in 0.25 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.377
+Loss - yyx: -1.235
+Run 19 completed in 0.34 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.528
+Loss - yyx: -0.930
+Run 20 completed in 0.31 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.957
+Loss - yyx: -1.096
+Run 21 completed in 0.24 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.314
+Loss - yyx: -1.254
+Run 22 completed in 0.29 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.695
+Loss - yyx: -0.677
+Run 23 completed in 0.40 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.033
+Loss - yyx: -1.147
+Run 24 completed in 0.26 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.720
+Loss - yyx: -0.975
+Run 25 completed in 0.27 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.821
+Loss - yyx: -0.709
+Run 26 completed in 0.32 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.690
+Loss - yyx: -0.694
+Run 27 completed in 0.33 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.872
+Loss - yyx: -0.711
+Run 28 completed in 0.33 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.066
+Loss - yyx: -0.785
+Run 29 completed in 0.35 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.896
+Loss - yyx: -1.018
+Run 30 completed in 0.28 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.400
+Loss - yyx: -0.937
+Run 31 completed in 0.34 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.146
+Loss - yyx: -0.838
+Run 32 completed in 0.34 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.079
+Loss - yyx: -0.755
+Run 33 completed in 0.33 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.668
+Loss - yyx: -0.958
+Run 34 completed in 0.22 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.627
+Loss - yyx: -0.935
+Run 35 completed in 0.25 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.716
+Loss - yyx: -0.717
+Run 36 completed in 0.34 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.222
+Loss - yyx: -1.218
+Run 37 completed in 0.20 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.461
+Loss - yyx: -0.891
+Run 38 completed in 0.30 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.766
+Loss - yyx: -0.703
+Run 39 completed in 0.31 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.408
+Loss - yyx: -1.264
+Run 40 completed in 0.26 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.236
+Loss - yyx: -1.209
+Run 41 completed in 0.35 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.563
+Loss - yyx: -0.966
+Run 42 completed in 0.40 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.686
+Loss - yyx: -0.988
+Run 43 completed in 0.31 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.023
+Loss - yyx: -0.801
+Run 44 completed in 0.33 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.929
+Loss - yyx: -0.756
+Run 45 completed in 0.40 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.844
+Loss - yyx: -1.047
+Run 46 completed in 0.28 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.429
+Loss - yyx: -0.935
+Run 47 completed in 0.39 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.389
+Loss - yyx: -0.860
+Run 48 completed in 0.36 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.148
+Loss - yyx: -1.179
+Run 49 completed in 0.27 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.665
+Loss - yyx: -0.947
+Run 50 completed in 0.37 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.550787  0.513858  ...  7.545742  7.950845  8.408458
+loss_yyx     50.0 -0.956807  0.183387  ... -0.936259 -0.805158 -0.677186
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_193.csv
+ 80%|████████  | 40/50 [17:39<03:14, 19.44s/it] 90%|█████████ | 45/50 [17:39<01:43, 20.77s/it] 96%|█████████▌| 48/50 [17:44<00:37, 18.50s/it] 26%|██▌       | 13/50 [17:46<42:12, 68.44s/it] 82%|████████▏ | 41/50 [17:46<03:29, 23.32s/it] 84%|████████▍ | 42/50 [17:46<02:09, 16.16s/it] 14%|█▍        | 7/50 [17:49<1:33:37, 130.64s/it] 14%|█▍        | 7/50 [17:50<1:41:53, 142.17s/it] 18%|█▊        | 9/50 [17:51<1:06:12, 96.90s/it]  96%|█████████▌| 48/50 [17:54<00:38, 19.26s/it] 92%|█████████▏| 46/50 [17:55<01:17, 19.36s/it] 82%|████████▏ | 41/50 [17:59<02:55, 19.52s/it] 98%|█████████▊| 49/50 [18:00<00:17, 17.56s/it] 86%|████████▌ | 43/50 [18:00<01:49, 15.59s/it] 84%|████████▍ | 42/50 [18:04<02:53, 21.74s/it] 24%|██▍       | 12/50 [18:06<54:23, 85.87s/it] 88%|████████▊ | 44/50 [18:11<01:24, 14.12s/it] 98%|█████████▊| 49/50 [18:12<00:18, 18.79s/it] 94%|█████████▍| 47/50 [18:14<00:57, 19.28s/it] 86%|████████▌ | 43/50 [18:19<02:16, 19.55s/it] 20%|██        | 10/50 [18:20<1:07:47, 101.68s/it] 26%|██▌       | 13/50 [18:21<46:52, 76.02s/it] 84%|████████▍ | 42/50 [18:21<02:41, 20.16s/it] 28%|██▊       | 14/50 [18:24<35:35, 59.33s/it] 20%|██        | 10/50 [18:25<1:00:54, 91.35s/it] 90%|█████████ | 45/50 [18:28<01:14, 14.87s/it]100%|██████████| 50/50 [18:29<00:00, 18.10s/it]100%|██████████| 50/50 [18:29<00:00, 22.18s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.487
+Loss - yyx: -0.917
+Run 1 completed in 1.39 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.393
+Loss - yyx: -0.919
+Run 2 completed in 0.32 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.250
+Loss - yyx: -0.819
+Run 3 completed in 0.50 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.079
+Loss - yyx: -1.222
+Run 4 completed in 0.41 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 7.414
+Loss - yyx: -1.117
+Run 5 completed in 0.19 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.470
+Loss - yyx: -0.919
+Run 6 completed in 0.41 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 8.045
+Loss - yyx: -1.124
+Run 7 completed in 0.34 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.298
+Loss - yyx: -0.855
+Run 8 completed in 0.38 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.727
+Loss - yyx: -0.665
+Run 9 completed in 0.42 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.753
+Loss - yyx: -1.080
+Run 10 completed in 0.36 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.859
+Loss - yyx: -0.755
+Run 11 completed in 0.29 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.168
+Loss - yyx: -0.846
+Run 12 completed in 0.35 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 7.082
+Loss - yyx: -0.661
+Run 13 completed in 0.37 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.002
+Loss - yyx: -1.196
+Run 14 completed in 0.52 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 7.913
+Loss - yyx: -1.143
+Run 15 completed in 0.26 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.348
+Loss - yyx: -1.257
+Run 16 completed in 0.26 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.404
+Loss - yyx: -0.947
+Run 17 completed in 0.43 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.612
+Loss - yyx: -0.927
+Run 18 completed in 0.47 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.331
+Loss - yyx: -1.242
+Run 19 completed in 0.43 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.437
+Loss - yyx: -0.922
+Run 20 completed in 0.66 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.833
+Loss - yyx: -1.092
+Run 21 completed in 0.28 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.344
+Loss - yyx: -1.261
+Run 22 completed in 0.26 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.850
+Loss - yyx: -0.664
+Run 23 completed in 0.28 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 7.984
+Loss - yyx: -1.141
+Run 24 completed in 0.35 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.648
+Loss - yyx: -0.980
+Run 25 completed in 0.30 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.926
+Loss - yyx: -0.685
+Run 26 completed in 0.39 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.719
+Loss - yyx: -0.709
+Run 27 completed in 0.44 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.855
+Loss - yyx: -0.705
+Run 28 completed in 0.23 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.101
+Loss - yyx: -0.780
+Run 29 completed in 0.29 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.841
+Loss - yyx: -1.016
+Run 30 completed in 0.33 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.465
+Loss - yyx: -0.930
+Run 31 completed in 0.35 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.258
+Loss - yyx: -0.829
+Run 32 completed in 0.24 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 6.990
+Loss - yyx: -0.777
+Run 33 completed in 0.29 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.782
+Loss - yyx: -0.972
+Run 34 completed in 0.45 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.502
+Loss - yyx: -0.936
+Run 35 completed in 0.42 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.805
+Loss - yyx: -0.703
+Run 36 completed in 0.37 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 7.466
+Loss - yyx: -1.115
+Run 37 completed in 0.31 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.474
+Loss - yyx: -0.890
+Run 38 completed in 0.33 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.808
+Loss - yyx: -0.700
+Run 39 completed in 0.30 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.262
+Loss - yyx: -1.257
+Run 40 completed in 0.29 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 7.891
+Loss - yyx: -1.163
+Run 41 completed in 0.33 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.583
+Loss - yyx: -0.959
+Run 42 completed in 0.33 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.701
+Loss - yyx: -0.969
+Run 43 completed in 0.27 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.067
+Loss - yyx: -0.803
+Run 44 completed in 0.33 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 7.131
+Loss - yyx: -0.773
+Run 45 completed in 0.56 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.883
+Loss - yyx: -1.044
+Run 46 completed in 0.25 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.469
+Loss - yyx: -0.921
+Run 47 completed in 0.26 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.226
+Loss - yyx: -0.847
+Run 48 completed in 0.32 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.013
+Loss - yyx: -1.134
+Run 49 completed in 0.29 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.778
+Loss - yyx: -0.951
+Run 50 completed in 0.27 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.494563  0.454792  ...  7.469541  7.839150  8.348476
+loss_yyx     50.0 -0.944738  0.179243  ... -0.928569 -0.806553 -0.660889
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_200.csv
+100%|██████████| 50/50 [18:28<00:00, 20.82s/it]100%|██████████| 50/50 [18:28<00:00, 22.17s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.341
+Loss - yyx: -0.892
+Run 1 completed in 1.48 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.413
+Loss - yyx: -0.920
+Run 2 completed in 0.25 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.430
+Loss - yyx: -0.824
+Run 3 completed in 0.41 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.123
+Loss - yyx: -1.217
+Run 4 completed in 0.37 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.376
+Loss - yyx: -1.233
+Run 5 completed in 0.43 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.671
+Loss - yyx: -0.926
+Run 6 completed in 0.42 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.925
+Loss - yyx: -1.115
+Run 7 completed in 0.30 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.419
+Loss - yyx: -0.893
+Run 8 completed in 0.38 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.786
+Loss - yyx: -0.672
+Run 9 completed in 0.37 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.852
+Loss - yyx: -1.071
+Run 10 completed in 0.32 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.915
+Loss - yyx: -0.749
+Run 11 completed in 0.40 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.457
+Loss - yyx: -0.895
+Run 12 completed in 0.42 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.970
+Loss - yyx: -0.742
+Run 13 completed in 0.53 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.070
+Loss - yyx: -1.205
+Run 14 completed in 0.48 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.104
+Loss - yyx: -1.159
+Run 15 completed in 0.25 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.324
+Loss - yyx: -1.256
+Run 16 completed in 0.34 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.556
+Loss - yyx: -0.943
+Run 17 completed in 0.43 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.512
+Loss - yyx: -0.912
+Run 18 completed in 0.32 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.456
+Loss - yyx: -1.226
+Run 19 completed in 0.48 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.345
+Loss - yyx: -0.889
+Run 20 completed in 0.37 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.985
+Loss - yyx: -1.109
+Run 21 completed in 0.37 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.335
+Loss - yyx: -1.257
+Run 22 completed in 0.36 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.625
+Loss - yyx: -0.665
+Run 23 completed in 0.39 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 7.836
+Loss - yyx: -1.108
+Run 24 completed in 0.35 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.590
+Loss - yyx: -0.954
+Run 25 completed in 0.36 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.747
+Loss - yyx: -0.677
+Run 26 completed in 0.19 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.702
+Loss - yyx: -0.671
+Run 27 completed in 0.26 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.798
+Loss - yyx: -0.702
+Run 28 completed in 0.30 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 6.937
+Loss - yyx: -0.774
+Run 29 completed in 0.44 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.703
+Loss - yyx: -0.983
+Run 30 completed in 0.29 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.389
+Loss - yyx: -0.916
+Run 31 completed in 0.33 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.113
+Loss - yyx: -0.829
+Run 32 completed in 0.23 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.062
+Loss - yyx: -0.769
+Run 33 completed in 0.23 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.558
+Loss - yyx: -0.950
+Run 34 completed in 0.27 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.555
+Loss - yyx: -0.923
+Run 35 completed in 0.38 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.757
+Loss - yyx: -0.704
+Run 36 completed in 0.35 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.244
+Loss - yyx: -1.226
+Run 37 completed in 0.27 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.201
+Loss - yyx: -0.839
+Run 38 completed in 0.36 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.715
+Loss - yyx: -0.694
+Run 39 completed in 0.27 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.276
+Loss - yyx: -1.242
+Run 40 completed in 0.28 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.085
+Loss - yyx: -1.201
+Run 41 completed in 0.45 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.436
+Loss - yyx: -0.931
+Run 42 completed in 0.34 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.507
+Loss - yyx: -0.971
+Run 43 completed in 0.37 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.016
+Loss - yyx: -0.801
+Run 44 completed in 0.34 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.967
+Loss - yyx: -0.766
+Run 45 completed in 0.34 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.670
+Loss - yyx: -1.036
+Run 46 completed in 0.35 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.371
+Loss - yyx: -0.949
+Run 47 completed in 0.26 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.259
+Loss - yyx: -0.845
+Run 48 completed in 0.28 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.275
+Loss - yyx: -1.173
+Run 49 completed in 0.26 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.553
+Loss - yyx: -0.944
+Run 50 completed in 0.47 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.506202  0.518944  ...  7.482086  7.906538  8.456414
+loss_yyx     50.0 -0.946908  0.184795  ... -0.924383 -0.806817 -0.665031
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_194.csv
+ 18%|█▊        | 9/50 [18:32<1:11:28, 104.59s/it] 18%|█▊        | 9/50 [18:33<1:15:55, 111.12s/it] 92%|█████████▏| 46/50 [18:39<00:55, 13.80s/it] 88%|████████▊ | 44/50 [18:39<01:59, 19.85s/it] 86%|████████▌ | 43/50 [18:40<02:18, 19.82s/it] 20%|██        | 10/50 [18:41<1:04:07, 96.19s/it] 16%|█▌        | 8/50 [18:40<1:13:46, 105.38s/it] 96%|█████████▌| 48/50 [18:46<00:46, 23.07s/it] 22%|██▏       | 11/50 [18:48<1:01:34, 94.72s/it] 98%|█████████▊| 49/50 [18:54<00:18, 18.63s/it] 90%|█████████ | 45/50 [18:58<01:37, 19.49s/it] 94%|█████████▍| 47/50 [18:58<00:46, 15.46s/it] 88%|████████▊ | 44/50 [19:04<02:06, 21.13s/it] 22%|██▏       | 11/50 [19:04<54:41, 84.15s/it]    20%|██        | 10/50 [19:06<57:58, 86.97s/it]   28%|██▊       | 14/50 [19:10<40:50, 68.08s/it] 92%|█████████▏| 46/50 [19:11<01:09, 17.49s/it] 30%|███       | 15/50 [19:13<32:45, 56.17s/it]100%|██████████| 50/50 [19:14<00:00, 19.03s/it]100%|██████████| 50/50 [19:14<00:00, 23.09s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.307
+Loss - yyx: -0.897
+Run 1 completed in 1.39 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.301
+Loss - yyx: -0.893
+Run 2 completed in 0.38 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.289
+Loss - yyx: -0.829
+Run 3 completed in 0.57 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.282
+Loss - yyx: -1.244
+Run 4 completed in 0.47 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.340
+Loss - yyx: -1.243
+Run 5 completed in 0.48 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.681
+Loss - yyx: -0.925
+Run 6 completed in 0.32 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.841
+Loss - yyx: -1.101
+Run 7 completed in 0.34 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.353
+Loss - yyx: -0.903
+Run 8 completed in 0.33 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.698
+Loss - yyx: -0.671
+Run 9 completed in 0.33 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.829
+Loss - yyx: -1.080
+Run 10 completed in 0.28 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.963
+Loss - yyx: -0.757
+Run 11 completed in 0.33 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.260
+Loss - yyx: -0.880
+Run 12 completed in 0.26 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.805
+Loss - yyx: -0.730
+Run 13 completed in 0.35 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.133
+Loss - yyx: -1.202
+Run 14 completed in 0.25 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.141
+Loss - yyx: -1.155
+Run 15 completed in 0.28 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.367
+Loss - yyx: -1.251
+Run 16 completed in 0.38 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.605
+Loss - yyx: -0.957
+Run 17 completed in 0.42 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.451
+Loss - yyx: -0.934
+Run 18 completed in 0.42 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.314
+Loss - yyx: -1.249
+Run 19 completed in 0.39 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.790
+Loss - yyx: -0.940
+Run 20 completed in 0.33 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.945
+Loss - yyx: -1.116
+Run 21 completed in 0.52 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.391
+Loss - yyx: -1.264
+Run 22 completed in 0.35 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.733
+Loss - yyx: -0.683
+Run 23 completed in 0.36 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.180
+Loss - yyx: -1.155
+Run 24 completed in 0.35 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.588
+Loss - yyx: -0.967
+Run 25 completed in 0.26 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.814
+Loss - yyx: -0.699
+Run 26 completed in 0.24 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.704
+Loss - yyx: -0.700
+Run 27 completed in 0.51 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.856
+Loss - yyx: -0.715
+Run 28 completed in 0.31 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.126
+Loss - yyx: -0.779
+Run 29 completed in 0.56 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.484
+Loss - yyx: -0.997
+Run 30 completed in 0.43 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.246
+Loss - yyx: -0.904
+Run 31 completed in 0.53 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.096
+Loss - yyx: -0.825
+Run 32 completed in 0.52 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.118
+Loss - yyx: -0.762
+Run 33 completed in 0.38 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.639
+Loss - yyx: -0.965
+Run 34 completed in 0.48 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.607
+Loss - yyx: -0.920
+Run 35 completed in 0.35 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.667
+Loss - yyx: -0.640
+Run 36 completed in 0.45 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.026
+Loss - yyx: -1.196
+Run 37 completed in 0.22 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.362
+Loss - yyx: -0.873
+Run 38 completed in 0.26 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.805
+Loss - yyx: -0.699
+Run 39 completed in 0.30 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.105
+Loss - yyx: -1.249
+Run 40 completed in 0.35 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.199
+Loss - yyx: -1.203
+Run 41 completed in 0.29 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.430
+Loss - yyx: -0.954
+Run 42 completed in 0.29 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.647
+Loss - yyx: -0.976
+Run 43 completed in 0.25 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.025
+Loss - yyx: -0.804
+Run 44 completed in 0.38 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.717
+Loss - yyx: -0.747
+Run 45 completed in 0.41 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.901
+Loss - yyx: -1.036
+Run 46 completed in 0.27 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.385
+Loss - yyx: -0.917
+Run 47 completed in 0.32 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.346
+Loss - yyx: -0.863
+Run 48 completed in 0.53 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 7.955
+Loss - yyx: -1.160
+Run 49 completed in 0.14 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.547
+Loss - yyx: -0.945
+Run 50 completed in 0.33 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.507920  0.519463  ...  7.467708  7.933872  8.391317
+loss_yyx     50.0 -0.951089  0.186133  ... -0.929692 -0.809314 -0.640294
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_195.csv
+ 96%|█████████▌| 48/50 [19:15<00:31, 15.70s/it] 98%|█████████▊| 49/50 [19:23<00:13, 13.43s/it] 90%|█████████ | 45/50 [19:24<01:43, 20.77s/it] 92%|█████████▏| 46/50 [19:32<01:08, 17.10s/it] 94%|█████████▍| 47/50 [19:32<00:56, 18.73s/it] 16%|█▌        | 8/50 [19:35<1:31:04, 130.11s/it] 20%|██        | 10/50 [19:36<1:01:27, 92.20s/it] 24%|██▍       | 12/50 [19:40<51:41, 81.63s/it]   26%|██▌       | 13/50 [19:39<54:23, 88.19s/it]100%|██████████| 50/50 [19:40<00:00, 14.65s/it]100%|██████████| 50/50 [19:40<00:00, 23.61s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.167
+Loss - yyx: -0.861
+Run 1 completed in 1.70 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.339
+Loss - yyx: -0.901
+Run 2 completed in 0.37 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.228
+Loss - yyx: -0.821
+Run 3 completed in 0.37 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.363
+Loss - yyx: -1.239
+Run 4 completed in 0.56 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.220
+Loss - yyx: -1.225
+Run 5 completed in 0.33 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.602
+Loss - yyx: -0.910
+Run 6 completed in 0.37 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 7.541
+Loss - yyx: -1.064
+Run 7 completed in 0.25 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 6.669
+Loss - yyx: -0.802
+Run 8 completed in 0.62 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.379
+Loss - yyx: -0.611
+Run 9 completed in 0.67 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.900
+Loss - yyx: -1.084
+Run 10 completed in 0.48 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.803
+Loss - yyx: -0.742
+Run 11 completed in 0.45 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.558
+Loss - yyx: -0.921
+Run 12 completed in 0.48 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.966
+Loss - yyx: -0.729
+Run 13 completed in 0.49 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.191
+Loss - yyx: -1.222
+Run 14 completed in 0.62 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.108
+Loss - yyx: -1.169
+Run 15 completed in 0.29 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.063
+Loss - yyx: -1.214
+Run 16 completed in 0.21 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.481
+Loss - yyx: -0.950
+Run 17 completed in 0.36 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.523
+Loss - yyx: -0.935
+Run 18 completed in 0.56 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.157
+Loss - yyx: -1.199
+Run 19 completed in 0.19 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 6.932
+Loss - yyx: -0.839
+Run 20 completed in 0.57 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 8.055
+Loss - yyx: -1.113
+Run 21 completed in 0.32 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.511
+Loss - yyx: -1.279
+Run 22 completed in 0.36 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.628
+Loss - yyx: -0.647
+Run 23 completed in 0.30 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.100
+Loss - yyx: -1.154
+Run 24 completed in 0.35 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.713
+Loss - yyx: -0.979
+Run 25 completed in 0.50 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.669
+Loss - yyx: -0.693
+Run 26 completed in 0.36 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.714
+Loss - yyx: -0.666
+Run 27 completed in 0.39 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.710
+Loss - yyx: -0.706
+Run 28 completed in 0.50 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 6.947
+Loss - yyx: -0.784
+Run 29 completed in 0.37 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.655
+Loss - yyx: -1.006
+Run 30 completed in 0.27 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.348
+Loss - yyx: -0.880
+Run 31 completed in 0.31 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.020
+Loss - yyx: -0.810
+Run 32 completed in 0.38 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 7.219
+Loss - yyx: -0.736
+Run 33 completed in 0.36 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.487
+Loss - yyx: -0.964
+Run 34 completed in 0.56 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.463
+Loss - yyx: -0.946
+Run 35 completed in 0.52 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.638
+Loss - yyx: -0.683
+Run 36 completed in 0.25 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 6.925
+Loss - yyx: -1.091
+Run 37 completed in 0.36 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.398
+Loss - yyx: -0.866
+Run 38 completed in 0.41 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.698
+Loss - yyx: -0.688
+Run 39 completed in 0.30 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.421
+Loss - yyx: -1.269
+Run 40 completed in 0.26 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.239
+Loss - yyx: -1.201
+Run 41 completed in 0.25 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.496
+Loss - yyx: -0.915
+Run 42 completed in 0.18 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.553
+Loss - yyx: -0.975
+Run 43 completed in 0.24 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 6.894
+Loss - yyx: -0.791
+Run 44 completed in 0.18 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 7.320
+Loss - yyx: -0.780
+Run 45 completed in 0.28 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.710
+Loss - yyx: -1.023
+Run 46 completed in 0.19 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.154
+Loss - yyx: -0.880
+Run 47 completed in 0.32 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.176
+Loss - yyx: -0.843
+Run 48 completed in 0.27 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 7.984
+Loss - yyx: -1.146
+Run 49 completed in 0.14 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.557
+Loss - yyx: -0.924
+Run 50 completed in 0.29 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.431888  0.556540  ...  7.472162  7.853603  8.510506
+loss_yyx     50.0 -0.937426  0.187951  ... -0.917794 -0.793501 -0.610532
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_203.csv
+ 94%|█████████▍| 47/50 [19:45<00:47, 15.76s/it] 20%|██        | 10/50 [19:45<1:08:13, 102.34s/it] 96%|█████████▌| 48/50 [19:47<00:35, 17.54s/it] 30%|███       | 15/50 [19:52<35:07, 60.20s/it] 98%|█████████▊| 49/50 [19:55<00:14, 14.70s/it] 24%|██▍       | 12/50 [20:01<48:08, 76.02s/it] 96%|█████████▌| 48/50 [20:03<00:33, 16.56s/it] 22%|██▏       | 11/50 [20:06<1:00:18, 92.78s/it] 32%|███▏      | 16/50 [20:08<31:36, 55.77s/it]100%|██████████| 50/50 [20:09<00:00, 14.35s/it]100%|██████████| 50/50 [20:09<00:00, 24.18s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.367
+Loss - yyx: -0.887
+Run 1 completed in 1.56 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.309
+Loss - yyx: -0.923
+Run 2 completed in 0.52 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.289
+Loss - yyx: -0.807
+Run 3 completed in 0.57 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.318
+Loss - yyx: -1.240
+Run 4 completed in 0.47 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.350
+Loss - yyx: -1.217
+Run 5 completed in 0.44 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.567
+Loss - yyx: -0.922
+Run 6 completed in 0.39 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 8.059
+Loss - yyx: -1.115
+Run 7 completed in 0.44 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.370
+Loss - yyx: -0.885
+Run 8 completed in 0.48 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 6.644
+Loss - yyx: -0.668
+Run 9 completed in 0.27 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 7.954
+Loss - yyx: -1.067
+Run 10 completed in 0.49 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.876
+Loss - yyx: -0.744
+Run 11 completed in 0.31 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.342
+Loss - yyx: -0.887
+Run 12 completed in 0.47 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 6.994
+Loss - yyx: -0.747
+Run 13 completed in 0.63 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.199
+Loss - yyx: -1.198
+Run 14 completed in 0.36 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.085
+Loss - yyx: -1.148
+Run 15 completed in 0.46 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.427
+Loss - yyx: -1.245
+Run 16 completed in 0.29 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.597
+Loss - yyx: -0.968
+Run 17 completed in 0.31 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.573
+Loss - yyx: -0.933
+Run 18 completed in 0.43 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.413
+Loss - yyx: -1.216
+Run 19 completed in 0.51 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.447
+Loss - yyx: -0.909
+Run 20 completed in 0.43 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 8.047
+Loss - yyx: -1.109
+Run 21 completed in 0.42 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.412
+Loss - yyx: -1.255
+Run 22 completed in 0.35 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.691
+Loss - yyx: -0.674
+Run 23 completed in 0.55 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 8.132
+Loss - yyx: -1.137
+Run 24 completed in 0.59 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.586
+Loss - yyx: -0.955
+Run 25 completed in 0.30 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.738
+Loss - yyx: -0.696
+Run 26 completed in 0.22 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.705
+Loss - yyx: -0.686
+Run 27 completed in 0.46 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.876
+Loss - yyx: -0.710
+Run 28 completed in 0.57 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 7.081
+Loss - yyx: -0.783
+Run 29 completed in 0.37 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.708
+Loss - yyx: -0.990
+Run 30 completed in 0.30 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.286
+Loss - yyx: -0.892
+Run 31 completed in 0.32 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.003
+Loss - yyx: -0.815
+Run 32 completed in 0.44 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 6.957
+Loss - yyx: -0.754
+Run 33 completed in 0.37 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.489
+Loss - yyx: -0.946
+Run 34 completed in 0.29 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.540
+Loss - yyx: -0.925
+Run 35 completed in 0.21 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.706
+Loss - yyx: -0.692
+Run 36 completed in 0.44 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 8.231
+Loss - yyx: -1.208
+Run 37 completed in 0.12 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.329
+Loss - yyx: -0.862
+Run 38 completed in 0.46 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 6.767
+Loss - yyx: -0.701
+Run 39 completed in 0.31 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.441
+Loss - yyx: -1.262
+Run 40 completed in 0.40 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.221
+Loss - yyx: -1.202
+Run 41 completed in 0.49 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.512
+Loss - yyx: -0.959
+Run 42 completed in 0.30 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.504
+Loss - yyx: -0.941
+Run 43 completed in 0.24 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 6.930
+Loss - yyx: -0.791
+Run 44 completed in 0.34 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 6.880
+Loss - yyx: -0.747
+Run 45 completed in 0.31 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.739
+Loss - yyx: -1.015
+Run 46 completed in 0.21 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.429
+Loss - yyx: -0.936
+Run 47 completed in 0.36 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.182
+Loss - yyx: -0.826
+Run 48 completed in 0.25 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 8.041
+Loss - yyx: -1.141
+Run 49 completed in 0.13 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.716
+Loss - yyx: -0.933
+Run 50 completed in 0.23 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.521159  0.551510  ...  7.496435  8.045500  8.441128
+loss_yyx     50.0 -0.945354  0.183649  ... -0.929258 -0.795051 -0.668021
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_201.csv
+ 98%|█████████▊| 49/50 [20:12<00:14, 14.12s/it] 22%|██▏       | 11/50 [20:13<52:27, 80.71s/it] 22%|██▏       | 11/50 [20:15<1:03:07, 97.13s/it] 26%|██▌       | 13/50 [20:16<41:49, 67.82s/it]100%|██████████| 50/50 [20:28<00:00, 14.76s/it]100%|██████████| 50/50 [20:28<00:00, 24.57s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 7.440
+Loss - yyx: -0.950
+Run 1 completed in 1.64 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 7.539
+Loss - yyx: -0.960
+Run 2 completed in 0.31 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 7.344
+Loss - yyx: -0.842
+Run 3 completed in 0.34 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 8.246
+Loss - yyx: -1.232
+Run 4 completed in 0.54 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 8.414
+Loss - yyx: -1.274
+Run 5 completed in 0.55 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 7.510
+Loss - yyx: -0.920
+Run 6 completed in 0.50 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 8.127
+Loss - yyx: -1.191
+Run 7 completed in 0.30 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 7.594
+Loss - yyx: -0.982
+Run 8 completed in 0.39 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 7.011
+Loss - yyx: -0.700
+Run 9 completed in 0.34 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 8.029
+Loss - yyx: -1.140
+Run 10 completed in 0.28 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 6.919
+Loss - yyx: -0.729
+Run 11 completed in 0.43 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 7.414
+Loss - yyx: -0.873
+Run 12 completed in 0.48 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 7.098
+Loss - yyx: -0.787
+Run 13 completed in 0.56 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 8.197
+Loss - yyx: -1.201
+Run 14 completed in 0.47 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 8.303
+Loss - yyx: -1.239
+Run 15 completed in 0.37 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 8.499
+Loss - yyx: -1.272
+Run 16 completed in 0.47 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 7.799
+Loss - yyx: -0.971
+Run 17 completed in 0.49 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 7.476
+Loss - yyx: -0.935
+Run 18 completed in 0.57 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 8.445
+Loss - yyx: -1.270
+Run 19 completed in 0.44 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 7.431
+Loss - yyx: -0.903
+Run 20 completed in 0.33 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 7.937
+Loss - yyx: -1.091
+Run 21 completed in 0.47 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 8.255
+Loss - yyx: -1.240
+Run 22 completed in 0.46 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 6.707
+Loss - yyx: -0.687
+Run 23 completed in 0.49 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 7.968
+Loss - yyx: -1.118
+Run 24 completed in 0.52 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 7.403
+Loss - yyx: -0.921
+Run 25 completed in 0.52 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 6.868
+Loss - yyx: -0.736
+Run 26 completed in 0.29 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 6.769
+Loss - yyx: -0.715
+Run 27 completed in 0.44 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 6.975
+Loss - yyx: -0.746
+Run 28 completed in 0.25 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 6.935
+Loss - yyx: -0.771
+Run 29 completed in 0.42 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 7.745
+Loss - yyx: -1.002
+Run 30 completed in 0.44 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 7.488
+Loss - yyx: -0.914
+Run 31 completed in 0.53 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 7.522
+Loss - yyx: -0.938
+Run 32 completed in 0.34 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 6.986
+Loss - yyx: -0.753
+Run 33 completed in 0.40 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 7.496
+Loss - yyx: -0.936
+Run 34 completed in 0.33 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 7.649
+Loss - yyx: -0.956
+Run 35 completed in 0.33 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 6.761
+Loss - yyx: -0.713
+Run 36 completed in 0.35 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 7.962
+Loss - yyx: -1.138
+Run 37 completed in 0.27 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 7.610
+Loss - yyx: -0.937
+Run 38 completed in 0.45 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 7.024
+Loss - yyx: -0.777
+Run 39 completed in 0.22 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 8.379
+Loss - yyx: -1.252
+Run 40 completed in 0.32 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 8.118
+Loss - yyx: -1.216
+Run 41 completed in 0.33 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 7.486
+Loss - yyx: -0.939
+Run 42 completed in 0.36 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 7.569
+Loss - yyx: -0.969
+Run 43 completed in 0.32 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 7.479
+Loss - yyx: -0.929
+Run 44 completed in 0.40 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 7.029
+Loss - yyx: -0.791
+Run 45 completed in 0.33 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 7.649
+Loss - yyx: -1.051
+Run 46 completed in 0.14 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 7.730
+Loss - yyx: -1.036
+Run 47 completed in 0.21 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 7.234
+Loss - yyx: -0.806
+Run 48 completed in 0.31 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 7.909
+Loss - yyx: -1.145
+Run 49 completed in 0.14 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 7.456
+Loss - yyx: -0.912
+Run 50 completed in 0.27 minutes.
+
+--- Multiple Runs Summary ---
+            count      mean       std  ...       50%       75%       max
+ln_yyx_sec   50.0  7.578624  0.491644  ...  7.516280  7.955586  8.498784
+loss_yyx     50.0 -0.970168  0.179491  ... -0.938151 -0.815048 -0.687012
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_198.csv
+ 32%|███▏      | 16/50 [20:29<30:10, 53.24s/it] 28%|██▊       | 14/50 [20:36<47:10, 78.61s/it] 26%|██▌       | 13/50 [20:40<39:56, 64.76s/it] 18%|█▊        | 9/50 [20:52<1:17:37, 113.60s/it] 22%|██▏       | 11/50 [20:54<57:00, 87.72s/it]   18%|█▊        | 9/50 [20:53<1:17:56, 114.07s/it] 22%|██▏       | 11/50 [20:56<1:00:16, 92.72s/it]  28%|██▊       | 14/50 [20:57<35:49, 59.71s/it] 24%|██▍       | 12/50 [21:01<51:27, 81.24s/it]   34%|███▍      | 17/50 [21:04<30:48, 56.03s/it] 24%|██▍       | 12/50 [21:08<52:59, 83.68s/it]   30%|███       | 15/50 [21:13<38:37, 66.22s/it] 28%|██▊       | 14/50 [21:20<34:15, 57.11s/it] 24%|██▍       | 12/50 [21:20<48:30, 76.60s/it] 20%|██        | 10/50 [21:23<58:40, 88.00s/it]   34%|███▍      | 17/50 [21:25<29:44, 54.08s/it] 24%|██▍       | 12/50 [21:29<47:09, 74.46s/it]   20%|██        | 10/50 [21:33<1:00:55, 91.39s/it] 30%|███       | 15/50 [21:40<31:55, 54.72s/it] 24%|██▍       | 12/50 [21:47<48:53, 77.19s/it] 26%|██▌       | 13/50 [21:57<45:26, 73.69s/it] 36%|███▌      | 18/50 [21:56<29:14, 54.83s/it] 32%|███▏      | 16/50 [21:59<33:56, 59.89s/it] 30%|███       | 15/50 [22:14<32:48, 56.26s/it] 26%|██▌       | 13/50 [22:18<48:58, 79.43s/it] 32%|███▏      | 16/50 [22:19<28:23, 50.09s/it] 36%|███▌      | 18/50 [22:23<29:23, 55.11s/it] 26%|██▌       | 13/50 [22:24<44:50, 72.72s/it] 38%|███▊      | 19/50 [22:35<25:53, 50.13s/it] 28%|██▊       | 14/50 [22:39<38:34, 64.28s/it] 22%|██▏       | 11/50 [22:41<54:40, 84.11s/it]   26%|██▌       | 13/50 [22:46<46:20, 75.14s/it] 28%|██▊       | 14/50 [22:51<39:23, 65.64s/it] 26%|██▌       | 13/50 [22:59<46:36, 75.57s/it] 28%|██▊       | 14/50 [22:59<36:50, 61.40s/it] 34%|███▍      | 17/50 [22:59<33:05, 60.17s/it] 22%|██▏       | 11/50 [23:03<59:32, 91.59s/it] 32%|███▏      | 16/50 [23:05<31:03, 54.82s/it] 40%|████      | 20/50 [23:05<22:03, 44.10s/it] 38%|███▊      | 19/50 [23:11<27:24, 53.05s/it] 34%|███▍      | 17/50 [23:22<29:35, 53.81s/it] 24%|██▍       | 12/50 [23:22<44:57, 71.00s/it] 28%|██▊       | 14/50 [23:29<39:22, 65.64s/it] 30%|███       | 15/50 [23:30<34:59, 59.99s/it] 42%|████▏     | 21/50 [23:30<18:31, 38.31s/it] 30%|███       | 15/50 [23:37<31:42, 54.37s/it] 30%|███       | 15/50 [23:40<35:15, 60.45s/it] 44%|████▍     | 22/50 [23:54<15:52, 34.01s/it] 28%|██▊       | 14/50 [24:00<42:42, 71.17s/it] 36%|███▌      | 18/50 [24:01<32:19, 60.62s/it] 36%|███▌      | 18/50 [24:07<27:22, 51.32s/it] 40%|████      | 20/50 [24:10<27:20, 54.69s/it] 32%|███▏      | 16/50 [24:12<30:58, 54.67s/it] 32%|███▏      | 16/50 [24:13<27:36, 48.72s/it] 30%|███       | 15/50 [24:16<34:58, 59.95s/it] 34%|███▍      | 17/50 [24:22<33:42, 61.29s/it] 46%|████▌     | 23/50 [24:27<15:07, 33.61s/it] 32%|███▏      | 16/50 [24:30<32:28, 57.31s/it] 26%|██▌       | 13/50 [24:37<44:36, 72.33s/it] 38%|███▊      | 19/50 [24:41<28:08, 54.45s/it] 42%|████▏     | 21/50 [24:45<23:40, 48.99s/it] 24%|██▍       | 12/50 [24:48<1:00:35, 95.67s/it] 38%|███▊      | 19/50 [24:48<24:57, 48.32s/it] 32%|███▏      | 16/50 [24:53<29:59, 52.92s/it] 30%|███       | 15/50 [24:53<38:22, 65.79s/it] 48%|████▊     | 24/50 [25:08<15:32, 35.88s/it] 28%|██▊       | 14/50 [25:17<37:24, 62.35s/it] 34%|███▍      | 17/50 [25:17<29:18, 53.29s/it] 34%|███▍      | 17/50 [25:19<32:07, 58.41s/it] 44%|████▍     | 22/50 [25:26<21:40, 46.44s/it] 40%|████      | 20/50 [25:29<22:56, 45.88s/it] 32%|███▏      | 16/50 [25:37<33:30, 59.13s/it] 34%|███▍      | 17/50 [25:37<27:41, 50.35s/it] 36%|███▌      | 18/50 [25:40<35:27, 66.48s/it] 40%|████      | 20/50 [25:41<28:03, 56.12s/it] 50%|█████     | 25/50 [25:58<16:39, 39.99s/it] 34%|███▍      | 17/50 [25:59<36:41, 66.73s/it] 46%|████▌     | 23/50 [26:00<19:15, 42.79s/it] 42%|████▏     | 21/50 [26:08<21:16, 44.01s/it] 36%|███▌      | 18/50 [26:11<28:39, 53.74s/it] 36%|███▌      | 18/50 [26:16<30:56, 58.00s/it] 30%|███       | 15/50 [26:19<36:17, 62.21s/it] 42%|████▏     | 21/50 [26:20<24:33, 50.81s/it] 52%|█████▏    | 26/50 [26:37<15:55, 39.83s/it] 38%|███▊      | 19/50 [26:40<33:14, 64.35s/it] 38%|███▊      | 19/50 [26:45<25:25, 49.21s/it] 44%|████▍     | 22/50 [26:45<19:32, 41.87s/it] 36%|███▌      | 18/50 [26:45<29:42, 55.71s/it] 36%|███▌      | 18/50 [26:47<32:35, 61.11s/it] 26%|██▌       | 13/50 [26:49<1:03:47, 103.44s/it] 48%|████▊     | 24/50 [26:52<19:46, 45.62s/it] 34%|███▍      | 17/50 [26:53<35:18, 64.18s/it] 54%|█████▍    | 27/50 [26:59<13:09, 34.33s/it] 44%|████▍     | 22/50 [27:06<23:08, 49.57s/it] 38%|███▊      | 19/50 [27:13<29:03, 56.25s/it] 38%|███▊      | 19/50 [27:29<28:40, 55.51s/it] 32%|███▏      | 16/50 [27:38<38:08, 67.30s/it] 46%|████▌     | 23/50 [27:41<20:42, 46.04s/it] 38%|███▊      | 19/50 [27:43<29:07, 56.36s/it] 50%|█████     | 25/50 [27:45<19:49, 47.59s/it] 40%|████      | 20/50 [27:44<32:12, 64.43s/it] 36%|███▌      | 18/50 [27:48<32:47, 61.50s/it] 40%|████      | 20/50 [27:52<27:16, 54.55s/it] 56%|█████▌    | 28/50 [27:57<15:14, 41.59s/it] 28%|██▊       | 14/50 [28:03<56:46, 94.62s/it]    46%|████▌     | 23/50 [28:07<23:46, 52.84s/it] 40%|████      | 20/50 [28:12<28:31, 57.04s/it] 42%|████▏     | 21/50 [28:20<22:36, 46.77s/it] 40%|████      | 20/50 [28:35<27:34, 55.16s/it] 58%|█████▊    | 29/50 [28:38<14:26, 41.29s/it] 48%|████▊     | 24/50 [28:41<21:46, 50.23s/it] 40%|████      | 20/50 [28:41<30:16, 60.56s/it] 42%|████▏     | 21/50 [28:45<30:33, 63.24s/it] 48%|████▊     | 24/50 [28:47<21:15, 49.04s/it] 52%|█████▏    | 26/50 [28:49<21:01, 52.56s/it] 34%|███▍      | 17/50 [28:49<37:43, 68.60s/it] 42%|████▏     | 21/50 [28:54<25:16, 52.28s/it] 38%|███▊      | 19/50 [28:58<33:07, 64.12s/it] 44%|████▍     | 22/50 [29:03<21:18, 45.65s/it] 42%|████▏     | 21/50 [29:23<26:33, 54.95s/it] 30%|███       | 15/50 [29:23<52:37, 90.20s/it] 60%|██████    | 30/50 [29:30<14:51, 44.57s/it] 42%|████▏     | 21/50 [29:35<27:16, 56.44s/it] 54%|█████▍    | 27/50 [29:45<20:31, 53.53s/it] 36%|███▌      | 18/50 [29:48<35:01, 65.68s/it] 50%|█████     | 25/50 [29:48<21:59, 52.78s/it] 40%|████      | 20/50 [29:52<30:27, 60.93s/it] 44%|████▍     | 22/50 [29:56<30:40, 65.74s/it] 44%|████▍     | 22/50 [29:57<25:55, 55.54s/it] 46%|████▌     | 23/50 [30:02<22:20, 49.66s/it] 50%|█████     | 25/50 [30:05<25:07, 60.28s/it] 44%|████▍     | 22/50 [30:15<24:06, 51.65s/it] 62%|██████▏   | 31/50 [30:16<14:14, 44.96s/it] 46%|████▌     | 23/50 [30:18<20:24, 45.35s/it] 44%|████▍     | 22/50 [30:20<25:57, 55.61s/it] 56%|█████▌    | 28/50 [30:26<18:18, 49.95s/it] 52%|█████▏    | 26/50 [30:28<19:30, 48.79s/it] 38%|███▊      | 19/50 [30:34<30:46, 59.55s/it] 48%|████▊     | 24/50 [30:36<19:23, 44.76s/it] 32%|███▏      | 16/50 [30:42<49:06, 86.66s/it] 46%|████▌     | 23/50 [30:49<27:52, 61.93s/it] 64%|██████▍   | 32/50 [30:50<12:28, 41.59s/it] 42%|████▏     | 21/50 [30:52<29:22, 60.78s/it] 48%|████▊     | 24/50 [30:52<18:12, 42.03s/it] 52%|█████▏    | 26/50 [31:15<25:18, 63.28s/it] 58%|█████▊    | 29/50 [31:21<18:00, 51.46s/it] 46%|████▌     | 23/50 [31:21<25:40, 57.07s/it] 54%|█████▍    | 27/50 [31:21<19:09, 49.98s/it] 40%|████      | 20/50 [31:21<27:59, 55.97s/it] 66%|██████▌   | 33/50 [31:22<10:58, 38.74s/it] 46%|████▌     | 23/50 [31:24<25:30, 56.67s/it] 48%|████▊     | 24/50 [31:35<24:45, 57.13s/it] 44%|████▍     | 22/50 [31:37<26:05, 55.91s/it] 50%|█████     | 25/50 [31:39<18:06, 43.47s/it] 56%|█████▌    | 28/50 [31:50<16:04, 43.86s/it] 50%|█████     | 25/50 [31:59<23:29, 56.37s/it] 34%|███▍      | 17/50 [32:00<46:14, 84.06s/it] 50%|█████     | 25/50 [32:02<20:01, 48.07s/it] 68%|██████▊   | 34/50 [32:02<10:28, 39.27s/it] 54%|█████▍    | 27/50 [32:10<23:18, 60.82s/it] 42%|████▏     | 21/50 [32:18<27:06, 56.09s/it] 60%|██████    | 30/50 [32:19<17:48, 53.44s/it] 70%|███████   | 35/50 [32:21<08:16, 33.10s/it] 46%|████▌     | 23/50 [32:23<23:53, 53.10s/it] 48%|████▊     | 24/50 [32:31<26:29, 61.13s/it] 48%|████▊     | 24/50 [32:32<26:01, 60.06s/it] 58%|█████▊    | 29/50 [32:35<15:24, 44.03s/it] 52%|█████▏    | 26/50 [32:35<20:07, 50.30s/it] 52%|█████▏    | 26/50 [32:43<19:49, 49.55s/it] 56%|█████▌    | 28/50 [32:52<20:13, 55.14s/it] 50%|█████     | 25/50 [32:53<20:09, 48.37s/it] 50%|█████     | 25/50 [32:55<20:48, 49.94s/it] 52%|█████▏    | 26/50 [32:55<19:50, 49.58s/it] 44%|████▍     | 22/50 [32:58<23:56, 51.29s/it] 36%|███▌      | 18/50 [32:59<40:57, 76.80s/it] 72%|███████▏  | 36/50 [33:01<08:13, 35.27s/it] 48%|████▊     | 24/50 [33:14<22:45, 52.52s/it] 62%|██████▏   | 31/50 [33:23<17:54, 56.56s/it] 52%|█████▏    | 26/50 [33:28<17:46, 44.43s/it] 60%|██████    | 30/50 [33:39<16:44, 50.20s/it] 46%|████▌     | 23/50 [33:40<21:52, 48.62s/it] 54%|█████▍    | 27/50 [33:43<20:10, 52.61s/it] 74%|███████▍  | 37/50 [33:44<08:06, 37.45s/it] 58%|█████▊    | 29/50 [33:55<20:10, 57.66s/it] 54%|█████▍    | 27/50 [33:58<22:57, 59.89s/it] 50%|█████     | 25/50 [34:02<21:15, 51.01s/it] 54%|█████▍    | 27/50 [34:04<21:13, 55.35s/it] 64%|██████▍   | 32/50 [34:14<16:26, 54.80s/it] 48%|████▊     | 24/50 [34:17<19:35, 45.20s/it] 38%|███▊      | 19/50 [34:18<39:54, 77.25s/it] 54%|█████▍    | 27/50 [34:19<17:49, 46.48s/it] 76%|███████▌  | 38/50 [34:26<07:46, 38.85s/it] 52%|█████▏    | 26/50 [34:33<25:40, 64.19s/it] 60%|██████    | 30/50 [34:46<18:29, 55.45s/it] 40%|████      | 20/50 [34:48<31:30, 63.03s/it] 62%|██████▏   | 31/50 [34:51<17:59, 56.83s/it] 56%|█████▌    | 28/50 [34:56<21:44, 59.32s/it] 56%|█████▌    | 28/50 [34:57<21:36, 58.94s/it] 56%|█████▌    | 28/50 [35:01<20:26, 55.73s/it] 66%|██████▌   | 33/50 [35:02<14:56, 52.74s/it] 78%|███████▊  | 39/50 [35:12<07:32, 41.16s/it] 52%|█████▏    | 26/50 [35:14<22:57, 57.38s/it] 56%|█████▌    | 28/50 [35:22<18:48, 51.28s/it] 58%|█████▊    | 29/50 [35:30<17:58, 51.34s/it] 68%|██████▊   | 34/50 [35:32<12:14, 45.93s/it] 64%|██████▍   | 32/50 [35:34<15:45, 52.54s/it] 50%|█████     | 25/50 [35:40<23:30, 56.42s/it] 80%|████████  | 40/50 [35:45<06:24, 38.46s/it] 62%|██████▏   | 31/50 [35:45<17:57, 56.70s/it] 54%|█████▍    | 27/50 [35:47<25:46, 67.24s/it] 42%|████▏     | 21/50 [36:05<32:32, 67.33s/it] 58%|█████▊    | 29/50 [36:10<22:17, 63.71s/it] 82%|████████▏ | 41/50 [36:10<05:09, 34.44s/it] 58%|█████▊    | 29/50 [36:18<21:45, 62.17s/it] 60%|██████    | 30/50 [36:23<17:18, 51.94s/it] 54%|█████▍    | 27/50 [36:25<23:35, 61.56s/it] 70%|███████   | 35/50 [36:27<12:12, 48.83s/it] 58%|█████▊    | 29/50 [36:27<19:22, 55.34s/it] 56%|█████▌    | 28/50 [36:27<21:38, 59.01s/it] 66%|██████▌   | 33/50 [36:27<14:56, 52.74s/it] 64%|██████▍   | 32/50 [36:38<16:40, 55.58s/it] 52%|█████▏    | 26/50 [36:49<24:09, 60.38s/it] 84%|████████▍ | 42/50 [37:07<05:30, 41.33s/it] 72%|███████▏  | 36/50 [37:17<11:26, 49.04s/it] 62%|██████▏   | 31/50 [37:16<16:29, 52.06s/it] 60%|██████    | 30/50 [37:19<20:35, 61.76s/it] 44%|████▍     | 22/50 [37:24<32:59, 70.69s/it] 60%|██████    | 30/50 [37:26<22:28, 67.45s/it] 56%|█████▌    | 28/50 [37:26<22:29, 61.34s/it] 66%|██████▌   | 33/50 [37:30<15:26, 54.50s/it] 60%|██████    | 30/50 [37:36<19:50, 59.52s/it] 58%|█████▊    | 29/50 [37:39<22:03, 63.04s/it] 68%|██████▊   | 34/50 [37:42<15:51, 59.47s/it] 86%|████████▌ | 43/50 [37:51<04:54, 42.02s/it] 54%|█████▍    | 27/50 [38:04<24:48, 64.71s/it] 74%|███████▍  | 37/50 [38:09<10:49, 49.96s/it] 64%|██████▍   | 32/50 [38:15<16:17, 54.31s/it] 62%|██████▏   | 31/50 [38:28<20:53, 66.00s/it] 68%|██████▊   | 34/50 [38:30<14:55, 55.96s/it] 62%|██████▏   | 31/50 [38:30<20:28, 64.65s/it] 88%|████████▊ | 44/50 [38:30<04:07, 41.19s/it] 58%|█████▊    | 29/50 [38:32<21:54, 62.60s/it] 62%|██████▏   | 31/50 [38:43<19:33, 61.75s/it] 76%|███████▌  | 38/50 [38:47<09:16, 46.37s/it] 60%|██████    | 30/50 [38:54<22:11, 66.59s/it] 70%|███████   | 35/50 [38:56<15:53, 63.59s/it] 56%|█████▌    | 28/50 [38:56<22:19, 60.88s/it] 46%|████▌     | 23/50 [38:59<35:07, 78.06s/it] 66%|██████▌   | 33/50 [39:09<15:17, 53.98s/it] 64%|██████▍   | 32/50 [39:14<17:28, 58.26s/it] 90%|█████████ | 45/50 [39:14<03:30, 42.20s/it] 64%|██████▍   | 32/50 [39:16<18:10, 60.57s/it] 70%|███████   | 35/50 [39:32<14:27, 57.81s/it] 78%|███████▊  | 39/50 [39:35<08:37, 47.03s/it] 60%|██████    | 30/50 [39:41<21:31, 64.57s/it] 72%|███████▏  | 36/50 [39:45<13:48, 59.19s/it] 64%|██████▍   | 32/50 [39:45<18:36, 62.02s/it] 68%|██████▊   | 34/50 [39:48<13:12, 49.54s/it] 58%|█████▊    | 29/50 [39:53<20:52, 59.65s/it] 80%|████████  | 40/50 [40:02<06:48, 40.81s/it] 92%|█████████▏| 46/50 [40:03<02:56, 44.08s/it] 66%|██████▌   | 33/50 [40:11<16:39, 58.81s/it] 72%|███████▏  | 36/50 [40:14<12:25, 53.22s/it] 66%|██████▌   | 33/50 [40:22<15:25, 54.42s/it] 94%|█████████▍| 47/50 [40:22<01:50, 36.72s/it] 48%|████▊     | 24/50 [40:31<35:39, 82.30s/it] 66%|██████▌   | 33/50 [40:32<18:14, 64.38s/it] 62%|██████▏   | 31/50 [40:38<24:38, 77.81s/it] 68%|██████▊   | 34/50 [40:39<13:12, 49.55s/it] 74%|███████▍  | 37/50 [40:41<12:38, 58.32s/it] 82%|████████▏ | 41/50 [40:43<06:07, 40.88s/it] 74%|███████▍  | 37/50 [40:47<10:13, 47.18s/it] 68%|██████▊   | 34/50 [40:52<12:34, 47.16s/it] 96%|█████████▌| 48/50 [40:55<01:11, 35.55s/it] 70%|███████   | 35/50 [40:56<13:49, 55.29s/it] 62%|██████▏   | 31/50 [40:57<21:34, 68.12s/it] 68%|██████▊   | 34/50 [41:02<14:21, 53.86s/it] 60%|██████    | 30/50 [41:02<20:46, 62.35s/it] 76%|███████▌  | 38/50 [41:11<10:00, 50.02s/it] 70%|███████   | 35/50 [41:13<09:50, 39.34s/it] 64%|██████▍   | 32/50 [41:14<19:31, 65.06s/it] 84%|████████▍ | 42/50 [41:21<05:20, 40.10s/it] 98%|█████████▊| 49/50 [41:22<00:33, 33.02s/it] 50%|█████     | 25/50 [41:26<30:54, 74.18s/it] 70%|███████   | 35/50 [41:34<12:47, 51.17s/it] 72%|███████▏  | 36/50 [41:36<11:48, 50.61s/it] 64%|██████▍   | 32/50 [41:37<17:50, 59.50s/it] 76%|███████▌  | 38/50 [41:40<09:46, 48.89s/it] 72%|███████▏  | 36/50 [41:49<08:55, 38.23s/it] 74%|███████▍  | 37/50 [41:59<09:08, 42.17s/it] 62%|██████▏   | 31/50 [42:03<19:38, 62.01s/it] 78%|███████▊  | 39/50 [42:08<09:33, 52.11s/it]100%|██████████| 50/50 [42:19<00:00, 39.97s/it]100%|██████████| 50/50 [42:19<00:00, 50.78s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.976
+Loss - yyx: -2.203
+Run 1 completed in 2.52 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 70.697
+Loss - yyx: -2.069
+Run 2 completed in 1.20 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.968
+Loss - yyx: -2.286
+Run 3 completed in 1.21 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.792
+Loss - yyx: -2.173
+Run 4 completed in 1.03 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 71.572
+Loss - yyx: -2.128
+Run 5 completed in 1.72 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 74.349
+Loss - yyx: -2.276
+Run 6 completed in 2.29 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.454
+Loss - yyx: -2.179
+Run 7 completed in 1.25 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 71.953
+Loss - yyx: -2.092
+Run 8 completed in 1.44 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 73.323
+Loss - yyx: -2.147
+Run 9 completed in 1.27 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.181
+Loss - yyx: -2.160
+Run 10 completed in 0.83 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 70.885
+Loss - yyx: -2.072
+Run 11 completed in 0.63 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 72.959
+Loss - yyx: -2.237
+Run 12 completed in 1.12 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 74.125
+Loss - yyx: -2.227
+Run 13 completed in 1.27 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 71.797
+Loss - yyx: -2.182
+Run 14 completed in 0.64 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 71.947
+Loss - yyx: -2.129
+Run 15 completed in 0.81 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 71.833
+Loss - yyx: -2.140
+Run 16 completed in 0.91 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 74.712
+Loss - yyx: -2.267
+Run 17 completed in 0.94 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.761
+Loss - yyx: -2.245
+Run 18 completed in 0.87 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 71.850
+Loss - yyx: -2.123
+Run 19 completed in 0.65 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.093
+Loss - yyx: -2.285
+Run 20 completed in 0.50 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.246
+Loss - yyx: -2.171
+Run 21 completed in 0.41 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 71.650
+Loss - yyx: -2.129
+Run 22 completed in 0.40 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 71.103
+Loss - yyx: -2.083
+Run 23 completed in 0.54 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 72.886
+Loss - yyx: -2.239
+Run 24 completed in 0.69 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 74.141
+Loss - yyx: -2.244
+Run 25 completed in 0.83 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.174
+Loss - yyx: -2.103
+Run 26 completed in 0.66 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 71.256
+Loss - yyx: -2.091
+Run 27 completed in 0.36 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.804
+Loss - yyx: -2.146
+Run 28 completed in 0.98 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 73.598
+Loss - yyx: -2.212
+Run 29 completed in 0.68 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 73.716
+Loss - yyx: -2.245
+Run 30 completed in 0.87 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 73.016
+Loss - yyx: -2.260
+Run 31 completed in 0.76 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.783
+Loss - yyx: -2.078
+Run 32 completed in 0.56 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.455
+Loss - yyx: -2.294
+Run 33 completed in 0.54 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 73.830
+Loss - yyx: -2.248
+Run 34 completed in 0.67 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 72.513
+Loss - yyx: -2.222
+Run 35 completed in 0.31 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.010
+Loss - yyx: -2.101
+Run 36 completed in 0.67 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 71.926
+Loss - yyx: -2.162
+Run 37 completed in 0.71 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 75.005
+Loss - yyx: -2.328
+Run 38 completed in 0.70 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.458
+Loss - yyx: -2.095
+Run 39 completed in 0.78 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.098
+Loss - yyx: -2.144
+Run 40 completed in 0.54 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.296
+Loss - yyx: -2.168
+Run 41 completed in 0.42 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.753
+Loss - yyx: -2.294
+Run 42 completed in 0.96 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.001
+Loss - yyx: -2.275
+Run 43 completed in 0.73 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 71.478
+Loss - yyx: -2.079
+Run 44 completed in 0.65 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 74.194
+Loss - yyx: -2.204
+Run 45 completed in 0.74 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.191
+Loss - yyx: -2.233
+Run 46 completed in 0.81 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.816
+Loss - yyx: -2.100
+Run 47 completed in 0.33 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 73.856
+Loss - yyx: -2.278
+Run 48 completed in 0.55 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 72.858
+Loss - yyx: -2.254
+Run 49 completed in 0.45 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 74.274
+Loss - yyx: -2.208
+Run 50 completed in 0.94 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  72.872280  1.168644  ...  72.798018  73.946036  75.005034
+loss_yyx     50.0  -2.186179  0.073047  ...  -2.180337  -2.128329  -2.069033
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_208.csv
+ 86%|████████▌ | 43/50 [42:23<05:26, 46.63s/it] 78%|███████▊  | 39/50 [42:31<09:04, 49.49s/it] 66%|██████▌   | 33/50 [42:32<16:28, 58.16s/it] 70%|███████   | 35/50 [42:35<16:28, 65.88s/it] 66%|██████▌   | 33/50 [42:37<19:58, 70.48s/it] 76%|███████▌  | 38/50 [42:40<08:22, 41.87s/it] 80%|████████  | 40/50 [42:45<07:54, 47.42s/it] 64%|██████▍   | 32/50 [42:47<16:57, 56.51s/it] 74%|███████▍  | 37/50 [42:47<09:32, 44.05s/it] 72%|███████▏  | 36/50 [42:53<13:54, 59.57s/it] 72%|███████▏  | 36/50 [43:06<12:51, 55.13s/it] 52%|█████▏    | 26/50 [43:07<32:50, 82.12s/it] 88%|████████▊ | 44/50 [43:15<04:49, 48.26s/it] 80%|████████  | 40/50 [43:20<08:13, 49.33s/it] 68%|██████▊   | 34/50 [43:22<14:52, 55.79s/it] 82%|████████▏ | 41/50 [43:23<06:40, 44.50s/it] 76%|███████▌  | 38/50 [43:26<08:31, 42.67s/it] 74%|███████▍  | 37/50 [43:39<12:00, 55.42s/it] 78%|███████▊  | 39/50 [43:44<08:54, 48.61s/it] 82%|████████▏ | 41/50 [43:50<06:31, 43.47s/it] 66%|██████▌   | 33/50 [43:54<16:54, 59.70s/it] 68%|██████▊   | 34/50 [43:59<19:46, 74.14s/it] 90%|█████████ | 45/50 [44:01<03:57, 47.59s/it] 74%|███████▍  | 37/50 [44:01<11:56, 55.15s/it] 70%|███████   | 35/50 [44:16<13:51, 55.42s/it] 80%|████████  | 40/50 [44:22<07:32, 45.23s/it] 92%|█████████▏| 46/50 [44:29<02:47, 41.75s/it] 70%|███████   | 35/50 [44:34<15:32, 62.18s/it] 84%|████████▍ | 42/50 [44:35<07:03, 52.98s/it] 84%|████████▍ | 42/50 [44:39<06:01, 45.13s/it] 78%|███████▊  | 39/50 [44:41<09:36, 52.41s/it] 54%|█████▍    | 27/50 [44:43<33:03, 86.25s/it] 76%|███████▌  | 38/50 [44:48<11:53, 59.48s/it] 94%|█████████▍| 47/50 [44:50<01:46, 35.52s/it] 82%|████████▏ | 41/50 [44:55<06:14, 41.65s/it] 68%|██████▊   | 34/50 [45:05<16:49, 63.10s/it] 76%|███████▌  | 38/50 [45:07<11:42, 58.52s/it] 86%|████████▌ | 43/50 [45:19<05:50, 50.07s/it] 72%|███████▏  | 36/50 [45:27<14:00, 60.05s/it] 86%|████████▌ | 43/50 [45:33<05:33, 47.68s/it] 96%|█████████▌| 48/50 [45:37<01:18, 39.03s/it] 80%|████████  | 40/50 [45:39<09:01, 54.13s/it] 72%|███████▏  | 36/50 [45:40<14:49, 63.51s/it] 78%|███████▊  | 39/50 [45:45<10:45, 58.69s/it] 78%|███████▊  | 39/50 [45:50<09:53, 53.96s/it] 70%|███████   | 35/50 [46:00<15:09, 60.65s/it] 98%|█████████▊| 49/50 [46:07<00:36, 36.31s/it] 84%|████████▍ | 42/50 [46:10<06:54, 51.80s/it] 88%|████████▊ | 44/50 [46:17<04:40, 46.80s/it] 74%|███████▍  | 37/50 [46:21<12:36, 58.22s/it] 88%|████████▊ | 44/50 [46:27<05:33, 55.52s/it] 80%|████████  | 40/50 [46:29<09:04, 54.43s/it] 56%|█████▌    | 28/50 [46:28<33:45, 92.07s/it] 82%|████████▏ | 41/50 [46:38<08:18, 55.36s/it] 74%|███████▍  | 37/50 [46:42<13:40, 63.13s/it] 80%|████████  | 40/50 [46:54<09:28, 56.85s/it] 82%|████████▏ | 41/50 [47:02<07:12, 48.06s/it] 90%|█████████ | 45/50 [47:03<03:52, 46.45s/it] 72%|███████▏  | 36/50 [47:06<14:30, 62.21s/it]100%|██████████| 50/50 [47:12<00:00, 44.95s/it]100%|██████████| 50/50 [47:12<00:00, 56.66s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.106
+Loss - yyx: -2.190
+Run 1 completed in 2.79 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 72.768
+Loss - yyx: -2.085
+Run 2 completed in 1.61 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.263
+Loss - yyx: -2.282
+Run 3 completed in 1.34 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.361
+Loss - yyx: -2.152
+Run 4 completed in 0.82 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.194
+Loss - yyx: -2.126
+Run 5 completed in 1.64 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 74.290
+Loss - yyx: -2.275
+Run 6 completed in 2.01 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.852
+Loss - yyx: -2.163
+Run 7 completed in 0.97 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 71.013
+Loss - yyx: -2.071
+Run 8 completed in 0.88 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 71.550
+Loss - yyx: -2.128
+Run 9 completed in 0.91 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.318
+Loss - yyx: -2.175
+Run 10 completed in 1.27 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.466
+Loss - yyx: -2.093
+Run 11 completed in 1.68 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.161
+Loss - yyx: -2.249
+Run 12 completed in 1.29 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.960
+Loss - yyx: -2.228
+Run 13 completed in 1.14 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 73.379
+Loss - yyx: -2.197
+Run 14 completed in 0.83 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 72.154
+Loss - yyx: -2.128
+Run 15 completed in 0.70 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.574
+Loss - yyx: -2.135
+Run 16 completed in 0.62 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.617
+Loss - yyx: -2.271
+Run 17 completed in 0.93 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.860
+Loss - yyx: -2.244
+Run 18 completed in 0.96 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 71.886
+Loss - yyx: -2.121
+Run 19 completed in 0.80 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.724
+Loss - yyx: -2.295
+Run 20 completed in 0.98 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 71.700
+Loss - yyx: -2.172
+Run 21 completed in 0.59 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 71.800
+Loss - yyx: -2.127
+Run 22 completed in 0.68 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 71.160
+Loss - yyx: -2.083
+Run 23 completed in 0.57 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.240
+Loss - yyx: -2.241
+Run 24 completed in 0.87 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 72.622
+Loss - yyx: -2.239
+Run 25 completed in 0.87 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.353
+Loss - yyx: -2.105
+Run 26 completed in 1.07 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 73.194
+Loss - yyx: -2.108
+Run 27 completed in 0.93 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.758
+Loss - yyx: -2.144
+Run 28 completed in 0.69 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 74.053
+Loss - yyx: -2.211
+Run 29 completed in 0.92 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.302
+Loss - yyx: -2.248
+Run 30 completed in 0.97 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.561
+Loss - yyx: -2.290
+Run 31 completed in 1.06 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.378
+Loss - yyx: -2.084
+Run 32 completed in 0.84 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.217
+Loss - yyx: -2.297
+Run 33 completed in 0.80 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 72.738
+Loss - yyx: -2.227
+Run 34 completed in 0.50 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.665
+Loss - yyx: -2.243
+Run 35 completed in 0.93 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 71.813
+Loss - yyx: -2.102
+Run 36 completed in 0.83 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.577
+Loss - yyx: -2.165
+Run 37 completed in 0.87 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.438
+Loss - yyx: -2.308
+Run 38 completed in 0.63 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.207
+Loss - yyx: -2.096
+Run 39 completed in 0.81 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 71.813
+Loss - yyx: -2.126
+Run 40 completed in 0.44 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.694
+Loss - yyx: -2.183
+Run 41 completed in 0.68 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.106
+Loss - yyx: -2.285
+Run 42 completed in 0.64 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.614
+Loss - yyx: -2.271
+Run 43 completed in 1.03 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 72.028
+Loss - yyx: -2.081
+Run 44 completed in 0.87 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.445
+Loss - yyx: -2.193
+Run 45 completed in 0.77 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 72.255
+Loss - yyx: -2.197
+Run 46 completed in 0.47 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.104
+Loss - yyx: -2.078
+Run 47 completed in 0.35 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.478
+Loss - yyx: -2.294
+Run 48 completed in 0.79 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.425
+Loss - yyx: -2.240
+Run 49 completed in 0.50 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.009
+Loss - yyx: -2.216
+Run 50 completed in 1.08 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  72.924913  1.036180  ...  72.762899  73.811276  74.723829
+loss_yyx     50.0  -2.185271  0.073354  ...  -2.186598  -2.126263  -2.071435
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_211.csv
+ 86%|████████▌ | 43/50 [47:18<06:35, 56.50s/it] 90%|█████████ | 45/50 [47:23<04:38, 55.68s/it] 76%|███████▌  | 38/50 [47:29<12:11, 60.99s/it] 82%|████████▏ | 41/50 [47:35<07:47, 51.94s/it] 76%|███████▌  | 38/50 [47:37<12:07, 60.63s/it] 58%|█████▊    | 29/50 [47:46<30:44, 87.82s/it] 84%|████████▍ | 42/50 [47:49<08:01, 60.24s/it] 92%|█████████▏| 46/50 [48:00<03:18, 49.54s/it] 88%|████████▊ | 44/50 [48:05<05:22, 53.83s/it] 74%|███████▍  | 37/50 [48:06<13:22, 61.73s/it] 84%|████████▍ | 42/50 [48:10<07:11, 53.93s/it] 86%|████████▌ | 43/50 [48:17<05:54, 50.57s/it] 78%|███████▊  | 39/50 [48:19<10:04, 54.94s/it] 78%|███████▊  | 39/50 [48:25<10:55, 59.57s/it] 92%|█████████▏| 46/50 [48:27<03:52, 58.21s/it] 86%|████████▌ | 43/50 [48:30<05:06, 43.72s/it] 94%|█████████▍| 47/50 [48:33<02:13, 44.57s/it] 80%|████████  | 40/50 [49:04<08:39, 51.91s/it] 76%|███████▌  | 38/50 [49:06<12:12, 61.06s/it] 88%|████████▊ | 44/50 [49:09<04:14, 42.38s/it] 94%|█████████▍| 47/50 [49:09<02:39, 53.25s/it] 84%|████████▍ | 42/50 [49:12<08:44, 65.59s/it] 96%|█████████▌| 48/50 [49:23<01:32, 46.37s/it] 90%|█████████ | 45/50 [49:24<05:06, 61.35s/it] 88%|████████▊ | 44/50 [49:25<05:34, 55.77s/it] 60%|██████    | 30/50 [49:33<31:09, 93.50s/it] 80%|████████  | 40/50 [49:44<10:54, 65.45s/it] 82%|████████▏ | 41/50 [49:53<07:40, 51.15s/it] 96%|█████████▌| 48/50 [49:57<01:43, 51.68s/it] 90%|█████████ | 45/50 [50:06<03:53, 46.73s/it] 98%|█████████▊| 49/50 [50:18<00:48, 48.75s/it] 90%|█████████ | 45/50 [50:19<04:36, 55.31s/it] 82%|████████▏ | 41/50 [50:25<08:41, 57.98s/it] 78%|███████▊  | 39/50 [50:25<12:12, 66.62s/it] 86%|████████▌ | 43/50 [50:33<08:11, 70.19s/it] 92%|█████████▏| 46/50 [50:39<04:21, 65.30s/it] 92%|█████████▏| 46/50 [50:41<03:00, 45.13s/it] 98%|█████████▊| 49/50 [50:51<00:52, 52.32s/it] 94%|█████████▍| 47/50 [51:03<02:39, 53.05s/it] 88%|████████▊ | 44/50 [51:04<05:50, 58.35s/it] 80%|████████  | 40/50 [51:07<09:52, 59.27s/it] 62%|██████▏   | 31/50 [51:15<30:26, 96.16s/it]100%|██████████| 50/50 [51:17<00:00, 52.03s/it]100%|██████████| 50/50 [51:17<00:00, 61.55s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 74.384
+Loss - yyx: -2.202
+Run 1 completed in 2.76 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.962
+Loss - yyx: -2.093
+Run 2 completed in 1.13 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.264
+Loss - yyx: -2.286
+Run 3 completed in 1.40 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.451
+Loss - yyx: -2.183
+Run 4 completed in 2.07 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 71.615
+Loss - yyx: -2.139
+Run 5 completed in 1.43 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 74.258
+Loss - yyx: -2.270
+Run 6 completed in 1.99 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.494
+Loss - yyx: -2.197
+Run 7 completed in 1.71 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 72.178
+Loss - yyx: -2.103
+Run 8 completed in 1.75 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 72.582
+Loss - yyx: -2.138
+Run 9 completed in 1.93 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.426
+Loss - yyx: -2.175
+Run 10 completed in 1.10 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 71.925
+Loss - yyx: -2.089
+Run 11 completed in 1.56 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 74.038
+Loss - yyx: -2.253
+Run 12 completed in 0.86 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 74.065
+Loss - yyx: -2.223
+Run 13 completed in 0.60 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 72.143
+Loss - yyx: -2.183
+Run 14 completed in 0.68 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 71.610
+Loss - yyx: -2.128
+Run 15 completed in 0.72 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.065
+Loss - yyx: -2.150
+Run 16 completed in 0.66 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 74.202
+Loss - yyx: -2.268
+Run 17 completed in 1.04 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 74.048
+Loss - yyx: -2.229
+Run 18 completed in 0.76 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 71.776
+Loss - yyx: -2.140
+Run 19 completed in 0.69 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.598
+Loss - yyx: -2.307
+Run 20 completed in 0.67 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.634
+Loss - yyx: -2.182
+Run 21 completed in 0.66 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.493
+Loss - yyx: -2.148
+Run 22 completed in 0.61 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.895
+Loss - yyx: -2.095
+Run 23 completed in 0.93 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 72.498
+Loss - yyx: -2.226
+Run 24 completed in 1.00 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 74.344
+Loss - yyx: -2.240
+Run 25 completed in 1.40 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.547
+Loss - yyx: -2.095
+Run 26 completed in 1.17 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 72.041
+Loss - yyx: -2.104
+Run 27 completed in 0.92 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.298
+Loss - yyx: -2.139
+Run 28 completed in 0.70 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 72.869
+Loss - yyx: -2.190
+Run 29 completed in 1.06 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.873
+Loss - yyx: -2.245
+Run 30 completed in 0.84 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 73.947
+Loss - yyx: -2.289
+Run 31 completed in 0.99 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 72.422
+Loss - yyx: -2.085
+Run 32 completed in 0.88 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.666
+Loss - yyx: -2.308
+Run 33 completed in 0.87 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 74.238
+Loss - yyx: -2.252
+Run 34 completed in 0.99 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.812
+Loss - yyx: -2.237
+Run 35 completed in 1.04 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.017
+Loss - yyx: -2.093
+Run 36 completed in 0.71 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.052
+Loss - yyx: -2.160
+Run 37 completed in 0.55 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.104
+Loss - yyx: -2.321
+Run 38 completed in 0.88 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.051
+Loss - yyx: -2.069
+Run 39 completed in 0.85 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 71.585
+Loss - yyx: -2.158
+Run 40 completed in 0.82 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.028
+Loss - yyx: -2.163
+Run 41 completed in 0.50 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.032
+Loss - yyx: -2.286
+Run 42 completed in 0.82 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.188
+Loss - yyx: -2.271
+Run 43 completed in 0.89 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 71.958
+Loss - yyx: -2.082
+Run 44 completed in 0.75 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.240
+Loss - yyx: -2.208
+Run 45 completed in 0.76 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.706
+Loss - yyx: -2.226
+Run 46 completed in 0.95 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 72.084
+Loss - yyx: -2.116
+Run 47 completed in 0.55 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.306
+Loss - yyx: -2.303
+Run 48 completed in 0.84 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.551
+Loss - yyx: -2.240
+Run 49 completed in 0.90 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.586
+Loss - yyx: -2.206
+Run 50 completed in 0.99 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.043017  1.023058  ...  72.608341  74.060972  74.872765
+loss_yyx     50.0  -2.189865  0.072013  ...  -2.186381  -2.137911  -2.069192
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_206.csv
+ 94%|█████████▍| 47/50 [51:18<02:08, 42.69s/it] 92%|█████████▏| 46/50 [51:20<03:39, 54.90s/it] 84%|████████▍ | 42/50 [51:22<08:18, 62.33s/it]100%|██████████| 50/50 [51:36<00:00, 50.31s/it]100%|██████████| 50/50 [51:36<00:00, 61.93s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.354
+Loss - yyx: -2.205
+Run 1 completed in 2.72 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.976
+Loss - yyx: -2.107
+Run 2 completed in 1.25 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 73.957
+Loss - yyx: -2.273
+Run 3 completed in 2.27 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 73.705
+Loss - yyx: -2.248
+Run 4 completed in 1.28 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.761
+Loss - yyx: -2.172
+Run 5 completed in 1.28 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 74.931
+Loss - yyx: -2.241
+Run 6 completed in 1.13 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.432
+Loss - yyx: -2.182
+Run 7 completed in 1.32 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 72.475
+Loss - yyx: -2.122
+Run 8 completed in 1.09 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 72.991
+Loss - yyx: -2.129
+Run 9 completed in 1.22 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.729
+Loss - yyx: -2.167
+Run 10 completed in 1.29 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.148
+Loss - yyx: -2.107
+Run 11 completed in 1.92 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 74.589
+Loss - yyx: -2.307
+Run 12 completed in 1.33 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.836
+Loss - yyx: -2.246
+Run 13 completed in 1.56 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 72.461
+Loss - yyx: -2.221
+Run 14 completed in 0.94 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 72.123
+Loss - yyx: -2.155
+Run 15 completed in 0.62 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.678
+Loss - yyx: -2.184
+Run 16 completed in 0.75 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.810
+Loss - yyx: -2.268
+Run 17 completed in 1.01 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.513
+Loss - yyx: -2.210
+Run 18 completed in 1.03 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 72.121
+Loss - yyx: -2.173
+Run 19 completed in 0.67 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.125
+Loss - yyx: -2.320
+Run 20 completed in 1.00 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.999
+Loss - yyx: -2.191
+Run 21 completed in 0.64 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.837
+Loss - yyx: -2.187
+Run 22 completed in 0.78 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.684
+Loss - yyx: -2.077
+Run 23 completed in 1.01 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.913
+Loss - yyx: -2.241
+Run 24 completed in 0.67 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 73.696
+Loss - yyx: -2.239
+Run 25 completed in 1.03 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.154
+Loss - yyx: -2.091
+Run 26 completed in 0.66 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 72.629
+Loss - yyx: -2.106
+Run 27 completed in 0.88 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 71.921
+Loss - yyx: -2.122
+Run 28 completed in 0.49 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 71.971
+Loss - yyx: -2.152
+Run 29 completed in 0.74 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.555
+Loss - yyx: -2.260
+Run 30 completed in 1.08 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 73.896
+Loss - yyx: -2.289
+Run 31 completed in 1.20 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 72.010
+Loss - yyx: -2.125
+Run 32 completed in 0.71 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.408
+Loss - yyx: -2.290
+Run 33 completed in 0.89 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 73.254
+Loss - yyx: -2.249
+Run 34 completed in 1.25 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.270
+Loss - yyx: -2.215
+Run 35 completed in 1.22 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 71.800
+Loss - yyx: -2.086
+Run 36 completed in 0.82 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.907
+Loss - yyx: -2.169
+Run 37 completed in 0.94 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.121
+Loss - yyx: -2.301
+Run 38 completed in 0.51 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.002
+Loss - yyx: -2.096
+Run 39 completed in 0.95 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.289
+Loss - yyx: -2.197
+Run 40 completed in 0.61 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 73.702
+Loss - yyx: -2.245
+Run 41 completed in 0.63 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 72.877
+Loss - yyx: -2.280
+Run 42 completed in 1.21 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 73.843
+Loss - yyx: -2.270
+Run 43 completed in 0.72 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 72.727
+Loss - yyx: -2.130
+Run 44 completed in 1.14 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 74.229
+Loss - yyx: -2.211
+Run 45 completed in 0.93 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.653
+Loss - yyx: -2.225
+Run 46 completed in 1.07 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 72.034
+Loss - yyx: -2.138
+Run 47 completed in 0.69 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 75.236
+Loss - yyx: -2.312
+Run 48 completed in 0.80 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.375
+Loss - yyx: -2.244
+Run 49 completed in 0.90 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.781
+Loss - yyx: -2.193
+Run 50 completed in 0.76 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.149827  0.891601  ...  72.995317  73.829842  75.235527
+loss_yyx     50.0  -2.199380  0.067639  ...  -2.201083  -2.141564  -2.077121
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_215.csv
+ 84%|████████▍ | 42/50 [51:49<08:46, 65.83s/it] 96%|█████████▌| 48/50 [51:55<01:21, 40.96s/it] 82%|████████▏ | 41/50 [51:57<08:28, 56.45s/it] 90%|█████████ | 45/50 [51:59<04:47, 57.46s/it] 96%|█████████▌| 48/50 [52:10<01:54, 57.18s/it] 94%|█████████▍| 47/50 [52:13<02:42, 54.32s/it] 86%|████████▌ | 43/50 [52:21<07:10, 61.47s/it] 92%|█████████▏| 46/50 [52:26<03:13, 48.30s/it] 98%|█████████▊| 49/50 [52:29<00:38, 38.84s/it] 64%|██████▍   | 32/50 [52:35<27:19, 91.07s/it]100%|██████████| 50/50 [52:47<00:00, 32.84s/it]100%|██████████| 50/50 [52:47<00:00, 63.36s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 74.019
+Loss - yyx: -2.192
+Run 1 completed in 3.20 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 72.429
+Loss - yyx: -2.111
+Run 2 completed in 2.73 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.512
+Loss - yyx: -2.295
+Run 3 completed in 2.33 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.727
+Loss - yyx: -2.197
+Run 4 completed in 1.75 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.376
+Loss - yyx: -2.158
+Run 5 completed in 1.61 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 74.141
+Loss - yyx: -2.260
+Run 6 completed in 1.34 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.490
+Loss - yyx: -2.191
+Run 7 completed in 2.35 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 71.019
+Loss - yyx: -2.097
+Run 8 completed in 1.19 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 71.154
+Loss - yyx: -2.103
+Run 9 completed in 1.36 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.999
+Loss - yyx: -2.198
+Run 10 completed in 1.91 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 71.029
+Loss - yyx: -2.063
+Run 11 completed in 1.18 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.806
+Loss - yyx: -2.273
+Run 12 completed in 0.54 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 74.679
+Loss - yyx: -2.233
+Run 13 completed in 1.28 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 72.254
+Loss - yyx: -2.162
+Run 14 completed in 0.73 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 72.506
+Loss - yyx: -2.142
+Run 15 completed in 0.78 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.394
+Loss - yyx: -2.156
+Run 16 completed in 0.61 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.153
+Loss - yyx: -2.240
+Run 17 completed in 0.74 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 72.753
+Loss - yyx: -2.210
+Run 18 completed in 1.14 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 71.789
+Loss - yyx: -2.139
+Run 19 completed in 0.96 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 73.919
+Loss - yyx: -2.307
+Run 20 completed in 0.87 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 73.014
+Loss - yyx: -2.190
+Run 21 completed in 0.99 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.203
+Loss - yyx: -2.145
+Run 22 completed in 0.67 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.026
+Loss - yyx: -2.084
+Run 23 completed in 1.14 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 72.801
+Loss - yyx: -2.229
+Run 24 completed in 1.13 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 72.423
+Loss - yyx: -2.212
+Run 25 completed in 0.35 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 70.478
+Loss - yyx: -2.067
+Run 26 completed in 0.59 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 70.854
+Loss - yyx: -2.099
+Run 27 completed in 0.85 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 73.033
+Loss - yyx: -2.107
+Run 28 completed in 1.04 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 73.710
+Loss - yyx: -2.180
+Run 29 completed in 1.08 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 73.180
+Loss - yyx: -2.228
+Run 30 completed in 1.15 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 73.735
+Loss - yyx: -2.269
+Run 31 completed in 1.12 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 72.363
+Loss - yyx: -2.110
+Run 32 completed in 1.04 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.054
+Loss - yyx: -2.270
+Run 33 completed in 0.61 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 72.833
+Loss - yyx: -2.235
+Run 34 completed in 0.50 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 72.239
+Loss - yyx: -2.204
+Run 35 completed in 0.35 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 70.639
+Loss - yyx: -2.061
+Run 36 completed in 0.59 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.353
+Loss - yyx: -2.187
+Run 37 completed in 0.96 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 73.888
+Loss - yyx: -2.270
+Run 38 completed in 0.66 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 71.355
+Loss - yyx: -2.061
+Run 39 completed in 1.25 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.743
+Loss - yyx: -2.163
+Run 40 completed in 0.97 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.930
+Loss - yyx: -2.202
+Run 41 completed in 0.97 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 73.790
+Loss - yyx: -2.288
+Run 42 completed in 1.19 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 72.997
+Loss - yyx: -2.239
+Run 43 completed in 0.47 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 71.823
+Loss - yyx: -2.106
+Run 44 completed in 1.13 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 72.992
+Loss - yyx: -2.183
+Run 45 completed in 0.90 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 72.455
+Loss - yyx: -2.194
+Run 46 completed in 0.36 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.257
+Loss - yyx: -2.086
+Run 47 completed in 0.62 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 73.939
+Loss - yyx: -2.274
+Run 48 completed in 0.62 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 72.697
+Loss - yyx: -2.201
+Run 49 completed in 0.56 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 72.941
+Loss - yyx: -2.185
+Run 50 completed in 0.31 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  72.677891  1.017614  ...  72.735135  73.172943  74.679484
+loss_yyx     50.0  -2.181150  0.068541  ...  -2.190909  -2.118129  -2.060796
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_207.csv
+ 88%|████████▊ | 44/50 [52:53<05:16, 52.76s/it] 84%|████████▍ | 42/50 [52:55<07:35, 56.91s/it] 98%|█████████▊| 49/50 [52:58<00:54, 54.42s/it] 86%|████████▌ | 43/50 [53:04<08:00, 68.61s/it] 96%|█████████▌| 48/50 [53:12<01:51, 55.69s/it] 94%|█████████▍| 47/50 [53:25<02:34, 51.56s/it] 90%|█████████ | 45/50 [53:40<04:14, 50.89s/it]100%|██████████| 50/50 [53:50<00:00, 53.82s/it]100%|██████████| 50/50 [53:50<00:00, 64.62s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.490
+Loss - yyx: -2.204
+Run 1 completed in 3.08 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.871
+Loss - yyx: -2.104
+Run 2 completed in 2.17 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.876
+Loss - yyx: -2.313
+Run 3 completed in 2.48 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 73.555
+Loss - yyx: -2.206
+Run 4 completed in 1.43 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.784
+Loss - yyx: -2.150
+Run 5 completed in 1.96 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.729
+Loss - yyx: -2.270
+Run 6 completed in 2.40 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 73.382
+Loss - yyx: -2.190
+Run 7 completed in 1.50 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 72.290
+Loss - yyx: -2.112
+Run 8 completed in 1.78 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 71.969
+Loss - yyx: -2.124
+Run 9 completed in 1.76 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.675
+Loss - yyx: -2.176
+Run 10 completed in 0.55 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.356
+Loss - yyx: -2.105
+Run 11 completed in 1.11 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.920
+Loss - yyx: -2.265
+Run 12 completed in 1.12 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 74.837
+Loss - yyx: -2.228
+Run 13 completed in 1.06 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 71.973
+Loss - yyx: -2.156
+Run 14 completed in 0.59 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 71.400
+Loss - yyx: -2.107
+Run 15 completed in 0.63 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.318
+Loss - yyx: -2.146
+Run 16 completed in 0.59 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 72.903
+Loss - yyx: -2.241
+Run 17 completed in 1.07 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.262
+Loss - yyx: -2.236
+Run 18 completed in 0.91 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 72.028
+Loss - yyx: -2.149
+Run 19 completed in 1.03 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 75.021
+Loss - yyx: -2.314
+Run 20 completed in 0.98 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.964
+Loss - yyx: -2.169
+Run 21 completed in 0.69 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 71.928
+Loss - yyx: -2.156
+Run 22 completed in 1.05 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 71.470
+Loss - yyx: -2.087
+Run 23 completed in 0.36 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.841
+Loss - yyx: -2.211
+Run 24 completed in 0.57 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 73.431
+Loss - yyx: -2.249
+Run 25 completed in 0.78 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 71.683
+Loss - yyx: -2.087
+Run 26 completed in 1.06 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 73.034
+Loss - yyx: -2.116
+Run 27 completed in 1.00 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.981
+Loss - yyx: -2.134
+Run 28 completed in 1.23 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 73.434
+Loss - yyx: -2.184
+Run 29 completed in 0.56 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 73.976
+Loss - yyx: -2.243
+Run 30 completed in 0.89 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.456
+Loss - yyx: -2.292
+Run 31 completed in 0.87 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 72.238
+Loss - yyx: -2.090
+Run 32 completed in 0.99 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 73.896
+Loss - yyx: -2.289
+Run 33 completed in 0.89 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 72.976
+Loss - yyx: -2.228
+Run 34 completed in 0.65 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 74.494
+Loss - yyx: -2.243
+Run 35 completed in 1.14 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.537
+Loss - yyx: -2.085
+Run 36 completed in 0.66 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.087
+Loss - yyx: -2.146
+Run 37 completed in 0.37 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.216
+Loss - yyx: -2.322
+Run 38 completed in 0.69 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 71.477
+Loss - yyx: -2.091
+Run 39 completed in 1.07 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.445
+Loss - yyx: -2.160
+Run 40 completed in 0.62 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.324
+Loss - yyx: -2.145
+Run 41 completed in 0.55 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 73.956
+Loss - yyx: -2.287
+Run 42 completed in 1.26 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.231
+Loss - yyx: -2.271
+Run 43 completed in 1.12 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 72.272
+Loss - yyx: -2.084
+Run 44 completed in 0.79 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.999
+Loss - yyx: -2.219
+Run 45 completed in 1.31 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.026
+Loss - yyx: -2.222
+Run 46 completed in 1.24 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.382
+Loss - yyx: -2.096
+Run 47 completed in 0.41 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.837
+Loss - yyx: -2.312
+Run 48 completed in 1.11 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.143
+Loss - yyx: -2.224
+Run 49 completed in 0.80 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.895
+Loss - yyx: -2.200
+Run 50 completed in 0.87 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.065344  1.017530  ...  73.003376  73.895330  75.020697
+loss_yyx     50.0  -2.188681  0.072506  ...  -2.186941  -2.126386  -2.084148
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_209.csv
+ 86%|████████▌ | 43/50 [53:51<06:36, 56.70s/it] 98%|█████████▊| 49/50 [53:56<00:52, 52.37s/it] 92%|█████████▏| 46/50 [54:01<02:48, 42.02s/it] 88%|████████▊ | 44/50 [54:03<06:33, 65.65s/it] 96%|█████████▌| 48/50 [54:06<01:36, 48.24s/it] 66%|██████▌   | 33/50 [54:22<27:11, 95.95s/it] 88%|████████▊ | 44/50 [54:38<05:21, 53.59s/it]100%|██████████| 50/50 [54:56<00:00, 54.62s/it]100%|██████████| 50/50 [54:56<00:00, 65.93s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.955
+Loss - yyx: -2.215
+Run 1 completed in 4.10 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.723
+Loss - yyx: -2.090
+Run 2 completed in 1.79 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.121
+Loss - yyx: -2.289
+Run 3 completed in 1.81 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.799
+Loss - yyx: -2.169
+Run 4 completed in 1.35 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 71.845
+Loss - yyx: -2.131
+Run 5 completed in 1.45 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.991
+Loss - yyx: -2.280
+Run 6 completed in 1.99 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.681
+Loss - yyx: -2.181
+Run 7 completed in 1.82 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 71.144
+Loss - yyx: -2.077
+Run 8 completed in 0.96 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 73.210
+Loss - yyx: -2.149
+Run 9 completed in 2.05 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.466
+Loss - yyx: -2.180
+Run 10 completed in 1.37 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.887
+Loss - yyx: -2.093
+Run 11 completed in 1.42 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.470
+Loss - yyx: -2.257
+Run 12 completed in 0.91 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.767
+Loss - yyx: -2.234
+Run 13 completed in 0.94 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 73.418
+Loss - yyx: -2.204
+Run 14 completed in 0.71 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 71.676
+Loss - yyx: -2.136
+Run 15 completed in 0.83 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 71.893
+Loss - yyx: -2.142
+Run 16 completed in 0.70 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.561
+Loss - yyx: -2.272
+Run 17 completed in 1.12 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.443
+Loss - yyx: -2.244
+Run 18 completed in 0.95 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 72.154
+Loss - yyx: -2.130
+Run 19 completed in 0.48 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.070
+Loss - yyx: -2.296
+Run 20 completed in 1.12 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.735
+Loss - yyx: -2.175
+Run 21 completed in 0.48 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 71.411
+Loss - yyx: -2.146
+Run 22 completed in 0.72 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.578
+Loss - yyx: -2.106
+Run 23 completed in 0.98 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.725
+Loss - yyx: -2.238
+Run 24 completed in 0.56 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 74.178
+Loss - yyx: -2.249
+Run 25 completed in 1.39 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.726
+Loss - yyx: -2.106
+Run 26 completed in 0.60 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 72.291
+Loss - yyx: -2.122
+Run 27 completed in 1.37 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 73.575
+Loss - yyx: -2.141
+Run 28 completed in 0.97 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 74.575
+Loss - yyx: -2.217
+Run 29 completed in 1.23 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.339
+Loss - yyx: -2.255
+Run 30 completed in 1.27 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.671
+Loss - yyx: -2.292
+Run 31 completed in 1.04 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.514
+Loss - yyx: -2.087
+Run 32 completed in 0.80 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.611
+Loss - yyx: -2.305
+Run 33 completed in 0.91 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 72.999
+Loss - yyx: -2.229
+Run 34 completed in 0.47 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.763
+Loss - yyx: -2.247
+Run 35 completed in 0.92 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.415
+Loss - yyx: -2.103
+Run 36 completed in 1.32 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 71.907
+Loss - yyx: -2.163
+Run 37 completed in 0.76 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.641
+Loss - yyx: -2.332
+Run 38 completed in 1.15 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.637
+Loss - yyx: -2.096
+Run 39 completed in 0.95 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 71.895
+Loss - yyx: -2.154
+Run 40 completed in 0.74 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 73.174
+Loss - yyx: -2.192
+Run 41 completed in 0.55 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.469
+Loss - yyx: -2.296
+Run 42 completed in 1.13 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 72.799
+Loss - yyx: -2.247
+Run 43 completed in 0.33 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 71.705
+Loss - yyx: -2.086
+Run 44 completed in 0.65 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 74.584
+Loss - yyx: -2.208
+Run 45 completed in 0.95 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 74.086
+Loss - yyx: -2.242
+Run 46 completed in 1.23 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 72.738
+Loss - yyx: -2.107
+Run 47 completed in 0.88 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.271
+Loss - yyx: -2.300
+Run 48 completed in 0.98 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.941
+Loss - yyx: -2.262
+Run 49 completed in 0.74 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.818
+Loss - yyx: -2.212
+Run 50 completed in 1.00 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.140921  1.008641  ...  73.192044  73.982336  74.670971
+loss_yyx     50.0  -2.193696  0.072407  ...  -2.197942  -2.132468  -2.077300
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_213.csv
+ 98%|█████████▊| 49/50 [54:56<00:49, 49.02s/it] 94%|█████████▍| 47/50 [55:04<02:24, 48.30s/it] 90%|█████████ | 45/50 [55:15<05:38, 67.78s/it] 90%|█████████ | 45/50 [55:21<04:11, 50.37s/it] 96%|█████████▌| 48/50 [55:44<01:31, 45.68s/it] 92%|█████████▏| 46/50 [55:45<02:49, 42.48s/it] 68%|██████▊   | 34/50 [55:51<25:00, 93.79s/it]100%|██████████| 50/50 [55:57<00:00, 52.60s/it]100%|██████████| 50/50 [55:57<00:00, 67.16s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.619
+Loss - yyx: -2.202
+Run 1 completed in 2.52 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.918
+Loss - yyx: -2.090
+Run 2 completed in 2.26 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.238
+Loss - yyx: -2.288
+Run 3 completed in 2.16 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 71.942
+Loss - yyx: -2.155
+Run 4 completed in 1.60 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.210
+Loss - yyx: -2.128
+Run 5 completed in 1.78 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.951
+Loss - yyx: -2.255
+Run 6 completed in 1.05 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 72.219
+Loss - yyx: -2.176
+Run 7 completed in 1.39 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 72.378
+Loss - yyx: -2.102
+Run 8 completed in 2.21 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 72.966
+Loss - yyx: -2.148
+Run 9 completed in 1.92 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.893
+Loss - yyx: -2.179
+Run 10 completed in 1.44 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.192
+Loss - yyx: -2.093
+Run 11 completed in 0.74 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.534
+Loss - yyx: -2.253
+Run 12 completed in 0.96 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 72.800
+Loss - yyx: -2.203
+Run 13 completed in 0.65 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 73.103
+Loss - yyx: -2.198
+Run 14 completed in 0.66 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 70.809
+Loss - yyx: -2.114
+Run 15 completed in 0.90 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.308
+Loss - yyx: -2.139
+Run 16 completed in 0.86 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 74.133
+Loss - yyx: -2.271
+Run 17 completed in 1.27 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 74.919
+Loss - yyx: -2.243
+Run 18 completed in 1.31 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 72.201
+Loss - yyx: -2.130
+Run 19 completed in 0.99 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.495
+Loss - yyx: -2.293
+Run 20 completed in 1.08 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.049
+Loss - yyx: -2.188
+Run 21 completed in 1.01 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.475
+Loss - yyx: -2.148
+Run 22 completed in 1.19 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 71.339
+Loss - yyx: -2.085
+Run 23 completed in 0.88 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 72.918
+Loss - yyx: -2.237
+Run 24 completed in 0.77 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 72.590
+Loss - yyx: -2.222
+Run 25 completed in 0.45 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.208
+Loss - yyx: -2.105
+Run 26 completed in 0.89 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 73.013
+Loss - yyx: -2.110
+Run 27 completed in 1.15 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 73.140
+Loss - yyx: -2.146
+Run 28 completed in 0.94 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 74.359
+Loss - yyx: -2.214
+Run 29 completed in 1.29 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.245
+Loss - yyx: -2.246
+Run 30 completed in 1.01 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 75.244
+Loss - yyx: -2.290
+Run 31 completed in 1.19 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.486
+Loss - yyx: -2.081
+Run 32 completed in 0.72 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.793
+Loss - yyx: -2.302
+Run 33 completed in 1.31 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 72.528
+Loss - yyx: -2.226
+Run 34 completed in 0.49 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.989
+Loss - yyx: -2.247
+Run 35 completed in 1.57 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 70.983
+Loss - yyx: -2.082
+Run 36 completed in 0.50 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 71.975
+Loss - yyx: -2.162
+Run 37 completed in 0.92 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 75.132
+Loss - yyx: -2.325
+Run 38 completed in 1.11 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.065
+Loss - yyx: -2.096
+Run 39 completed in 0.72 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.003
+Loss - yyx: -2.151
+Run 40 completed in 1.06 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.240
+Loss - yyx: -2.173
+Run 41 completed in 0.67 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.386
+Loss - yyx: -2.295
+Run 42 completed in 1.62 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.735
+Loss - yyx: -2.276
+Run 43 completed in 1.35 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 70.518
+Loss - yyx: -2.057
+Run 44 completed in 0.51 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.238
+Loss - yyx: -2.197
+Run 45 completed in 0.92 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 72.445
+Loss - yyx: -2.202
+Run 46 completed in 0.45 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 72.063
+Loss - yyx: -2.104
+Run 47 completed in 0.99 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.130
+Loss - yyx: -2.287
+Run 48 completed in 0.67 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 72.820
+Loss - yyx: -2.245
+Run 49 completed in 0.85 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.887
+Loss - yyx: -2.211
+Run 50 completed in 1.02 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  72.956526  1.171070  ...  72.810099  73.979676  75.243792
+loss_yyx     50.0  -2.187404  0.072332  ...  -2.192350  -2.128537  -2.056881
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_214.csv
+ 98%|█████████▊| 49/50 [56:18<00:42, 42.13s/it] 94%|█████████▍| 47/50 [56:20<02:00, 40.30s/it] 92%|█████████▏| 46/50 [56:33<04:42, 70.74s/it] 96%|█████████▌| 48/50 [57:16<01:30, 45.11s/it]100%|██████████| 50/50 [57:29<00:00, 50.85s/it]100%|██████████| 50/50 [57:29<00:00, 68.99s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 74.144
+Loss - yyx: -2.209
+Run 1 completed in 3.98 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 72.135
+Loss - yyx: -2.093
+Run 2 completed in 1.34 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 73.845
+Loss - yyx: -2.288
+Run 3 completed in 1.81 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.406
+Loss - yyx: -2.181
+Run 4 completed in 1.71 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.082
+Loss - yyx: -2.138
+Run 5 completed in 1.79 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.852
+Loss - yyx: -2.274
+Run 6 completed in 2.25 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 73.547
+Loss - yyx: -2.191
+Run 7 completed in 1.35 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 71.367
+Loss - yyx: -2.073
+Run 8 completed in 0.80 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 72.798
+Loss - yyx: -2.146
+Run 9 completed in 2.45 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 72.758
+Loss - yyx: -2.175
+Run 10 completed in 0.93 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 73.186
+Loss - yyx: -2.096
+Run 11 completed in 1.84 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.709
+Loss - yyx: -2.256
+Run 12 completed in 0.88 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.882
+Loss - yyx: -2.229
+Run 13 completed in 1.16 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 72.887
+Loss - yyx: -2.162
+Run 14 completed in 0.56 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 72.281
+Loss - yyx: -2.123
+Run 15 completed in 0.81 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 71.778
+Loss - yyx: -2.133
+Run 16 completed in 0.83 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.855
+Loss - yyx: -2.270
+Run 17 completed in 1.48 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 72.830
+Loss - yyx: -2.223
+Run 18 completed in 0.80 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 70.989
+Loss - yyx: -2.120
+Run 19 completed in 0.71 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.738
+Loss - yyx: -2.316
+Run 20 completed in 1.21 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.981
+Loss - yyx: -2.177
+Run 21 completed in 0.70 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 71.907
+Loss - yyx: -2.156
+Run 22 completed in 0.95 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 73.039
+Loss - yyx: -2.105
+Run 23 completed in 1.01 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.275
+Loss - yyx: -2.229
+Run 24 completed in 1.18 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 72.367
+Loss - yyx: -2.221
+Run 25 completed in 0.40 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 73.131
+Loss - yyx: -2.113
+Run 26 completed in 1.62 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 72.755
+Loss - yyx: -2.117
+Run 27 completed in 1.24 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.067
+Loss - yyx: -2.145
+Run 28 completed in 0.66 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 73.581
+Loss - yyx: -2.192
+Run 29 completed in 1.21 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.216
+Loss - yyx: -2.248
+Run 30 completed in 1.25 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.334
+Loss - yyx: -2.301
+Run 31 completed in 1.73 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.036
+Loss - yyx: -2.062
+Run 32 completed in 0.59 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.078
+Loss - yyx: -2.312
+Run 33 completed in 1.39 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 74.424
+Loss - yyx: -2.253
+Run 34 completed in 1.38 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 72.510
+Loss - yyx: -2.228
+Run 35 completed in 0.57 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.729
+Loss - yyx: -2.105
+Run 36 completed in 1.11 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.431
+Loss - yyx: -2.166
+Run 37 completed in 1.04 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.527
+Loss - yyx: -2.322
+Run 38 completed in 0.91 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 71.431
+Loss - yyx: -2.080
+Run 39 completed in 0.69 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.465
+Loss - yyx: -2.149
+Run 40 completed in 0.75 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.667
+Loss - yyx: -2.167
+Run 41 completed in 0.82 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.772
+Loss - yyx: -2.293
+Run 42 completed in 1.47 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 73.816
+Loss - yyx: -2.272
+Run 43 completed in 0.99 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 70.965
+Loss - yyx: -2.063
+Run 44 completed in 0.54 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 72.934
+Loss - yyx: -2.196
+Run 45 completed in 0.78 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 72.252
+Loss - yyx: -2.195
+Run 46 completed in 0.36 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 73.076
+Loss - yyx: -2.109
+Run 47 completed in 1.05 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 73.946
+Loss - yyx: -2.301
+Run 48 completed in 0.66 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.660
+Loss - yyx: -2.239
+Run 49 completed in 0.56 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.896
+Loss - yyx: -2.209
+Run 50 completed in 1.19 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.006757  0.996531  ...  72.957867  73.850224  74.771538
+loss_yyx     50.0  -2.188512  0.073944  ...  -2.186230  -2.125796  -2.062168
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_210.csv
+ 70%|███████   | 35/50 [57:29<23:47, 95.14s/it] 94%|█████████▍| 47/50 [57:33<03:22, 67.36s/it] 98%|█████████▊| 49/50 [58:12<00:48, 48.34s/it] 96%|█████████▌| 48/50 [58:18<02:01, 60.67s/it] 72%|███████▏  | 36/50 [58:55<21:31, 92.27s/it] 98%|█████████▊| 49/50 [59:06<00:56, 56.88s/it]100%|██████████| 50/50 [59:10<00:00, 51.33s/it]100%|██████████| 50/50 [59:10<00:00, 71.02s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 74.379
+Loss - yyx: -2.213
+Run 1 completed in 4.47 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.793
+Loss - yyx: -2.088
+Run 2 completed in 2.03 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.445
+Loss - yyx: -2.290
+Run 3 completed in 2.08 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.284
+Loss - yyx: -2.172
+Run 4 completed in 2.33 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 72.099
+Loss - yyx: -2.131
+Run 5 completed in 2.01 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.835
+Loss - yyx: -2.277
+Run 6 completed in 2.76 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 71.755
+Loss - yyx: -2.170
+Run 7 completed in 2.16 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 72.266
+Loss - yyx: -2.097
+Run 8 completed in 1.74 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 72.820
+Loss - yyx: -2.149
+Run 9 completed in 1.29 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 73.161
+Loss - yyx: -2.169
+Run 10 completed in 0.69 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.740
+Loss - yyx: -2.097
+Run 11 completed in 1.13 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 73.583
+Loss - yyx: -2.253
+Run 12 completed in 0.68 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.484
+Loss - yyx: -2.233
+Run 13 completed in 1.26 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 73.453
+Loss - yyx: -2.194
+Run 14 completed in 0.65 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 72.521
+Loss - yyx: -2.136
+Run 15 completed in 1.03 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.127
+Loss - yyx: -2.145
+Run 16 completed in 1.32 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.807
+Loss - yyx: -2.276
+Run 17 completed in 1.19 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 74.131
+Loss - yyx: -2.247
+Run 18 completed in 0.98 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 72.354
+Loss - yyx: -2.130
+Run 19 completed in 0.75 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.092
+Loss - yyx: -2.291
+Run 20 completed in 0.79 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.768
+Loss - yyx: -2.188
+Run 21 completed in 0.94 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.406
+Loss - yyx: -2.149
+Run 22 completed in 0.67 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.508
+Loss - yyx: -2.105
+Run 23 completed in 0.71 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.841
+Loss - yyx: -2.240
+Run 24 completed in 0.62 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 73.672
+Loss - yyx: -2.247
+Run 25 completed in 1.38 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.433
+Loss - yyx: -2.110
+Run 26 completed in 1.16 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 73.140
+Loss - yyx: -2.116
+Run 27 completed in 1.25 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 73.526
+Loss - yyx: -2.144
+Run 28 completed in 0.87 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 73.818
+Loss - yyx: -2.215
+Run 29 completed in 0.95 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 74.260
+Loss - yyx: -2.251
+Run 30 completed in 1.14 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.350
+Loss - yyx: -2.292
+Run 31 completed in 1.02 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.107
+Loss - yyx: -2.064
+Run 32 completed in 0.73 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.779
+Loss - yyx: -2.300
+Run 33 completed in 1.12 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 74.052
+Loss - yyx: -2.249
+Run 34 completed in 1.18 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 74.072
+Loss - yyx: -2.244
+Run 35 completed in 0.92 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 72.003
+Loss - yyx: -2.107
+Run 36 completed in 1.10 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 72.647
+Loss - yyx: -2.168
+Run 37 completed in 1.01 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.666
+Loss - yyx: -2.330
+Run 38 completed in 0.99 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 72.581
+Loss - yyx: -2.103
+Run 39 completed in 1.33 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 72.609
+Loss - yyx: -2.147
+Run 40 completed in 0.70 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 72.635
+Loss - yyx: -2.194
+Run 41 completed in 0.83 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 75.122
+Loss - yyx: -2.291
+Run 42 completed in 0.97 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 74.578
+Loss - yyx: -2.280
+Run 43 completed in 0.94 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 72.029
+Loss - yyx: -2.084
+Run 44 completed in 0.77 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.639
+Loss - yyx: -2.197
+Run 45 completed in 0.71 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 72.202
+Loss - yyx: -2.204
+Run 46 completed in 0.40 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.909
+Loss - yyx: -2.111
+Run 47 completed in 0.59 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 75.403
+Loss - yyx: -2.299
+Run 48 completed in 0.94 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 74.173
+Loss - yyx: -2.263
+Run 49 completed in 0.93 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.468
+Loss - yyx: -2.210
+Run 50 completed in 0.97 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.230552  1.007627  ...  73.306788  74.067003  75.403200
+loss_yyx     50.0  -2.193238  0.072034  ...  -2.194033  -2.132095  -2.064463
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_212.csv
+ 74%|███████▍  | 37/50 [1:00:14<19:11, 88.55s/it]100%|██████████| 50/50 [1:00:29<00:00, 64.86s/it]100%|██████████| 50/50 [1:00:29<00:00, 72.59s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 72.728
+Loss - yyx: -2.180
+Run 1 completed in 4.21 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 73.398
+Loss - yyx: -2.169
+Run 2 completed in 1.53 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 73.851
+Loss - yyx: -2.225
+Run 3 completed in 2.39 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 74.522
+Loss - yyx: -2.274
+Run 4 completed in 2.12 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 73.830
+Loss - yyx: -2.194
+Run 5 completed in 2.13 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 72.556
+Loss - yyx: -2.195
+Run 6 completed in 1.07 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 74.188
+Loss - yyx: -2.244
+Run 7 completed in 1.59 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 74.235
+Loss - yyx: -2.178
+Run 8 completed in 1.94 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 73.689
+Loss - yyx: -2.181
+Run 9 completed in 1.55 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 73.751
+Loss - yyx: -2.239
+Run 10 completed in 1.07 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 73.899
+Loss - yyx: -2.179
+Run 11 completed in 1.29 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 74.865
+Loss - yyx: -2.312
+Run 12 completed in 0.89 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 73.049
+Loss - yyx: -2.200
+Run 13 completed in 1.20 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 74.222
+Loss - yyx: -2.265
+Run 14 completed in 1.02 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 73.880
+Loss - yyx: -2.201
+Run 15 completed in 0.89 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 73.297
+Loss - yyx: -2.189
+Run 16 completed in 0.73 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.437
+Loss - yyx: -2.251
+Run 17 completed in 1.27 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.832
+Loss - yyx: -2.260
+Run 18 completed in 0.92 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 73.375
+Loss - yyx: -2.196
+Run 19 completed in 1.17 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 74.693
+Loss - yyx: -2.267
+Run 20 completed in 0.89 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 73.420
+Loss - yyx: -2.220
+Run 21 completed in 1.01 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 73.995
+Loss - yyx: -2.200
+Run 22 completed in 0.74 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.926
+Loss - yyx: -2.150
+Run 23 completed in 0.78 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 74.745
+Loss - yyx: -2.301
+Run 24 completed in 0.85 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 73.909
+Loss - yyx: -2.247
+Run 25 completed in 0.79 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 73.683
+Loss - yyx: -2.157
+Run 26 completed in 1.20 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 74.235
+Loss - yyx: -2.189
+Run 27 completed in 1.19 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.931
+Loss - yyx: -2.170
+Run 28 completed in 1.01 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 72.948
+Loss - yyx: -2.208
+Run 29 completed in 1.09 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 73.328
+Loss - yyx: -2.255
+Run 30 completed in 1.15 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.335
+Loss - yyx: -2.282
+Run 31 completed in 1.27 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 73.581
+Loss - yyx: -2.169
+Run 32 completed in 0.66 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 75.333
+Loss - yyx: -2.323
+Run 33 completed in 0.92 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 73.559
+Loss - yyx: -2.248
+Run 34 completed in 0.84 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 73.650
+Loss - yyx: -2.256
+Run 35 completed in 0.91 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 73.891
+Loss - yyx: -2.157
+Run 36 completed in 1.18 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 73.553
+Loss - yyx: -2.206
+Run 37 completed in 0.90 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 74.536
+Loss - yyx: -2.297
+Run 38 completed in 1.12 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 73.057
+Loss - yyx: -2.169
+Run 39 completed in 0.94 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 73.531
+Loss - yyx: -2.214
+Run 40 completed in 1.32 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 74.688
+Loss - yyx: -2.276
+Run 41 completed in 0.68 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 75.014
+Loss - yyx: -2.280
+Run 42 completed in 1.40 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 73.659
+Loss - yyx: -2.256
+Run 43 completed in 1.25 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 73.290
+Loss - yyx: -2.168
+Run 44 completed in 0.98 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 73.438
+Loss - yyx: -2.234
+Run 45 completed in 1.21 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.069
+Loss - yyx: -2.238
+Run 46 completed in 1.29 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 73.589
+Loss - yyx: -2.170
+Run 47 completed in 0.99 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 74.741
+Loss - yyx: -2.316
+Run 48 completed in 0.75 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 74.924
+Loss - yyx: -2.308
+Run 49 completed in 0.80 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 73.636
+Loss - yyx: -2.213
+Run 50 completed in 1.39 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  73.809788  0.641625  ...  73.685841  74.231526  75.333206
+loss_yyx     50.0  -2.225503  0.048297  ...  -2.216896  -2.183118  -2.150328
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_205.csv
+ 76%|███████▌  | 38/50 [1:01:56<18:27, 92.33s/it] 78%|███████▊  | 39/50 [1:02:47<14:41, 80.17s/it] 80%|████████  | 40/50 [1:04:05<13:15, 79.50s/it] 82%|████████▏ | 41/50 [1:05:32<12:14, 81.63s/it] 84%|████████▍ | 42/50 [1:07:18<11:51, 88.91s/it] 86%|████████▌ | 43/50 [1:08:39<10:06, 86.70s/it] 88%|████████▊ | 44/50 [1:09:59<08:27, 84.66s/it] 90%|█████████ | 45/50 [1:11:18<06:54, 82.80s/it] 92%|█████████▏| 46/50 [1:12:53<05:46, 86.55s/it] 94%|█████████▍| 47/50 [1:14:04<04:05, 81.92s/it] 96%|█████████▌| 48/50 [1:15:05<02:31, 75.57s/it] 98%|█████████▊| 49/50 [1:16:11<01:12, 72.62s/it]100%|██████████| 50/50 [1:18:00<00:00, 83.66s/it]100%|██████████| 50/50 [1:18:00<00:00, 93.61s/it]
+
+--- Run 1/50 ---
+Run 1 : ln_yyx = 73.811
+Loss - yyx: -2.209
+Run 1 completed in 3.89 minutes.
+
+--- Run 2/50 ---
+Run 2 : ln_yyx = 71.762
+Loss - yyx: -2.083
+Run 2 completed in 2.74 minutes.
+
+--- Run 3/50 ---
+Run 3 : ln_yyx = 74.840
+Loss - yyx: -2.289
+Run 3 completed in 2.94 minutes.
+
+--- Run 4/50 ---
+Run 4 : ln_yyx = 72.224
+Loss - yyx: -2.161
+Run 4 completed in 2.26 minutes.
+
+--- Run 5/50 ---
+Run 5 : ln_yyx = 71.108
+Loss - yyx: -2.110
+Run 5 completed in 2.36 minutes.
+
+--- Run 6/50 ---
+Run 6 : ln_yyx = 73.543
+Loss - yyx: -2.254
+Run 6 completed in 1.73 minutes.
+
+--- Run 7/50 ---
+Run 7 : ln_yyx = 71.939
+Loss - yyx: -2.159
+Run 7 completed in 1.89 minutes.
+
+--- Run 8/50 ---
+Run 8 : ln_yyx = 70.626
+Loss - yyx: -2.070
+Run 8 completed in 0.85 minutes.
+
+--- Run 9/50 ---
+Run 9 : ln_yyx = 73.440
+Loss - yyx: -2.151
+Run 9 completed in 2.22 minutes.
+
+--- Run 10/50 ---
+Run 10 : ln_yyx = 68.642
+Loss - yyx: -2.109
+Run 10 completed in 0.49 minutes.
+
+--- Run 11/50 ---
+Run 11 : ln_yyx = 72.620
+Loss - yyx: -2.093
+Run 11 completed in 1.66 minutes.
+
+--- Run 12/50 ---
+Run 12 : ln_yyx = 74.384
+Loss - yyx: -2.266
+Run 12 completed in 1.75 minutes.
+
+--- Run 13/50 ---
+Run 13 : ln_yyx = 74.490
+Loss - yyx: -2.239
+Run 13 completed in 2.02 minutes.
+
+--- Run 14/50 ---
+Run 14 : ln_yyx = 72.377
+Loss - yyx: -2.188
+Run 14 completed in 1.24 minutes.
+
+--- Run 15/50 ---
+Run 15 : ln_yyx = 71.861
+Loss - yyx: -2.131
+Run 15 completed in 1.33 minutes.
+
+--- Run 16/50 ---
+Run 16 : ln_yyx = 72.680
+Loss - yyx: -2.140
+Run 16 completed in 1.31 minutes.
+
+--- Run 17/50 ---
+Run 17 : ln_yyx = 73.023
+Loss - yyx: -2.245
+Run 17 completed in 1.30 minutes.
+
+--- Run 18/50 ---
+Run 18 : ln_yyx = 73.051
+Loss - yyx: -2.223
+Run 18 completed in 1.00 minutes.
+
+--- Run 19/50 ---
+Run 19 : ln_yyx = 71.803
+Loss - yyx: -2.128
+Run 19 completed in 1.30 minutes.
+
+--- Run 20/50 ---
+Run 20 : ln_yyx = 71.423
+Loss - yyx: -2.217
+Run 20 completed in 0.50 minutes.
+
+--- Run 21/50 ---
+Run 21 : ln_yyx = 72.567
+Loss - yyx: -2.175
+Run 21 completed in 1.29 minutes.
+
+--- Run 22/50 ---
+Run 22 : ln_yyx = 72.248
+Loss - yyx: -2.147
+Run 22 completed in 1.31 minutes.
+
+--- Run 23/50 ---
+Run 23 : ln_yyx = 72.063
+Loss - yyx: -2.098
+Run 23 completed in 1.59 minutes.
+
+--- Run 24/50 ---
+Run 24 : ln_yyx = 73.357
+Loss - yyx: -2.247
+Run 24 completed in 1.54 minutes.
+
+--- Run 25/50 ---
+Run 25 : ln_yyx = 72.590
+Loss - yyx: -2.220
+Run 25 completed in 0.92 minutes.
+
+--- Run 26/50 ---
+Run 26 : ln_yyx = 72.038
+Loss - yyx: -2.103
+Run 26 completed in 1.68 minutes.
+
+--- Run 27/50 ---
+Run 27 : ln_yyx = 72.342
+Loss - yyx: -2.117
+Run 27 completed in 1.60 minutes.
+
+--- Run 28/50 ---
+Run 28 : ln_yyx = 72.698
+Loss - yyx: -2.151
+Run 28 completed in 1.76 minutes.
+
+--- Run 29/50 ---
+Run 29 : ln_yyx = 72.293
+Loss - yyx: -2.197
+Run 29 completed in 1.30 minutes.
+
+--- Run 30/50 ---
+Run 30 : ln_yyx = 73.514
+Loss - yyx: -2.250
+Run 30 completed in 1.78 minutes.
+
+--- Run 31/50 ---
+Run 31 : ln_yyx = 74.103
+Loss - yyx: -2.292
+Run 31 completed in 1.71 minutes.
+
+--- Run 32/50 ---
+Run 32 : ln_yyx = 71.816
+Loss - yyx: -2.073
+Run 32 completed in 1.32 minutes.
+
+--- Run 33/50 ---
+Run 33 : ln_yyx = 74.663
+Loss - yyx: -2.302
+Run 33 completed in 1.79 minutes.
+
+--- Run 34/50 ---
+Run 34 : ln_yyx = 74.311
+Loss - yyx: -2.257
+Run 34 completed in 1.48 minutes.
+
+--- Run 35/50 ---
+Run 35 : ln_yyx = 74.678
+Loss - yyx: -2.248
+Run 35 completed in 1.64 minutes.
+
+--- Run 36/50 ---
+Run 36 : ln_yyx = 71.954
+Loss - yyx: -2.105
+Run 36 completed in 1.43 minutes.
+
+--- Run 37/50 ---
+Run 37 : ln_yyx = 71.946
+Loss - yyx: -2.160
+Run 37 completed in 1.33 minutes.
+
+--- Run 38/50 ---
+Run 38 : ln_yyx = 75.478
+Loss - yyx: -2.330
+Run 38 completed in 1.69 minutes.
+
+--- Run 39/50 ---
+Run 39 : ln_yyx = 71.006
+Loss - yyx: -2.070
+Run 39 completed in 0.86 minutes.
+
+--- Run 40/50 ---
+Run 40 : ln_yyx = 71.900
+Loss - yyx: -2.149
+Run 40 completed in 1.30 minutes.
+
+--- Run 41/50 ---
+Run 41 : ln_yyx = 73.063
+Loss - yyx: -2.189
+Run 41 completed in 1.44 minutes.
+
+--- Run 42/50 ---
+Run 42 : ln_yyx = 74.751
+Loss - yyx: -2.302
+Run 42 completed in 1.76 minutes.
+
+--- Run 43/50 ---
+Run 43 : ln_yyx = 73.278
+Loss - yyx: -2.247
+Run 43 completed in 1.36 minutes.
+
+--- Run 44/50 ---
+Run 44 : ln_yyx = 71.927
+Loss - yyx: -2.077
+Run 44 completed in 1.33 minutes.
+
+--- Run 45/50 ---
+Run 45 : ln_yyx = 72.983
+Loss - yyx: -2.189
+Run 45 completed in 1.31 minutes.
+
+--- Run 46/50 ---
+Run 46 : ln_yyx = 73.428
+Loss - yyx: -2.237
+Run 46 completed in 1.59 minutes.
+
+--- Run 47/50 ---
+Run 47 : ln_yyx = 71.247
+Loss - yyx: -2.087
+Run 47 completed in 1.18 minutes.
+
+--- Run 48/50 ---
+Run 48 : ln_yyx = 73.441
+Loss - yyx: -2.272
+Run 48 completed in 1.01 minutes.
+
+--- Run 49/50 ---
+Run 49 : ln_yyx = 73.789
+Loss - yyx: -2.246
+Run 49 completed in 1.10 minutes.
+
+--- Run 50/50 ---
+Run 50 : ln_yyx = 72.754
+Loss - yyx: -2.209
+Run 50 completed in 1.82 minutes.
+
+--- Multiple Runs Summary ---
+            count       mean       std  ...        50%        75%        max
+ln_yyx_sec   50.0  72.757479  1.270343  ...  72.650349  73.495611  75.477800
+loss_yyx     50.0  -2.184245  0.072760  ...  -2.188176  -2.119848  -2.069784
+
+[2 rows x 8 columns]
+
+Results saved to results/hpc_runs-full/runs_full_204.csv
