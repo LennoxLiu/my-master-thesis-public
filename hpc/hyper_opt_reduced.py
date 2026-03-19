@@ -31,7 +31,7 @@ def create_objective(arrival_times_target,
             "model_config_yy": {
                 "model_name": "LogNormMix",  # Name of the model to use, ["LogNormMix", "ExponentialMix","GompertzMix"]
                 "context_size": 2** trial.suggest_int("context_size_yy", 1, 8),  # From 2^0 to 2^7, i.e., 1 to 128, Size of the RNN hidden vector
-                "num_mix_components": 2** trial.suggest_int("num_mix_components_yy", 1, 7),  # 32 Number of components for a mixture model
+                "num_mix_components": 2** trial.suggest_int("num_mix_components_yy", 1, 6),  # 32 Number of components for a mixture model
                 "hidden_sizes": hidden_sizes_yy,       # 16 Hidden sizes of the MLP for the inter-event time distribution
                 "context_extractor": "lstm", #trial.suggest_categorical("context_extractor_yy", ["gru", "lstm"]), # Type of RNN to use for context extraction, ["gru", "lstm", "mlp"]
                 "activation_func": trial.suggest_categorical("activation_func_yy", ["Tanh", "ReLU", "GELU"]),
@@ -42,7 +42,7 @@ def create_objective(arrival_times_target,
                 "L_sep_weight": trial.suggest_float("L_sep_weight_yy", 1e-10, 1e-3, log=True),               # Weight for the separation regularization term
                 "L_scale_weight": trial.suggest_float("L_scale_weight_yy", 1e-10, 1e-3, log=True),             # Weight for the scale regularization term
                 "learning_rate": trial.suggest_float("learning_rate_yy", 5e-4, 1e-2, log=True),           # Learning rate for Adam optimizer
-                "max_epochs": 1000,              # For how many epochs to train
+                "max_epochs": 750,              # For how many epochs to train
                 "display_step": 5,               # Display training statistics after every display_step
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
             },
@@ -190,7 +190,7 @@ if __name__ == "__main__":
             "L_sep_weight": best["L_sep_weight_yy"],
             "L_scale_weight": best["L_scale_weight_yy"],
             "learning_rate": best["learning_rate_yy"],
-            "max_epochs": 500,
+            "max_epochs": 750,
             "display_step": 5,
             "patience": 20,
         },

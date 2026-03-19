@@ -39,7 +39,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
         --data_file_path "./data/event_times_data.h5" \
         --num_trials 5 \
         --history_length 512 \
-        --batch_size 512 \
+        --batch_size 256 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
         --seed 42 &
