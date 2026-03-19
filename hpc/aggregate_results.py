@@ -44,6 +44,8 @@ def main():
                 
                 # Save each column as a dataset within the subgroup
                 for col in df.columns:
+                    if col == 'run':
+                        continue
                     subgrp.create_dataset(col, data=encode_for_h5(df[col]))
             else:
                 print(f"File missing, skipping: {csv_path}")
@@ -66,6 +68,8 @@ def main():
                 
                 # Save each column as a dataset within the subgroup
                 for col in df.columns:
+                    if col == 'run':
+                        continue
                     subgrp.create_dataset(col, data=encode_for_h5(df[col]))
             else:
                 print(f"File missing, skipping: {csv_path}")
