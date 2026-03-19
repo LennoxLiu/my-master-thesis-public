@@ -2,7 +2,7 @@
 #SBATCH --job-name=TE_reduced_opt
 #SBATCH --output=hpc/logs/TE_reduced_opt_arrayjob%a.out
 #SBATCH --partition=devel
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
 #SBATCH --array=1-2
 #SBATCH --mem-per-cpu=3328M
@@ -28,7 +28,7 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 nvidia-cuda-mps-control -d
 
 # Define the number of concurrent tasks per GPU
-TASKS_PER_JOB=8
+TASKS_PER_JOB=16
 #--cpus-per-task should be half of TASKS_PER_JOB
 
 # Launch tasks in the background
@@ -39,7 +39,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
         --data_file_path "./data/event_times_data.h5" \
         --num_trials 5 \
         --history_length 512 \
-        --batch_size 256 \
+        --batch_size 128 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
         --seed 42 &
