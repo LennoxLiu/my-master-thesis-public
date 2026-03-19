@@ -1295,6 +1295,7 @@ def Ln_estimation_yy(event_time, configs: dict, seed: int = 42, trial = None):
     return ln_yy_test * len_target / configs["data_prep_config"]["total_time"], log_loss_yy
 
 # For hyperparameter optimization
+# Input: [target_event_time, source_event_time]
 def Ln_estimation_yyx(event_time, configs: dict, seed: int = 42, trial = None):
     """
     Estimate the the natural logarithm of the expression with PDF of Y'|Y,X of a temporal point process (TPP) using neural models."""

@@ -53,7 +53,7 @@ def create_objective(arrival_times_source, arrival_times_target, device, args):
         }
         
         ln_yyx, log_loss_yyx = Ln_estimation_yyx(
-            event_time=[arrival_times_source, arrival_times_target],
+            event_time=[arrival_times_target, arrival_times_source],
             configs=deepcopy(configs),
             seed=args.seed,
             trial=trial
