@@ -31,8 +31,8 @@ def run_multiple_estimation_reduced(target_events, configs, task_id, n_runs=10, 
     Saves per-run results incrementally to prevent data loss.
     """
 
-    os.makedirs("results/hpc_runs-reduced", exist_ok=True)
-    output_file = f"results/hpc_runs-reduced/runs_reduced_{task_id}.csv"
+    os.makedirs("results/runs-reduced", exist_ok=True)
+    output_file = f"results/runs-reduced/runs_reduced_{task_id}.csv"
 
     start_run = 0
     run_results = []
@@ -110,7 +110,7 @@ if __name__ == "__main__":
         torch.manual_seed(args.seed)
         np.random.seed(args.seed)
 
-    os.makedirs("results/hpc_runs-reduced", exist_ok=True)
+    os.makedirs("results/runs-reduced", exist_ok=True)
 
     # Read task parameters from task file
     group_id, neuron_id = get_task_params_reduced('hpc/tasks_reduced.csv', args.task_id)

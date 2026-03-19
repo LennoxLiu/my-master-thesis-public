@@ -29,8 +29,8 @@ def run_multiple_estimation_full(source_events, target_events, configs, task_id,
     Saves per-run results incrementally to prevent data loss.
     """
 
-    os.makedirs("results/hpc_runs-full", exist_ok=True)
-    output_file = f"results/hpc_runs-full/runs_full_{task_id}.csv"
+    os.makedirs("results/runs-full", exist_ok=True)
+    output_file = f"results/runs-full/runs_full_{task_id}.csv"
 
     start_run = 0
     run_results = []
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         torch.manual_seed(args.seed)
         np.random.seed(args.seed)
 
-    os.makedirs("results/hpc_runs-full", exist_ok=True)
+    os.makedirs("results/runs-full", exist_ok=True)
 
     # Read task parameters from task file
     s_group, s_neuron, t_group, t_neuron = get_task_params_full('hpc/tasks_full.csv', args.task_id)
