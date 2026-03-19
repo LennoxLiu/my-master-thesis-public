@@ -37,7 +37,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/hyper_opt_full.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_trials 3 \
+        --num_trials 5 \
         --history_length 512 \
         --batch_size 128 \
         --data_time_length 900 \
