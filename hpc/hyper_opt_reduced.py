@@ -42,7 +42,7 @@ def create_objective(arrival_times_target,
                 "L_sep_weight": trial.suggest_float("L_sep_weight_yy", 1e-10, 1e-3, log=True),               # Weight for the separation regularization term
                 "L_scale_weight": trial.suggest_float("L_scale_weight_yy", 1e-10, 1e-3, log=True),             # Weight for the scale regularization term
                 "learning_rate": trial.suggest_float("learning_rate_yy", 5e-4, 1e-2, log=True),           # Learning rate for Adam optimizer
-                "max_epochs": 500,              # For how many epochs to train
+                "max_epochs": 1000,              # For how many epochs to train
                 "display_step": 5,               # Display training statistics after every display_step
                 "patience": 20,                  # After how many consecutive epochs without improvement of val loss to stop training
             },

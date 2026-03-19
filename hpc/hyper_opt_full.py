@@ -17,16 +17,16 @@ def create_objective(arrival_times_source, arrival_times_target, device, args):
         n_layers_yyx = trial.suggest_int("n_layers_yyx", 1, 2)
         hidden_sizes_yyx = []
         for i in range(n_layers_yyx):
-            layer_size = 2 ** trial.suggest_int(f"hidden_size_yyx_l{i}", 2, 6)
+            layer_size = 2 ** trial.suggest_int(f"hidden_size_yyx_l{i}", 2, 8)
             hidden_sizes_yyx.append(layer_size)
 
         configs = {
             "model_config_yyx": {
                 "model_name": "LogNormMix",
-                "context_size": 2 ** trial.suggest_int("context_size_yyx", 1, 4),
-                "num_mix_components": 2 ** trial.suggest_int("num_mix_components_yyx", 1, 5),
+                "context_size": 2 ** trial.suggest_int("context_size_yyx", 1, 8),
+                "num_mix_components": 2 ** trial.suggest_int("num_mix_components_yyx", 1, 7),
                 "hidden_sizes": hidden_sizes_yyx,
-                "context_extractor": trial.suggest_categorical("context_extractor_yyx", ["gru", "lstm"]),
+                "context_extractor": "lstm", #trial.suggest_categorical("context_extractor_yyx", ["gru", "lstm"]),
                 "activation_func": trial.suggest_categorical("activation_func_yyx", ["Tanh", "ReLU", "GELU"]),
             },
             "train_config_yyx": {
@@ -35,7 +35,7 @@ def create_objective(arrival_times_source, arrival_times_target, device, args):
                 "L_sep_weight": trial.suggest_float("L_sep_weight_yyx", 1e-10, 1e-3, log=True),
                 "L_scale_weight": trial.suggest_float("L_scale_weight_yyx", 1e-10, 1e-3, log=True),
                 "learning_rate": trial.suggest_float("learning_rate_yyx", 5e-4, 1e-2, log=True),
-                "max_epochs": 500,
+                "max_epochs": 1000,
                 "display_step": 5,
                 "patience": 20,
             },
