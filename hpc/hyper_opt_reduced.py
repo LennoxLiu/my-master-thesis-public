@@ -159,7 +159,7 @@ if __name__ == "__main__":
 
     # Assuming 'objective' function is defined as above
     # ,load_if_exists=True to continue from an existing study
-    study = optuna.create_study(directions=["minimize"], storage=f"sqlite:///results/opt/opt_reduced_{task_id}.db"
+    study = optuna.create_study(directions=["minimize"], storage=f"sqlite:///results/opt-reduced/opt_reduced_{task_id}.db"
                                 ,load_if_exists=True, study_name=f"opt_reduced-model_seed={seed:02d}_task={task_id}",
                                 pruner=pruner) 
 
