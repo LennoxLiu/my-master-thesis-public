@@ -45,8 +45,8 @@ def main():
                     # Calculate TE array
                     # If run counts differ (e.g., due to failed runs), truncate to the minimum length
                     min_len = min(len(ln_yyx_sec), len(ln_yy_sec))
-                    te_array = np.mean(ln_yyx_sec[:min_len] - ln_yy_sec[:min_len]
-                    
+                    te_array = ln_yyx_sec[:min_len] - ln_yy_sec[:min_len]
+
                     te_mean = np.mean(te_array)
                     te_std = np.std(te_array, ddof=1) if min_len > 1 else 0.0
                     mean_runtime = np.mean(run_duration)
