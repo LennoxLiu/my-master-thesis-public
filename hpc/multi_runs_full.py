@@ -58,7 +58,7 @@ def run_multiple_estimation_full(source_events, target_events, configs, task_id,
         run_seed = seed + (run+1) * 1000
         
         ln_yyx_sec, log_loss_yyx = Ln_estimation_yyx(
-            event_time=[source_events, target_events],  # Source and target events needed for full model
+            event_time=[target_events, source_events],  # Source and target events needed for full model
             configs=deepcopy(configs),
             seed=run_seed,
         )
