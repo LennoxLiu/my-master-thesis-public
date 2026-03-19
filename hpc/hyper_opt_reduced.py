@@ -181,7 +181,7 @@ if __name__ == "__main__":
             "context_size": 2 ** best["context_size_yy"],
             "num_mix_components": 2 ** best["num_mix_components_yy"],
             "hidden_sizes": hidden_sizes_yy,
-            "context_extractor": best["context_extractor_yy"],
+            "context_extractor": "lstm", #best["context_extractor_yy"],
             "activation_func": best["activation_func_yy"],
         },
         "train_config_yy": {
