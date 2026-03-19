@@ -24,16 +24,16 @@ def create_objective(arrival_times_target,
         hidden_sizes_yy = []
         for i in range(n_layers_yy):
             # Suggest the size for each hidden layer dynamically
-            layer_size = 2** trial.suggest_int(f"hidden_size_yy_l{i}", 2, 6)
+            layer_size = 2** trial.suggest_int(f"hidden_size_yy_l{i}", 2, 8)
             hidden_sizes_yy.append(layer_size)
 
         configs = {
             "model_config_yy": {
                 "model_name": "LogNormMix",  # Name of the model to use, ["LogNormMix", "ExponentialMix","GompertzMix"]
-                "context_size": 2** trial.suggest_int("context_size_yy", 1, 4),  # From 2^0 to 2^7, i.e., 1 to 128, Size of the RNN hidden vector
-                "num_mix_components": 2** trial.suggest_int("num_mix_components_yy", 1, 5),  # 32 Number of components for a mixture model
+                "context_size": 2** trial.suggest_int("context_size_yy", 1, 8),  # From 2^0 to 2^7, i.e., 1 to 128, Size of the RNN hidden vector
+                "num_mix_components": 2** trial.suggest_int("num_mix_components_yy", 1, 7),  # 32 Number of components for a mixture model
                 "hidden_sizes": hidden_sizes_yy,       # 16 Hidden sizes of the MLP for the inter-event time distribution
-                "context_extractor": trial.suggest_categorical("context_extractor_yy", ["gru", "lstm"]), # Type of RNN to use for context extraction, ["gru", "lstm", "mlp"]
+                "context_extractor": "lstm", #trial.suggest_categorical("context_extractor_yy", ["gru", "lstm"]), # Type of RNN to use for context extraction, ["gru", "lstm", "mlp"]
                 "activation_func": trial.suggest_categorical("activation_func_yy", ["Tanh", "ReLU", "GELU"]),
             },
             "train_config_yy": {
