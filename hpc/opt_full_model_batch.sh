@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=TE_full_opt
 #SBATCH --output=hpc/logs/TE_full_opt_arrayjob%a.out
-#SBATCH --partition=devel
+#SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
-#SBATCH --array=0
+#SBATCH --array=0-25
 #SBATCH --mem-per-cpu=3328M
-#SBATCH --time=00:30:00
+#SBATCH --time=04:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -37,7 +37,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/hyper_opt_full.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_trials 5 \
+        --num_trials 50 \
         --history_length 512 \
         --batch_size 128 \
         --data_time_length 900 \
