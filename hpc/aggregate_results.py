@@ -5,8 +5,8 @@ import h5py
 # Configuration paths
 TASKS_REDUCED_PATH = "hpc/tasks_reduced.csv"
 TASKS_FULL_PATH = "hpc/tasks_full.csv"
-RESULTS_REDUCED_DIR = "results/hpc_runs-reduced"
-RESULTS_FULL_DIR = "results/hpc_runs-full"
+RESULTS_REDUCED_DIR = "results/runs-reduced"
+RESULTS_FULL_DIR = "results/runs-full"
 OUTPUT_H5_PATH = "results/multi_runs_results.h5"
 
 def encode_for_h5(series):
