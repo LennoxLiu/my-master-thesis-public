@@ -2,9 +2,9 @@
 #SBATCH --job-name=TE_full_runs
 #SBATCH --output=hpc/logs/TE_full_runs_arrayjob%a.out
 #SBATCH --partition=gpu-single
-#SBATCH --cpus-per-task=6
+#SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
-#SBATCH --array=0-33
+#SBATCH --array=0-50
 #SBATCH --mem-per-cpu=3328M
 #SBATCH --time=04:00:00
 #SBATCH --account=bw20g013
@@ -28,7 +28,7 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 nvidia-cuda-mps-control -d
 
 # Define the number of concurrent tasks per GPU
-TASKS_PER_JOB=12
+TASKS_PER_JOB=8
 #--cpus-per-task should be half of TASKS_PER_JOB
 
 # Launch tasks in the background
