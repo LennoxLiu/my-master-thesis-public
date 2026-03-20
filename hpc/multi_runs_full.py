@@ -15,7 +15,10 @@ def load_best_config_full(file_path):
     Loads the optimization configuration dictionary from a JSON-formatted text file.
     """
     if not os.path.exists(file_path):
-        raise FileNotFoundError(f"No configuration file found at: {file_path}")
+        # Instead of raising an error that crashes Slurm, 
+        # print a message and exit cleanly.
+        print(f"Skipping: No configuration file found at {file_path}")
+        sys.exit(0)
         
     with open(file_path, "r") as f:
         config = json.load(f)
