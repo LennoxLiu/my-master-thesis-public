@@ -37,7 +37,7 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/multi_runs_reduced.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_runs 20 \
+        --num_runs 40 \
         --history_length 512 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
