@@ -129,7 +129,15 @@ if __name__ == "__main__":
         pruner=pruner
     ) 
 
-    study.optimize(objective_t, n_trials=args.num_trials)
+    # Calculate remaining trials
+    completed_trials = len(study.trials)
+    n_trials_to_run = args.num_trials - completed_trials
+
+    if n_trials_to_run > 0:
+        print(f"Study already has {completed_trials} trials. Running {n_trials_to_run} more to reach {args.num_trials}.")
+        study.optimize(objective_t, n_trials=n_trials_to_run)
+    else:
+        print(f"Study already contains {completed_trials} trials, which meets or exceeds the target of {args.num_trials}.")
 
     best = study.best_params
     hidden_sizes_yyx = [2 ** best[f"hidden_size_yyx_l{i}"] for i in range(best["n_layers_yyx"])]

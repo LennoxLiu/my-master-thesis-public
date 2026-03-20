@@ -163,7 +163,15 @@ if __name__ == "__main__":
                                 ,load_if_exists=True, study_name=f"opt_reduced-model_seed={seed:02d}_task={task_id}",
                                 pruner=pruner) 
 
-    study.optimize(objective_t, n_trials=num_trials) # Run for unlimited trials
+    # Calculate remaining trials
+    completed_trials = len(study.trials)
+    n_trials_to_run = args.num_trials - completed_trials
+
+    if n_trials_to_run > 0:
+        print(f"Study already has {completed_trials} trials. Running {n_trials_to_run} more to reach {args.num_trials}.")
+        study.optimize(objective_t, n_trials=n_trials_to_run)
+    else:
+        print(f"Study already contains {completed_trials} trials, which meets or exceeds the target of {args.num_trials}.")
 
     print("Best trial:")
     print(f"  Value: {study.best_value}")
