@@ -2,8 +2,8 @@ import random
 import math
 import pickle
 import numpy as np
-from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from entropy_tpp import save_dict_indented
+from src.te_tpp import TE_estimation_tpp, run_multiple_estimation
+from src.te_tpp import save_dict_indented
 import torch
 import time
 from src.CoTETE_example_run import generate_spike_trains_CoTETE
@@ -13,10 +13,8 @@ import matplotlib.pyplot as plt
 import torch
 from copy import deepcopy
 import optuna
-from entropy_tpp import CondH_estimation_yy, CondH_estimation_yyx
 
-
-def create_objective(arrival_times_target_list, arrival_times_source_list,
+def create_objective(arrival_times_source_list, arrival_times_target_list,
                      time_series_length, device, seed):
     """
     This outer function creates and returns the actual objective function.
@@ -148,8 +146,8 @@ if __name__ == "__main__":
 
     # Print summary statistics
     print("\n--- Simulation Results ---")
-    print(f"Total events for Process X_0: {len(source_events_list[0])}")
-    print(f"Total events for Process Y_0: {len(target_events_list[0])}")
+    print(f"Total events for source process: {len(source_events_list[0])}")
+    print(f"Total events for target process: {len(target_events_list[0])}")
     print(f"Simulation Time: {SIMULATION_TIME} seconds")
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'

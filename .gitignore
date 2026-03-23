@@ -5,9 +5,7 @@ __pycache__/
 
 # Latex aux files
 *.synctex.gz
-*.log
 *.aux
-*.out
 *.dvi
 *.xwm
 *.nav
@@ -23,5 +21,4 @@ comment.cut
 
 .idea/
 .vscode/
-
-
+/results

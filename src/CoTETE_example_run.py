@@ -3,8 +3,8 @@ import random
 import math
 import pickle
 import numpy as np
-from entropy_tpp import TE_estimation_tpp, run_multiple_estimation
-from entropy_tpp import save_dict_indented
+from src.te_tpp import TE_estimation_tpp, run_multiple_estimation
+from src.te_tpp import save_dict_indented
 import torch
 import time
 import matplotlib.pyplot as plt

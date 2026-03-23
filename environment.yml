@@ -1,0 +1,33 @@
+name: RMDN-TE
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - ipykernel
+  - tqdm
+  - pandas
+  - optuna
+  - optuna-dashboard
+  - filterpy
+  - tensorboard
+  - plotly
+  - sparse
+  - pipreqs
+  - hyperopt
+  - jupyter_client<8
+  - notebook
+  - pyzmq<25
+  - h5py
+  - pip
+  - pip:
+    - --index-url https://download.pytorch.org/whl/cu124
+    - torch
+    - torchvision
+    - torchaudio
