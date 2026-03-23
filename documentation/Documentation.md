@@ -151,12 +151,14 @@ These two functions handle specific sub-tasks within the `TE_estimation_tpp` rou
 
 ## Workflow Pipeline (Local)
 
-input: event time array
+input: event time array, output single estimation, check demo,ipynb
 
 ## Workflow Pipeline (HPC)
 
-accept h5
+accept HDF5 as event times, parallelization on HPC for two tasks and two steps for each task, aggrate the resutls and calcualte TE
 
 ## Metrics for Evaluation
+
+p-p plot, boxplot, 95%ci, std
 
 ## Requirements
