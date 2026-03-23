@@ -6,7 +6,7 @@ The project also includes scripts for **HPC parallelization** (SLURM), supportin
 
 Modified from the PyTorch implementation of [*Intensity-Free Learning of Temporal Point Processes*](https://openreview.net/forum?id=HygOjhEYDH) (Shchur, Biloš & Günnemann, ICLR 2020).
 
-> **Full documentation:** see [`documentation/Documentation.md`](https://claude.ai/chat/documentation/Documentation.md)
+> **Full documentation:** see [`documentation/Documentation.md`](./documentation/Documentation.md)
 
 ------
 
@@ -81,7 +81,7 @@ If your data is in MATLAB format, first convert it:
 python hpc/mat_to_h5.py  # converts data/testFile.mat → data/event_times_data.h5
 ```
 
-See [`documentation/Documentation.md`](https://claude.ai/chat/documentation/Documentation.md) for the full step-by-step HPC guide, including SLURM parameters, output formats, and progress checking.
+See [`documentation/Documentation.md`](./documentation/Documentation.md) for the full step-by-step HPC guide, including SLURM parameters, output formats, and progress checking.
 
 ------
 
@@ -128,4 +128,4 @@ module load devel/cuda/12.6
 
 ## License
 
-See [LICENSE.md](https://claude.ai/chat/LICENSE.md) for details.
+See [LICENSE.md](./LICENSE.md) for details.

@@ -71,7 +71,7 @@ Primary source code for the transfer entropy estimation framework.
 
 ### `hpc/`
 
-Source code for scaling the estimation framework on HPC clusters. See the [HPC Workflow Pipeline](https://claude.ai/chat/00712085-0d80-4730-af80-b5d6c55bcc03#workflow-pipeline-hpc) section for a step-by-step usage guide.
+Source code for scaling the estimation framework on HPC clusters. See the [HPC Workflow Pipeline](#workflow-pipeline-hpc) section for a step-by-step usage guide.
 
 | File                         | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
