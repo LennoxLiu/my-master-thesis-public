@@ -75,13 +75,13 @@ Input HDF5
     └──► [Step 5]  Visualize                 python hpc/plot_te_heatmap.py
 ```
 
-If your data is in MATLAB format, first convert it:
+If your data is in MATLAB format, first convert it to HDF5 format. For example,
 
 ```bash
 python hpc/mat_to_h5.py  # converts data/testFile.mat → data/event_times_data.h5
 ```
 
-See [`documentation/Documentation.md`](./documentation/Documentation.md) for the full step-by-step HPC guide, including SLURM parameters, output formats, and progress checking.
+See [`documentation/Documentation.md`](./documentation/Documentation.md) for the full step-by-step HPC guide, including SLURM parameters, input/output formats, and progress checking.
 
 ------
 
