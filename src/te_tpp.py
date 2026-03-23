@@ -1330,13 +1330,12 @@ def TE_estimation_tpp(event_time, configs: dict, seed: int = 42, trial=None):
     Estimate the transfer entropy (TE) between two temporal point processes (TPPs) using neural models.
     This function prepares data loaders, trains two TPP models (one with and one without access to the source process),
     and estimates the transfer entropy by comparing the log-probabilities of inter-event times under both models.
-    Args:
-        event_time: Input event time data for the processes in seconds. It can be a tuple of (histories, targets) for single process,
-                    or a list of event times for multiple processes. When using a list, the first tensor in the list is considered the target process,
-                    and the rest are source processes.
+    Inputs:
+        event_time: Input event time data for the processes in seconds. It should be a list of event times 
+        for multiple processes. The first tensor in the list is considered the target process, and the second one is the source process.
         configs (dict): Configuration dictionary containing model and training parameters.
         seed (optional): Random seed for reproducibility.
-    Returns:
+    Outputs:
         tuple:
             - (TE_test, ln_yy_test, ln_yyx_test): Estimated transfer entropy values per second for the train, validation, and test sets.
             - (log_loss_yy, log_loss_yyx): Quantile losses for the two trained models.
