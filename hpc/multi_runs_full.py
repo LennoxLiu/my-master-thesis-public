@@ -103,6 +103,7 @@ if __name__ == "__main__":
     parser.add_argument("--data_time_length", type=int, default=None, help="Total time of the sequences in seconds")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
     parser.add_argument("--num_runs", type=int, default=10, help="Number of runs to perform")
+    parser.add_argument("--surrogate", action="store_true", help="Enable surrogate data for estimation")
     args = parser.parse_args()
 
     if args.seed is not None:
@@ -150,6 +151,10 @@ if __name__ == "__main__":
         print(f"Overwriting data_time_length: {args.data_time_length}")
         if "data_prep_config" in best_configs:
             best_configs["data_prep_config"]["total_time"] = args.data_time_length
+
+    if args.surrogate:
+        print("Using surrogate data for estimation.")
+        best_configs["data_prep_config"]["shuffle"] = True
 
     # Run multiple estimations and save results
     run_multiple_estimation_full(

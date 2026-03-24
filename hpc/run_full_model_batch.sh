@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --array=0-50
 #SBATCH --mem-per-cpu=3328M
-#SBATCH --time=04:00:00
+#SBATCH --time=02:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -37,11 +37,12 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/multi_runs_full.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_runs 40 \
+        --num_runs 20 \
         --history_length 512 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
-        --seed 42 &
+        --seed 42 \
+        --surrogate &
 done
 
 wait # Wait for all tasks to finish
