@@ -7,6 +7,7 @@ TASKS_REDUCED_PATH = "hpc/tasks_reduced.csv"
 TASKS_FULL_PATH = "hpc/tasks_full.csv"
 RESULTS_REDUCED_DIR = "results/runs-reduced"
 RESULTS_FULL_DIR = "results/runs-full"
+RESULTS_FULL_SURROGATE_DIR = "results/runs-full-surrogate"
 OUTPUT_H5_PATH = "results/multi_runs_results.h5"
 
 def encode_for_h5(series):
@@ -27,6 +28,7 @@ def main():
         # Create main groups
         grp_reduced = h5f.create_group("reduced")
         grp_full = h5f.create_group("full")
+        grp_full_surrogate = h5f.create_group("full_surrogate")
 
         # 1. Process Reduced Runs
         print("Packing reduced runs...")
@@ -74,6 +76,29 @@ def main():
             else:
                 print(f"File missing, skipping: {csv_path}")
 
+        # 3. Process Full Surrogate Runs
+        print("Packing full surrogate runs...")
+        for _, row in tasks_full.iterrows():
+            task_id = int(row['task_id'])
+            src_group = row['source_group_id']
+            src_neuron = int(row['source_neuron_id'])
+            tgt_group = row['target_group_id']
+            tgt_neuron = int(row['target_neuron_id'])
+
+            subgroup_name = f"{src_group}_{src_neuron}_to_{tgt_group}_{tgt_neuron}"
+            csv_path = os.path.join(RESULTS_FULL_SURROGATE_DIR, f"runs_full_surrogate_{task_id}.csv")
+
+            if os.path.exists(csv_path):
+                df = pd.read_csv(csv_path)
+                subgrp = grp_full_surrogate.create_group(subgroup_name)
+                
+                # Save each column as a dataset within the subgroup
+                for col in df.columns:
+                    if col == 'run':
+                        continue
+                    subgrp.create_dataset(col, data=encode_for_h5(df[col]))
+            else:
+                print(f"File missing, skipping: {csv_path}")
     print(f"\nConsolidation complete. Data saved to: {OUTPUT_H5_PATH}")
 
 if __name__ == "__main__":
