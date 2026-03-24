@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --array=0-50
 #SBATCH --mem-per-cpu=3328M
-#SBATCH --time=02:00:00
+#SBATCH --time=04:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
