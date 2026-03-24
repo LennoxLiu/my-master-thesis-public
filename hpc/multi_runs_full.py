@@ -25,15 +25,20 @@ def load_best_config_full(file_path):
     
     return config
 
-def run_multiple_estimation_full(source_events, target_events, configs, task_id, n_runs=10, seed=42):
+def run_multiple_estimation_full(source_events, target_events, configs, task_id, n_runs=10, seed=42, surrogate=False):
     """
     Runs Ln_yyx estimation multiple times. 
     Can resume unfinished runs by checking the existing CSV file.
     Saves per-run results incrementally to prevent data loss.
     """
 
-    os.makedirs("results/runs-full", exist_ok=True)
-    output_file = f"results/runs-full/runs_full_{task_id}.csv"
+    if surrogate:
+        print("Running with surrogate data. Results will reflect shuffled event times.")
+        os.makedirs("results/runs-full-surrogate", exist_ok=True)
+        output_file = f"results/runs-full-surrogate/runs_full_surrogate_{task_id}.csv"
+    else:
+        os.makedirs("results/runs-full", exist_ok=True)
+        output_file = f"results/runs-full/runs_full_{task_id}.csv"
 
     start_run = 0
     run_results = []
@@ -110,8 +115,6 @@ if __name__ == "__main__":
         torch.manual_seed(args.seed)
         np.random.seed(args.seed)
 
-    os.makedirs("results/runs-full", exist_ok=True)
-
     # Read task parameters from task file
     s_group, s_neuron, t_group, t_neuron = get_task_params_full('hpc/tasks_full.csv', args.task_id)
     if s_group is not None:
@@ -163,5 +166,6 @@ if __name__ == "__main__":
         best_configs, 
         task_id=args.task_id, 
         n_runs=args.num_runs, 
-        seed=args.seed
+        seed=args.seed,
+        surrogate=args.surrogate
     )
