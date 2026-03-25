@@ -55,11 +55,11 @@ def main():
             if full_grp_name in h5f and reduced_grp_name in h5f:
                 try:
                     ln_yyx_sec = h5f[full_grp_name]['ln_yyx_sec'][:]
-                    ln_yy_sec = h5f[reduced_grp_name]['ln_yyx_sec'][:]
+                    ln_yyx_surrogate_sec = h5f[reduced_grp_name]['ln_yyx_sec'][:]
                     run_duration = h5f[full_grp_name]['run_duration_sec'][:]
                     
-                    min_len = min(len(ln_yyx_sec), len(ln_yy_sec))
-                    te_array = ln_yyx_sec[:min_len] - ln_yy_sec[:min_len]
+                    min_len = min(len(ln_yyx_sec), len(ln_yyx_surrogate_sec))
+                    te_array = ln_yyx_sec[:min_len] - ln_yyx_surrogate_sec[:min_len]
 
                     # Basic Metrics
                     te_mean = np.mean(te_array)
