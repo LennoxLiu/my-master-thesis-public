@@ -122,6 +122,12 @@ if __name__ == "__main__":
             0.1
         )
 
+        draw_combined_te_heatmap_significant_larger(
+            data, 
+            "results/te_heatmap_95ci_g0.075.png", 
+            "Transfer Entropy",
+            0.075
+        )
     except FileNotFoundError:
         print(f"Error: {DATA_PATH} not found.")
     except KeyError as e:
