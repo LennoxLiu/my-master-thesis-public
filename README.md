@@ -14,14 +14,14 @@ Modified from the PyTorch implementation of [*Intensity-Free Learning of Tempora
 
 TE is estimated by training two separate RMDNs:
 
-1. **Reduced model** — predicts the next inter-event interval (IEI) of the target process using only its own history.
-2. **Full model** — predicts the next target IEI using both the target's and the source's history.
+1. **Full model** — predicts the next inter-event interval (IEI) of the target using both the target's and the source's history.
+2. **Surrogate model** — trains the same architecture on surrogate data, where the source event times are shuffled to break any temporal coupling between source and target while preserving the marginal statistics of the target. This produces a stable baseline that plays the same conceptual role as a reduced model, but with lower variance.
 
-The TE rate is then computed as:
+Since the reduced-model terms cancel algebraically, the corrected TE rate is:
 
-$$\dot{TE} = \text{mean}(\ln_{yyx}) - \text{mean}(\ln_{yy})$$
+$$\dot{TE} = \text{mean}(\ln_{yyx}) - \text{mean}(\ln_{surrogate})$$
 
-where $\ln_{yy}$ and $\ln_{yyx}$ are the per-event log-ratios from the reduced and full models respectively.
+The surrogate model reuses the same hyperparameters as the full model.
 
 ------
 
@@ -58,24 +58,29 @@ configs = { ... }  # See Documentation.md for full config reference
 print(f"TE rate: {TE_test:.4f} nats/sec")
 ```
 
+> **Note:** The local single-pair pipeline (`TE_estimation_tpp`) still uses the reduced model internally. The surrogate-based workflow is implemented in the HPC pipeline described below.
+
 ------
 
 ## HPC Pipeline (SLURM)
 
-For large-scale pairwise estimation across neuron populations, the full pipeline is:
+For large-scale pairwise estimation across neuron populations, the pipeline requires only one round of hyperparameter optimization (full model only) and two parallel estimation runs (full + surrogate):
 
 ```
 Input HDF5
     │
-    ├──► [Step 0]  Generate task lists       python hpc/hpc_header.py
-    ├──► [Step 1]  Hyperparameter search     sbatch hpc/opt_{reduced,full}_model_batch.sh
-    ├──► [Step 2]  Multi-run estimation      sbatch hpc/run_{reduced,full}_model_batch.sh
-    ├──► [Step 3]  Aggregate results         python hpc/aggregate_results.py
-    ├──► [Step 4]  Calculate TE              python hpc/calculate_te.py
-    └──► [Step 5]  Visualize                 python hpc/plot_te_heatmap.py
+    ├──► [Step 0]  Generate task list         python hpc/hpc_header.py
+    ├──► [Step 1]  Hyperparameter search      sbatch hpc/opt_full_model_batch.sh
+    ├──► [Step 2a] Multi-run — Full model     sbatch hpc/run_full_model_batch.sh
+    ├──► [Step 2b] Multi-run — Surrogate      sbatch hpc/run_full_model_batch-surrogate.sh
+    ├──► [Step 3]  Aggregate results          python hpc/aggregate_results.py
+    ├──► [Step 4]  Calculate TE               python hpc/calculate_te-surrogate.py
+    └──► [Step 5]  Visualize                  python hpc/plot_te_heatmap.py
 ```
 
-If your data is in MATLAB format, first convert it to HDF5 format. For example,
+Steps 2a and 2b can be submitted **in parallel** — the surrogate run reuses the full-model hyperparameter configs with `--surrogate` (which sets `shuffle=True` on the source).
+
+If your data is in MATLAB format, first convert it to HDF5:
 
 ```bash
 python hpc/mat_to_h5.py  # converts data/testFile.mat → data/event_times_data.h5
@@ -100,6 +105,17 @@ See [`documentation/Documentation.md`](./documentation/Documentation.md) for the
 └── setup.py          # Package configuration
 ```
 
+After a full HPC run, `results/` is structured as:
+
+```
+results/
+├── opt-full/                # Per-task best hyperparameter configs (full model)
+├── runs-full/               # Per-task multi-run CSV results (real data)
+├── runs-full-surrogate/     # Per-task multi-run CSV results (shuffled source)
+├── multi_runs_results.h5    # Aggregated results
+└── te_results_hpc.csv       # Final TE estimates with statistics
+```
+
 ------
 
 ## Requirements
@@ -117,7 +133,7 @@ See [`documentation/Documentation.md`](./documentation/Documentation.md) for the
 | scikit-learn | 1.6.1                                    |
 | juliacall    | 0.9.28 (optional, for CoTETE comparison) |
 
-On **bwUniCluster 2.0 / bwForCluster**, load the required modules first:
+On bwForCluster, load the required modules first:
 
 ```bash
 module load devel/miniforge/24.9.2

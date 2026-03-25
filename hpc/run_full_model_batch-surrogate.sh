@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=TE_full_runs
-#SBATCH --output=hpc/logs/TE_full_runs_arrayjob%a.out
+#SBATCH --job-name=TE_full_runs_surrogate
+#SBATCH --output=hpc/logs/TE_full_runs_surrogate_arrayjob%a.out
 #SBATCH --partition=gpu-single
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
 #SBATCH --array=0-50
 #SBATCH --mem-per-cpu=3328M
-#SBATCH --time=04:00:00
+#SBATCH --time=02:00:00
 #SBATCH --account=bw20g013
 
 mkdir -p hpc/logs
@@ -37,16 +37,17 @@ for (( i=0; i<$TASKS_PER_JOB; i++ )); do
     
     python hpc/multi_runs_full.py \
         --data_file_path "./data/event_times_data.h5" \
-        --num_runs 20 \
+        --num_runs 40 \
         --history_length 512 \
         --data_time_length 900 \
         --task_id $CURRENT_TASK_ID \
-        --seed 42 &
+        --seed 42 \
+        --surrogate &
 done
 
 wait # Wait for all tasks to finish
 
 # Log GPU state right before shutdown to verify utilization
-nvidia-smi >> hpc/logs/gpu_usage_runs_full_${SLURM_ARRAY_TASK_ID}.log
+nvidia-smi >> hpc/logs/gpu_usage_runs_full_surrogate_${SLURM_ARRAY_TASK_ID}.log
 
 nvidia-cuda-mps-control -q # Shut down daemon

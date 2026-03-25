@@ -25,15 +25,20 @@ def load_best_config_full(file_path):
     
     return config
 
-def run_multiple_estimation_full(source_events, target_events, configs, task_id, n_runs=10, seed=42):
+def run_multiple_estimation_full(source_events, target_events, configs, task_id, n_runs=10, seed=42, surrogate=False):
     """
     Runs Ln_yyx estimation multiple times. 
     Can resume unfinished runs by checking the existing CSV file.
     Saves per-run results incrementally to prevent data loss.
     """
 
-    os.makedirs("results/runs-full", exist_ok=True)
-    output_file = f"results/runs-full/runs_full_{task_id}.csv"
+    if surrogate:
+        print("Running with surrogate data. Results will reflect shuffled event times.")
+        os.makedirs("results/runs-full-surrogate", exist_ok=True)
+        output_file = f"results/runs-full-surrogate/runs_full_surrogate_{task_id}.csv"
+    else:
+        os.makedirs("results/runs-full", exist_ok=True)
+        output_file = f"results/runs-full/runs_full_{task_id}.csv"
 
     start_run = 0
     run_results = []
@@ -103,13 +108,12 @@ if __name__ == "__main__":
     parser.add_argument("--data_time_length", type=int, default=None, help="Total time of the sequences in seconds")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
     parser.add_argument("--num_runs", type=int, default=10, help="Number of runs to perform")
+    parser.add_argument("--surrogate", action="store_true", help="Enable surrogate data for estimation")
     args = parser.parse_args()
 
     if args.seed is not None:
         torch.manual_seed(args.seed)
         np.random.seed(args.seed)
-
-    os.makedirs("results/runs-full", exist_ok=True)
 
     # Read task parameters from task file
     s_group, s_neuron, t_group, t_neuron = get_task_params_full('hpc/tasks_full.csv', args.task_id)
@@ -151,6 +155,10 @@ if __name__ == "__main__":
         if "data_prep_config" in best_configs:
             best_configs["data_prep_config"]["total_time"] = args.data_time_length
 
+    if args.surrogate:
+        print("Using surrogate data for estimation.")
+        best_configs["data_prep_config"]["shuffle"] = True
+
     # Run multiple estimations and save results
     run_multiple_estimation_full(
         source_events,
@@ -158,5 +166,6 @@ if __name__ == "__main__":
         best_configs, 
         task_id=args.task_id, 
         n_runs=args.num_runs, 
-        seed=args.seed
+        seed=args.seed,
+        surrogate=args.surrogate
     )
