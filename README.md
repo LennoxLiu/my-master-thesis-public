@@ -15,7 +15,7 @@ Modified from the PyTorch implementation of [*Intensity-Free Learning of Tempora
 TE is estimated by training two separate RMDNs:
 
 1. **Full model** — predicts the next inter-event interval (IEI) of the target using both the target's and the source's history.
-2. **Surrogate model** — trains the same architecture on surrogate data, where the source event times are **shuffled** to break any temporal coupling between source and target while preserving the marginal statistics of the target. This produces a stable baseline that plays the same conceptual role as a reduced model, but with lower variance.
+2. **Surrogate model** — trains the same architecture on surrogate data, where the source event times are shuffled to break any temporal coupling between source and target while preserving the marginal statistics of the target. This produces a stable baseline that plays the same conceptual role as a reduced model, but with lower variance.
 
 Since the reduced-model terms cancel algebraically, the corrected TE rate is:
 
@@ -64,7 +64,7 @@ print(f"TE rate: {TE_test:.4f} nats/sec")
 
 ## HPC Pipeline (SLURM)
 
-For large-scale pairwise estimation across neuron populations, the pipeline requires only **one round of hyperparameter optimization** (full model only) and **two parallel estimation runs** (full + surrogate):
+For large-scale pairwise estimation across neuron populations, the pipeline requires only one round of hyperparameter optimization (full model only) and two parallel estimation runs (full + surrogate):
 
 ```
 Input HDF5
@@ -133,7 +133,7 @@ results/
 | scikit-learn | 1.6.1                                    |
 | juliacall    | 0.9.28 (optional, for CoTETE comparison) |
 
-On **bwUniCluster 2.0 / bwForCluster**, load the required modules first:
+On bwForCluster, load the required modules first:
 
 ```bash
 module load devel/miniforge/24.9.2
