@@ -22,12 +22,18 @@ $$\begin{equation}
 
 The TE estimation problem is then converted to two prediction problems:
 
-1. **(Reduced Model)** Use only the historical inter-event intervals of the **target** to predict the PDF of the next inter-event interval.
-2. **(Full Model)** Use the historical IEIs of both the **source and the target** to predict the PDF of the next inter-event interval.
+1. **(Full Model)** Use the historical IEIs of both the source and the target to predict the PDF of the next inter-event interval.
+2. **(Surrogate Model)** Train the same full-model architecture on surrogate data, where the source event times are shuffled to break any temporal relationship between source and target while preserving the marginal statistics of the target. This produces a baseline $\ln_{surrogate}$ that captures the self-correlation of the target alone, playing the same conceptual role as the reduced model but with greater statistical stability.
 
-Two RMDNs are trained **separately** for these two tasks. After training, each model is evaluated on the ground-truth intervals to obtain per-event log-probabilities. The transfer entropy rate is then computed by averaging the log ratio over all events in the target process according to the formula above:
+Two RMDNs are trained **separately** for these two tasks. No separate reduced model needs to be trained or optimized. After training, each model is evaluated on the (non-shuffled) ground-truth intervals to obtain per-event log-probabilities. Since the reduced-model terms cancel algebraically, the corrected transfer entropy rate reduces to:
 
-$$\dot{TE} = \text{mean}(\ln_{yyx}) - \text{mean}(\ln_{yy})$$
+$$\dot{TE} = \text{mean}(\ln_{yyx}) - \text{mean}(\ln_{surrogate})$$
+
+This is derived from the full cancellation:
+
+$$\dot{TE} = \bigl(\text{mean}(\ln_{full}) - \text{mean}(\ln_{reduced})\bigr) - \bigl(\text{mean}(\ln_{surrogate}) - \text{mean}(\ln_{reduced})\bigr)$$
+
+The surrogate model reuses the same hyperparameters as the full model (found during full-model optimization), so no additional hyperparameter search is required.
 
 The parameters `k` and `l` in the formula specify the number of historical IEIs considered. Theoretically, larger `k` and `l` yield more accurate estimates, but they also increase the dimensionality of the conditioning variables and thus the amount of data required.
 
@@ -73,24 +79,26 @@ Primary source code for the transfer entropy estimation framework.
 
 Source code for scaling the estimation framework on HPC clusters. See the [HPC Workflow Pipeline](#workflow-pipeline-hpc) section for a step-by-step usage guide.
 
-| File                         | Description                                                  |
-| ---------------------------- | ------------------------------------------------------------ |
-| `hpc_header.py`              | Shared utility functions and task list generation for SLURM array jobs |
-| `mat_to_h5.py`               | Converts raw MATLAB `.mat` files to HDF5 format              |
-| `opt_reduced_model_batch.sh` | SLURM script for reduced model hyperparameter optimization   |
-| `opt_full_model_batch.sh`    | SLURM script for full model hyperparameter optimization      |
-| `hyper_opt_reduced.py`       | Optuna-based hyperparameter search for the reduced model     |
-| `hyper_opt_full.py`          | Optuna-based hyperparameter search for the full model        |
-| `run_reduced_model_batch.sh` | SLURM script for multi-run estimation with the reduced model |
-| `run_full_model_batch.sh`    | SLURM script for multi-run estimation with the full model    |
-| `multi_runs_reduced.py`      | Runs repeated reduced model estimations for a single task    |
-| `multi_runs_full.py`         | Runs repeated full model estimations for a single task       |
-| `aggregate_results.py`       | Consolidates all per-task CSV results into a single HDF5 file |
-| `calculate_te.py`            | Computes final TE rates with statistics and confidence intervals |
-| `plot_te_heatmap.py`         | Generates heatmap visualizations of pairwise TE estimates    |
-| `check_results.py`           | Verifies completeness of optimization and multi-run outputs  |
-| `check_env.py`               | Checks the environment and GPU availability                  |
-| `debug.py`                   | Debugging utilities                                          |
+| File                                   | Description                                                                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------- |
+| `hpc_header.py`                        | Shared utility functions and task list generation for SLURM array jobs                |
+| `mat_to_h5.py`                         | Converts raw MATLAB `.mat` files to HDF5 format                                       |
+| `opt_full_model_batch.sh`              | SLURM script for full model hyperparameter optimization                               |
+| `hyper_opt_full.py`                    | Optuna-based hyperparameter search for the full model                                 |
+| `run_full_model_batch.sh`              | SLURM script for multi-run estimation with the full model (real data)                 |
+| `run_full_model_batch-surrogate.sh`    | SLURM script for multi-run estimation with the surrogate model (shuffled source)      |
+| `multi_runs_full.py`                   | Runs repeated full model estimations for a single task; pass `--surrogate` flag for surrogate runs |
+| `aggregate_results.py`                 | Consolidates all per-task CSV results (full and surrogate) into a single HDF5 file   |
+| `calculate_te-surrogate.py`            | Computes final TE rates (full − surrogate) with statistics and confidence intervals   |
+| `plot_te_heatmap.py`                   | Generates heatmap visualizations of pairwise TE estimates                             |
+| `check_results.py`                     | Verifies completeness of optimization and multi-run outputs                           |
+| `check_env.py`                         | Checks the environment and GPU availability                                           |
+| `debug.py`                             | Debugging utilities                                                                   |
+| `opt_reduced_model_batch.sh`           | *(Legacy)* SLURM script for reduced model hyperparameter optimization                 |
+| `hyper_opt_reduced.py`                 | *(Legacy)* Optuna-based hyperparameter search for the reduced model                   |
+| `run_reduced_model_batch.sh`           | *(Legacy)* SLURM script for multi-run estimation with the reduced model               |
+| `multi_runs_reduced.py`                | *(Legacy)* Runs repeated reduced model estimations for a single task                  |
+| `calculate_te.py`                      | *(Legacy)* Computes TE rates using full − reduced model                               |
 
 ### `results/`
 
@@ -98,12 +106,11 @@ Output directory for computed results and plots. Structured as follows after a f
 
 ```
 results/
-├── opt-reduced/             # Per-task best hyperparameter configs (reduced model)
-├── opt-full/                # Per-task best hyperparameter configs (full model)
-├── runs-reduced/            # Per-task multi-run CSV results (reduced model)
-├── runs-full/               # Per-task multi-run CSV results (full model)
-├── multi_runs_results.h5    # Aggregated results (output of aggregate_results.py)
-└── te_results_hpc.csv       # Final TE estimates with statistics (output of calculate_te.py)
+├── opt-full/                    # Per-task best hyperparameter configs (full model)
+├── runs-full/                   # Per-task multi-run CSV results (full model, real data)
+├── runs-full-surrogate/         # Per-task multi-run CSV results (surrogate model, shuffled source)
+├── multi_runs_results.h5        # Aggregated results (output of aggregate_results.py)
+└── te_results_hpc.csv           # Final TE estimates with statistics (output of calculate_te-surrogate.py)
 ```
 
 ------
@@ -198,7 +205,7 @@ These functions are called directly by the HPC scripts (`hyper_opt_reduced.py`, 
 
 ## Workflow Pipeline (Local)
 
-This workflow runs the complete TE estimation locally for a single pair of processes. Refer to `demo/demo.ipynb` for a fully worked example.
+This workflow runs the complete TE estimation locally for a single pair of processes. This pipeline still use a reduced model rather than a surrogate model. Refer to `demo/demo.ipynb` for a fully worked example.
 
 **Step 1 — Prepare the environment**
 
@@ -241,27 +248,27 @@ Assess the model fit using the returned log-loss values and optional P-P plots (
 
 ## Workflow Pipeline (HPC)
 
-The HPC pipeline estimates TE for all pairwise neuron combinations in a dataset using SLURM array jobs. There are two parallel tracks — **reduced** (target self-prediction) and **full** (source + target prediction) — each consisting of two sequential steps: **hyperparameter optimization**, then **multi-run estimation**.
+The HPC pipeline estimates TE for all pairwise neuron combinations in a dataset using SLURM array jobs. The pipeline requires only the **full model** and a **surrogate run** (the reduced model is no longer needed). The workflow is:
 
 ```
 Input HDF5
     │
-    ├──► [Step 0]  Generate task lists (tasks_reduced.csv, tasks_full.csv)
+    ├──► [Step 0]  Generate task list  (tasks_full.csv)
     │
-    ├──► [Step 1a] Hyperparameter optimization — Reduced model  (opt_reduced_model_batch.sh)
-    ├──► [Step 1b] Hyperparameter optimization — Full model     (opt_full_model_batch.sh)
+    ├──► [Step 1]  Hyperparameter optimization — Full model     (opt_full_model_batch.sh)
     │
-    ├──► [Step 2a] Multi-run estimation — Reduced model         (run_reduced_model_batch.sh)
-    ├──► [Step 2b] Multi-run estimation — Full model            (run_full_model_batch.sh)
+    ├──► [Step 2a] Multi-run estimation — Full model            (run_full_model_batch.sh)
+    ├──► [Step 2b] Multi-run estimation — Surrogate model       (run_full_model_batch-surrogate.sh)
+    │              (reuses full-model hyperparameters; no separate optimization needed)
     │
     ├──► [Step 3]  Aggregate results                            (aggregate_results.py)
-    ├──► [Step 4]  Calculate TE                                 (calculate_te.py)
+    ├──► [Step 4]  Calculate TE                                 (calculate_te-surrogate.py)
     └──► [Step 5]  Visualize                                    (plot_te_heatmap.py)
 ```
 
 ### Data Conversion
 
-If your spike data is in MATLAB format, convert it to HDF5 first. The script reads a `sortedData` cell array, filters neurons with fewer than `min_events` spikes, and organises the output as `group_id/neuron_id` datasets:
+If your spike data is in MATLAB format, convert it to HDF5 first. The script reads a `sortedData` cell array, filters neurons with fewer than `min_events` spikes, and organizes the output as `group_id/neuron_id` datasets:
 
 ```bash
 python hpc/mat_to_h5.py
@@ -279,73 +286,74 @@ event_times_data.h5
 
 ### Step 0 — Generate Task Lists
 
-Before submitting SLURM jobs, generate the task CSV files that map each SLURM array task ID to a specific neuron (or neuron pair):
+Before submitting SLURM jobs, generate the task CSV file that maps each SLURM array task ID to a specific source-target neuron pair:
 
 ```bash
 python hpc/hpc_header.py
 ```
 
-This is interactive:
-
-- For the **reduced model**, you select which neuron groups to include; one task is created per neuron: `tasks_reduced.csv`.
-- For the **full model**, you select source and target groups; one task is created per ordered (source, target) neuron pair across different groups: `tasks_full.csv`.
+This is interactive. You select source and target neuron groups; one task is created per ordered (source, target) neuron pair across different groups, producing `tasks_full.csv`. This single task list is shared by the full model, the surrogate model, and the post-processing steps.
 
 ### Step 1 — Hyperparameter Optimization
 
-Run Optuna-based hyperparameter search using SLURM array jobs. Each task runs 50 trials to find the best model architecture and regularization settings for that specific neuron (or neuron pair). Results are saved as JSON-formatted `.txt` files in `results/opt-reduced/` and `results/opt-full/`.
+Run Optuna-based hyperparameter search using SLURM array jobs. Each task runs a configurable number of trials to find the best model architecture and regularization settings for each source-target neuron pair. Results are saved as JSON-formatted `.txt` files in `results/opt-full/`.
+
+The surrogate model reuses these same hyperparameters — **no separate optimization run is needed for the surrogate**.
 
 ```bash
-# Reduced model (one task per target neuron)
-sbatch hpc/opt_reduced_model_batch.sh
-
 # Full model (one task per source-target neuron pair)
 sbatch hpc/opt_full_model_batch.sh
 ```
 
-Key SLURM parameters (edit in the `.sh` files to match your cluster and dataset):
+Key SLURM parameters (edit in the `.sh` file to match your cluster and dataset):
 
-| Parameter          | Reduced    | Full       | Description                            |
-| ------------------ | ---------- | ---------- | -------------------------------------- |
-| `--array`          | `0-1`      | `0-25`     | Task ID range (one per neuron/pair)    |
-| `--time`           | `01:00:00` | `01:00:00` | Wall time per job                      |
-| `--gres`           | `gpu:1`    | `gpu:1`    | GPUs per job                           |
-| `TASKS_PER_JOB`    | `16`       | `16`       | Concurrent processes per GPU (via MPS) |
-| `--history_length` | `128`      | `128`      | IEI history length $k=l$               |
-| `--num_trials`     | `20`       | `20`       | Optuna trials per task                 |
+| Parameter          | Full       | Description                            |
+| ------------------ | ---------- | -------------------------------------- |
+| `--array`          | `0-25`     | Task ID range (one per neuron pair)    |
+| `--time`           | `01:00:00` | Wall time per job                      |
+| `--gres`           | `gpu:1`    | GPUs per job                           |
+| `TASKS_PER_JOB`    | `16`       | Concurrent processes per GPU (via MPS) |
+| `--history_length` | `128`      | IEI history length $k=l$               |
+| `--num_trials`     | `20`       | Optuna trials per task                 |
 
 Each job launches `TASKS_PER_JOB` Python processes in parallel via CUDA Multi-Process Service (MPS), which allows multiple processes to share a single GPU efficiently.
 
 **Verify completion:**
 
 ```bash
-python hpc/check_results.py --reduced <N_reduced_tasks> --full <N_full_tasks>
+python hpc/check_results.py --full <N_full_tasks>
 ```
 
 ### Step 2 — Multi-Run Estimation
 
-Using the best hyperparameters found in Step 1, run the estimation `num_runs` times per task to quantify estimation variance. Results are saved as CSV files in `results/runs-reduced/` and `results/runs-full/`. The script supports **resuming** interrupted runs automatically.
+Using the best hyperparameters found in Step 1, run the estimation `num_runs` times per task. Two sets of runs are required: one with real data (**full model**) and one with surrogate data (**surrogate model**). Both use the same script (`multi_runs_full.py`) and the same hyperparameter configs except for `shuffle`  flag for  the surrogate. The surrogate run simply passes `--surrogate`, which sets `shuffle=True` in the data preparation config to break source–target temporal coupling.
+
+Results are saved as CSV files in `results/runs-full/` and `results/runs-full-surrogate/`. Both scripts support **resuming** interrupted runs automatically.
 
 ```bash
-# Reduced model
-sbatch hpc/run_reduced_model_batch.sh
-
-# Full model
+# Full model (real source data)
 sbatch hpc/run_full_model_batch.sh
+
+# Surrogate model (shuffled source data; reuses full-model hyperparameters)
+sbatch hpc/run_full_model_batch-surrogate.sh
 ```
+
+The two jobs can be submitted **in parallel** since they are independent.
 
 Key script arguments (edit in the `.sh` files):
 
-| Argument             | Example | Description                                    |
-| -------------------- | ------- | ---------------------------------------------- |
-| `--num_runs`         | `20`    | Number of independent estimation runs per task |
-| `--history_length`   | `128`   | Must match the value used in Step 1            |
-| `--data_time_length` | `900`   | Total recording duration in seconds            |
-| `--seed`             | `42`    | Base random seed                               |
+| Argument             | Example | Description                                           |
+| -------------------- | ------- | ----------------------------------------------------- |
+| `--num_runs`         | `40`    | Number of independent estimation runs per task        |
+| `--history_length`   | `512`   | Must match the value used in Step 1                   |
+| `--data_time_length` | `900`   | Total recording duration in seconds                   |
+| `--seed`             | `42`    | Base random seed                                      |
+| `--surrogate`        | *(flag)*| Enable surrogate mode (shuffles source event times)   |
 
 **Verify completion:**
 
 ```bash
-python hpc/check_results.py --reduced <N> --full <N> --num_runs 20
+python hpc/check_results.py --full <N> --num_runs 40
 ```
 
 ### Step 3 — Aggregate Results
@@ -361,22 +369,22 @@ The output HDF5 file has the structure:
 
 ```
 multi_runs_results.h5
-├── reduced/
-│   └── <group_id>_<neuron_id>/   # e.g. "BC_0"
-│       ├── ln_yy_sec             # Log-ratio values per run
-│       └── run_duration_sec      # Runtime per run
-└── full/
-    └── <src_group>_<src_id>_to_<tgt_group>_<tgt_id>/   # e.g. "BC_0_to_POm_3"
-        ├── ln_yyx_sec
+├── full/
+│   └── <src_group>_<src_id>_to_<tgt_group>_<tgt_id>/   # e.g. "BC_0_to_POm_3"
+│       ├── ln_yyx_sec             # Log-ratio values per run (real data)
+│       └── run_duration_sec       # Runtime per run
+└── full_surrogate/
+    └── <src_group>_<src_id>_to_<tgt_group>_<tgt_id>/
+        ├── ln_yyx_sec             # Log-ratio values per run (surrogate/shuffled data)
         └── run_duration_sec
 ```
 
 ### Step 4 — Calculate Transfer Entropy
 
-Compute the final TE rate for each source-target pair using the aggregated results, along with uncertainty statistics:
+Compute the final TE rate for each source-target pair using the aggregated results. The surrogate-aware script computes `TE = mean(ln_yyx_full) − mean(ln_yyx_surrogate)` per run pair, then derives uncertainty statistics from the resulting per-run TE array:
 
 ```bash
-python hpc/calculate_te.py
+python hpc/calculate_te-surrogate.py
 # Output: results/te_results_hpc.csv
 ```
 
@@ -405,7 +413,7 @@ python hpc/plot_te_heatmap.py
 # Output: results/te_heatmap_standard.png, results/te_heatmap_95ci.png
 ```
 
-Two heatmaps are produced side by side (e.g., BC→POm and POm→BC directions), with neurons on each axis and TE magnitude shown by color. A shared colorbar is used for direct comparison.
+Two heatmaps are produced side by side (e.g., BC→POm and POm→BC directions), with neurons on each axis and TE magnitude shown by color. A shared color bar is used for direct comparison. The user can apply a threshold on the lower bound of 95% CI for more significant results.
 
 ------
 
@@ -414,7 +422,7 @@ Two heatmaps are produced side by side (e.g., BC→POm and POm→BC directions),
 ### Model Fit
 
 - **P-P Plot (Probability-Probability Plot)**: Compares the empirical CDF of observed IEIs against the model's predicted CDF. Points close to the diagonal indicate a well-calibrated model. Enable with `"plot_pp": True` in `configs`. Output files follow the pattern `pp_plot_<model_name>_<seed>.png`.
-- **Negative Log-Likelihood Loss** (`log_loss_yy`, `log_loss_yyx`): Lower values indicate the model assigns higher probability to observed events. Used during hyperparameter optimization as the objective to minimize.
+- **Negative Log-Likelihood Loss** (`log_loss_yyx`): Lower values indicate the model assigns higher probability to observed events. Used during hyperparameter optimization as the objective to minimize. Both the full model and the surrogate model are evaluated this way; the surrogate's loss reflects fit quality on shuffled-source data.
 
 ### Estimation Reliability
 
