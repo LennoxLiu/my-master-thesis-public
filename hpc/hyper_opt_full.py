@@ -7,7 +7,7 @@ import argparse
 import json
 
 from src.te_tpp import Ln_estimation_yyx 
-from hpc.hpc_header import get_task_params_full, read_event_times_full
+from hpc.hpc_helper import get_task_params_full, read_event_times_full
 
 def create_objective(arrival_times_source, arrival_times_target, device, args):
     """

@@ -10,7 +10,7 @@ from src.te_tpp import Ln_estimation_yy
 from scipy.stats import rankdata
 import numpy as np
 import matplotlib.pyplot as plt
-from hpc.hpc_header import get_task_params_reduced, read_event_times_reduced
+from hpc.hpc_helper import get_task_params_reduced, read_event_times_reduced
 
 def load_best_config_reduced(file_path):
     """

@@ -7,7 +7,7 @@ from copy import deepcopy
 import optuna
 from src.te_tpp import Ln_estimation_yy
 import argparse
-from hpc.hpc_header import get_task_params_reduced, read_event_times_reduced
+from hpc.hpc_helper import get_task_params_reduced, read_event_times_reduced
 import json
 
 def create_objective(arrival_times_target,

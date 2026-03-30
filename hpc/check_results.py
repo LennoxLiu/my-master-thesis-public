@@ -87,6 +87,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Check Opt results, and optionally Run results.")
     parser.add_argument("--full", type=int, help="Task count for Full model")
     parser.add_argument("--reduced", type=int, help="Task count for Reduced model")
+    parser.add_argument("--surrogate", type=int, help="Task count for Full Surrogate model (if applicable)")
     # Set default to None to make it an explicit toggle
     parser.add_argument("--num_runs", type=int, default=None, help="Required repetitions in CSV")
     
@@ -109,7 +110,14 @@ if __name__ == "__main__":
             "runs_path": "results/runs-reduced",
             "runs_prefix": "runs_reduced"
         }
-
+    if args.surrogate is not None:
+        job_config["Full Surrogate Model"] = {
+            "range": range(args.surrogate),
+            "opt_path": "results/opt-full-surrogate",
+            "opt_prefix": "opt_full_surrogate",
+            "runs_path": "results/runs-full-surrogate",
+            "runs_prefix": "runs_full_surrogate"
+        }
     if not job_config:
         print("Error: No tasks specified. Use --full [N] or --reduced [N].")
     else:

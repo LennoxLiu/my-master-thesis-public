@@ -8,7 +8,7 @@ import torch
 from tqdm import tqdm
 from src.te_tpp import Ln_estimation_yyx
 import numpy as np
-from hpc.hpc_header import get_task_params_full, read_event_times_full
+from hpc.hpc_helper import get_task_params_full, read_event_times_full
 
 def load_best_config_full(file_path):
     """
