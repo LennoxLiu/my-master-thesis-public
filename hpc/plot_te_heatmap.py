@@ -82,15 +82,15 @@ def draw_combined_te_heatmap_significant(df, output_filename, title):
 def draw_combined_te_heatmap_significant_larger(df, output_filename, title, threshold=0.1):
     """
     Filters out results where the confidence interval includes zero.
-    Sets te_mean to 0 if te_ci_lower <= threshold.
+    Sets te_mean to 0 if abs(te_ci_lower) <= threshold.
     """
     df_sig = df.copy()
     
-    # Logic: If te_ci_lower <= threshold, the result is not statistically significant.
+    # Logic: If abs(te_ci_lower) <= threshold, the result is not statistically significant.
     # We set these means to 0 to mask them in the heatmap.
-    df_sig.loc[df_sig['te_ci_lower'] <= threshold, 'te_mean'] = 0
+    df_sig.loc[(df_sig['te_ci_lower'] <= threshold) & (df_sig['te_ci_upper'] >= -threshold), 'te_mean'] = 0
     
-    full_title = f"{title} (Significant Results Only: ci_lower > {threshold})"
+    full_title = f"{title} (Significant Results Only: abs(ci_lower) > {threshold} and abs(ci_upper) < {-threshold})"
     draw_combined_te_heatmap(df_sig, output_filename, full_title)
 
 
@@ -120,6 +120,13 @@ if __name__ == "__main__":
             "results/te_heatmap_95ci_g0.1.png", 
             "Transfer Entropy",
             0.1
+        )
+
+        draw_combined_te_heatmap_significant_larger(
+            data, 
+            "results/te_heatmap_95ci_g0.5.png", 
+            "Transfer Entropy",
+            0.5
         )
 
         draw_combined_te_heatmap_significant_larger(
