@@ -90,7 +90,7 @@ def draw_combined_te_heatmap_significant_larger(df, output_filename, title, thre
     # We set these means to 0 to mask them in the heatmap.
     df_sig.loc[(df_sig['te_ci_lower'] <= threshold) & (df_sig['te_ci_upper'] >= -threshold), 'te_mean'] = 0
     
-    full_title = f"{title} (Significant Results Only: abs(ci_lower) > {threshold} and abs(ci_upper) < {-threshold})"
+    full_title = f"{title} (Significant Results Only: ci_lower > {threshold} or ci_upper < {-threshold})"
     draw_combined_te_heatmap(df_sig, output_filename, full_title)
 
 
